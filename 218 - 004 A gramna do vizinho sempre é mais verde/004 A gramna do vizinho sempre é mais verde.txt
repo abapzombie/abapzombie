@@ -1,0 +1,40 @@
+#004 – A gram(n)a do vizinho sempre é mais verde?
+Autor: Leo Schmidt
+Data: 15/03/2016 10:00
+
+AEEEE PENSOU QUE A GENTE MORREU? AQUI É ZUMBI, MALUCO!
+Pode ter crise econômica, crise política, mas ABAP sempre é ABAP em todo lugar do mundo. Será mesmo? Nesse episódio, o Maurício, o Mauro e eu (com aparições pop-up do Henrique) recebemos
+Ronildo Santos
+,
+Flávio Furlan
+e
+Custódio de Oliveira
+, 3 figurinhas carimbadas do mundo SAP/ABAP pra conversar em mais de 2h sobre como conseguir móveis no lixo, churrasco, crimes internacionais e eventualmente também sobre como é trabalhar com SAP fora do Brasil.
+Críticas? Dúvidas? Sugestões? Tá faltando sacolinha no mercado aí também? Então comente aí embaixo!
+Muito obrigado por ter escutado e até a próxima! \o/
+Links e recomendações do episódio:
+Um oferecimento de
+English Town™
+😉
+Node School
+Cloud9
+SAP Web IDE
+ABAP Active Record
+, o projeto open source do Furlan
+Ronildo recomenda: LEIAM + SEUS ANI+ (mentira, é só “leiam mais” mesmo):
+What Technology Wants – Kevin Kelly
+A Lógica do Cisne Negro – Nassim Nicholas Taleb
+Originals: How Non-Conformists Move the World – Adam Grant
+Brave Browser
+História nas Redes Sociais
+Não saiam no meio da gravação do podcast, se possível
+To the Moon
+
+
+
+Comentários:
+Guilherme (23/05/2016 17:38): Muito bom o podcast! Espero que continuem fazendo, trabalho na SAP em Sankt Leon Rot a uns poucos quilômetros de Walldorf, também passei por essa adaptação, mas a minha vinda para a Alemanha foi mais tranquila, já que minha esposa tem cidadania italiana. É bem interessante ouvir as histórias dos devs de ABAP fora da SAP. Deixa eu fazer um jabazinho aqui, desenvolvi uma extensão para o chrome que coloca code highlighting nas correction instructions de SAP Notes: https://chrome.google.com/webstore/detail/sap-note-enhancer/keibkcomemkcceddcddjdlncidohgedk Abraço! Guilherme.
+Custodio de Oliveira (25/04/2016 21:32): Muitissimo obrigado ao Mauricio e demais integrantes da equipe Zumbi pelo convite. Gostei muito de participar e espero que alguem aproveite algo do que falei. Algumas observacoes: 1 – Aqui na Australia tambem eh proibido pegar as coisas que o povo deixa na rua; voce corre o risco de ser multado. Mas esse risco eh apenas teorico, nunca ninguem foi multado por isso (aqui tambem tem leis que “pegam” ou “nao pegam”) 2 – Logo depois da gravacao do podcast, acabou meu contrato e fiquei quase 2 meses sem trabalhar 🙁 Em todos esses anos nessa industria vital, eh a primeira vez que isso me acontece (entendedores velhos entenderao) 3 – Australianos gostam muito de ajudar no trabalho, SE voce mostrar que tentou primeiro. Nao tente peguntar pra alguem “como faz XYZ” que nao tera resposta. Pergunte “preciso fazer XYZ; ja tentei ABC, DEF e HGHI, mas nao tive resultado. voce pode me dar uma ajuda?”. Voce sera ajudado. 4 – Ja nao uso mais nenhum das 2 dicas que dei 😀 5 – Tenho uma outra dica: Pra quem se interessar em migrar para Australia, todas informacoes necessarias estao em http://www.immi.gov.au . Se precisarem esclarecer alguma coisa, podem entrar em contato comigo – mas lembre-se do ponto 3 acima 😉 Eu tinha outras coisas pra comentar, mas como nao escrevi, esqueci  – velho eh foda 🙁 Abracos!!!
+Vinícius (06/04/2016 09:59): Cara! excepcional. Estou tentando tirar o IELTS para ir para o Canadá, e quero continuar vivendo a serviço da “Nave Mãe” . Mas vocês têm postar um podcast destes assim semanal, no mínimo. É muito bom, e tira essa sensação de que somos os últimos abaps no mundo. Acredite, aqui no Rio de janeiro dá pra se sentir assim. Estou tentando refazer muitos dos meu programas no padrão MVC mas confesso que é difícil ainda aplicar o conceito  da noite para o dia no ABAP.  Não estou fazendo um OO meia boca não, mas acho que dá pra ficar melhor. Alguma dica?
+Fabio Pagoti (16/03/2016 15:31): Este podcast ficou show de bola. Estou levando quase 2 horas para sair do trabalho e chegar no hotel. Deu o tempo certinho de ouvir. Abraços a todos que participaram do podcast. PS: acabo de verificar que o Fiori Launchpad roda tranquilo no Brave.
+Thiago Alves (15/03/2016 10:10): Ótimo post, já que no mês que vem estou me mudando para o Canadá… 😀

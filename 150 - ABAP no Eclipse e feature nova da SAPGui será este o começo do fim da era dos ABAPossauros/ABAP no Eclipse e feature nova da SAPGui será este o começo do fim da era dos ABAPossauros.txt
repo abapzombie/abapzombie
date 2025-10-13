@@ -1,0 +1,116 @@
+ABAP no Eclipse e feature nova da SAPGui: será este o começo do fim da era dos ABAPossauros?
+Autor: Mauricio Cruz
+Data: 15/08/2012 12:00
+
+Hey amigo ABAPossauro, você ainda usa aquele “lindo” editor antigo, que não tinha nem code highlight? Então venha se divertir neste post divido em 3 partes, que mostra o “presente desconhecido” e o futuro do desenvolvimento ABAP.
+Imagem pelo
+Enterprise Geeks!
+Para escutar o podcast que eles fizeram sobre o ABAP no Eclipse, é só clicar na imagem! 🙂
+Aqui apresento 3 screencasts:
+No primeiro, vou mostrar uma novidade de
+autocomplete
+muito bem-vinda e presente nas edições mais novas da SAPGui.
+No segundo, vocês poderão ver como funciona a
+mecânica de criação de objetos
+ABAP pelo
+Eclipse
+.
+No terceiro e último screencast, tentei mostrar um pouco da
+codificação
+ABAP dentro do
+Eclipse
+.
+Ou seja: não precisa passar pelo processo chato e demorado de instalação desse negócio todo para conhecer essas novidades.  Mas, se você tiver interesse em fazer uma instalação nova do AS Trial (MiniSAP), acesse
+a novíssima página do ABAP101
+, que contém um vídeo detalhado sobre a instalação da versão mais nova!
+Vamos lá?
+😀
+1 – Finalmente um autocomplete completo
+Quando foi lançado, o editor novo deixou a experiência de desenvolver código ABAP bem menos frustrante. Mas desde que eu passei a ter mais contato com outras linguages, comecei a sentir muita falta de um autocomplete que fizesse referência ao código que eu estou escrevendo, e não só para as keywords.
+Mas, finalmente, a SAP colocou isso em prática nas últimas versões da SAPGui. Vamos analisar um pouco essa “novidade” no vídeo!
+Ponto importante do vídeo: Em determinada parte, quando eu declaro um método do tipo DD03L-FIELDNAME, eu comento que o editor mostra o tipo do campo que o método espera. Esse pop-up amarelo não apareceu no vídeo, não sei exatemente o porque.. sei que não vou gravar de novo (já era minha 4 ou 5 tentativa, dê um desconto! 😛 ) Imaginem que ele esteja lá quando eu falar! O pop-up amarelo aparece mais tarde no 3 vídeo, da codificação pelo Eclipse.
+Links relacionados ao vídeo:
+Página que explica o que é necessário para instalar a última versão do AS Trial.
+Instalação do AS 7.03, o mesmo do vídeo, por Furlan do ABAP101
+2 – Criando objetos ABAP pelo Eclipse
+Aqui eu começo a mostrar o desenvolvimento ABAP através do Eclipse. Você vai acompanhar como funciona a criação de objetos e requests, e a idéia de mostrar a SAPGui num aba nova, para as coisas que o ADT (ABAP Development Tools) não suporta.
+Link relacionados ao vídeo:
+Página que explica tudo que você precisa para instalar a última versão do AS Trial + Eclipse
+Artigo da SAP falando que, no futuro, somente o ADT vai receber novas funcionalidades
+Série animal explicando os Pacotes do ABAP
+FAQ completo, para tirar as suas dúvidas sobre o ADT
+3 – Codificando ABAP no Eclipse
+E no último vídeo, vamos analisar como é a mecânica de desenvolvimento pelo Eclipse. Eu não estudei muito todas as funcionalidades do ADT antes de fazer o vídeo, a idéia é mostrar o básico mesmo. Talvez eu faça outro vídeo no futuro mais “avançado”, após eu ter usado um pouco e aprendido mais alguns truques 🙂
+Links relacionados os vídeo:
+Guia de utilização para o ABAP no Eclipse
+E nada de Debug no ADT, pelo menos por enquanto
+E aí? O que você achou? Qual a sua opinião sobre o início dessa mudança no nosso trabalho? Vai rolar mesmo a extinção dos ABAPossauros?
+Minha opinião: por enquanto “bacana”, mas ainda falta muito para podermos trabalhar “de fato” com o ADT. Porém continuo enxergando essa mudança com bons olhos!
+Deixe suas percepções nos comentários! Abraços!
+
+
+
+Comentários:
+Alessandro Norce (28/05/2019 15:38): E ai povo ,, passados anos e anos,,,  o Eclipse pelo jeito ainda está “Acordando”,, a velha SE80 ainda permanece… Oque vcs acham ?
+Carlos (16/07/2016 17:18): Maurício, boa tarde, Eu instalei os plugins tudo certinho, porém, quando vou abrir um projeto, gera uma mensagem de erro: Location ‘C:\Users\Punk\AppData\Roaming\SAP\Common’ does not point to a SAP GUI configuration file. Mas beleza, ele abre na tela de cadastro do projeto, porém, quando eu vou finalizar o projeto, ele gera esse erro: Logon to system PRD failed (System PRD does not support Eclipse based ABAP Development Tools). Eu não sei se estou fazendo algo errado. Poderia me ajudar Maurício?
+Joao Martins de Castro Jr (15/04/2016 11:36): Olá Maurício, Sou ABAPssauro em evolução, aprendendo na raça o ABAP OO e “otras cositas mas”. Quero acrescentar que no editor ABAP também é possível fazer com que o Auto-complete use palavras definidas no próprio código, tais como variáveis e constantes. Não é tão eficiente quanto no eclipse, mas funciona. Por exemplo, se eu quiser limpar uma variável com o comando CLEAR, eu tenho que dar um espaço ou usar “:” antes de teclar CTRL+espaço para chamar o auto-complete com as variáveis do programa. Na janela que se abre com as variáveis, ainda posso escolher o que exibir pelos ícones logo abaixo. Caso não esteja funcionando, clicar no ícone OPTIONS no editor (aquele amarelinho, logo abaixo da barra de rolagem no lado direito). Na opção “Code Completion”, marcar a opção “Suggest Non-keywords from the Text”. O “fechar” parenteses/colchetes/apóstrofes também pode ser configurado nessa tela em “Formating” e marcar a opção “Enable Auto Brackets” Pode ser que estas sejam informações básicas, que qualquer ABAP fuçador acharia, mas é ter algumas coisas mastigadas de vez em quando. Parabéns pelos vídeos – são muito didáticos e diretos. Abraço!
+  Joao Martins de Castro Jr (15/04/2016 11:39): Complementando, como ABAPssauro em evolução, pretendo estudar o ADT para me preparar caso se torne obrigatório antes de me aposentar (rsrsrs). Afinal, conhecimento não pesa e não ocupa espaço.
+  Joao Martins de Castro Jr (15/04/2016 11:39): Complementando, como ABAPssauro em evolução, pretendo estudar o ADT para me preparar caso se torne obrigatório antes de me aposentar (rsrsrs). Afinal, conhecimento não pesa e não ocupa espaço.
+Cicero (05/02/2016 07:48): Estou começando a usar o eclipse em meus desenvolvimentos, estou com uma duvida simples que seria como criar um form a partir de um perform ?
+  fawcs (14/03/2016 14:00): Opa, vou fazer meu comentario partindo do principio de que vc não tem um sap no talo(7.40 sp 8). Pelo que eu vi até agora, a SAP está mais focada no orientado a objeto, ou seja, o uso do eclipse é muito forte quando você trabalha com classes.  Gerando automaticamente atributos e as respectivas interfaces… creio que ele não gere forms
+  fawcs (14/03/2016 14:00): Opa, vou fazer meu comentario partindo do principio de que vc não tem um sap no talo(7.40 sp 8). Pelo que eu vi até agora, a SAP está mais focada no orientado a objeto, ou seja, o uso do eclipse é muito forte quando você trabalha com classes.  Gerando automaticamente atributos e as respectivas interfaces… creio que ele não gere forms
+Paulo Campos (05/07/2014 21:39): Maurício, bacana o post, faz tempo que estava querendo ver como o eclipse se comportava, vou instalar ele na minha maquina e tentar acessar o SAP da empresa que presto serviço, porem  creio que não irá funcionar devido estar na versão do componente SAP_AP esta na RELEASE 700 NIVEL 17 e não possui nenhum EHP. Caso funcione tentarei trabalhar nesta e verificar se seria viável. Agora uma coisa é fato o DEBUG é uma ferramenta indispensável! Abraço. Paulo Campos
+Glauber Santana (04/06/2014 22:52): Boa noite, Mauricio. Tudo certo? Eu não consegui fazer o Eclipse comunicar-se com o Minisap.. Pode dar uma ideia do que fazer? Onde encontro algum material, do tipo passo-a-passo?
+  Mauricio Cruz (05/06/2014 11:03): Estamos tentando te ajudar pelo twitter 🙂 Todos os links com guias e etc são acessados por aqui: http://scn.sap.com/community/abap/eclipse É importante dizer que, apesar de o Eclipse substituir a se80, você ainda precisa do SAP Logon devidamente configurado. Qdo o Eclipse não tem alguma transação nativa (tipo VA03, SE11, etc), ele vai abrir uma aba usando a SAP Gui. Abs!
+  Mauricio Cruz (05/06/2014 11:03): Estamos tentando te ajudar pelo twitter 🙂 Todos os links com guias e etc são acessados por aqui: http://scn.sap.com/community/abap/eclipse É importante dizer que, apesar de o Eclipse substituir a se80, você ainda precisa do SAP Logon devidamente configurado. Qdo o Eclipse não tem alguma transação nativa (tipo VA03, SE11, etc), ele vai abrir uma aba usando a SAP Gui. Abs!
+Lauffer (23/08/2012 13:17): Eu usei o ADT e odiei. Acho o Eclipse extremamente lento e como hoje o ADT ainda é uma ferramenta incompleta, fica impossível de se usar em um ambiente produtivo de verdade. Não sou contra mudanças, pelo contrário, mas sou muito mais a SE80. Realmente não consigo gostar do Eclipse. Muito tempo atrás tentei usá-lo para desenvolvimento web e odiei, tentei dar uma segunda chance ao testar o ADT e passei a gostar menos ainda do Eclipse hehehehehe
+  Mauricio Cruz (23/08/2012 13:35): Realmente o ADT está incompleto. Não dá pra falar muito, porque não dá para usar como ferramenta primária de desenvolvimento. Eu só vou fazer uma análise detalhada quando sair uma versão completa. Até lá, continuo achando que a mudança para o Eclipse é bem vinda. Usei o Eclipse para programar em Java, e gosto muito da IDE 🙂 Abraços!
+  Mauricio Cruz (23/08/2012 13:35): Realmente o ADT está incompleto. Não dá pra falar muito, porque não dá para usar como ferramenta primária de desenvolvimento. Eu só vou fazer uma análise detalhada quando sair uma versão completa. Até lá, continuo achando que a mudança para o Eclipse é bem vinda. Usei o Eclipse para programar em Java, e gosto muito da IDE 🙂 Abraços!
+Haroldo Doratiotto (19/08/2012 10:32): Não acredito que o fim do “velho lobo do mar” esteja acabando. É difícil pra um programador antigo aceitar que as coisas estão(já) mudando(mudaram). Acho que isso vai começar a mudar quando as empresas começarem a exigir mais na contratação, pois muitas delas só querem ver o programa funcionando, não importa o que você faça. Programar não significa “comer” o código, fazer tudo na “unha”. Temos que aproveitar o que a ferramenta oferece. Foram criadas para usar. Você só tem que saber se vai lhe atender ou não. Abraços…
+  Haroldo Doratiotto (19/08/2012 12:30): Corrigindo meu comentário: Não acredito no fim do “velho lobo  do mar”.
+    Mauricio Cruz (20/08/2012 08:54): Antigamente eu achava que TODOs os ABAPers velhos eram contra mudanças e novidades. Até que uma vez eu trabalhei com um cara com cerca de 55 anos, que estava completamente interessando em aprender coisas novas. O cara trabalhava com SAP há mais de 10 anos, e seguia a comunidade, as mudanças na ferramenta, as novidades das versões novas da Gui e do AS.. Me surpreendeu bastante! Pena que eu perdi contato com o cara, talvez ele pudesse criar um post aqui falando sobre essa história de tentar manter-se atualizado 🙂 Abraços!
+    Mauricio Cruz (20/08/2012 08:54): Antigamente eu achava que TODOs os ABAPers velhos eram contra mudanças e novidades. Até que uma vez eu trabalhei com um cara com cerca de 55 anos, que estava completamente interessando em aprender coisas novas. O cara trabalhava com SAP há mais de 10 anos, e seguia a comunidade, as mudanças na ferramenta, as novidades das versões novas da Gui e do AS.. Me surpreendeu bastante! Pena que eu perdi contato com o cara, talvez ele pudesse criar um post aqui falando sobre essa história de tentar manter-se atualizado 🙂 Abraços!
+  Haroldo Doratiotto (19/08/2012 12:30): Corrigindo meu comentário: Não acredito no fim do “velho lobo  do mar”.
+    Mauricio Cruz (20/08/2012 08:54): Antigamente eu achava que TODOs os ABAPers velhos eram contra mudanças e novidades. Até que uma vez eu trabalhei com um cara com cerca de 55 anos, que estava completamente interessando em aprender coisas novas. O cara trabalhava com SAP há mais de 10 anos, e seguia a comunidade, as mudanças na ferramenta, as novidades das versões novas da Gui e do AS.. Me surpreendeu bastante! Pena que eu perdi contato com o cara, talvez ele pudesse criar um post aqui falando sobre essa história de tentar manter-se atualizado 🙂 Abraços!
+    Mauricio Cruz (20/08/2012 08:54): Antigamente eu achava que TODOs os ABAPers velhos eram contra mudanças e novidades. Até que uma vez eu trabalhei com um cara com cerca de 55 anos, que estava completamente interessando em aprender coisas novas. O cara trabalhava com SAP há mais de 10 anos, e seguia a comunidade, as mudanças na ferramenta, as novidades das versões novas da Gui e do AS.. Me surpreendeu bastante! Pena que eu perdi contato com o cara, talvez ele pudesse criar um post aqui falando sobre essa história de tentar manter-se atualizado 🙂 Abraços!
+Matheus (17/08/2012 10:23): Olha, não acho que isso vá pegar, por muuuito tempo ainda vai se desenvolver pela se80 e afins. Eu me lembro quando se começou a trabalhar com abap object, se comentava que só se codificaria orientado a objeto e  etc. Na prática, em todos os projetos que participei nos ultimos 2 anos da pra contar nos dedos os programas escritos O.O. (não estou falado de chamadas a métodos standard, estou falando de programas Z escritos no conceito). ainda vai levar muitos anos para se abandonar o desenvolvimento convencional. Com o eclipse é a mesma coisa, se a SAP não descontinuar o workbench convencional, vai levar muitos anos para isso pegar no mercado. Abs.
+  Mauricio Cruz (17/08/2012 10:30): Ah sim, vai demorar bastante tempo… Mas a mudança pode acontecer forçada pela SAP, como você mesmo comentou. E eu acredito que, um dia, eles vão forçar. Pensei em comentar sobre a parte de ninguém usar OO, mas meio que cansei de falar desse tema heauheauhe. Fica complicado de argumentar contra uma pseudo-comunidade que acredita que OO não é viável, por motivos idiotas. Abraços!
+    Lauffer (23/08/2012 13:10): Teu “não” comentário sobre OO foi perfeito! É bem assim mesmo uhahuauhauh
+    Lauffer (23/08/2012 13:10): Teu “não” comentário sobre OO foi perfeito! É bem assim mesmo uhahuauhauh
+  Mauricio Cruz (17/08/2012 10:30): Ah sim, vai demorar bastante tempo… Mas a mudança pode acontecer forçada pela SAP, como você mesmo comentou. E eu acredito que, um dia, eles vão forçar. Pensei em comentar sobre a parte de ninguém usar OO, mas meio que cansei de falar desse tema heauheauhe. Fica complicado de argumentar contra uma pseudo-comunidade que acredita que OO não é viável, por motivos idiotas. Abraços!
+    Lauffer (23/08/2012 13:10): Teu “não” comentário sobre OO foi perfeito! É bem assim mesmo uhahuauhauh
+    Lauffer (23/08/2012 13:10): Teu “não” comentário sobre OO foi perfeito! É bem assim mesmo uhahuauhauh
+Fawcs (17/08/2012 09:26): Bom, vou inst.. brigar com um AS 7.3 e testar, se der certo é isso=) Vlw pelas respostas
+Fawcs (16/08/2012 13:02): Eu migraria por um tempo só pra testar.. mas a conexão com o SAP é possível em que versões? Dúvido que eu consiga fazer isso nos clientes 4.6c =( Dúvida: O auto-complete de ctrl+espaço como é mostrado no primeiro vídeo está disponível para quais versões do netweaver/gui?
+  Mauricio Cruz (17/08/2012 09:08): Cara, eu sou uma negação para versões de SAPGui e coisas em gerais da SAP… acho uma zona sem tamanho. Mas tenho quase certeza que é a 7.20 EHP alguma coisa (se você descobrir que é outra, avise 🙂 ) Para testar, você pode baixar a versão 7.02 ou 7.03 do AS Trial (MiniSAP), e pegar a versão que vem lá dentro. Abraços!
+    Fawcs (17/08/2012 09:09): Eu estou usando a 7.30 e o auto-complete não tem pra várias coisas que tem no video=( sera que é a versão do AS?
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+    Fawcs (17/08/2012 09:09): Eu estou usando a 7.30 e o auto-complete não tem pra várias coisas que tem no video=( sera que é a versão do AS?
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+  Mauricio Cruz (17/08/2012 09:08): Cara, eu sou uma negação para versões de SAPGui e coisas em gerais da SAP… acho uma zona sem tamanho. Mas tenho quase certeza que é a 7.20 EHP alguma coisa (se você descobrir que é outra, avise 🙂 ) Para testar, você pode baixar a versão 7.02 ou 7.03 do AS Trial (MiniSAP), e pegar a versão que vem lá dentro. Abraços!
+    Fawcs (17/08/2012 09:09): Eu estou usando a 7.30 e o auto-complete não tem pra várias coisas que tem no video=( sera que é a versão do AS?
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+    Fawcs (17/08/2012 09:09): Eu estou usando a 7.30 e o auto-complete não tem pra várias coisas que tem no video=( sera que é a versão do AS?
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+      Mauricio Cruz (17/08/2012 09:15): Acho que sim. Eu usei um alguns clientes já, mas eram versões bem atualizadas.. Como eu disse, sou uma negação para essas versões todas. Aliás, isso me deu uma idéia de post, só que eu vou precisar consultar alguns amigos para montar 🙂 Abraços!
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+        Fawcs (20/08/2012 13:56): Loguei hoje num cliente com AS 7.02 e o auto-complete estava la
+Custodio (15/08/2012 20:58): ABAPossaurus Novus falando aqui: sou mais minha SE80 😀 Baixei tudo pra instalar + ou – 1 mes atras (assim que foi lancado), mas ainda nao instalei. Ja critiquei muito o ADT, principalmente por nao ter tudo que eu preciso. Nao quero mais uma ferramenta, quero fazer tudo num lugar soh.  Com o SAPGui na tab adicional isso eh minimizado, apesar de nao ser o ideal. Um dia vou instalar e testar, ai entao eu critico mais.
+Renan Augusto Ferreira (15/08/2012 16:12): Fala Zombizada, Show de bola esse plug-in do Eclipse, concerteza vai ter muito ABAPossauro dizendo que ‘sou mais minha SE38/SE80’, mas tudo que é novo muitas vezes vem pra somar, certo?e acho que essa é uma das coisas. O conceito de trabalhar por pacotes é uma mão na roda, ainda mais agora com esse plugin, show!!! Vamos aguardar, 😉 Salve Zombizada!!! []’s

@@ -1,0 +1,43 @@
+ABAPZombie Guide to ABAP – Parte 30 – GET TIME
+Autor: Mauricio Cruz
+Data: 06/03/2012 15:30
+
+Bom, já perdemos a ordenação faz um tempo, então, a partir de hoje, vamos pegar comandos aleatórios e já era 😀
+GET TIME!
+Comando simples que, quando utilizado sozinho, atualiza as variáveis de sistema
+sy-datlo
+,
+sy-datum
+,
+sy-timlo
+,
+sy-uzeit
+, e
+sy-zonlo
+com os valores correspondes ao horário do servidor.
+Você também pode jogar o horário direto numa variável do tipo “t”, com o
+GET TIME FIELD [campo]
+.
+Veja o exemplo:
+REPORT zombie_time.
+
+  DATA: l_time TYPE t.  
+
+* Atualiza as variáveis do Sistema de Data/Hora
+ GET TIME.
+
+  * Joga o horário atual numa variável qualquer
+ GET TIME FIELD l_time.  
+
+WRITE l_time.
+Normalmente as variáveis de sistema estão sincronizadas com o horário do servidor, mas eu juro que eu vi um caso na versão 4.6c onde o programa precisava usar o GET TIME, pois as variáveis estavam desatualizadas. Se alguém souber o motivo, comente aí 🙂
+Abraços!
+
+
+
+Comentários:
+Lucas Antoni (08/03/2012 09:46): Custodio, Aqui no meu programa é a mesma coisa, o sy-uzeit é o mesmo valor no começo e no fim do programa, sendo necessário utilizar o GET TIME para atualizar o horário.
+Custodio (08/03/2012 00:55): WRITE sy-uzeit. DO 50000000 TIMES. ENDDO. WRITE sy-uzeit. GET TIME. WRITE sy-uzeit. ************************SAIDA*********** 14:55:35 14:55:35 14:55:44
+Custodio (08/03/2012 00:54): Entao eh mais estranho do que parece. meus testes aqui o sy-uzeit eh o mesmo no comeco e no fim do programa, soh muda se eu uso o get time. Estou na 7.02.
+Mauricio Cruz (06/03/2012 20:21): Sim, eu vi o help, sempre olho para fazer esse tipo de post. Mas mas versões mais novas do AS, isso daí não é muito verdade… Digo isso pq eu fiz o teste antes de postar 🙂 Faça um teste aí.. roda um DO de milhões de vezes fazendo um write no sy-uzeit, colocando alguma coisa dentro para demorar a execução. Ele muda o valor e write sai c/ o tempo correto! Particularmente, eu sempre usei sy-datum e sy-uzeit para colocar campos em tabelas, e nunca tive que usar o get time e nem tive problemas. Só vi isso acontecer na 4.6c.. mas, como disse no post, n posso falar com certeza o porque disso tudo. Abraços!
+Custodio (06/03/2012 20:15): Esta la no help Mauricio: “Note Except for GET TIME, the system fields are updated after starting a program, after sending a screen, and after changing the internal mode. ” Ou seja, normalmente as variaveis nao sao atualizadas, digamos, “real time”, mas apenas nessas situacoes. Por isso que se vc imprimir sy-uzeit no comeco e no fim de um report que demora + de 1 segundo para executar, o valor sera o mesmo, a nao ser que vc use o get time. Quando vc debuga as variaveis sao atualizadas. Abraco.

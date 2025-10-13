@@ -1,0 +1,43 @@
+#009 – Saindo um XSA com BaaS, bastante Node, molho MQTT e fritas #SITSP
+Autor: Leo Schmidt
+Data: 08/03/2018 11:00
+
+Passou o Natal, passou o Carnaval, Páscoa chegando, e nada de episódio novo.
+É NADA! TAMO DE VOLTA!
+Depois de mais um longo hiato, a equipe completa do ABAP Zombie se reúne novamente, dessa vez pra discutir as novidades apresentadas no SAP Inside Track SP Developers do ano passado. Neste episódio, passamos por toda a sopa de letrinhas que foi apresentada no evento, como sempre dando nossa avalizada e abalizada opinião sobre os caminhos da SAP. E também mandamos muitos abraços e comemos alguns lanches.
+Críticas? Dúvidas? Sugestões? Receitas de podrão? Comenta aí!
+Muito obrigado por ter escutado e até a próxima!
+Links e recomendações do episódio:
+Porquê ABAP na nuvem é uma coisa ridícula
+Keynote breguíssimo do TechED Las Vegas 2017 com temática de Star Trek
+(a parte sobre
+blockchain
+começa aos 0:29:30)
+Cover de Slayer do Leo
+Visual Studio Code
+Estudem inglês na escola para entender
+bloatwords
+(ou talvez no
+italki
+)
+Persona 5 para PS4
+Este episódio é mais um oferecimento de
+Mauro Laranjeira’s SAP HR Relocation and Opportunities™!
+Envie seu currículo!
+Ponto certo pra comer um XSA lá no largo do Paissandú
+Confira a conta PJ do
+banco Agibank
+(outra vez demoramos muito pra publicar e o banco mudou de nome)
+Sejam mais saudáveis e comprem
+marmitas
+fitness
+(ou façam
+as suas próprias
+)
+Cabeça de Ovo cursos online
+Pluralsight
+
+
+
+Comentários:
+Edson Thomaz (07/04/2018 10:24): Falae galera, ouço o cast desde o primeiro episódio, quando eu estava pensando em fazer um tbm, mas desisti pq iria consumir  tempo que não tenho para edição. Por isto parem de pedir desculpas pelo atraso, é difícil pra kct conseguir tempo na nossa vida de consultor, vcs estão de parabéns!!! Daiane, bom te ver no sitsp tbm! Esta é uma das coisas boas do sitsp, rever as pessoas. Abraços

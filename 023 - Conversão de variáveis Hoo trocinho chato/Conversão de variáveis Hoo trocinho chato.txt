@@ -1,0 +1,60 @@
+Conversão de variáveis – Hoo trocinho chato!!!
+Autor: Mauro Laranjeira
+Data: 26/01/2011 07:38
+
+Quem nunca precisou fazer conversão de dados no SAP? Acho que só quem nunca mexeu com SAP mesmo. :S
+E muito chato!!
+Exemplo:
+O cabra quer dar um select no banco, mas no banco o registro está
+0000000010
+, mas vc tem o valor na sua variável como
+10
+…. eeennnntttããooo seus problemas acabaram, graças as revolucionarias funções standard XD
+Temos 2 funções que nos auxiliam com este tratamento:
+–
+CONVERSION_EXIT_ALPHA_INPUT
+que converte um valor para o formato do banco;
+–
+CONVERSION_EXIT_ALPHA_OUTPUT
+que converte o valor para exibição em tela.
+DATA: v_teste TYPE char10 VALUE ’30′.
+
+CALL FUNCTION ‘CONVERSION_EXIT_ALPHA_INPUT’
+EXPORTING
+input  = v_teste
+IMPORTING
+output = v_teste.
+
+WRITE v_teste.
+
+CALL FUNCTION ‘CONVERSION_EXIT_ALPHA_OUTPUT’
+EXPORTING
+input  = v_teste
+IMPORTING
+output = v_teste.
+
+WRITE v_teste.
+Neste caso iria aparecer na tela:
+0000000030
+Formato do banco de dados
+30
+Formato para exibição em tela
+Sem churumelas 😀
+Espero ter ajudado alguém, ja me ajudou um dia o/
+Abraços a todos os ex-Zombies
+
+
+
+Comentários:
+Programista ABAP (21/01/2013 17:08): Sometimes i use SHIFT LEADING insteed but most of the times CONVERSION is the best way for add / cut leading zeros. 🙂
+Adriano S. C. (08/04/2012 22:52): Olá! A função parece ser útil, mas como ela funciona exatamente? A saída é padrão, ou seja, o formato no banco de dados é padrão?? Digo isso pq não vejo aonde você “fala” pro programa que é esse tipo de saída que você quer=) abç Abap newbie
+  Mauro Laranjeira (09/04/2012 09:17): Certo Adriano, A função ira retornar no tipo que a variável foi declarada. Exemplo: data: vl_partner type bu_partner.
+
+vl_partner = '123'. O tipo bu_partner, é um char de 10 posições, se usar a função CONVERSION_EXIT_ALPHA_INPUT irá retornar 0000000123, pois esta é a forma salva no banco de dados. Caso tenha a variável vl_partner com 0000000123, e usarmos a função  CONVERSION_EXIT_ALPHA_OUTPUT o retorno será 123. Esta função é útil se vc tem o valor 123 e quer fazer uma consulta no banco, se não for feita a conversão, não encontrara o valor. Entendeu amigo? Abs, Mauro Laranjeira
+    Adriano S. C. (09/04/2012 10:51): Ahh, agora entendi =) vlw Mauro
+    Adriano S. C. (09/04/2012 10:51): Ahh, agora entendi =) vlw Mauro
+  Mauro Laranjeira (09/04/2012 09:17): Certo Adriano, A função ira retornar no tipo que a variável foi declarada. Exemplo: data: vl_partner type bu_partner.
+
+vl_partner = '123'. O tipo bu_partner, é um char de 10 posições, se usar a função CONVERSION_EXIT_ALPHA_INPUT irá retornar 0000000123, pois esta é a forma salva no banco de dados. Caso tenha a variável vl_partner com 0000000123, e usarmos a função  CONVERSION_EXIT_ALPHA_OUTPUT o retorno será 123. Esta função é útil se vc tem o valor 123 e quer fazer uma consulta no banco, se não for feita a conversão, não encontrara o valor. Entendeu amigo? Abs, Mauro Laranjeira
+    Adriano S. C. (09/04/2012 10:51): Ahh, agora entendi =) vlw Mauro
+    Adriano S. C. (09/04/2012 10:51): Ahh, agora entendi =) vlw Mauro

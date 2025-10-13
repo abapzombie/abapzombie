@@ -1,0 +1,57 @@
+Seleção com Query Dinamica – BOL
+Autor: Mauro Laranjeira
+Data: 17/02/2012 15:43
+
+– Fazer uma consulta de documento…
+– Fácil
+– SEM comando SELECT…
+A partir do CRM 6.0, existe uma maneira diferente de fazermos nossas seleções de documentos, podemos utilizar a camada BOL para a busca.
+Na transação GENIL_BOL_BROWSER, podemos testar as buscas:
+Entre na Transação GENIL_MODEL_BROWSER, em SET DE COMPONENTES preencha
+ALL
+Teste de Query na Transação GENIL_BOL_BROWSER
+O objetivo deste teste foi buscar todas as Ordens de Serviço de um determinado parceiro de negócios.
+Para este processo utilizo a Query Dinâmica
+BTQSrvOrd
+.
+Tudo lindo, como seria isso via código:
+DATA: o_query       TYPE REF TO cl_crm_bol_dquery_service,
+        o_col_entity  TYPE REF TO if_bol_entity_col,
+        o_entity      TYPE REF TO cl_crm_bol_entity.
+
+  "Pega a instancia do objeto de pesquisa
+  o_query = cl_crm_bol_dquery_service=>get_instance( 'BTQSrvOrd' ).
+
+  "Preenche os parâmetros de seleção
+  o_query->add_selection_param( iv_attr_name = 'BU_PARTNER'
+                                   iv_sign      = 'I'
+                                   iv_option    = 'EQ'
+                                   iv_low       = '0000000000' ). "Número do BP
+
+  "Executa a busca e retorna uma coleção de entities
+  "ou seja, todos os documentos encontrados
+  o_col_entity = o_query->get_query_result( ).
+Para navegarmos em cada objeto encontrado podemos usar:
+"Pega a primeira entity do resultado da pesquisa
+  o_entity = o_col_entity->get_first( ).
+
+  "Entity instanciada?
+  WHILE o_entity IS BOUND.
+
+//Toda a logica com a entity
+
+    "Pega a próxima entity do resultado da pesquisa
+    o_entity = o_col_entity->get_next( ).
+
+  ENDWHILE.
+Neste post não vou explicar como fazer a navegação nas entidades do BOL, para isto temos o
+post
+da Priscila.
+Abraços para toda Zombizada!!!!
+
+
+
+Comentários:
+Anderson Balieiro (26/11/2015 17:05): Muito bom mauro. Apenas complementando que caso a busca seja em um modelo que não tenha “Pesquisa ampliada” (exemplo BuilHeaderSearch) será necessario usar a seguinte classe: o_query = cl_crm_bol_query_service=>get_instance( ‘BuilHeaderSearch’ ). o_query->set_property( iv_attr_name = ‘PARTNER’ iv_value = vl_partner ).
+  Mauro Laranjeira (01/12/2015 12:11): Exato, para query simples. Basicamente muda a classe de controle: cl_crm_bol_query_service – Para query simples cl_crm_bol_dquery_service – Para query dinâmica Como a query dinâmica permite repetição para os parâmetros de busca, o método utilizado é outro add_selection_param. Vlw manu 😉 Abração
+  Mauro Laranjeira (01/12/2015 12:11): Exato, para query simples. Basicamente muda a classe de controle: cl_crm_bol_query_service – Para query simples cl_crm_bol_dquery_service – Para query dinâmica Como a query dinâmica permite repetição para os parâmetros de busca, o método utilizado é outro add_selection_param. Vlw manu 😉 Abração

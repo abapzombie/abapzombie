@@ -1,0 +1,59 @@
+Testando o SAP GUI 7.40 – no LINUX
+Autor: Mauro Laranjeira
+Data: 09/06/2015 10:00
+
+Olá amiguinhos carniceiros zumbis,
+Como todos já devem saber, (mentira, nunca falei isso antes) eu sou usuário linux, porém utilizo
+Máquina Virtual
+para trabalhar com o SAP GUI.
+Já havia testado anteriormente o SAP GUI 7.30 for Java, mas acreditem, não fiz post por conta que ele travava quando algum popup era exibido, tentei diversas vezes em duas distribuições diferentes.
+Agora é a vez do SAP GUI 7.40 for Java
+Menu do Linux com o Ícone do SAP GUI
+Não vou falar aqui sobre a instalação, existem diversos lugares que explicam como fazer, seguem alguns:
+ABAP 101
+Natan Cavalcanti
+Post de Frederico Martin SCN
+No meu caso, tive problemas com o Java, solução no
+AskUbuntu
+Instalador no
+Site da SCN SAP
+Primeira impressão, cai bastante, muito mesmo, caiu de novo agora, caiu mais uma vez.
+Barra de Carregando
+Não existe a possibilidade de ser a rede, estou utilizando o SAP na rede interna, sem nenhum tipo de VPN ou conexão com a internet, fiz o teste utilizando o SAP GUI do meu linux (distribuição da
+Elementary OS
+), que é o
+SO
+principal, abri também uma Máquina Virtual com windows 7, para executar o SAP GUI for Windows, o do Windows não caiu nenhuma vez durante os testes.
+Seguem as telas:
+SAP GUI Carregando
+Tela com as entradas do SAP
+Usuário e senha do Ambiente
+No Editor o autocomplete não funciona 🙁  Os atalhos de teclado são diferentes da versão do windows
+Editor SE38
+Nem existe a opção de visualizar um formulário Smartforms
+Fazer um smartforms, não não não
+Editor SE80 – Classe
+SE11
+Notei que em todas as telas aparecem cinco botões
+Cada um destes botões tem um submenu
+Exibição de ALVs
+ALV Grid
+ALV Tree
+SPRO
+Tentei fazer um programa utilizando a função GUI_UPLOAD, porém desisti com a quantidade de vezes que o GUI caiu.
+Outro ponto que queria testar e desisti, é criar algum tipo de OLE, utilizando o Microsoft Office com o Wine, mas sem chance.
+Fiquei contente em saber que a SAP ainda insiste no GUI for Java, eu pensei que já tinham desistido, porém ainda não foi desta vez.
+Abraços a todos zumbi open source!
+
+
+
+Comentários:
+Lucas V.C. (02/10/2018 09:10): Cara não consigo baixar o gui, pois não tenho conta na SAP. Existe algum diretório obscuro que tenha um instalador (seguro*)??
+Sapp di dummie (22/02/2017 22:47): A melhor assinatura q ja vi.
+Sap dummie (22/02/2017 22:46): A melhor assinatura q ja vi
+Eduardo Lima Ferreira (30/11/2015 09:55): Bom dia. Tenho o ubuntu instalado (15.04) o Java 9 instalado, e também o SAPGUI JAVA 7.30 porém o mesmo trava em algumas telas, bloqueando o teclado para digitação, o teclado do mesmo só volta a responder quando o SAPGUI é finalizado e iniciado normalmente. Obs. esse travamento do teclado só acontece no SAPGUI, quando o mesmo esta travado no SAPGUI, vou mexer em outra coisa no ubuntu e funciona normal o teclado. Alguem pode me ajudar?
+  Mauro Laranjeira (01/12/2015 12:38): Certo Eduardo, Cara, posso estar errado, mas acredito que so rola no java 8. Porem, tive alguns problemas há uns anos atras quando tentei pelo ubuntu na versão 7.20 do SAP GUI. Neste teste usei o java 8 com a distribuição Elementary OS. Abs
+  Mauro Laranjeira (01/12/2015 12:38): Certo Eduardo, Cara, posso estar errado, mas acredito que so rola no java 8. Porem, tive alguns problemas há uns anos atras quando tentei pelo ubuntu na versão 7.20 do SAP GUI. Neste teste usei o java 8 com a distribuição Elementary OS. Abs
+Thiago Alves (09/06/2015 23:24): Estou usando só o Debian em casa, mas ainda não testei esse SAP GUI. Parece uma bosta mesmo… Será que não rola emular com o Wine a versão do Windows?
+  Mauro Laranjeira (09/06/2015 23:30): Thiago, Eu tentei mas sem sucesso. A instalação trava logo no inicio. Abs
+  Mauro Laranjeira (09/06/2015 23:30): Thiago, Eu tentei mas sem sucesso. A instalação trava logo no inicio. Abs

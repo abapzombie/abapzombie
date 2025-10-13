@@ -1,0 +1,49 @@
+E-learning e Apostilas – Vasculhando o SDN
+Autor: Mauricio Cruz
+Data: 02/03/2011 13:21
+
+Que o SDN tem informações todo mundo
+deveria saber
+sabe… Mas, infelizmente,  diversos consultores não tem noção do quanto estão perdendo por deixar de pesquisar e olhar com calma o conteúdo desse portal.
+Recemente, eu assisti diversas seções de um
+e-learning
+muito bom sobre Web-Dynpro, free-of-charge, com exemplos, dicas e explicações detalhadas. Eu achei animal, e hoje já consigo desenvolver algumas coisinhas simples de WD por conta própria.
+Logo,  resolvi compartilhar alguns e-learning legais e também algumas apostilas que você encontra no SDN.
+Mas atenção:
+Todos os materias aqui do post estão em inglês. Se você não entende inglês, eu
+recomendo fortemente
+que você estude e aprenda o quanto antes!
+E-Learnings
+No site do SDN você encontra diversos e-learnings sobre os mais variados tópicos (alguns muito bem elaborados, por sinal). O mais engraçado é que o link está na página principal, mas as pessoas pra quem eu pergunto, nunca viram hahahaha.
+Se você não ver agora, marque um oftamologista 😛
+Só de entrar na página inicial de e-learnings, você já vê os kilos e litros de e-learnings disponíveis. Recomendo os seguintes:
+Introdução ao Webdynpro ABAP
+(link atualizado para o novo SDN, procure na lista que irá aparecer)
+São 7 partes, esse é o Link da parte 1. Vale muito a pena, eu fiz todos e curti muito.
+Performance Webdynpro ABAP
+(link atualizado para o novo SDN, procure na lista que irá aparecer)
+Esse é o que eu estou fazendo agora. Também bem bacana.
+O Futuro do ABAP
+As novidades que estão entrando e outras coisinhas. Feito na SAPTech do ano passado, bem legal de assistir.
+Tem vários outros, e se eu fizer mais alguns eu posto aqui. Ah, e eu adicionei o link para a página de e-learning ali nos links do blog. 😉
+Apostilas (Articles)
+O SDN tem muitos documentos explicando coisas dos mais diversos tópicos. Como no caso do E-learning, é engraçado ver como poucas pessoas conhecem essa parte do portal.
+Aposto que você viu o do e-learning ali em cima, mas não viu esse dos Articles do lado! hahahaha
+Separei um que estou olhando e outro que eu acho legal:
+Guia para Programação usando o BOL – CRM 7.0
+Estou usando para dar uma estudada em BOL no CRM. Bem completa para o que proprõe!
+Guia básico assistido de ABAP Objects
+Literalmente um passo-a-passo de como criar classes, métodos, atributos e outras coisas usando o ABAP. Vale a pena como referência!
+Adicionei ambos na parte de links do blog.
+Se você tiver alguma dica de artigo ou e-learning, coloque no comentário que eu adiciono no post.
+Abraços a todos aqueles que não tem medo de disseminar o conhecimento 😉
+
+
+
+Comentários:
+Lucas Magalhães Carminati (10/05/2013 14:21): Parabéns pelo blog Maurício. Quando tentei baixar um artigo no sdn do link, o tipo do arquivo é desconhecido. Como faço para abrir? Obrigado!
+  Mauricio Cruz (15/05/2013 10:58): Cara, aqui sempre abriu em PDF.. tem uns links que são para apresentações da plataforma e-leaning. Na época do post abria automaticamente, hoje não sei.. Coloca o link aí pra gente testar. Abs!
+  Mauricio Cruz (15/05/2013 10:58): Cara, aqui sempre abriu em PDF.. tem uns links que são para apresentações da plataforma e-leaning. Na época do post abria automaticamente, hoje não sei.. Coloca o link aí pra gente testar. Abs!
+Vitor (13/06/2012 18:10): Parabéns pelo blog Mauricio. Estou começando a estudar ABAP e o blog tem sido de grande ajuda!! Não encontrei a sessão de e-learning! Acessei o site dia 13/06/2012 e pela data do post talvez tenham mudado o site. Depois de vasculhar o site encontrei essa área http://scn.sap.com/community/abap/content?filterID=content~objecttype~objecttype%5Bdocument%5D Mas não estou certo se é essa a área. Você sabe se existe um sessão específica sobre o e-learning? Obrigado.
+  Mauricio Cruz (14/06/2012 15:18): Era dessa área mesmo que eu estava falando Vitor. O nome não é “E-Learning”, mas é exatamente isso que você encontar por aí. O link do post era o link antigo, vou corrigir para esse que você enviou. Muito obrigado!
+  Mauricio Cruz (14/06/2012 15:18): Era dessa área mesmo que eu estava falando Vitor. O nome não é “E-Learning”, mas é exatamente isso que você encontar por aí. O link do post era o link antigo, vou corrigir para esse que você enviou. Muito obrigado!

@@ -1,0 +1,84 @@
+Tela de Seleção Turbinada – Parte 5 – Parafernálias para sua Tela
+Autor: Mauricio Cruz
+Data: 04/01/2011 12:09
+
+Agora que eu já expliquei com mais detalhes algumas partes mais trabalhosas para deixar sua tela de seleção mais, ahm,
+divertida ( 😛 ),
+vou mostrar algumas coisas simples que você pode inserir na sua tela.
+São eles: Listbox, Comentários, Botões, Linhas, Espaços e Inclusão de elementos de uma tela em outra. Código:
+REPORT  z_adicionais_zombie.
+
+* Vamos começar a nos divertir hehe :D
+* Ah, e boa parte dessas coisas você vê no HELP (F1).
+*----------------------------------------------
+
+SELECTION-SCREEN BEGIN OF BLOCK bl01 WITH FRAME.
+
+*------> Pular Linhas
+PARAMETER: p_pula  TYPE char10.
+SELECTION-SCREEN SKIP 1. "Podem ser X linhas
+PARAMETER: p_pulou TYPE char10.
+SELECTION-SCREEN SKIP 2.
+
+*-------> Comentário
+SELECTION-SCREEN COMMENT /1(50) comment.
+SELECTION-SCREEN SKIP 1.
+
+*-------> Botão para apertar (apertar = clicar hehe)
+SELECTION-SCREEN  PUSHBUTTON /2(13) botao USER-COMMAND click.
+SELECTION-SCREEN SKIP 1.
+
+*-------> Linha Horizontal
+SELECTION-SCREEN ULINE. "mesmo esquema do WRITE
+SELECTION-SCREEN SKIP 1.
+
+*-------> ListBox (ele puxa os valores do domínio)
+PARAMETERS: p_listb   TYPE MARA-MTART
+                      AS LISTBOX VISIBLE LENGTH 10.
+
+SELECTION-SCREEN END OF BLOCK bl01.
+
+*----------------------------------------------------------
+* Vou criar outra tela de seleção, igual a de cima!
+* Escrever tudo denovo? Pra que?
+SELECTION-SCREEN BEGIN OF SCREEN 9000 AS WINDOW.
+
+*-------> Incluir uma tela de seleção em outras
+SELECTION-SCREEN INCLUDE BLOCKS bl01.
+* Dá pra fazer só com parameters ou só com select-options
+* aperte F1 no INCLUDE ali pra ver!
+
+SELECTION-SCREEN END OF SCREEN 9000.
+
+*--------------------------------------
+INITIALIZATION.
+
+* Texto do Comentário
+  comment = 'Eu sou um comentário, duh'.
+* Texto do Botão
+  botao = 'Click Me!'.
+
+*--------------------------------------
+AT SELECTION-SCREEN.
+
+* Clicou no botao!
+  IF sy-ucomm = 'CLICK'.
+*   E com isso, você pode chamar a mesma tela como pop-up X vezes
+*   (até o sap não aguentar e dar uns problemas malucos!).
+    CALL SELECTION-SCREEN 9000 STARTING AT 5 5.
+  ENDIF.
+No ZTESTE maroto + F8, vai ficar assim:
+Aí está, cheia das parafernálias
+Se você clicar no botao, a mesma tela irá abrir num pop-up
+E se você clicar no botão do pop-up, ele abre denovo. E denovo. E denovo. E denovo. E denovo.... Viva o botão gerador de pop-ups infinito! 😀
+E finalmente, chegamos ao fim dessa saga maluca pela tela de seleção. Por hora, chega de telas! 👿
+Um dia eu faço sobre onlines. Mas agora não. 🙄
+A pseudo parte 6 vai ser a tela megazordzor, essa semana eu posto.
+Abraços a todos aqueles que leram ou irão ler essa sequência de posts.
+
+
+
+Comentários:
+Matheus Diniz (03/12/2024 14:07): Excelente post, mas muitas imagens em diversos posts não estão aparecendo. Daí não dá pra saber exatamente como ficaria.
+Rhian Mello (21/12/2022 10:34): Salvou!
+Bruno S (25/03/2019 10:39): Meio fora do tempo mas.. o tempo é relativo então.. Muito obrigado cara, estava louco atrás desse comando que pula linhas na SELECTION SCREEN, tks, O conteúdo por aqui é bom demais, abraços.

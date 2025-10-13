@@ -1,0 +1,61 @@
+ABAPZombie Guide to ABAP – Parte 24 – CALL SCREEN
+Autor: Mauricio Cruz
+Data: 14/07/2011 14:40
+
+Então vamos continuar com a saga maluca de catalogar todos os comandos do ABAP. Espero lembrar do primeiro quando chegar no último 😀
+Hoje vamos falar de um comando divertido e essencial no dia-a-dia da galera. O
+CALL SCREEN
+. O comando é bem simples mas, como quase todo comando do mundo da programação, pode trazer uma leve dor de cabeça no seu cérebro pseudo-zumbificado, caso você não tome alguns cuidados 😛
+Para usar o
+CALL SCREEN
+você deve ter uma tela criada dentro do seu programa (seja ele um Report ou um Módule Pool, tanto faz). A sintaxe não poderia ser mais simples:
+REPORT zombie_calls_screen.
+
+*--------------------------------------------------------------------*
+* Start-of-Selection Event
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Já criei a tela e adicionei ao meu report. Se você não fizer isso é
+* DUMP na cabeça colega
+  CALL SCREEN 9000.
+E com esse esquema acima, você vai ver a tela 9000 sendo exibida. Mas existem mais coisas num CALL SCREEN do que você, a princípio, pode imaginar…
+REPORT zombie_calls_screen.
+
+*--------------------------------------------------------------------*
+* Start-of-Selection Event
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* E lá vamos nós...
+  CALL SCREEN 9000.
+*&---------------------------------------------------------------------*
+*&      Module  STATUS_9000  OUTPUT
+*&---------------------------------------------------------------------*
+module STATUS_9000 output.
+
+* ...forçar DUMPs para estudo. Isso é o futuro rapaz!
+  CALL SCREEN 9000.
+
+endmodule.                 " STATUS_9000  OUTPUT
+Se o sistema chamar 50 telas na sequência, ele vai resultar num DUMP.  Em programas Onlines um pouco mais “complexos” é comum ocorrer esse tipo de erro. Note que eu escrevi “se o sistema chamar”, ou seja, isso é valido para o SAP inteiro (eu já vi esse erro em standard haha).
+Acha impossível isso acontecer? Imagine que você tem um online com diversas “abas”. Cada aba vai ser uma tela, e se o usuário mudar de aba 50 vezes, o que acontece? DUMP! Portanto, cuidado!
+Uma coisa legal do CALL SCREEN são os sufixos que indicam onde a sua tela irá começar e terminar. Se você omitir esses parâmetros, o CALL SCREEN exibirá a nova tela no modo “tela-cheia”, mas passando estes valores você pode “diminuir” o tamanho da exibição (como se fosse um pop-up).
+Exemplo:
+REPORT zombie_calls_screen.
+
+*--------------------------------------------------------------------*
+* Start-of-Selection Event
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* POP-UP, APAREÇAAAAA
+  CALL SCREEN 9000 STARTING AT 1 1
+                   ENDING   AT 30 20.
+Caso você queira aprofundar seus estudos nos tipos de tela, dê uma olhada na aba “Características” quando for criar uma tela nova, e pesquise pelos diferentes tipos de tela e o uso de cada um. Ah, e não tente chamar uma tela criada utilizando o comando SELECTION-SCREEN BEGIN OF SCREEN com o CALL SCREEN… Vou explicar o porquê num próximo post 🙂
+Abraços!
+
+
+
+Comentários:
+Hugo (23/10/2018 16:09): Bom tutorial! Estou entrando no mundo de ABAP agora e foi de extrema importância.

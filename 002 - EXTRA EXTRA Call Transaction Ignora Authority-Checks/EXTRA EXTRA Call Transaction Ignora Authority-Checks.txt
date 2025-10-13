@@ -1,0 +1,47 @@
+EXTRA! EXTRA! Call Transaction Ignora Authority-Checks!
+Autor: Mauricio Cruz
+Data: 17/12/2010 00:02
+
+E é com esse clima de notícia bombástica, datena-style, que eu conto pra vocês uma coisa que normalmente não nos atentamos no dia-a-dia corrido de projetos:
+O Call Transaction, esse comando mágico, simplesmente ignora a verificação de autorização para o usuário que executar o programa que dispara o call transaction.
+Num primeiro momento isso parece simples, mas é muito interessante ver o número de ABAPs que conhecem as “funções para acessar a transação X ou Y”, mas não sabem o
+porque elas funcionam
+e te levam para aquela transação X que vai salvar a sua vida (pensou na su01, né?
+espertinho
+!).
+ABAP "espertinho"
+Na verdade, o próprio help da SAP explica. Apertando o famoso F1 no comando CALL TRANSACTION, vamos nos deparar com a seguinte frase:
+“At the statement
+CALL TRANSACTION
+, the authorization of the current user to execute the called transaction is not checked automatically. If the calling program does not execute a check, the called program must check the authorization. To do this, the called program must call function module AUTHORITY_CHECK_TCODE.”
+Link:
+http://help.sap.com/abapdocu_70/en/ABAPCALL_TRANSACTION.htm
+Ou seja, ou você chama antes do CALL TRANSACTION a função
+AUTHORITY_CHECK_TCODE
+, ou o comando ignora o check de autorização para a transação nas configurações do usuário.
+Agora você entendeu como “aquela” função mágica funciona!…
+…
+Apesar que agora ela deixou de ser mágica
+🙁
+Agora, caso você queira acabar com a brincadeira da galera, você pode forçar o SAP a rodar a autorização para o CALL TRANSACTION no programa Z, mesmo sem chamar a função AUTHORITY_CHECK_TCODE. Bem vindos à transação SE97!
+Transação SE97, sua arma contra espertinhos
+É fácil configurar, e você pode até escolher qual tipo de mensagem retornar após o check de autorização.
+Aí você pode configurar a transação, praticamente dizendo: “Eu vou fazer um CALL TRANSACTION nessa transação, e eu quero que você rode a verificação de autorizações seu SAP folgado! Vai trabalhar!”.
+E pronto! Num post só acabei com a magia das funções que dão gato, e ainda expliquei como ser
+mais esperto
+que os espertinhos de plantão e não deixar ninguém burlar seu sistema.
+Divirtam-se!
+Ps.: Comentários com nome das funções não mais tão mágicas serão deletados. Nada de ensinar a burlar sistemas por aqui! 😀
+
+
+
+Comentários:
+Basis RJ (12/05/2015 17:52): Só lembrando que fica rastro, ou seja, fica log na auditoria do SAP. Já peguei vários espertinhos fazendo isso. Abraços,
+Erik Bormann (17/12/2010 08:52): ABAPDOCU para o ABAP espertinho!
+  miojox (25/05/2011 12:44): EU pensei que ABAPDOCU era pros abaps gays!
+    Mauricio Cruz (25/05/2011 14:03): Na verdade é para os ABAPs não-homofóbicos 😀
+    Mauricio Cruz (25/05/2011 14:03): Na verdade é para os ABAPs não-homofóbicos 😀
+  miojox (25/05/2011 12:44): EU pensei que ABAPDOCU era pros abaps gays!
+    Mauricio Cruz (25/05/2011 14:03): Na verdade é para os ABAPs não-homofóbicos 😀
+    Mauricio Cruz (25/05/2011 14:03): Na verdade é para os ABAPs não-homofóbicos 😀
+ABAP &quot;espertinh (17/12/2010 07:45): Magoei!

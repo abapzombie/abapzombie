@@ -1,0 +1,21 @@
+Pérolas de um mundo ZUMBÍSTICO – PARTE 3 – Performs autoexplicativos
+Autor: Mauro Laranjeira
+Data: 22/06/2012 10:24
+
+Eles continuam
+garantindo nossas alocações
+nos assombrando. Corre que os Zumbis podem estar em qualquer lugar, até no seu ambiente.
+Pérola enviada por Wagner Fernandes
+perform p_flw.
+
+form p_flw.
+
+write 'Abraços a todos os matadores de Zumbis'.
+
+endform.
+
+
+
+Comentários:
+wagner fernandes (27/06/2012 08:13): hehehe ainda dou manutenção pra esse programa tem tanta perola que pode ser considerado uma bomba relogio
+Mauricio Cruz (22/06/2012 11:17): Nomes que explicam as coisas são legais, mas “apelou_perdeu” já é demais hahahahaha. Isso me lembrou dos meus v_pqps. Quando eu era mais novo em ABAP, sempre fazia meus testes com v_pqp, t_pqp, wa_pqp. Até que uma subiu pra PRD e o resto é história 😀

@@ -1,0 +1,57 @@
+Função or Not Função? A pergunta que quase nunca é feita!
+Autor: Mauricio Cruz
+Data: 23/09/2011 14:45
+
+Uma construção comum no mundo do ABAP:
+LOOP AT T_DADOS INTO LWA_DADOS.
+
+  CALL FUNCTION 'BUSCA_INFORMACOES_ADICIONAIS'
+    EXPORTING
+      material   = lwa_dados-material
+    TABLES
+      t_details  = t_inf_aux.
+
+  (...)
+
+ENDLOOP.
+Simples não é? Consideramos aqui que a função ‘BUSCA_INFORMACOES_ADICIONAIS’ é uma função standard, que vai trazer todas as informações adicionais que vamos precisar de uma material na tabela T_INF_AUX.
+É muito bom descobrir que tem uma função standard que retorna todos os dados formatados exatamente do jeito que precisamos. E é exatamente neste sentimento de “felicidade”
+que mora o perigo
+… 😕
+O grande problema em utilizarmos essas funções
+“faz-tudo”
+dentro de LOOPs é que a função pode fazer milhões, ou melhor, bilhões, ou melhor, trilhões de seleções e acessos ao banco e destroçar a performance do nosso programa. Ao longo desses anos trabalhando com ABAP eu tenho notado que poucas pessoas se preocupam em analisar o código dentro da função antes de sair utilizando a “danada” dentro de laços com milhões de registros.
+Ludibriado pela facilidade com que os dados chegam
+mastigados
+para seu programa, é fácil dar um tiro no pé: ou no seu, ou de alguém que algum dia vai ter que fazer uma análise de performance no programa, que então deve rodar mais lento que o Barrichello na Williams esse ano. 😯
+Mas e aí, como resolver?
+Infelizmente, não tem uma “regra” que pode ser aplicada: cada caso é um caso. O ideal é que você sempre verifique o que a função faz antes de sair enfiando ela em tudo quanto é LOOP do seu código.
+Certa vez eu fiz uma análise de performance num programa gigantesco, e o único problema real do programa era que ele chamava uma função para busca da lista técnica do material diversas vezes sem motivo. Vou usar aqui no exemplo a CS_BOM_EXPLOSION, só para explicar:
+* Exemplo de como o código estava, os parâmetros não são os reais
+LOOP AT t_ekpo INTO lwa_ekpo.
+
+CALL FUNCTION 'CS_BOM_EXPLOSION'
+  EXPORTING
+    matnr  = lwa_ekpo-matnr
+  TABLES
+    (tabelas de retorno c/ a lista)
+
+ENDLOOP.
+Além da função fazer diversos SELECTs em seu processamento, não era necessário chamar a função tantas vezes, afinal, a tabela T_EKPO contém itens de documentos de MM, e itens de diferentes documentos podem ter o
+mesmo material
+. Logo, a função era chamada várias vezes para o mesmo material, destruindo a performance do programa para buscar repetidamente a mesma informação.
+No caso que eu ajudei a resolver, fizeram um controle para que a função não fosse executada duas vezes para o mesmo material, e isso melhorou a performance do programa em uns 70%. O ideal seria refazer as seleções dentro do programa, fazendo acessos únicos a cada uma das tabelas no banco, mas pelo tempo que tínhamos seria inviável (e viva o dilema do tempo em TI).
+Chupinhar a lógica dos selects da função pode ser a solução
+, ou vai me dizer que você nunca usou uma função que retornava milhões de coisas quando você só precisava de um flag? 😉
+Bom,
+este é só um exemplo
+, mas a minha recomendação é a de que vocês não sejam ludibriados pela facilidade do retorno das informações e sempre tenham uma noção dos acessos que a função faz. Ou pelo menos dá uma fuçada no google, vai que alguém já sofreu com ela 🙂
+Abraços e
+“beware of the unholy function”
+👿
+
+
+
+Comentários:
+Mario Eiji Morishita (27/10/2016 15:23): Pessoal, gostaria de uma ajuda, estou criando um relatorio de Lista Tecnica, aonde a TABELA STKO = Cabeçalho STPO = ITEM, estou usando a tabela MAST e STZU. Porem estou com um problema a Tabela STPO não contem o Campo que relaciona a Lista Tenica Alternativa o que é primordial para que posso encontrar os componentes da lista, alguem já passou por este problema. Forte Abraço,
+Mauro Laranjeira (26/09/2011 07:47): Grande Mauricio, Também vale lembrar que existem funções que dão uma otimizada neste tipo de buscas, como por exemplo a função KNA1_SINGLE_READ ou a MAKT_SINGLE_READ. Por conta do tratamento que a função faz com o Buffer, muitas vezes compensa usar estas funções do que utilizar o select direto  😯 Eu entendi que a idéia do post é de não utilizar funções que fazem 1000 coisas sendo que vc ira utilizar apenas uma informação. Abs, Mauro Laranjeira

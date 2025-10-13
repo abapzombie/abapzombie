@@ -1,0 +1,43 @@
+Quero trabalhar com SAP e ABAP! O que devo fazer?
+Autor: Mauricio Cruz
+Data: 05/12/2011 13:26
+
+*** Atualização do futuro ( 02/10/2015) ***:
+Olá, tudo bem? Desde suas publicações, os guias desta página já ajudaram milhares de pessoas com suas carreiras SAP. Organizei tudo que aprendi em 9 anos de SAP/ABAP em um livro, que pode ser um
+ótimo
+ponto de partida para sua carreira, ou mesmo uma forma de
+refletir
+sobre o trabalho que você vêm realizando.
+Dê uma olhada neste link
+(a capa está no menu do site!). E fique tranquilo: todo o conteúdo do site ABAPZombie continuará 100% gratuito. Abraços, boa sorte e fique com o post + comentários!
+————————-
+Então você está pesando em mudar de área, e está pensando em ir trabalhar com ABAP? Ou será que você está pensando em iniciar a sua carreira pelo ABAP?
+Então acredite:
+você não é o único!
+😀
+Não é novidade pra ninguém que existem muitas pessoas querendo trabalhar com ABAP, e a sua grande maioria o faz porque quer aumentar o seu salário. Alguns talvez até o façam porque algum “
+amigo
+” falou que “
+é fácil
+” e que ele iria “
+ganhar milhões
+” a troco de nada. Será mesmo? 🙂
+Para responder a quase todas as perguntas que pessoas que não trabalham com SAP – e ABAP – possam ter, eu criei alguns posts explicando temas importantes, como
+certificações
+,
+o mercado
+,
+academias
+e até um
+guia de como aprender ABAP por conta própria
+.
+Novatos no Mundo SAP – Por Onde Começar? (Guia do ABAP Noob)
+– Um dos posts mais acessados da história do ABAPZombie, mostrando que existem muitas pessoas interessadas em trabalhar com ABAP. Entenda aqui como as empresas recrutam, e o que você pode fazer para iniciar a sua empreitada rumo à uma vaga ABAP Jr.
+Certificação SAP – O que anda acontecendo e você (provavelmente) não sabe!
+– Muita gente que não trabalha com ABAP pode ter a visão de que uma Certificação irá lhe garantir um emprego. Neste post eu mostro que a história não é bem assim não…
+Aprendendo ABAP Por Conta Própria em 8 passos!
+– Tudo (ou quase tudo! :p ) o que você precisa saber para aprender ABAP sem precisar ingressar numa academia. Dicas de links, como estudar, onde estudar, o que utilizar para estudar. Útil também para qualquer novato na área!
+Hey, você já trabalha com ABAP, mas caiu aqui por algum motivo mágico do milênio? Então acesse o post
+Sou ABAP há algum tempo… e agora?
+. Se você pretende seguir carreira na área, vale a pena ler para ter uma idéia das questões que certamente irão surgir depois de 2 ou 3 anos trabalhando com SAP.
+Os posts não foram feitos na mesma época, e pode até ser que essa página aumente no futuro com mais posts. Caso você tenha alguma sugestão, comente aí embaixo!

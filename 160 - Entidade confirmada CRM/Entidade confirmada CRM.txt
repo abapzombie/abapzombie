@@ -1,0 +1,29 @@
+Entidade confirmada – CRM
+Autor: Mauro Laranjeira
+Data: 13/11/2012 09:54
+
+Olá amiguinhos zumbis…
+Por
+todos
+os projetos de CRM que eu passei, em todos precisei fazer algum desenvolvimento que precise pegar a entidade confirmada, resolvi fazer um post rápido sobre o assunto.
+O que é Entidade Confirmada?
+Todos os objetos no CRM são tratados como Entidades (Classe principal CL_CRM_BOL_ENTITY), a entidade confirmada é quando um agente do call center esta trabalhando com a informação de um determinado cliente.
+No Resumo: É saber quem é o cliente que esta em atendimento pelo SAC.
+Vamos sujar as mãos, ou nem tanto. O CRM tem um bom relacionamento dos Objetos, todas as classes de componentes herdam da mesma classe, a CL_BSP_WD_CONTROLLER que tem um método bacaninha o GET_CUSTOM_CONTROLLER. Assim podemos pegar informações de outros componentes. Como do componente que trabalha com a confirmação de entidades.
+Exemplo de código para pegar a entidade confirmada:
+DATA: o_controller  TYPE REF TO cl_crmcmp_b_cucobupa_impl,
+      o_entity      TYPE REF TO cl_crm_bol_entity.
+
+o_controller ?= me->get_custom_controller( 'GLOBAL.CRMCMP_BPIDENT/CuCoBuPa' ).
+
+o_entity ?= o_controller->typed_context->customers->collection_wrapper->get_current( ).
+Pronto, ja era, so isso…
+O resultado será a entidade confirmada do tipo do BuilHeader, seguindo o
+relacionamento do BOL
+, você consegue qualquer informação sobre o cliente que esta sendo atendido pelo SAC.
+Força anti-zumbie e abraços a todos.
+
+
+
+Comentários:
+Anderson (28/12/2015 10:26): Muuuuuuito top o coments maurão. E se você não estiver obter o Custom_controller, posso usar o seguinte código para pegar o cliente ?: DATA: ol_entity       TYPE REF TO cl_crm_bol_entity, ol_bdc           TYPE REF TO if_crm_ui_data_context, ol_cust          TYPE REF TO if_bol_bo_property_access. ol_bdc = cl_crm_ui_data_context_srv=>get_instance( ). ol_cust = ol_bdc->get_entity( ‘CURRENTCUSTOMER’ ). ol_entity ?= ol_cust.

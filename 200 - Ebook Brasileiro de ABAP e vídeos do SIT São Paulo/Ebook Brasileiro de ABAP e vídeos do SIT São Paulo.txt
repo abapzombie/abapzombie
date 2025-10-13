@@ -1,0 +1,34 @@
+Ebook Brasileiro de ABAP e vídeos do SIT São Paulo
+Autor: Mauricio Cruz
+Data: 11/12/2014 09:23
+
+E aí, apanhando muito da NFe 3.10? 🙂
+Este post é um update rápido sobre algumas coisas bacanas que estão rolando por aí…
+Ebook Brazuca de ABAP
+A galera do ABAP101 lançou um ebook com foco em exercícios de ABAP para iniciantes na área, olha só:
+>>> ABAP101 Ebook <<<<
+É mais uma forma de aprofundar seu conhecimento em ABAP. Inclusive algumas pessoas manifestaram-se sobre formas de incentivar o uso dos exercícios:
+@lucattelli
+@abap101
+Boa!!! Eu mando qualquer livro de HANA ou ABAP da SAP Press!
+— Flávio Furlan (@furlan)
+December 7, 2014
+Estudar e de quebra ganhar um livro… Quer incentivo melhor?
+Recomende também para seus coleguinhas ABAPeiros!
+Vídeos de Palestras do SITSP 2014
+Sábado passado aconteceu o SAP Inside Track São Paulo, mas se você perdeu o evento (diz a lenda que a cerveja foi paga pela SAP!) fique tranquilo. Caras como o
+@luccatelli
+e o
+@jrnunes
+salvaram a sua vida, pois tudo foi gravado e será postado no
+canal oficial do SIT Brasil
+. Já tem duas palestras focadas em desenvolvimento no ar:
+O resto será colocado conforme os caras forem liberando. A edição e o som ficaram sensacionais. Agradeça os brothers nos comentários dos vídeos!
+ACESSE O CANAL DO SIT BRASIL CLICANDO AQUI!
+
+
+
+Comentários:
+Fábio Pagoti (13/12/2014 17:08): Valeu a força Maurício! É uma pena que você não pode participar! Segunda-feira também sai o post no ABAP101 divulgando o eBook com mais algumas informações sobre o mesmo. Abraços!
+Márcio (12/12/2014 02:48): Muito bom! Estão de parabéns, e que venham cada vez mais pessoas assim com o intuito de ajudar nós iniciantes. 😀
+Valdecir Souza (11/12/2014 13:41): Parabens pela Palestra e contribuir compartilhando informações… Abraços Valdecir Souza sap abap

@@ -1,0 +1,25 @@
+Novo ABAP Debugger – Serve pra alguma coisa?
+Autor: Mauricio Cruz
+Data: 30/11/2011 13:01
+
+Eu sou daqueles programadores que chegou ao ponto de ficar perdido no Debugger antigo, apesar de tê-lo usado por muitos anos. Como eu acho isso uma coisa
+boa
+, resolvi explicar porque eu mudei radicalmente :). Divirta-se!
+Nome da Sequência de Posts:
+Novo ABAP Debugger – Porque largar o velho?
+———————————————
+Descrição:
+Saga para desvendar o debugger novo, e mostrar como ele pode ajudar no seu dia-a-dia. Não vamos englobar coisas que são iguais ao Debugger antigo, somente as funções que foram implementadas recentemente. A idéia é mostrar as novidades que facilitam o debug de qualquer coisa para os “reativos à novidades” de plantão e para aqueles que não conhecem o novo debugger.
+———————————————
+Links para os posts:
+Acesso Rápido à Memória, Layout interativo, Código no formato texto, Análise de tabelas internas, Go-to, Download de tabelas internas, Salvar parâmetros para a se37:
+Novo ABAP Debugger – Porque largar o velho? – Parte 1
+Comparação de variáveis, Ferramentas Especiais (Área de Sistema, Análise de Memória), Watchpoints:
+Novo ABAP Debugger – Porque largar o velho? – Parte 2
+Debug de Sistema e de Atualização, Visualizador de Objetos, Análise simplificada de Strings:
+Novo ABAP Debugger – Porque largar o velho? – Parte 3
+———————————————
+Como instalar:
+Para utilizar o Debugger novo, você precisa estar no ECC 6.0, com uma versão de SAP GUI que suporte a exibição do novo debugger. Eu já vi o Debugger novo sendo executado em versões mais antigas, mas sinceramente, não sei o que é preciso. Eu pesquisei, mas as informações não são claras, então preferi não postar. Se alguem tiver mais informações, por favor, comente!
+Dúvidas, comentários, sugestões, anedotas, relatos ou piadas, comente! Só não me xingue, por favor 🙂
+Abraços!

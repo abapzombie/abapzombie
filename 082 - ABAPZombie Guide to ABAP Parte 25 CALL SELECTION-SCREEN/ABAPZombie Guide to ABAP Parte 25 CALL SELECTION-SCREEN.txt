@@ -1,0 +1,67 @@
+ABAPZombie Guide to ABAP – Parte 25 – CALL SELECTION-SCREEN
+Autor: Mauricio Cruz
+Data: 21/07/2011 15:43
+
+Eu comentei no post do CALL SCREEN que ele quase de tudo em telas, menos chamar telas de seleção criadas via SELECTION-SCREEN em Reports.
+Pois bem, apresento para vocês essa maravilha da não tão nova era, o comando CALL SELECTION-SCREEN.
+Bom, se você é novo no ABAP e ainda não viu
+meus posts explicando
+de tudo sobre selection-screens, você provavelmente associa o nome “telas” com programas Online ou ALVs Orientados à Objeto. Mas existe
+mais
+além da montanha meu rapaz! 😀
+Primeiro, vamos criar um tela utilizando comandos dentro de um report:
+REPORT  zombie_callselscreen.
+
+  * Primeira Tela, Tela Padrão do Report
+ SELECTION-SCREEN BEGIN OF BLOCK bl01.  
+
+PARAMETERS: p_call AS CHECKBOX.
+
+  SELECTION-SCREEN END OF BLOCK bl01.
+
+  * Segunda tela, que vai ser chamada via comando
+ SELECTION-SCREEN BEGIN OF SCREEN 9000.  
+
+PARAMETERS: p_oi AS CHECKBOX.  
+
+SELECTION-SCREEN END OF SCREEN 9000.   
+
+START-OF-SELECTION.  
+
+IF p_call IS INITIAL.
+   *   Pra que diabos você executou isso então? 
+  EXIT. 
+ENDIF.  
+
+CALL SCREEN 9000.
+Pois é colega, o que aconteceu quando você executou o comando acima? Simples, ERRO!
+Vamos trocar ali:
+REPORT  zombie_callselscreen.
+
+  * Primeira Tela, Tela Padrão do Report
+ SELECTION-SCREEN BEGIN OF BLOCK bl01.  
+
+PARAMETERS: p_call AS CHECKBOX.
+
+  SELECTION-SCREEN END OF BLOCK bl01.
+
+  * Segunda tela, que vai ser chamada via comando
+ SELECTION-SCREEN BEGIN OF SCREEN 9000.  
+
+PARAMETERS: p_oi AS CHECKBOX.  
+
+SELECTION-SCREEN END OF SCREEN 9000.   
+
+START-OF-SELECTION.  
+
+IF p_call IS INITIAL.
+   *   Pra que diabos você executou isso então? 
+  EXIT. 
+ENDIF.  
+
+CALL SELECTION-SCREEN 9000.
+Executando isso, você vai ver que tudo funciona 🙂
+Eu usei muito este comando na
+ABAPZombie Screen Examples,
+e recomendo que você olhe o código fonte deste programa para ver o CALL SELECTION-SCREEN funcionando na prática.
+Abraços!

@@ -1,0 +1,29 @@
+Alert Modeler – CRM
+Autor: Mauro Laranjeira
+Data: 10/01/2011 10:09
+
+Ate enfim.. meu primeiro post junto com primeiro post de CRM do blog =D
+ENNTTTÃÃOO Let´s GO Negads…
+Nas versões versões 2007 (6.0) e 2009 (7.0) do CRM quase tudo e orientação a objetos, com isso entendemos que temos muita reutilização de código de coisas nativas do sistemas, que nem sempre temos idéias de como funcionam, mas ja que funcionam, utilizamos…
+Uma coisa ate que simples e escrever mensagem no Alert Modeler na tela do IC.
+Muitas coisas no CRM utilizam o padrão de orientação a objetos
+Singleton
+, exemplo como o Alert Modeler e mensagem de sucesso e erro.
+Vou escrever uma mensagem de teste, e mostrar o “gigante” código para fazer isso.
+Alert Modeler
+Basicamente são 3 passos:
+1. Declarar a variável;
+2. Pegar a instância da classe;
+3. Inserir a informação no objeto;
+=( fica ate sem graça, kk.
+" Declaração da variável do tipo da classe que controla o alert modeler
+  DATA: o_alert TYPE REF TO cl_crm_ic_5x_ext_alert_srv.
+
+  "Pega a instancia do Alert Modeler
+  o_alert ?= cl_crm_ic_5x_ext_alert_srv=>if_crm_ic_5x_ext_alert_srv~get_instance( ).
+
+  "Insere o texto no Alert Modeler
+  o_alert->if_crm_ic_5x_ext_alert_srv~trigger_alert( iv_message = 'Teste de alert' ).
+E isso.. fica ate xoxu, rs…
+Massss como o Mauricio diz “OO é o futuro”…
+Abraços a todos os consultores que não tem medo de conhecer o “novo”. 😉

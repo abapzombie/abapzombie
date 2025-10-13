@@ -1,0 +1,37 @@
+Frequently Asked Questions – O FAQ Zumbi
+Autor: Mauricio Cruz
+Data: 09/12/2011 09:37
+
+Q: Como eu faço para colocar um código formatado nos comentários?
+A:
+É simples, coloque a tag <pre lang=”abap” escaped=”true”></pre> entre o código no comentário. Exemplo:
+Se você colocar isso no seu comentário…
+<pre lang=”abap” escaped=”true” line=”1″>
+REPORT zteste.
+START-OF-SELECTION.
+“Eu sou um report teste!
+</pre>
+…ele vai ficar assim:
+REPORT zteste.
+
+START-OF-SELECTION.
+
+"Eu sou um report teste!
+Q: Como eu faço para colocar uma foto nos meus comentários?
+A:
+O site utiliza o Gravatar para gerenciar fotos de usuários nos comentários do site. Você deve entrar em
+gravatar.com
+e criar uma nova conta com
+o mesmo e-mail que você utilizou nos comentários.
+Depois de criar a conta com o e-mail e subir uma imagem, espere 1 ou 2 dias para que a sua foto apareça aqui no site. Essa tempo ocorre somente para a primeira vez que você comentar, nas outras é tudo automático.
+O legal de criar uma conta no Gravatar é que diversos sites utilizam o gravatar, então acaba valendo para todos de uma só vez 🙂
+Q: Quero contribuir com material para o site, o que devo fazer?
+A:
+No momento, ainda não temos uma forma estruturada de compartilhar artigos de visitantes do site. Já recebemos alguns artigos, mas ainda estamos conversando para ver a melhor forma de liberar as matérias para vocês. Assim que tivermos alguma novidade, iremos divulgar!
+Para qualquer outra dúvida sobre
+a utilização do site
+ou
+sobre contatos e novos projetos
+, deixe um comentário aí embaixo ou nos mande um
+e-mail clicando aqui
+.

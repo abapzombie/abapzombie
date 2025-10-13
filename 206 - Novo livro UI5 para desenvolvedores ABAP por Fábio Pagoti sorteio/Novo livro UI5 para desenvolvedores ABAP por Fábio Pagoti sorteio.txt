@@ -1,0 +1,107 @@
+Novo livro “UI5 para desenvolvedores ABAP”, por Fábio Pagoti! (+sorteio!)
+Autor: Mauricio Cruz
+Data: 29/04/2015 09:00
+
+Olá pessoal! Sumi um pouco pois estava de férias! 🙂 Retorno com uma notícia muito bacana para todos os desenvolvedores ABAP que desejam desbravar uma nova tecnologia, através da criação de projetos utilizando o UI5.
+Desde o começo o ABAP101 sempre apoiou o ABAPZombie e hoje, fico muito feliz em poder anunciar que um dos postadores de lá, o Fábio Pagoti, lançou o seu livro “
+UI5 para desenvolvedores ABAP
+“.
+Ele está sendo publicado pela plataforma Leanpub, onde é possível criar um livro e complementá-lo conforme o tempo for passando. Todos que comprarem o livre terão direito a futuros updates, portanto aproveite a oportunidade enquanto ainda está barato! 🙂
+Sobre o livro
+A idéia do Fábio foi criar um livro que explica UI5 em termos que qualquer ABAPer entenderia. Todo o código do livro encontra-se no seu repositório do Github:
+https://github.com/fabiopagoti/UI5-Livro
+, então você pode acompanhar as explicações já copiando todo o código para testar localmente.
+Ele explica desde conceitos básicos sobre as ferramentas SAP envolvidas no desenvolvimento UI5, até como conseguir uma estação de trabalho para testar a coisa toda. E o melhor é que está tudo em português-brasileiro-do-brasil, então quem faltou nas aulas de inglês agora não tem mais desculpa para aprender!
+O UI5 é a base para toda essa papagaiada que você escuta sobre Fiori, além de poder ser utilizado como biblioteca js standlone, sem depender de ferramentas SAP (usando a versão opensource, o OpenUI5). Falaremos mais disso nas pŕoximas semana, quando eu fizer um post explicando Fiori.
+SHUT UP AND TAKE MY MONEY, ou “Onde eu compro?”
+Toma aí o link, pequeno padawan:
+https://leanpub.com/ui5/
+. É só criar a conta e comprar!
+Sorteio especial para leitores do ABAPZombie
+Todos que comentarem nessa postagem dizendo “
+PARABENS PELO TRAMPO FÁBIO
+” (ou algo assim), estarão concorrendo a dois exemplares grátis do livro.
+***ATENÇÃO ** Só valem comentários feitos até a próxima segunda-feira (04/maio/2015)
+. Libero o resultado pela página do Facebook + Twitter do ABAPZombie, além de fazer um update nesta postagem.
+*** ATENÇÃO***
+Não esqueçam de comentar usando um
+e-mail válido
+, caso contrário, não tenho como enviar o link para que o ganhador possa baixar o livro sem custo. Se você colocar um e-mail zuado, vai para o próximo e você vai perder, playboy.
+Concorra e divirta-se aprendendo sobre desenvolvimento web e UI5!
+Os ganhadores foram os comentaristas Vinícius e Natasha Oliveira!
+A lista do sorteio pode ser vista aqui:
+http://sorteiospt.com/share/b429160f8dcb979e20ac0bcdf8a3b015
+(ganharam os dois primeiros da lista).
+Obrigado a todos pela participação!
+(…)
+PS: diz a lenda que alguém aí também está no processo de finalização do seu livro, que está sendo escrito há corridos 10 meses. Fique ligado nas novidades 😉 .
+
+
+
+Comentários:
+Lucas Pottmayer (04/05/2015 14:58): Parabéns pelo livro, muito bom ter acesso a material em PT.. Valeu
+daniel jesus (04/05/2015 09:11): Comprei, não dá pra contar com uma espec bem feita todo dia né? melhor garantir.
+Vinícius (04/05/2015 08:56): Parabéns pelo trampo Fábio, esse eh dos que vale a pena ter!
+Douglas Brauner (03/05/2015 23:03): Parabéns pelo trabalho Fábio! #saplabs #openiu5
+Alexandre S. Brosso (01/05/2015 21:37): Parabéns pelo livro. É ótimo ter material criado por brasileiro.
+Emília (30/04/2015 22:52): PARABENS PELO TRAMPO FÁBIO. Muito bacana o trabalho,  muito bom saber que teremos livros escritos por consultores nacionais.
+Custodio (30/04/2015 22:42): cl_demo_output=>new( )->begin_section(‘Parabens’)->write(‘Parabens pelo trampo, Fabio!’)->next_section(‘E obrigado’)->write(‘E obrigado pela minha copia ;)’)->display( ).
+  Custodio (30/04/2015 22:48): Pra deixar claro: ja tenho uma copia, nao precisa me incluir no sorteio 😉
+  Custodio (30/04/2015 22:48): Pra deixar claro: ja tenho uma copia, nao precisa me incluir no sorteio 😉
+Valdenilson Pina (30/04/2015 22:05): Ótima iniciativa, Parabéns pelo trabalho, Fábio.
+Bruno Nicolau (30/04/2015 21:40): Parabéns pelo trampo Fábio!
+Edgar Domingues (30/04/2015 21:27): Parabéns, bela iniciativa…
+Adilson Cobo Ventura (30/04/2015 16:49): Opá quero um desse aí tbm!
+Rafael Gonçalves Collett (30/04/2015 15:40): “PARABENS PELO TRAMPO FÁBIO”. Muito bom saber que meu professor e colega esta se consagrando na carreira ABAP. Um grande abraço! Rafael
+Ubirajara Novaes (30/04/2015 14:28): PARABENS PELO TRAMPO FÁBIO 🙂 e obrigado pelas aulas! Grande abraço!!
+Henrique (30/04/2015 12:46): READ TABLE WITH KEY PARABENS PELO TRAMPO FÁBIO Abraços a todos q dormiram no video de ctrl+c ctrl+v do curso de ui5 da opensap.
+Timóteo Ker (30/04/2015 09:29): PARABENS PELO TRAMPO FÁBIO
+Linton Silva (30/04/2015 09:13): “PARABÉNS PELO TRAMPO FÁBIO!!!!” Espero que o livro venda bastante para compensar o seu esforço.
+Victor Clemente (29/04/2015 18:15): Parabéns pela iniciativa, mas devo admitir que é mais legal ver o povo falando que o Abap vai morrer ou padronizar taxas… sangue sangue sangue… Escrever um livro não é pra qq um, demanda tempo, estudos e dinheiro. Boa sorte no retorno do esforço.
+Gabriel Gonçalves (29/04/2015 17:27): PARABENS PELO TRAMPO FÁBIO! Vamo que vamo! 😀
+Rafael Delfino (29/04/2015 17:19): PARABENS PELO TRAMPO FÁBIO!!
+Fawcs (29/04/2015 16:55): PARABENS PELO TRAMPO FÁBIO Pra complementar o que estou vendo no ABAP to the Future P.S:Nunca vi tanto comentário!!
+  Mauricio Cruz (29/04/2015 17:23): Para encher seu blog de ABAP de comentários: Fale que o salário do ABAP vai baixar OU faça um sorteio. #dicadeamigo
+    Mauro Laranjeira (29/04/2015 17:39): Ou fale que o abap vai MORRER. Nem precisa escrever mais nada.
+    Mauro Laranjeira (29/04/2015 17:39): Ou fale que o abap vai MORRER. Nem precisa escrever mais nada.
+  Mauricio Cruz (29/04/2015 17:23): Para encher seu blog de ABAP de comentários: Fale que o salário do ABAP vai baixar OU faça um sorteio. #dicadeamigo
+    Mauro Laranjeira (29/04/2015 17:39): Ou fale que o abap vai MORRER. Nem precisa escrever mais nada.
+    Mauro Laranjeira (29/04/2015 17:39): Ou fale que o abap vai MORRER. Nem precisa escrever mais nada.
+Fabio Pagoti (29/04/2015 15:40): OMG! Quanta gente!
+Bruno Pinho (29/04/2015 15:19): Boa iniciativa. Estou sentindo que o livro vai pra mim. hahaha
+Schinaider Sá (29/04/2015 15:16): PARABÉNS PELO TRAMPO FÁBIO!!!
+Danilo (29/04/2015 15:15): PARABENS PELO TRAMPO FÁBIO!!! Ganhei??? kkkkkk Estamos precisando de conteúdo com qualidade offline em português, afinal não dá para aprender ABAP em 21 dias.
+Mauro Laranjeira (29/04/2015 15:03): PARABENS PELO TRAMPO FÁBIO Pessoal do Blog tbm pode concorrer né?
+Aline Cristina Souza (29/04/2015 14:56): PARABÉNS PELO TRAMPO FÁBIO! E que bom que é em português 🙂 Torcendo para ser a sortuda, o que não é muito comum pra mim rs
+Flávio Félix Marques (29/04/2015 14:49): Livro em PT-BR sobre UI5? Aí sim! Fábio, parabéns pelo trampo e pela iniciativa!
+Cleber Sanchez (29/04/2015 14:31): PARABENS PELO TRAMPO FÁBIO!!
+Thiago Martins de Oliveira (29/04/2015 14:26): PARABENS PELO TRAMPO FÁBIO!! Torcer pra ganhar o livro e estudar rsrs Se não ganhar, é estudar do mesmo jeito rsrs Maurício e equipe, parabéns pelo ótimo trabalho.
+Fred Pereira (29/04/2015 14:24): Vê-se que a  maioria realmente é ABAP…muitos escreveram exatamente o que o Mauricio indicou, “PARABENS PELO TRAMPO FÁBIO!!!”, em maiuscula mesmo, copiado e colado! rsrs
+  Mauricio Cruz (29/04/2015 14:25): haheouaheahehea! O ABAPZombie imita a vida ABAPer… ou será o contrário? 😀
+    Lucas Santos (29/04/2015 14:42): Tudo pro sy-subrc ser = 0 na hora de sortear o livro!!
+    Lucas Santos (29/04/2015 14:42): Tudo pro sy-subrc ser = 0 na hora de sortear o livro!!
+  Mauricio Cruz (29/04/2015 14:25): haheouaheahehea! O ABAPZombie imita a vida ABAPer… ou será o contrário? 😀
+    Lucas Santos (29/04/2015 14:42): Tudo pro sy-subrc ser = 0 na hora de sortear o livro!!
+    Lucas Santos (29/04/2015 14:42): Tudo pro sy-subrc ser = 0 na hora de sortear o livro!!
+Lucas Santos (29/04/2015 14:23): PARABENS PELO TRAMPO FÁBIO!! E eu não copiei e colei só pra ganhar o livro, realmente é uma ótima iniciativa! Parabens!
+Fernando Castro (29/04/2015 14:20): Dá-lhe ABAP Zombie! Quero ganhar o livro!!
+Thiago Cardin (29/04/2015 13:51): PARABENS PELO TRAMPO FÁBIO!!!
+Alabi Caio (29/04/2015 13:41): Eu quero a minha cópia !
+Alabi Caio (29/04/2015 13:41): Eu quero a minha cópia claro!
+Paulo (29/04/2015 13:21): Parabéns Fábio! Nós abaps agradecemos muito!!!
+Thiago Alves (29/04/2015 13:16): Fudido hein, ótima iniciativa! Vou estudar o pdf e tentar sair do zero com UI5… Já ando fazendo coisas com BSP e Bootstrap, mas nada melhor que aprender o “abap do futuro”.
+Antonio Carlos Correia Junior (29/04/2015 13:12): Opa, sempre marco presença no site tentando me atualizar, agora com promoção, melhor ainda… Vamo ve se tenho sorte..
+Evandro Lopes (29/04/2015 12:52): Parabéns pelo trampo, Fábio!
+Mauro (29/04/2015 12:45): Opa, Nunca ganhei nada em sorteio, quem sabe é agora… Rssss
+Fábio Mancusio (29/04/2015 12:13): Bom dia! Acompanho o ABAO101 a um certo tempo e também as postagens do meu xará, já pratiquei algumas dicas dadas por ele e agora ter a oportunidade de ganhar um material tão rico e agregador relacionado a soluções SAP é o máximo. Sem mais delongas… Parabéns, Fábio Pagoti!
+Ricardo Perrella (29/04/2015 12:05): PARABÉNS PELO TRAMPO FÁBIO!!! Show….ótimo post.
+Roseli (29/04/2015 11:44): PARABÉNS PELO TRAMPO FÁBIO!!!
+Bruno Ribeiro (29/04/2015 11:43): PARABENS PELO TRAMPO FÁBIO! *dedos cruzados*
+Fred Pereira (29/04/2015 10:59): Conheci o Fábio Pagoti no último SAP Inside Track, no ano passado. Através dele criei minha conta no Github. Lembrando que tem um curso bacana no OpenSap sobre Fiori, acho válido darem uma olhada. Fábio, parabéns pela iniciativa de fazer-nos olhar para fora da caixa!
+André (29/04/2015 10:53): PARABENS PELO TRAMPO FÁBIO
+Evandro Paulo Gazola (29/04/2015 10:43): Opa, Sou novatão na área de SAP/ABAP. Vou ganhar esse livro e dar show depois .. ahhhahahhah Arbaços!
+Natasha Oliveira (29/04/2015 10:33): Tbm Quero o livro 🙂
+Leandro Gambim (29/04/2015 10:12): PARABENS PELO TRAMPO FÁBIO!! 😀
+Rodrigo F. Morais (29/04/2015 10:10): Ótima iniciativa! Parabéns bro!!
+Norton senna (29/04/2015 10:06): Opa! Tenho muito azar com sorteios, mas vamos nessa! Também quero o livro!
+Marcio (29/04/2015 09:56): PARABENS PELO TRAMPO FÁBIO. Estava mesmo procurando um livro em português sobre UI5. Espero ganhar o sorteio… rsrsrsrsrs

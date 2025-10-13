@@ -1,0 +1,58 @@
+Comandos de Sistema – SM69
+Autor: Mauro Laranjeira
+Data: 26/03/2013 16:56
+
+Olá Amiguinhos zumbis.
+Aqui no projeto, passei por uma situação que gostaria de compartilhar.
+Cenário: Criar um arquivo no servidor, e dar permissão 775.
+Para a criação do arquivo, usei OPEN DATASET, TRANSFER, CLOSE DATASET, ate então sem mistérios.
+Mas para dar permissão, isso não tinha ideia, encontrei no Google algo sobre a transação SM69 (Atualizar comandos externos SO).
+Com essa transação fiz a criação de um novo comando ZCHMOD, informei o comando de sistema
+CHMOD – Comando usando para alteração da permissão de arquivos
+Na criação do novo comando, será necessário informar, o comando de sistema e um parâmetro do comando de sistema, caso seja necessário, no meu caso o tipo de permissão 775.
+É possível executar o comando apertando F8, ira aparecer o campo para informar o parâmetro para o comando de sistema, no meu caso, o parâmetro é o nome do arquivo que receberá a nova permissão.
+Ótimo, mas como user esse comando novo em meu código ABAP?
+Basta executar a função SXPG_COMMAND_EXECUTE.
+Exemplo:
+DATA: lv_param LIKE sxpgcolist-parameters.
+
+  lv_param = '/pasta/arquivo.txt'.
+
+  CALL FUNCTION 'SXPG_COMMAND_EXECUTE'
+    EXPORTING
+      commandname                   = 'ZCHMOD'
+      additional_parameters         = lv_param
+    EXCEPTIONS
+      no_permission                 = 1
+      command_not_found             = 2
+      parameters_too_long           = 3
+      security_risk                 = 4
+      wrong_check_call_interface    = 5
+      program_start_error           = 6
+      program_termination_error     = 7
+      x_error                       = 8
+      parameter_expected            = 9
+      too_many_parameters           = 10
+      illegal_command               = 11
+      wrong_asynchronous_parameters = 12
+      cant_enq_tbtco_entry          = 13
+      jobcount_generation_error     = 14
+      OTHERS                        = 15.
+Vale lembrar que a transação SM69, não gera request. Logo, se necessário transporte do programa, também temos que fazer a criação do comando de sistema no ambiente de destino.
+Para fazer o transporte, vá no menu
+comando
+, logo após
+transportar
+, será pedido a request.
+Abraços a todos!
+
+
+
+Comentários:
+Eduardo (31/10/2017 10:46): Bom dia guerreiros! Estou com um problema ao tentar importar uma request de um ambiente para outro. Sei que não é bem o que o post foi relatado, mas acredito que quem resolveu isso possa me ajudar rs Estou no Minisap fazendo alguns testes. Preciso importar uma determinada request. Porém estou tentando o erro 0208, onde fala que: \\minhaoi\sapmnt\trans\cofiles\K912211.NSP for writing (Permission denied) Saberiam me dizer a respeito disso? É como se eu não tivesse permissão para acessar o arquivo no S.O. Já alterei as permissões da pasta do Win, já reiniciei o minisap, o SO, tentei fazer manualmente, até formatei meu pc acreditando ser algo no SO e nada! Teriam ideia do que possa ser por favor? Agradeço desde já.
+Felipe Cabral (08/05/2013 10:53): Caracas!!! Cara você salvou minha vida com essa dica! O time aqui ficou se matando uns 2 dias pra achar uma solução para o nosso caso (semelhante ao seu) e isso foi uma mão na roda! Muito Obrigado mesmo, e não deixe de compartilhar os pepinos do dia a dia, muita gente passa pelo mesmo problema! Abraços!
+Ricardo (17/04/2013 13:11): Que bosta.
+  Denis (06/03/2014 09:30): Bom dia Ricardo. Sabe resolver o problema proposto de uma melhor forma? Se puder contribuir, por favor peço que compartilhe conosco. Obrigado.
+  Mauricio Cruz (17/04/2013 14:11): Olá Ricardo, tudo bem? Obrigado pelo comentário, que demonstra uma ótima argumentação contra as informações apresentadas. Apareça de novo! Grande Abraço!
+  Denis (06/03/2014 09:30): Bom dia Ricardo. Sabe resolver o problema proposto de uma melhor forma? Se puder contribuir, por favor peço que compartilhe conosco. Obrigado.
+  Mauricio Cruz (17/04/2013 14:11): Olá Ricardo, tudo bem? Obrigado pelo comentário, que demonstra uma ótima argumentação contra as informações apresentadas. Apareça de novo! Grande Abraço!

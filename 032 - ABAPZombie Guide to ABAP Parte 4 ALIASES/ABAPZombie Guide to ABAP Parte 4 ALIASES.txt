@@ -1,0 +1,83 @@
+ABAPZombie Guide to ABAP – Parte 4 – ALIASES
+Autor: Mauricio Cruz
+Data: 07/02/2011 08:40
+
+Como um cara que curte OO, eu curto bastante esse comando. 🙂
+ALIASES
+pode ser entendido como uma abreviação do nome de um método de uma interface.
+Quando trabalhamos com interfaces em classes, normalmente temos que acessar os métodos das interfaces com o padrão
+nome_da_interface~nome_do_método
+. Isso enche o saco dependendo da classe que você estiver modelando :P.
+Inventaram o ALIASES exatamente para acabar com a chatice desses nomes grande 🙂 . Vejamos:
+REPORT  zombie_alias.
+
+* Começamos com a declaração de uma interface qualquer
+INTERFACE interface1.
+  METHODS metodo.
+ENDINTERFACE.                                               "interface1
+
+*----------------------------------------------------------------------*
+*       CLASS lcl_alias DEFINITION
+*----------------------------------------------------------------------*
+CLASS lcl_alias DEFINITION.
+
+* Na sessão pública, vou adicionar a interface, e um ALIAS para
+* um método definido na interface
+  PUBLIC SECTION.
+    INTERFACES interface1.
+    METHODS teste_alias.
+
+*   Aqui o comando que cria um nickname(apelido) para o método
+*   da interface
+    ALIASES met1 FOR interface1~metodo.
+ENDCLASS.                    "lcl_alias DEFINITION
+
+*----------------------------------------------------------------------*
+*       CLASS lcl_alias IMPLEMENTATION
+*----------------------------------------------------------------------*
+CLASS lcl_alias IMPLEMENTATION.
+
+* Implementação do método da interface
+  METHOD interface1~metodo.
+    WRITE 'Hi there!'.
+  ENDMETHOD.                    "interface1~metodo
+
+* Esse é um método da própria classe, que chama o método da interface
+* utilizando um ALIAS
+  METHOD teste_alias.
+    CALL METHOD met1.
+  ENDMETHOD.                    "teste_alias
+
+ENDCLASS.                    "lcl_alias IMPLEMENTATION
+
+* Referênciando nossa classe local
+DATA: o_alias TYPE REF TO lcl_alias.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+  CREATE OBJECT o_alias.
+
+* A chamada do método vai escrever o "Hi There!" na tela. E é só :)
+  o_alias->teste_alias( ).
+Convenhamos, é bem mais fácil chamar o método
+met1
+do que o método
+interface1~metodo.
+Sintaxe:
+ALIASES <nome_abreviado> FOR <nome_da_interface~nome_do_metodo>.
+Para fazer ALIASES na
+SE24,
+é só olhar na última aba da transação.
+Só tomem cuidado para não se perder com as abreviações!
+Abraços!
+Edit: 10/02 – Vale a pena ler a observação do Furlan aí em embaixo. Se a sua classe tiver muitas interfaces, usar ALIASES demais pode deixar a sua classe mais caótica do que horda de zumbi com fome. Valeu Furlan! 😀
+
+
+
+Comentários:
+Fl&aacute;vio Furlan (10/02/2011 07:03): Mas o fato de usar os ALIASES não torna o código mais dificil de dar manutenção? Eu particularmente não gosto dos ALIASES. São muito legais para quem escreve e tem o código na cabeça, mas para quem está fazendo manutenção é mais uma coisa para levar em consideração.
+  mauricio.cruz (10/02/2011 07:50): Olá Furlan! Boa Observação! Eu me empolguei no post e acho que não ressaltei esse tema, que inclusive já foi motivo de polêmica num projeto antigo hahaha. Para evitar esses tipo de problemas, se fosse pra usar os ALIASES a gente colocava alguma notação para mostrar de qual interface era, por exemplo int1_met1. E lá os nomes de interface eram GIGANTES hehehe. Abraços e muito obrigado pelo comentário! Vou até ajustar o post 😀
+  mauricio.cruz (10/02/2011 07:50): Olá Furlan! Boa Observação! Eu me empolguei no post e acho que não ressaltei esse tema, que inclusive já foi motivo de polêmica num projeto antigo hahaha. Para evitar esses tipo de problemas, se fosse pra usar os ALIASES a gente colocava alguma notação para mostrar de qual interface era, por exemplo int1_met1. E lá os nomes de interface eram GIGANTES hehehe. Abraços e muito obrigado pelo comentário! Vou até ajustar o post 😀

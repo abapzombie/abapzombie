@@ -1,0 +1,19 @@
+Buscar Business Role Logada
+Autor: Mauro Laranjeira
+Data: 05/05/2014 10:00
+
+Olá amiguinhos.
+Quase 90% dos meus desenvolvimentos são no SAP CRM, em todos os projetos sempre tem alguma validação com base na Business Role que o usuário logou.
+Sempre preciso procurar como fazer isto, então este post é para mim  (risos), mas acredito que pode ajudará ajudar outras pessoas.
+A classe para busca da business role é a CL_CRM_UI_PROFILE, esta classe é singleton, ou seja, permite apenas uma instancia por sessão.
+Segue um exemplo da utilização:
+DATA: v_business_role TYPE string.
+
+  v_business_role = cl_crm_ui_profile=>get_instance( )->get_profile( ).
+É galera, muito simples, mas sempre esqueço o nome da classe.
+Abraços a todos
+
+
+
+Comentários:
+Jedi (10/06/2014 14:51): Show de bola este POST!!! ta guardado aqui S2

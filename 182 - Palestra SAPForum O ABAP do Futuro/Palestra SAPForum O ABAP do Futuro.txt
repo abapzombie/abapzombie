@@ -1,0 +1,35 @@
+Palestra #SAPForum – O ABAP do Futuro
+Autor: Mauricio Cruz
+Data: 13/02/2014 15:00
+
+Pessoal, agradeço a todos que compareceram em minha palestra no SAP Forum 2014. Tentei fazer um overview geral de como está a tecnologia ABAP, e onde é possível encontrar informação que “acabou de sair do forno”. Neste post estão os slides da palestra, e a maioria dos links relacionados aos slides.
+Se tiverem qualquer dúvida, deixem nos comentários.
+Update: Vídeo da Palestra editado em níveis absurdos pelo
+@lucattelli
+(clique para ver a palestra no slideshare, caso o viewer não funcione).
+Links:
+ABAP Release 7.40
+ABAP on HANA
+ABAP in Eclipse
+ABAP AS Trial – Amazon Web Services
+SAP Community Network
+SCN ABAP Place
+Assine o Canal do SAP Inside Track no Youtube
+ABAP101
+Zevolving
+ABAPinho
+Developers.sap.com
+OpenSAP
+Github
+Valeu e até a próxima!
+
+
+
+Comentários:
+Roberto Aran (06/03/2014 17:32): Ótima apresentação Maurício, vale salientar o oData também que para o mundo SAP depende do ABAP.
+  Mauricio Cruz (11/03/2014 07:39): Valeu Aran! Abraços!
+  Mauricio Cruz (11/03/2014 07:39): Valeu Aran! Abraços!
+Fawcs (14/02/2014 11:30): Acabei nem podendo ir fofo=(
+Henrique Dias (13/02/2014 22:19): Não teve vídeo dessa vez?
+  Mauricio Cruz (14/02/2014 07:24): Vai ter sim, o @lucatelli gravou 😀
+  Mauricio Cruz (14/02/2014 07:24): Vai ter sim, o @lucatelli gravou 😀

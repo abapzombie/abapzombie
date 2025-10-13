@@ -1,0 +1,43 @@
+ABAPZombie Guide to ABAP – Parte 3 – ADD – THEN, UNTIL
+Autor: Mauricio Cruz
+Data: 04/02/2011 08:39
+
+* Atenção, este comando é obsoleto na versã0 6.0!
+Esse é um comando interessante, apesar de obsoleto. Pense numa work area que tem diversos campos numéricos, e você precisa somar alguns desses campos e colocar o resultado numa variável.
+Síntaxe:
+ADD valor1 THEN valor 2 UNTIL valorx TO result.
+Vamos ao exemplo:
+REPORT  zombie_then_until.
+
+* Type com campos para ficar fácil
+TYPES: BEGIN OF ty_add,
+        one   TYPE i,
+        two   TYPE i,
+        three TYPE i,
+        four  TYPE i,
+       END OF ty_add.
+
+* Work Areas
+DATA: wa_add TYPE ty_add.
+
+* Variáveis
+DATA: result TYPE i.
+
+* Vamos somar todos os campos de uma vez
+wa_add-one   = 1.
+wa_add-two   = 2.
+wa_add-three = 3.
+wa_add-four  = 4.
+
+* Result vai ter 10!
+ADD wa_add-one THEN wa_add-two
+               UNTIL wa_add-four
+               TO result.
+
+* ACCORDING TO -> soma só os campos da tabela descrita
+* GIVING -> troque o GIVING pelo TO, e você vai entender :P
+
+BREAK-POINT.
+As outras variantes possíveis estão explicadas no exemplo.
+Vamos somando tudo, até o número de formigas no jardim da nossas casa (?!?!?!).
+Abraço!

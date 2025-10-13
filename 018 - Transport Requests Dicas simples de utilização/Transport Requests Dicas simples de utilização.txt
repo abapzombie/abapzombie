@@ -1,0 +1,54 @@
+Transport Requests – Dicas simples de utilização
+Autor: Mauricio Cruz
+Data: 17/01/2011 12:29
+
+É pessoal! O SAP tem essa
+“maravilha da nova era”
+que se chama Transport Requests.  Sejamos sinceros: o negócio é legal, e funciona bem para comparar versões, para transportes, para organização de objetos…
+se usado corretamente.
+Normalmente, a maioria dos problemas de requests está relacionado ao mau uso ou com a falta de conhecimento. Por exemplo, esses dias eu escutei um colega de trabalho pseudo-iniciante falar que era
+impossível
+agregar vários objetos e versioná-los numa mesma request… se ele ler o post, vai ver que dá sim 😉
+Dicas simples de requests para você usar no seu projeto:
+* Utilizar a transação SE09 para os casos abaixo!
+1 –
+Você pode prevenir que usuários coloquem objetos em suas requests sem que você saiba… é só
+protegê-la
+! É legal fazer isso porque, por padrão, o SAP avisa que vai criar uma task nova para o usuário que não é dono da request, e adiciona o objeto. Com a proteção, o SAP barra!
+Clique na Request, vá no menu da figura, e escolha Proteger. Vai aparecer o cadeado ali. Agora, tente adicionar um objeto com um outro usuário que não seja o dono da Request e que não tenha nenhuma Task nessa Request. O SAP irá barrar automaticamente!
+Para voltar, é só anular a proteção.
+2 –
+Adicionando
+requests dentro de outras requests
+,
+versionando os objetos.
+Muita gente sabe como colocar requests dentro de outras requests, mas muitas vezes o pessoal esquece de versionar o objeto dentro de uma só request. Vamos ao cenário:
+– Você tem uma request já transportada, e gostaria de adicionar os objetos dela numa nova request.
+– Entre na SE09 e ache a request alvo. Siga os passos da figura para adicionar os objetos:
+Nesse caso, eu estou colocando os objetos de uma request já transportada (no campo REQUEST VAI AQUI!) em uma request aberta. Existe a opção de colocar de várias requests e outras coisas.. daí é só fuçar 🙂
+– Agora vem a
+parte interessante
+. Se você só adicionar as request, os objetos não vão ficar bloqueados na request onde você os inseriu. Então, você tem que entrar na request e forçar o bloqueio:
+Note em 1 que os objetos adicionados vão ficar embaixo da Request, sem nenhuma task. Com um duplo clique na request, você vê em 2 que os objetos não estão bloqueados. Selecione todos e clique no cadeado (alguns objetos não podem ser bloqueados, como comentários ou dados de tabela... normalmente não dão problema, mas sempre analize caso a caso 🙂 )
+E pronto. Com os objetos bloqueados na nova request, você evita que um objeto esteja ao mesmo tempo em duas requests, além de colocar essa request na lista de versões do objeto (para fazer comparações de versões entre DEV, QAS e PRD). É mais ou menos isso que o pessoal usa para fazer as famosas
+requests jumbo
+(request com várias requests dentro. Conhecida também como request-salva-projeto-porque-o-projeto-perdeu-o-controle-da-ordem-dos-transportes
+).
+3 –
+Por último, uma mais simples.
+Criando tasks para vários usuários
+, e ainda
+tirar um sarro
+da cara deles. 😈
+Aeee, vire chefe do seu colega 😀 E fale que não vai pagar salário!.. na verdade, isso cria uma task para um user X dentro de uma request de um user Y. Você pode usar em conjunto com a proteção ali em cima! 🙂
+E pronto!
+Coisas simples que ajudam. Tome muito cuidado no gerenciamento de requests, pois é fácil se perder!
+Abraços!
+
+
+
+Comentários:
+Antonio (13/12/2017 16:13): Caros, Como faço para,  após a liberação da request,  já aparecer automaticamente na fila de transporte na STMS? Tem algum JOB para programar?
+Robson (15/03/2016 09:31): kkkkkkkkkkkk rachei com a definição da request jumbo… fato!
+Vinicius Ostan (27/07/2011 11:22): Ótimo post, ajudou muito!!! Parabéns equipe
+Jorge (17/01/2011 11:42): Muito bom a dica sobre requests! A opção de proteção contra usuários invasores é ninja mesmo!!! Parabéns!! Abrassssssssssss

@@ -1,0 +1,35 @@
+#007 – 40 horas não é o bastante
+Autor: Mauricio Cruz
+Data: 18/01/2017 10:00
+
+Lembra quando nós dissemos que iríamos lançar um novo The Walking Dev todo mês? Pois é, acho que nós
+erramos na estimativa!
+(foi mal)
+Aproveitando que quebramos o budget do projeto, nos juntamos para discutir a mística por volta das estimativas. Junte-se a nós em uma discussão com tantas viagens que seria impossível estimar o impacto na vida daqueles que pensam em unidades de tempo.
+Críticas? Dúvidas? Sugestões? Conhece outras técnicas para fugir de assaltos? Então conte aí nos comentários!
+Muito obrigado por ter escutado e até a próxima! \o/
+Obs.: Estimamos que o próximo The Walking Dev sairá em breve.
+Links e recomendações do episódio:
+Instagram da Priscila
+Eisenbahn Pilsen Baratinha (paga nóis)
+Curso da Dai na Fundação Gasolina, digo, Vanzolini
+OpenSAP
+Xamarin é dahora
+Série Vikings, dos primos do Leo
+Vlogs do Tito Melo – Eventos Aleatórios
+Viu! Como se Faz! – jimmydiresta
+
+
+
+Comentários:
+Bruno Pidde (03/01/2020 09:05): 3 anos depois volto para reouvir esse maravilhoso zombiecast. Gostaria de fazer uma pergunta… existe uma estimativa para divulgação do PLANILHAO de ESTIMATIVA do ABAP ZOMBIE ? kkkk Estou desenvolvendo uma e gostaria de comparar se minha subjetividade esta fora da realidade ou não kkk Parabéns e muito obrigado pelo conteúdo!
+Yago Anthony de Araujo (24/02/2017 12:58): Ola pessoal, Sou estagiario de uma grande empresa, e participei recentemente de um projeto de SAP e tive contato com abap e consultores variados durante esse tempo, tenho formação em ADS e estou cursando contabeis, surgiu uma grande motivação de comecar a entrar no mundo de SAP, alguem pode disponibilizar material de inicialização, dicas, sugestoes? Obrigado
+Valdir Mendes (22/02/2017 17:58): Show de bola, parabéns pelo trabalho!
+Richard (24/01/2017 13:43): Legal, que bom que voltaram, nem trabalho com ABAP mas curto os podcasts.
+  Mauro Laranjeira (27/01/2017 16:35): Vlw Richard. Estavamos apenas em feriasde verão, andando de lança e jogando bingo em casinos clandestinos. Obrigado pelo apoio, este é o combustivel que nos motiva a fazer este árduo trabalho. Felicidades
+  Mauro Laranjeira (27/01/2017 16:35): Vlw Richard. Estavamos apenas em feriasde verão, andando de lança e jogando bingo em casinos clandestinos. Obrigado pelo apoio, este é o combustivel que nos motiva a fazer este árduo trabalho. Felicidades
+Igor OBM (23/01/2017 10:15): Muito bom! esperando mês quem vem…
+  Mauro Laranjeira (27/01/2017 16:26): Olá amiguinho Lembrando que e apenas uma estimativa baseada em um medida de tempo inimaginavel com referencias a coisas que não existem. Até breve
+  Mauro Laranjeira (27/01/2017 16:26): Olá amiguinho Lembrando que e apenas uma estimativa baseada em um medida de tempo inimaginavel com referencias a coisas que não existem. Até breve
+João (19/01/2017 23:28): Muito bom! continuem!
+Custodio de Oliveira (18/01/2017 19:48): Mais um zombiecast marotao, obrigado! Eu teria muito a falar sobre o assunto principal, mas estimo que demoraria umas 32 horas escrevendo, entao deixa pra la. Observacoes rapidas: – concordo com o Henrique, certificacao, de verdade, ja nao serve pra porra nenhuma mesmo. Imagina a da openSAP entao, que nem certificacao de verdade eh… – Tb nao sei muito sobre Xamarin, mas lembro do Mauricio ter twuitado a respeito uns 2 anos atras. Dei uma olhada rapida e indiquei pro arquiteto de desenvolvimento aqui. Na epoca ele nao conhecia, e hoje eh a base de todo desenvolvimento mobile no cliente que estamos. Aguardando o zombiecast do mes que vem! Abracos!

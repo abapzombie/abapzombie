@@ -1,0 +1,47 @@
+Novo ABAP Debugger – Porque largar o velho? – Parte 3
+Autor: Mauricio Cruz
+Data: 27/01/2011 09:40
+
+Eu, como um
+Abap Objects-addicted
+, não poderia deixar de fora essa parte do Debugger Novo que vou explicar hoje. O novo
+visualizador de objetos
+é uma das coisas mais divertidas desse monte de telas malucas. E para fechar essa saga, mais algumas coisinhas úteis que ficaram um pouco “escondidas”.
+Boa Leitura!
+1 –
+Debug de Sistema e Debug de Atualização
+Siga o menu em 1, que vai aparecer a telinha ali em 2. Você pode mudar algumas coisinhas, e ativar o debug de sistema ou de atualização. Eu já vi gente mudando para o debug velho pra fazer isso, vai entender 🙄 ...
+2 –
+Visualizador mega-blaster de objetos
+Ficou muito bacana, se liga:
+É só clicar no menu de objetos e colocar o nome da variável instanciada. Lembrando que se você não instanciou (CREATE OBJECT), você não vai ver nada (tá maluco?).
+Quer ver a hierarquia do Objeto? Clica no botão ali que ele mostra as classes de onde o seu objeto busca herança e as interfaces de cada uma das classes.
+Heim? Quer saber quais eventos o objeto dispara? Fácil, basta um clique e você tem a lista!
+3 –
+Análise simplificada para strings
+Para strings gigantes, você pode mudar o tipo de visualização da variável. Clique no menu da foto, e você verá as opções.
+Neste print, o exemplo de duas opções. Na primeira, um visualizador de XMLs, na segunda, uma apresentação tabular da string, com os offsets das linhas e os valores hexadecimais. Bem mais fácil de analisar!
+E olha só, chegamos ao fim dessa saga.
+Acho
+que eu não esqueci nenhum ponto importante, mas, se eu esqueci, me avisa comentando que eu atualizo o post.
+Abraços a todos aqueles que usam o Debugger novo, ou que passaram vontade por trabalharem em lugares onde ele não existe (eu sei, é triste 🙁 ).
+
+
+
+Comentários:
+Paulo (22/12/2015 18:28): Ola! Muito bom seu site. Uma duvida no debugger novo: onde acho as Chamadas, que sao as rotinas (includes) que passaram antes do ponto em que estamos? No debugger velho isso estava bem na cara. valeu Paulo
+  Mauro Laranjeira (05/01/2016 16:14): Blz Paulo? Se vc clicar na aba Standard, no seu lado direito tem uma tabela com “Pilha ABAP e de Tela”. Abs
+  Mauro Laranjeira (05/01/2016 16:14): Blz Paulo? Se vc clicar na aba Standard, no seu lado direito tem uma tabela com “Pilha ABAP e de Tela”. Abs
+William Jardim Loyola (27/05/2014 18:54): Gostaria de deixar minha contribuição: Se você ir na ferramenta “Tabela” e clicar no botão “Serviço da Ferramenta” e selecionar a opção “Upload from File” você consegue selecionar um arquivo CSV com dados de uma tabela e popular sua tabela sem a necessidade de fazer registra a registro. Uma coisa que eu gostaria de entender melhor é a ferramenta “Script”, ele serve para desenvolver código dentro de debug?
+  Mauricio Cruz (28/05/2014 09:05): Essa história do Script dá um bom post.. vou colocar aqui no nosso backlog 🙂 Abs!
+  Mauricio Cruz (28/05/2014 09:05): Essa história do Script dá um bom post.. vou colocar aqui no nosso backlog 🙂 Abs!
+Gustavo Venceslau (29/08/2013 15:12): Muito bom o post!
+Vinicius Ostan (14/03/2012 09:45): Maurício, tudo beleza? Sabe se é possível fazer com que o Debug novo não abra uma nova janela ao iniciar? Assim como é feito no Antigo, ou seja, ele inicia o Debug em cima da janela atual. Desde já, obrigado.
+  Mauricio Cruz (14/03/2012 09:50): Vinicius, Até onde eu sei, não dá não… o novo debugger não roda no mesmo “processo” do seu programa, é separado. Aliás, só é possível fazer esse monte de coisas legais porque ele roda num processo separado. Abraços!
+  Mauricio Cruz (14/03/2012 09:50): Vinicius, Até onde eu sei, não dá não… o novo debugger não roda no mesmo “processo” do seu programa, é separado. Aliás, só é possível fazer esse monte de coisas legais porque ele roda num processo separado. Abraços!
+Norberto Silva (13/12/2011 15:04): Mauricio, parabéns pelo post, é muito bom. Pude aproveitar bastante essas suas dicas. E para esse novo debug, segue minha contribuição: Ao parar com o ponteiro do mouse sobre uma variável qualquer, o debug mostra num poup-up o conteúdo da variável na primeira linha e na segunda linha mostra o tipo e tamanho que essa variável foi instanciada. Eu achei bem interessante e uso com muita frequencia, pois não é mais preciso dar duplo-clique sobre a variável para saber o seu valor atual. Um abraço, Norberto Silva
+  Mauricio Cruz (14/12/2011 08:25): Opa, valeu por lembrar disso Norberto. Eu tb acho legal essa funcionalidade, mas se você estiver utilizando uma VPN lenta ela pode atrapalhar bastante… Se alguém passar por isso, e quiser desligar, é só clicar na caixa de texto que fica na mesma janela onde mostra o código, no canto inferior. Lá tem uma opção para desabilitar esse quick view de variáveis. Abraços! 🙂
+  Mauricio Cruz (14/12/2011 08:25): Opa, valeu por lembrar disso Norberto. Eu tb acho legal essa funcionalidade, mas se você estiver utilizando uma VPN lenta ela pode atrapalhar bastante… Se alguém passar por isso, e quiser desligar, é só clicar na caixa de texto que fica na mesma janela onde mostra o código, no canto inferior. Lá tem uma opção para desabilitar esse quick view de variáveis. Abraços! 🙂
+Elaine Omine (19/03/2011 11:37): Oi Maurício! Muito bacana seus posts sobre o debug novo. Eu também olhei meio torto da primeira vez, mas depois não larguei mais! Uma outra funcionalidade que eu também acho muito útil é a Debugger/Ir para instrução. É excelente naqueles casos em que você está debugando um standard há meia hora e dá F6 justamente num perform que executa a rotina que você quer! hahaha A única coisa que eu não gostei (não achei em lugar nenhum!) é que tiraram a opção de você ir visualizando a impressão de um relatório "write" comando-a-comando. Era bem útil pra alinhar colunas… hehehe Abçs e parabéns pelo blog! Obs.: Vocês podiam fazer um post desses para o editor novo, né? Tem várias funcionalidades novas e bacanas tb! 😉
+  Mauricio Cruz (21/03/2011 05:53): Elaine, Muito obrigado pelo comentário, que bom que você curtiu. Eu tenho idéias de fazer uma sequência para o editor novo sim (na verdade, eu quase fiz antes dessa do Debug Novo  hehehe), em breve você vai ver algo por aqui 🙂 Ah, e quanto ao negócio do WRITE, eu pesquisei bastante sobre isso quando estava fazendo os posts, e não encontrei nada. Todo mundo por aí reclama, mas parece que o único jeito é voltar ao debug "clássico" para ver listas… Mas blz, tem tanta coisa útil nesse Debug novo que esse negócio do WRITE nem enche tanto o saco assim 😛 Abraços!
+  Mauricio Cruz (21/03/2011 05:53): Elaine, Muito obrigado pelo comentário, que bom que você curtiu. Eu tenho idéias de fazer uma sequência para o editor novo sim (na verdade, eu quase fiz antes dessa do Debug Novo  hehehe), em breve você vai ver algo por aqui 🙂 Ah, e quanto ao negócio do WRITE, eu pesquisei bastante sobre isso quando estava fazendo os posts, e não encontrei nada. Todo mundo por aí reclama, mas parece que o único jeito é voltar ao debug "clássico" para ver listas… Mas blz, tem tanta coisa útil nesse Debug novo que esse negócio do WRITE nem enche tanto o saco assim 😛 Abraços!

@@ -1,0 +1,55 @@
+Validações simples em SM30 – Eventos
+Autor: Mauricio Cruz
+Data: 13/01/2011 10:47
+
+Esses dias eu expliquei para uma pessoa um
+“esquema”
+que poderia salvar a vida de muitas pessoas… mas só elas conhecessem esse
+“esquema”
+.
+Pergunta do milhão:
+quem aqui já teve que
+alterar o código de uma SM30
+para validar alguma coisa levanta a mãooooooo!
+Eu sei, eu sei…
+ninguém gosta
+, mas todo mundo já fez! 🙁
+Daí vem algum panguá, entra na se11 e re-gera a sua SM30, tirando todas as chamadas de forms Z do código, e fazendo a sm30 funcionar do jeito standard… que era exatamente o que o usuário não queria!
+Eu sei, eu sei…
+ninguém gosta
+mas já aconteceu com todo mundo! 🙁
+Então, se você tem consistências simples, você pode minimizar esses problemas
+usando eventos
+!
+Atenção: o Post ficou looooongo, mas vale a pena! Essa coisa já salvou minha vida algumas vezes!
+Bom, você criou a tabela e gerou sua SM30. Daí você precisa fazer uma consistência sempre que o user entrar com um valor na SM30. Entre na SE11 -> Menu gerar SM30 -> Modificação -> Hora (traduçao porca! em inglês é Event)
+Ignore o pop-up (afinal, TUDO pertence a SAP, duh). Aperte F4 na primeira coluna, e você vai ver a lista de eventos que podem disparar um FORM "Z".
+Escolha um Evento (eu escolhi o 05, sempre que uma nova linha for inserida). Dê um nome para seu FORM e aperte ENTER. Vai aparecer aquele ícone de editor ali.
+Pode apertar Enter na tela de nova include, porque a idéia é criar uma include separada mesmo. Um detalhe importante é que ele não vai criar o comando FORM.. ENDFORM automático. Você deve entrar na mão. CUIDADO PARA NÃO ERRAR O NOME DO FORM! 😉
+Ative, a tabela e saia da SE11. Por precaução, verifique na SE80 se o Grupo de Funções da SM30 também foi ativado. Agora, entre na SM30, coloque uma nova linha e aperte enter... que vai parar no FORM que você criou! 😀
+Agora você me pergunta:
+tá, e daí?
+Simples!
+Se você re-gerar a sua SM30, tudo que você vai ter que fazer para sua lógica voltar a funcionar na nova SM30, é adicionar UMA linha de código, independente da quantidade de consistências que você fez. (claro que se a tabela foi alterada, você vai ter que ajustar a lógica.. mas isso é o de menos).
+É só abrir o programa principal do grupo de funções da SM30 re-gerada, e adicionar a include que foi criada na hora que você criou o evento. Simples assim! 😀
+Tem gente que insiste em alterar o código standard da SM30 para fazer as chamadas dos seus módulos ou performs Z. Cada caso é um caso… mas se for para fazer consistências simples, use eventos. Se for pra fazer muita coisa, faça um online hehe 🙄
+Abraços a todos aquele que não tem medo de conhecer coisas velhas como sendo novas 😀
+Até a próxima!
+
+
+
+Comentários:
+Eduarda (19/05/2025 17:05): 2025 e esse post segue me ajudando hehe valeu!!
+Jorge (18/12/2018 01:45): Que m%#¥@…sao 2:42 da manhã e eu olhando como fazer validaçao de SM30, sendo que faço isso há anos. Insônia + ser abap + não ter o que ver na Internet dá nisso. Devia ter escutado minha mãe e estudado.
+Luciano (22/03/2018 16:21): Boa tarde Mauricio Cruz, pesquisando na internet achei um post igualzinho ao seu, até  com os emoticons!! Vc ganha direitos autorais pela seu post e pelos emoticos também ? kkk abraço
+  Mauricio Cruz (26/03/2018 17:31): Valeu Luciano. O site que tem essa cópia é horrendo… infelizmente não tem muito o que fazer – mesmo denunciando, a galera copia de novo. O negócio é focar no nosso conteúdo e torcer pra galera beber a água “da fonte”. 🙂 Abraços!
+  Mauricio Cruz (26/03/2018 17:31): Valeu Luciano. O site que tem essa cópia é horrendo… infelizmente não tem muito o que fazer – mesmo denunciando, a galera copia de novo. O negócio é focar no nosso conteúdo e torcer pra galera beber a água “da fonte”. 🙂 Abraços!
+Fernando (30/08/2017 09:21): Fiz um esquema parecido para incluir um botão na SM30, para exportar os dados para o Excel. Realmente dá pra mexer bastante em telas standard através desses recursos da SAP. Muito boa a postagem!
+Miguel (14/06/2017 08:54): Ola a todos. Fiz o evento, a validação da erro no 3º campo da minha SM30, só que ele retorna para o primeiro campo. Qual a forma de fazer o evento retornar para o campo que está ocorrendo o erro?
+Felipe Omarini (31/12/2014 09:01): Eu tenho uma duvida Estou configurando uma SM30 de uma tabela Z e uma das restrições é que ao clicar no botão eliminar só deve preencher um flag de eliminação e não deletar o resgistro. Alguem tem alguma sugestão de como se faz isso?
+Raul Romano (17/07/2013 13:18): Gostei muito do post, já passei por momentos em que a sm30 tinha 4 eventos e eles estavam em includes diferentes (Lógico, ehehehehe), dai precisava copiar uma por uma pra poder re-gerar a sm30. Agora como foi dito acima, digamos que temos apenas 1 evento na sm30 dai regeramos ela, quando colocamos a chamada da include que tinha aquele único evento novamente e ele funciona é porq ficou salvo na memória todo o código do evento??
+rodrigo (22/08/2012 12:41): muito bom…excelente
+Adriano Miguel (30/07/2011 10:17): Muito bom o Post e muito com o Site , a algum tempo está em meus favoritos, parabens…
+  Mauricio Cruz (01/08/2011 13:00): Valeu a força Adriano! Abraços!
+  Mauricio Cruz (01/08/2011 13:00): Valeu a força Adriano! Abraços!
+William (14/01/2011 07:47): Muito bom o blog de vc´s, estão de parabéns! Fantástico!

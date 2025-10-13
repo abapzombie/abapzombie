@@ -1,0 +1,22 @@
+ABAPZombie Guide to ABAP – Parte 34 – EXIT
+Autor: Henrique Dias
+Data: 14/06/2012 15:00
+
+Começamos agora uma nova série de comandos, utilizada para controlar a saída de um loop (LOOP, WHILE e DO). Os comandos são:
+EXIT
+CHECK
+CONTINUE
+O comando EXIT finaliza o loop no momento em que ele é executado. A sintaxe é simplesmente:
+EXIT.
+Abaixo, um exemplo de utilização:
+DO.
+  IF v_municao > 0.
+    PERFORM atirar_nos_zumbis.
+  ELSE.
+    EXIT.
+  ENDIF.
+ENDDO.
+No exemplo acima vamos continuar atirando nos zumbis até q a munição acabe, quando ela acabar o comando EXIT vai ser executado e o loop (comando DO) será encerrado e aí só nos resta correr…
+Corre negada!!!
+O EXIT também pode ser utilizado para finalizar um bloco de execução (um PERFORM por exemplo), porém a SAP não recomenda essa utilização e um comando EXIT no lugar errado dentro de uma USER-EXIT pode trazer o caos ao projeto. A recomendação nesse caso é o comando RETURN, mas isso fica pra outro post…
+Abraços a todos que já viram o caos no projeto por causa de um exit na user-exit da VA01 (ou 02 :D).

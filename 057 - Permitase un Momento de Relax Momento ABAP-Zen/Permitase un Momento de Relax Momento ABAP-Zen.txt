@@ -1,0 +1,18 @@
+Permitase un Momento de Relax – Momento ABAP-Zen
+Autor: Mauricio Cruz
+Data: 04/03/2011 09:15
+
+Ah, o Carnaval!
+Momento de sossego, paz e tranquilidade. Encontrar a família, curtir uma praia, um campo, as montanhas…
+Figura para ilustrar nosso momento zen (pense numa música que te acalme também!)
+O tempo é ideal para fazer festas, se divertir pra valer e passar momentos únicos com aqueles que amamos! Sempre tomando cuidado para besteiras não atrapalharem a brincadeira!
+É por isso que nós, do ABAP Zombie, desejamos a todos um ótimo carnaval. Que seu feriado seja ótimo, daqueles que você irá se lembrar por muitos anos!
+…
+…
+…
+…
+Ok,
+depois dessa história toda, vamos voltar para nossa realidade e ir debuggar o standard, já que vamos trabalhar o carnaval inteiro. Vida de consultor não é fácil rapaz,
+deal with it.
+Abraços a todos aqueles vão trabalhar no Carnaval. Espero que o ABAPZombie ajudem vocês a pelo menos conseguir ficar em casa no domingo à tarde.
+😛

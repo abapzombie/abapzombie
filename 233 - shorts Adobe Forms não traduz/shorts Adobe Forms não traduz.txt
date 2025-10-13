@@ -1,0 +1,13 @@
+#shorts Adobe Forms não traduz
+Autor: Henrique Dias
+Data: 30/09/2021 14:00
+
+Eae galera!
+Peguei um erro bizarro aqui e resolvi compartilhar.
+Se você traduzir um Adobe Forms mas não aparecer o texto traduzido é porque deu alguma zica no cache. Para limpá-lo utilize o report FP_PDF_TEST_26.
+É isso. Valeu, é nóis!
+
+
+
+Comentários:
+Bruno Pidde (10/11/2021 01:41): AAAAAAAê! Zombies are back!

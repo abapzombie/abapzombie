@@ -1,0 +1,35 @@
+ABAPZombie Guide to ABAP – Parte 37 – CONTINUE
+Autor: Henrique Dias
+Data: 15/10/2012 07:00
+
+O comando CONTINUE é utilizado para encerrar a execução de um laço de um loop (comandos LOOP, DO, WHILE…) e ir para o próximo registro. A sintaxe é:
+CONTINUE.
+Abaixo, um exemplo de utilização:
+LOOP AT t_armas INTO w_armas.
+  IF w_armas-municao = 0.
+    CONTINUE.
+  ENDIF.
+  PERFORM atirar_nos_zumbis.
+ENDLOOP.
+No exemplo acima, é executado um loop na tabela de armas, caso a arma esteja sem munição, ele irá passar direto para a próxima arma, sem executar o PERFORM.
+
+
+
+Comentários:
+Raju Shrestha (15/09/2015 15:58): Your site is one of the most eye catching technical site.. 🙂 .. Congrats!! Regards, Raju..
+Custodio (15/10/2012 23:54): Vamos analisar o codigo do Fawcs: – Nao usou o continue, que eh o assunto to topico – Usou um metodo com importing ao inves de receiving, e nao usou o que importou – Entrou em um do…enddo infinito Parabens!
+  Fawcs (16/10/2012 08:53): po, vc interpretou meu código errado=( a arma vc seta na variavel weapon(deveria ser set melee weapon(exporting..) eu desconsiderei o assunto do topico apenas para matar zumbis… infinitamente
+    Mauricio Cruz (16/10/2012 09:23): Calma crianças. O Fawcs só aloprou ali o tema de matar zumbis, whatever. Mas o Custódio também tem uma péssima tolerância a piadas com código, então whatever também. Divirtam-se na treta ae!
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+    Mauricio Cruz (16/10/2012 09:23): Calma crianças. O Fawcs só aloprou ali o tema de matar zumbis, whatever. Mas o Custódio também tem uma péssima tolerância a piadas com código, então whatever também. Divirtam-se na treta ae!
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+  Fawcs (16/10/2012 08:53): po, vc interpretou meu código errado=( a arma vc seta na variavel weapon(deveria ser set melee weapon(exporting..) eu desconsiderei o assunto do topico apenas para matar zumbis… infinitamente
+    Mauricio Cruz (16/10/2012 09:23): Calma crianças. O Fawcs só aloprou ali o tema de matar zumbis, whatever. Mas o Custódio também tem uma péssima tolerância a piadas com código, então whatever também. Divirtam-se na treta ae!
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+    Mauricio Cruz (16/10/2012 09:23): Calma crianças. O Fawcs só aloprou ali o tema de matar zumbis, whatever. Mas o Custódio também tem uma péssima tolerância a piadas com código, então whatever também. Divirtam-se na treta ae!
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+      Fawcs (16/10/2012 12:50): TA TODO MUNDO CALMO AQUI
+Fawcs (15/10/2012 10:45): ENDLOOP. try. o_player->get_melee_weapon( importing weapon). do. o_player->slash_zombies( ). enddo. catch cx_no_melee_weapon. o_player->run( ). endtry.

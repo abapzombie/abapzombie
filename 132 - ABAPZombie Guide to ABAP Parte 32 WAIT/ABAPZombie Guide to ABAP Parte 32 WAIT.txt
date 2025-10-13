@@ -1,0 +1,25 @@
+ABAPZombie Guide to ABAP – Parte 32 – WAIT
+Autor: Henrique Dias
+Data: 22/03/2012 13:10
+
+Bem vindos ao meu sensacional post de inauguração no qual iremos falar do comando:
+WAIT!
+A sintaxe é:
+WAIT UP TO x SECONDS.
+Onde
+x
+é um número inteiro positivo, que por acaso é o número de segundos que você quer  esperar…
+Oh wait!
+Agora você deve estar se perguntando, “beleza e por que você está explicando como funciona esse comando tosco?”. Porque esse comando tosco pode ser muito útil: na hora que você estiver testando aquele seu programa demoníaco, que cria todos os documentos do universo e funciona lindo enquanto você debuga, mas que não funciona nem por reza brava quando o funcional testa.
+Existem situações em que o documento criado por um Call Transaction não é gravado instantaneamente. Então se, por exemplo, você criar uma ordem de venda e quiser criar a remessa pra essa ordem no mesmo programa, talvez o documento ainda não esteja disponível e é nessa hora que o funcional vai cair matando em você. Nesse caso você pode colocar um WAIT fixo antes de criar o próximo documento, criar uma lógica para verificar se o documento já está disponível no banco de dados e se não estiver, executar o WAIT, pode colocar essa lógica dentro de um loop (oh meu Deus! um select dentro de loop :lol:) e executar ela indefinidamente. Faça o que seu coração mandar mas lembre-se de controlar isso para não entrar num loop infinito. Ah! e não coloque um WAIT no meio da execução de alguma coisa, porque o WAIT executa um COMMIT automático toda vez em que ele é executado.
+Não era pra ser um post sensacional? Era mas meu computador tá lento pra caramba, meu minisap está com problema e eu não estou conseguindo logar nele, enfim, é o que tem pra hoje. Quando os problemas estiverem resolvidos eu prometo fazer um post mais elaborado.
+Abraços e até a próxima.
+
+
+
+Comentários:
+Henrique Dias (22/03/2012 16:34): OH WAIT!
+Mauro Laranjeira (22/03/2012 14:01): kkkk “Faça o que seu coração mandar” foi o melhor Calma Mauricio, estão saindo 😉 Isso aee Henrique, vlw Brother. Abraços
+  Mauricio Cruz (22/03/2012 16:28): Mauro não sacou a piada. Mauricio wins!
+  Mauricio Cruz (22/03/2012 16:28): Mauro não sacou a piada. Mauricio wins!
+Mauricio Cruz (22/03/2012 13:18): Aeee finalmente! Tava até parecendo uns outros caras do blog que sempre falam de posts mas nunca postam.. OH WAIT

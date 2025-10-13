@@ -1,0 +1,26 @@
+O tesouro perdido dos Consultores Zumbis!
+Autor: Mauricio Cruz
+Data: 24/04/2011 20:25
+
+Faz umas 2 semanas que não temos posts novos aqui no ABAPZombie, pois os autores andam muito atarefados (
+NOT
+😛 ). Em breve continuaremos nossas sagas e outros posts malucos, sempre com bastante informação!
+Mas ei, já que não temos posts novos, porque você não dá uma olhada em alguns
+posts perdidos
+nos nosso
+68 tópicos
+já publicados?
+– Aprenda como funciona aquela função marota que já deve ter te ajudado (e que eu deleto dos comentários hahaha):
+EXTRA! EXTRA! Call Transaction Ignora Authority-Checks!
+– A magia das coisas dinâmicas, demonstrada no Select:
+Desvendando o Select Dinâmico
+– Dicas de Transport Request, o terror de Consultores em 9 de cada 10 Go-Lives:
+Transport Requests – Dicas simples de utilização
+– A chatice da conversão de valores em variáveis:
+Conversão de variáveis – Hoo trocinho chato!!!
+– BOL não é Brasil Online, é sério:
+Relacionamento BOL
+– Se você não tem preguiça, é fácil aprender:
+E-learning e Apostilas – Vasculhando o SDN
+Já estamos preparando mais coisas e em breve elas serão publicadas. Continue ligado no ABAP Zombie para não acabar comendo o cérebro da sua irmã no futuro! 😈
+Abraços!

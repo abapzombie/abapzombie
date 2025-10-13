@@ -1,0 +1,44 @@
+Permitase un Momento de Relax – Quando você acha que já viu de tudo…
+Autor: Mauricio Cruz
+Data: 07/02/2013 09:51
+
+Eu estava preparando um post um pouco mais divertido para voltar do recesso de janeiro, mas tem certas coisas que a gente vê por aí que PEDEM para ser compartilhadas.
+Para você que acha isso zuado:
+CONSTANTS: c_x TYPE c VALUE 'x'.
+Eu lhe apresento o cúmulo do uso idiota de constantes. Com vocês,
+A CONSTANTE DE FUNÇÃO:
+CALL FUNCTION c_cs_bom_expl_mat_v2
+    EXPORTING
+     ....
+Me diz… ONDE ESSE MUNDO VAI PARAR?
+Esse povo da
+Síndrome do Robô
+é muito persistente…
+
+
+
+Comentários:
+Ricardo (17/04/2013 13:15): Que bosta, os cara se acham os pica das galaxias… manow a parada é o seguinte, se ta funcionando ja era.. fecho.
+  Mauricio Cruz (17/04/2013 14:14): Olá Ricardo, tudo bem? Obrigado pelo novo comentário, o seu último comentário foi matador, realmente um divisor de águas para nosso site. Obrigado por ter retornado. E você superou-se com este comentário heim? Vastos conhecimentos sobre desenvolvimento de software. Espero um dia ter você no meu time. Grande Abraço!
+  Mauricio Cruz (17/04/2013 14:14): Olá Ricardo, tudo bem? Obrigado pelo novo comentário, o seu último comentário foi matador, realmente um divisor de águas para nosso site. Obrigado por ter retornado. E você superou-se com este comentário heim? Vastos conhecimentos sobre desenvolvimento de software. Espero um dia ter você no meu time. Grande Abraço!
+Miura (26/03/2013 10:29): Pois é meus caros, tem muito disso. Fora a função “constante” que o Maurício comentou, fui “obrigado” a modificar um programa que estava desenvolvendo para isso: SET PF-STATUS c_pfstatus_0001. Tudo porque a metodologia da empresa não permite hardcode nos programas, e se não tirar, não passa no processo de QA. Onde já se viu, constante num pf-status !!! Coisa de loko !!! A gente ri para não chorar !!! hehehehe. Abs.
+  Mauro Laranjeira (26/03/2013 11:55): Grande Miura, Até sei qual é esse projeto que vc esta falando, rs. Abração
+  Mauro Laranjeira (26/03/2013 11:55): Grande Miura, Até sei qual é esse projeto que vc esta falando, rs. Abração
+João (25/03/2013 14:58): Boas, Funciona quando a nossa tabela de parametrização tem a coluna com o numero de exit e temos de criar a função com o nome pre definido…se é bom ou nao…claro que nao..mas é o que temos.. Abraço
+  Mauro Laranjeira (25/03/2013 15:11): Meu filho… Isso que vc ta dizendo, pode funcionar, pode ser uma boa dependendo do cenário. Mas NÃO usando constante… Tente ativar isso: CONSTANTS: c_teste type char10 value 'ZUMBIE'.
+
+c_teste = 'ABAPZOMBIE'. Fica tranquilo, é um post de humor, não é uma regra. Abs
+  Mauro Laranjeira (25/03/2013 15:11): Meu filho… Isso que vc ta dizendo, pode funcionar, pode ser uma boa dependendo do cenário. Mas NÃO usando constante… Tente ativar isso: CONSTANTS: c_teste type char10 value 'ZUMBIE'.
+
+c_teste = 'ABAPZOMBIE'. Fica tranquilo, é um post de humor, não é uma regra. Abs
+João (25/03/2013 14:45): Amigo…o dono do código…ter calma com as palavras por vezes dava jeito..digo eu..mas pronto.. será uma variável sim..mas com a possibilizade de utilizarmos como quisermos.. vamos imaginar.. temos o nosso codigo standard..sem Z/Y’s Como fazer com que o programador possa fazer alterações ao codigo? Criarmos as nossas proprias funções predefinidas (campos/tabelas e afins) e uma tabela de parametrização para o programador configurar que exits quer que estejam ativas… se é uma boa politica?..talvez nao..mas de mal o menos temos a possibilidade de fazermos o nosso codigo sem andar a fazer alterações no standard..
+  Mauricio Cruz (25/03/2013 14:50): João, eu entendi perfeitamente a sua idéia no primeiro comentário. Note que eu não comentei nada sobre ela. O quanto eu acho ela boa ou não sai do escopo desse post, e não vou discutir isso aqui. O fato é que aqui nest post brincamos com CONSTANTES para nome de função, e não para variáveis. Para a sua lógica funcionar, uma constante não funciona, correto? Portanto, seu primeiro comentário continua sem sentido, mesmo que a lógica esteja correta para VARIÁVEIS no nome da função. Abraços!
+  Mauricio Cruz (25/03/2013 14:50): João, eu entendi perfeitamente a sua idéia no primeiro comentário. Note que eu não comentei nada sobre ela. O quanto eu acho ela boa ou não sai do escopo desse post, e não vou discutir isso aqui. O fato é que aqui nest post brincamos com CONSTANTES para nome de função, e não para variáveis. Para a sua lógica funcionar, uma constante não funciona, correto? Portanto, seu primeiro comentário continua sem sentido, mesmo que a lógica esteja correta para VARIÁVEIS no nome da função. Abraços!
+João (25/03/2013 13:56): Antes de dizer que é bom ou mau, tentem ver um exemplo: tipo… * User exit CALL FUNCTION ‘z_check_exit’ EXPORTING exit = exit_1 IMPORTING e_func    = nome_da_funcao EXCEPTIONS OTHERS     = 1. IF sy-subrc EQ 0. CALL FUNCTION nome_da_funcao …. ENDIF. Isto é bom quando estamos a fazer desenvolvimentos em Standard e queremos dar ao programador a possibilidade de fazer desenvolvimentos sem andar a registar o objeto por exemplo. Se existem maneiras melhores..claro que sim.. mas fica aqui o exemplo do quão util pode ser a declaração de uma constante de função..
+  Mauro Laranjeira (25/03/2013 14:13): Haaa.. yeye.. Descobrimos o dono do código =D
+  Mauricio Cruz (25/03/2013 14:09): Olá João! Desculpe, mas o seu exemplo só funciona se nome_da_função for uma variável/parâmetro , e não uma constante . Constante de função não presta para absolutamente nada. Só se a implementação for MUITO TOSCA, e utilizar uma constante para trocar o nome de várias funções de uma só vez. Acho que eu iria vomitar se olhasse algo assim, mas vai saber. Abs!
+  Mauro Laranjeira (25/03/2013 14:13): Haaa.. yeye.. Descobrimos o dono do código =D
+  Mauricio Cruz (25/03/2013 14:09): Olá João! Desculpe, mas o seu exemplo só funciona se nome_da_função for uma variável/parâmetro , e não uma constante . Constante de função não presta para absolutamente nada. Só se a implementação for MUITO TOSCA, e utilizar uma constante para trocar o nome de várias funções de uma só vez. Acho que eu iria vomitar se olhasse algo assim, mas vai saber. Abs!
+Felipe Tieppo (21/02/2013 11:10): Também já me daparei com isso! E mais! Havia um comentário na declaração da constante, bem esclarecedor por sinal. ex: ‘ ” Módulo de função cs_bom_expl_mat_v2.
+Rodney (15/02/2013 09:30): Genius
+Danilão (07/02/2013 10:44): kkkkkkkkkkkkkk sem palavras.

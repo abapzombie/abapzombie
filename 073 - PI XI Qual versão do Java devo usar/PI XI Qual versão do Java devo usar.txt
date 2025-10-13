@@ -1,0 +1,33 @@
+PI  / XI  – Qual versão do Java devo usar?
+Autor: Mauricio Cruz
+Data: 14/06/2011 10:38
+
+Se você trabalha com PI e já passou por clientes com versões diferentes da ferramenta, provavelmente você alguma vez já deve ter apanhando pra abrir o Integration Repository ou o Integration Directory.
+O PI precisa que vôce tenha uma versão certa do JRE (Java Runtime Environment) instalado no seu computador para que você possa trabalha nessa ferramenta, que é uma das maravilhas tecnotrônicas do novo milênio (?).
+Mas vamos lá, utilize as seguintes verões de JREs (JAVA Runtime Environment) para cada versão do XI/PI:
+XI 3.0 ->
+1.4.2_XX
+PI 7.0 ->
+1.4.2_XX
+PI 7.1 ->
+1.5.XX
+Para baixar a 1.5.XX:
+http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html
+Para baixar a 1.4.2_XX:
+http://java.sun.com/products/archive/j2se/1.4.2_19/index.html
+Você pode baixar somente o JRE, que serve para executar aplicativos Java, ou o JDK (Java Developer’s Kit), que contém todo o pacote de desenvolvimento para criar aplicativos Java e também a JRE.
+“Mas Mauricio, eu tenho que ficar removendo e re-instalando o Java todas as vezes?”
+Depende
+👿
+Eu já pesquisei um pouco, mas não encontrei uma maneira prática de trocar a versão do Java para iniciar o aplicativo do PI. Que eu me lembre, existem duas maneiras:
+– Você pode alterar as configurações do Java Web Start para que ele sempre pergunte qual executável ele deve usar para disparar o aplicativo Java do PI (#boring). Eu acho chato, e vc tem que ficar escolhendo lá a pqp do executável dentro da pasta do JRE que vc vai usar todas as vezes.
+– Ou você faz um procedimento para ativar a versão que você quiser no sistema todo, mudando umas variáveis de sistema. #boringoretorno
+Tem vários tutoriais sobre isso, mas eu simplesmente achei desnecessário pesquisar essa questão a fundo, afinal, nunca estive na situação de ter que acessar dois PIs com versões diferentes (mas com a mesma versão já, e ainda bem que era a mesma versão hahaha), e eu raramente tenho que instalar a 1.4.2_XX, já que hoje em dia a maioria das empresas tem a versão 7.0 ou 7.1.
+Se você achar algo legal, me envie que eu posto aqui com os devidos créditos 🙂
+Abraços!
+
+
+
+Comentários:
+Vinicius Silva (03/07/2014 12:20): Eu não cheguei a trabalhar ainda com versões mais antigas do PI (ou XI) mas venho trabalhando há algum tempo com o PI 7.1 e atualmente estou com o java JRE 1.7.0_55-b14 (um dos mais novos) e, até agora, sem problemas. Quando comecei a trabalhar com este PI sempre ouvia dizer que era melhor usar o Java 6, que o PI não funcionava com o 7, que era o que causava um erro e não iniciava o PI… O que eu descobri posteriormente é que, na verdade, o que causa o erro é ter 2 versões ativas ao mesmo tempo, Java 6 e 7 por exemplo. Quando desativei o Java 6 o Java 7 passou a rodar liso com o PI. Para fazer isso basta ir em Painel de Controle -> Java . No painel do Java, na aba “Java”, clicar em “View”. Vai abrir uma janela com as versões instaladas, basta desmarcar o “Enable” das outras versões, dar ok em tudo e já era.
+José Nunes (08/05/2013 14:32): Em um projeto de migração do XI 3.0 p/ PI 7.3 você acabará tendo essa situação. O grande problema é que nas versões anteriores do PI, por ex. XI 3.0 e PI 7.0, algumas funcionalidades do Repository não estarão disponíveis caso você use a versão errada do Java. Exemplos: “Show Dependencies” e  “Map Selected Fields and Substructures if Names Are Identical” no Message Mapping. Ao meu ver deve-se levar isso em consideração: use sempre a mesma versão do java que o servidor usa. Seja para abrir as ferramentas swing (Integration Repository/ESR e Integration Directory) como para desenvolver objetos como Java Mapping, Adapter Module e Adapters. Como descobrir qual versão do Java o PI no qual estou conectado usa? http://server:port/dir -> Administration -> Software Build Information ou http://server:port/ -> System Information E para a parte de desenvolvimento de Java Mapping/Adapter Module e Adapter, sempre use as libraries do próprio servidor, por motivos de compatibilidade. http://wiki.sdn.sap.com/wiki/display/XI/Where+to+get+the+libraries+for+XI+development

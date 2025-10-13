@@ -1,0 +1,24 @@
+ABAPZombie Guide to ABAP – Parte 20 – CALL CUSTOMER-FUNCTION
+Autor: Mauricio Cruz
+Data: 23/03/2011 14:47
+
+O
+CALL CUSTOMER-FUNCTION
+é um comando usado em diversos lugares do Standard para chamar funções de user-exit definidas na transação SMOD e ativadas pela transação CMOD.
+O comando funciona de maneira similar à chamada de uma função comum (pelo CALL FUNCTION), porém o nome da função será sempre um número que corresponde a um dos componentes listados nas ampliações da CMOD. Confuso? Veja o exemplo abaixo: 🙂
+* Include standard LMR1MF0L
+* Parte da transação MIRO
+
+  CALL CUSTOMER-FUNCTION '001'
+       EXPORTING
+                 I_RBKPV = I_RBKPV
+                 I_YDRSEG = I_DRSEG
+Dando um duplo clique nessa linha, você irá ser levado para a função
+EXIT_SAPLMR1M_001
+que é um componente da aplicação da
+MM08R002
+da SMOD.
+Um programador pode criar a include Z que existende dentro dessa função e implementar a exit.
+Todas as funções definidas como User-Exits na SMOD são chamadas dessa forma dentro do standard, ou seja, você pode colocar um BREAK-POINT no comando CALL CUSTOMER FUNCTION para procurar exits. 😀
+Mais detalhes do uso da SMOD e da CMOD num post específico.
+Abraços!

@@ -1,0 +1,23 @@
+Sequência de teste SE37
+Autor: Mauro Laranjeira
+Data: 08/07/2011 18:47
+
+Ceeeerto Zombizada animada!!!
+#Fail
+Há uns dias atras um funcional aqui do projeto estava “cabreiro” (como diz meu velho).
+Ele queria fazer um teste de uma BAPI, mas a BAPI precisava de COMMIT, como fazer isso na SE37?! 🙄
+Na realidade a necessidade desse Zombie era executar a função BAPI_OUTB_DELIVERY_CHANGE logo após executar a função BAPI_TRANSACTION_COMMIT, isso pela SE37.
+Vamos lá….
+Entre na SE37
+Transação SE37
+Clique em Módulo de função -> Testar -> Sequencia de teste.
+Coloque na sequencia as funções a serem executadas.
+É isso galera, espero ter ajudado.
+Abraços a todos.
+
+
+
+Comentários:
+Marcelo (18/10/2011 08:29): Lembro que uma vez tive que executar um COMMIT para testar uma função e não havia encontrado como fazer, a não ser implementar a função no código, o que deu muito trabalho pois ela não iria atender a solicitação! Valeu!
+  Mauricio Cruz (18/10/2011 08:58): Opa, esse negócio da sequencia ajuda mesmo! 🙂 Abraços!
+  Mauricio Cruz (18/10/2011 08:58): Opa, esse negócio da sequencia ajuda mesmo! 🙂 Abraços!

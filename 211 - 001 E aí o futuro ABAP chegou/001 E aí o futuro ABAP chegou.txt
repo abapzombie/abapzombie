@@ -1,0 +1,67 @@
+#001 – E aí, o futuro ABAP chegou?
+Autor: Mauricio Cruz
+Data: 03/08/2015 09:00
+
+Neste primeiro episódio a
+equipe do ABAPZombie
+discute sobre a pergunta do milhão:  o futuro
+JÁ CHEGOU MESMO
+para você caro ABAPer? Escute nossa visão sincera sobre o tema, entre devaneios enrolados em plásticos-bolha, gêmidos zumbísticos, muitos SÁITIS, tômpero e diversão:
+Críticas? Dúvidas? Sugestões? Conhece algum mendigo que recomende outras marcas de água com gás? Então comente aí embaixo!
+Muito obrigado por ter escutado e até a próxima! \o/
+Links discutidos no episódio:
+Gravação do Webinar da SAP Brasil sobre S/4HANA
+OpenSAP – Conceitos básicos de In-Memory
+OpenSAP – Introduction to Software Development on SAPHana
+OpenSAP – ABAP on HANA
+OpenSAP – Fiori
+OpenSAP – Internet das Coisas (Internet of Things)
+Série de posts do ABAPZombie sobre ABAP on HANA
+Livros da SAPPress
+DEMO – Fiori
+DEMO –
+Gateway
+DEMO –
+HANA
+DEMO –
+Personas
+Recomendações
+Água com Gás
+Newsletter ABAP101 (olhe do lado esquerdo do site)
+Bodecast
+Canal Masterchef no Youtube (tômpero > SCN)
+Pizza Congelada
+
+
+
+Comentários:
+Geovane Alborghetti (31/08/2022 11:41): Ouvindo em 2022… parece que ainda estamos em 2015 kkkkkkkkkk
+Thyago Gonçalves (16/12/2015 10:52): Meu elogio a iniciativa, ficou bem legal! Parabéns!
+Ageu (26/08/2015 10:09): Muito bom!!! Mauro você tem uma linda história!!! 🙁 kkk, curti demais, esperando o 2!!!
+Evandro (19/08/2015 12:03): Excelente PodCast! Ouço diversos PodCast´s, mas agora um voltado ao lado mais SAP da coisa é uma excelente iniciativa, a primeira parte do cast foi um show a parte, as histórias obscuras de todo Abaper é muito boa. Tenho algumas dicas para próximos temas: -> Funcional, eu migrei (E voltei | E gostei | Eu estou tentando), teria que achar os participantes; -> Trabalho com SAP fora do nosso Brasil. -> Mobile. Precisando é só mandar e-mail. Abraços e até logo!
+Max (15/08/2015 11:45): Iniciativa aprovadíssima!!! PostCast muito interessante e muito próximo dos papos no café de muitos Abapers…. Estamos aqui na expectativa do próximo!!!
+Luciano Soares (12/08/2015 09:13): Muito bom, Mauricio Quando sai o próximo ?
+Flavio Furlan (11/08/2015 17:15): Acabei de lembrar de outra coisa ao ouvir as histórias do Mauro. Quando você trabalha em consultoria e é enviado para trabalhar no cliente, você aprende a trabalhar em qualquer buraco. Mesa com farpas de madeira, bancos (não cadeiras) e lugares fedidos. Num go-live desses, fomos para a fábrica e ficamos perto do depósito de cevada. O cheiro era igual a trabalhar num saco de ração para cachorro! Quando vejos o pessoal do escritório reclamando que a mesa não tem gavetas suficientes, lembro desses clientes… trabalhar em consultoria é como ser um sem-teto, nesse caso, um sem mesa… cada dia em um lugar! Essas experiências são boas, isso te deixa forte e forma caráter kkkkk
+  Mauro Laranjeira (12/08/2015 10:20): Certo Furlan, Isso é verdade. Essas coisas nos deixam mais fortes, ja pensei nisso. Trabalhar em contêiner, em lugar muito quente, lugar isolado que o restaurante so serve língua de boi, 3 consultores por mesa, rodar o sap gui em Pentium 3 com 512 de ram entre outros. Fora as logicísticas, pegar barco, acordar cedo pegar vôos e depois horas de ônibus. Me lembro de uma vez de ir para um projeto no interior de SP de moto e uma barra de ferro entrar na minha perna, na estrada, sem suporte. Mas como dizem, a vida de consultor é tranquila =S Abs.
+  Mauro Laranjeira (12/08/2015 10:20): Certo Furlan, Isso é verdade. Essas coisas nos deixam mais fortes, ja pensei nisso. Trabalhar em contêiner, em lugar muito quente, lugar isolado que o restaurante so serve língua de boi, 3 consultores por mesa, rodar o sap gui em Pentium 3 com 512 de ram entre outros. Fora as logicísticas, pegar barco, acordar cedo pegar vôos e depois horas de ônibus. Me lembro de uma vez de ir para um projeto no interior de SP de moto e uma barra de ferro entrar na minha perna, na estrada, sem suporte. Mas como dizem, a vida de consultor é tranquila =S Abs.
+Flavio Furlan (05/08/2015 16:38): Cheguei ao final do primeiro program muito contente, finalmente um podcast ABAP (pelo menos em português)!!! Toma essa Maurício, eu ouvi até o final! Valeu pela recomendação da newsletter do ABAP101!!! Parabéns pela iniciativa, continuem gravando, quem sabe o Fábio se anima e gravamos o nosso 😉
+  Mauricio Cruz (05/08/2015 19:49): Hahahah que bom que curtiu! 🙂 Gravem sim meu, é bem legal! Abs e valeu!
+  Mauricio Cruz (05/08/2015 19:49): Hahahah que bom que curtiu! 🙂 Gravem sim meu, é bem legal! Abs e valeu!
+Henry Yamamoto (04/08/2015 13:46): Fenomenal Mestres. Fenomenal! Espetacular, só tenho essa palavra pra resumir a iniciativa de vocês e a zona que deve ter sido essa gravação. Tenho absoluta certeza que não durou 1hr… rsrsrsrs O grande problema, é que agora eu to aqui… no aguardo do próximo…rsrsrs Quem sabe né….
+  Mauricio Cruz (05/08/2015 19:47): Henry, Guenta ae que já estamos pensando no próximo. Valeu!
+  Mauricio Cruz (05/08/2015 19:47): Henry, Guenta ae que já estamos pensando no próximo. Valeu!
+Thiago Losilla (04/08/2015 10:39): Galera, estão de parabéns! Muito legal esse conteúdo nesse tipo de midia! Ficou Show! Não parem!! Abraçao!! P.S.: Continuem com as historias engraçadas no começo… fiquei até com dó do Mauro! Força ae man!!
+  Mauricio Cruz (05/08/2015 19:47): Mano Losilla, Diz a lenda que o Mauro já passou perrengues piores. Espero que o podcast dure para ele contar todos! haha Abs!
+  Mauricio Cruz (05/08/2015 19:47): Mano Losilla, Diz a lenda que o Mauro já passou perrengues piores. Espero que o podcast dure para ele contar todos! haha Abs!
+Thiago Rabelo (03/08/2015 19:19): Achei bacana a discussão e a melhor frase foi: “a maioria dos usuários são burros”… mijei de tanto rir. Engraçado é que a maioria dos ABAPs estão pouco se fu… para estas novas tecnologias ou estudar algo. Vocês estão de parabéns. Não é só na área de desenvolvimento que se tem esta sensação de frustração, em geral, as soluções SAP são apresentadas com lindas apresentações, péssimo suporte de implementação (documentação…) e poucos clientes se aventurando. Enfim, ficamos louco pra colocar a mão na massa.
+  Mauricio Cruz (05/08/2015 19:45): Valeu Thiago, que bom que curtiu 🙂
+  Mauricio Cruz (05/08/2015 19:45): Valeu Thiago, que bom que curtiu 🙂
+Rafael Freitas (03/08/2015 14:52): Gostei do Podcast, Acho que é um consenso que na pratica não vemos a maioria das soluções “sopas de letrinhas” nos clientes, ficando apenas no abap antigão mesmo.. são vários motivos na minha opinião, comecei a listar aqui vou completar… Parabéns pela iniciativa, estou acompanhando..
+  Mauricio Cruz (03/08/2015 16:39): Valeu pelo comentário Rafael! Pois é, realmente acho que demora um pouco mais para as coisas novas acontecerem na prática. Mas uma hora chega… 🙂 Abs!
+  Mauricio Cruz (03/08/2015 16:39): Valeu pelo comentário Rafael! Pois é, realmente acho que demora um pouco mais para as coisas novas acontecerem na prática. Mas uma hora chega… 🙂 Abs!
+Paulo Rios (03/08/2015 11:58): Quando começou eu fiquei em dúvida se estava ouvindo o podcast certo mesmo. A história dos perrengues do Mauro foi muito engraçada! Quanto ao tema do cast, achei bem interessante. Devo dizer que consegui entender um pouco melhor essa sopa de letrinhas da SAP com um dos posts do ABAPZombie onde o Maurício desmistificou um pouco tudo isso. Fiz uns dois cursos do Open SAP, sendo um deles uma introdução ao S/4HANA que fiz até o fim, um de FIORI que não terminei por falta de tempo (e pq era muito chato) e um outro sobre HANA. Por enquanto não vi nada disso no mundo real, mas ainda assim acho que o Open SAP é um ótimo lugar pra aprendermos o básico dessas novas tecnologias. Abraços a todos e que venha o segundo episódio. Vou aguardar tomando minha água com gás e comendo pizza congelada.
+  Mauricio Cruz (03/08/2015 14:28): Hahhaha valeu Paulo! As histórias serão regras daqui para frente, então pode esperar mais contos malucos no início dos episódios 🙂 A OpenSAP é realmente bem legal para um contato primário com essas tecnologias, e não substitui de maneira alguma estudos aprofundados, como livros da SAP Press. Indico para todo mundo que quer desvendar a sopa de letrinhas… Valeu por ter ouvido, boa pizza e cuidado com a ressaca da água com gás. Abs!
+  Mauricio Cruz (03/08/2015 14:28): Hahhaha valeu Paulo! As histórias serão regras daqui para frente, então pode esperar mais contos malucos no início dos episódios 🙂 A OpenSAP é realmente bem legal para um contato primário com essas tecnologias, e não substitui de maneira alguma estudos aprofundados, como livros da SAP Press. Indico para todo mundo que quer desvendar a sopa de letrinhas… Valeu por ter ouvido, boa pizza e cuidado com a ressaca da água com gás. Abs!
+Sarmento (03/08/2015 11:57): Galera passando pra dizer que ficou show de bola! Agora é esperar o próximo capítulo da série, ah não posso deixar de desejar melhoras ao Mauro e cara toma um banho de sal grosso que tá osso o esquema ai hein… Abraços manos e Mina! Sarmento
+  Mauro Laranjeira (03/08/2015 13:50): Sarmento, Obrigado, gostamos muito desse primeiro, muito difícil determinar uma estrutura, mas ficou engraçado. Vlw a força, as dificuldades estão ae para nos deixarem mais fortes… to pique o hulk.. rs… Abs
+  Mauro Laranjeira (03/08/2015 13:50): Sarmento, Obrigado, gostamos muito desse primeiro, muito difícil determinar uma estrutura, mas ficou engraçado. Vlw a força, as dificuldades estão ae para nos deixarem mais fortes… to pique o hulk.. rs… Abs

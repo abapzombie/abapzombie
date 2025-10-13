@@ -1,0 +1,25 @@
+ABAPZombie Guide to ABAP – Parte 33 – WAIT UNTIL
+Autor: Henrique Dias
+Data: 27/03/2012 08:00
+
+Continuando
+a espera dos comandos
+os comandos de espera, temos o
+WAIT UNTIL.
+A sintaxe é:
+WAIT UNTIL expressão [UP TO x SECONDS].
+Onde
+expressão
+é uma expressão lógica qualquer (lembra do IF né?) e
+x
+é um número inteiro positivo, que é o tempo limite que você quer esperar.
+O WAIT UNTIL só deve ser utilizado depois de uma RFC assíncrona, para aguardar até que alguma expressão seja válida. Aproveitando o
+post
+da Daiane, vejam o exemplo abaixo:
+WAIT UNTIL v_task_ativa = 0.
+No exemplo do post dela, o programa vai esperar até que todas as tasks sejam executadas (v_task_ativa = 0) e quando essa expressão for verdadeira o programa continua a execução.
+Ela também poderia ter usado o UP TO x SECONDS, que definiria o tempo limite de espera.
+WAIT UNTIL v_task_ativa = 0 UP TO 60 SECONDS.
+Dessa forma o programa iria esperar até a expressão ser verdadeira ou até o limite de 60 segundos, o que acontecer primeiro, e continuaria a execução em seguida.
+Se você executar o WAIT UNTIL sem uma RFC assíncrona ativa, o comando será ignorado e a execução do programa continuará a partir do próximo comando.
+Fim dos posts de comandos preguiçosos, abraços!

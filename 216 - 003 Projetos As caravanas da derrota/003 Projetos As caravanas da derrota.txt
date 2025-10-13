@@ -1,0 +1,33 @@
+#003 – Projetos: As caravanas da derrota
+Autor: Mauricio Cruz
+Data: 10/11/2015 09:00
+
+Todo mundo tem alguma história doida para contar dos projetos onde trabalhou. Neste episódio eu, o Mauro, a Daiane e o Léo compartilhamos algumas dessas tristezas, bizarrices, tragédias e felicidades. Aproveite e conte também as suas histórias nos comentários!
+Críticas? Dúvidas? Sugestões? O seu chefe também gritou com a sua mãe? Então comente aí embaixo!
+Muito obrigado por ter escutado e até a próxima! \o/
+Links e recomendações do episódio:
+Programa standard – FDT_TEMPLATE_FUNCTION_PROCESS
+Livro ABAP – O Guia de Sobrevivência do Profissional Moderno
+The Daily WTF
+Coding Horror
+O maravilhoso mundo do Leo:
+GEBRABA – Grande Empresa Brasileira do Ramo Bancário
+CASOSO – Anagrama para uma cidade da Grande SP
+GESVICO – Grande Empresa Suiça de Vidros e Construção
+
+
+
+Comentários:
+Vinícius (08/03/2016 10:17): Comprei o Livro. Achei muito bom. Recomendo a todos.
+  Mauricio Cruz (18/03/2016 10:04): Muito obrigado Vinícius, feliz por você ter gostado! 🙂 Abs!
+  Mauricio Cruz (18/03/2016 10:04): Muito obrigado Vinícius, feliz por você ter gostado! 🙂 Abs!
+Vinícius (08/03/2016 10:16): kkkk. Galera acabei de ouvir e divulgar os 3 podcasts. Passei mal de rir com a desgraça alheia! Cadê o episódio 4?
+Paulo (08/12/2015 16:18): “A transação está com erro no vegetal” HAUHAUHAUHAA chorei
+Vagnão (17/11/2015 16:33): No projeto da GESEMOGE (Grande Empresa de Sementes Modificadas Geneticamente), no final do século passado, os Abapers eram identificados por seus usuários: ABAP01, ABAP02, etc. O ABAP03 passou a ser conhecido por ABAP 30 Horas (a planilha dele dava esse tanto de horas por dias). Eis que o ABAP03 conversava com o ABAP09 (seu companheiro na república de Abapers), falando sobre o domingo, onde ambos se declaravam muito cansados. E dizia que chegou em casa no domingo final da tarde, vindo do projeto, comprou meio quilo de salame e duas cervejas. Sentou-se e degustou o petisco. Porém, a forma como disse isso, no  meio do projeto foi: “Cê viu só, sô! Ontem foi meio quilo de salame numa sentada só!
+Custodio (16/11/2015 22:55): Fala galera, Ri bastante com esse podcast 😀 Algumas das lembracas que tenho: 1- Eu estava ensinando as saudosas field exits pra um newbie de origem niponica, a quem eu carinhosamente chamava “Fujitsu”. Entao falei pra ele: “pra ter certeza que esta ‘passando’ pela exit, coloque uma mensagem de erro qualquer”, e escrevi na primeira linha: message e398(00) with ‘Teste Fujitsu’. O elemento de dados nao era muito usado, um tal MATNR, entao alguns minutos depois fui tomar um cafe e uns 10 funcionais vieram em minha direcao perguntando se havia algum teste maluco acontecendo com impressoras e  falando que nao conseguiam cria/alterar materiais, lista tecnica, pedido de compra, ordem de venda etc por causa do erro “Teste Fujitsu”. Expliquei a situacao, assumi a culpa e desativei a exit, mas mesmo assim o coitado do Fujitsu ficou com a fama 😀 2 – Na mesma empresa um outro programador fez um programa que alterava o preco de materiais em uma range (acho que nao havia transacao MASS ainda). pra testar o programa, o rapaz deixou um hardcode de preco = 500. Isso foi pra producao e todos os materiais tiveram seus precos alterados pra R$ 500. abraco! Custodio
+  Vanessa (15/03/2016 21:52): Kkkkkkkkkk morri de rir
+  Vanessa (15/03/2016 21:52): Kkkkkkkkkk morri de rir
+Furlan (13/11/2015 19:01): “Desgraça pouca é ABAP” essa foi para a história! Aposto que daria para fazer uma série de anos com histórias de projetos! Eu tenho algumas: 1. o telefone não parava de tocar, ora um funcional, ora outro, ora engano. Aí, para fazer graça  para o pessoal perto de mim, atendi uma dessas ligações dizendo “Delegacia de Polícia, pois não”, já que o telefone parecia de uma delegacia. Era o gerente do outro lado procurando um dos coordenadores… 2. Num projeto em que os abapeiros ficavam em uma jaula, quero dizer, sala separada e alguns funcionais vinham para ouvir um pouco de besteira, afinal, o projeto pode estar pegando fogo, mas “The zueira never ends!”. 3. Numa das minhas turmas, meus alunos descobriram a infame TH_POPUP e começaram a abusar da minha paciência. Daí eu decidi alterar a FM standard e acabei de ferrar uma parte do Core do sistema e nenhuma tcode funcionava mais, nem o login do cara de basis!!!! Resultado, voltar backup e perder um dia de treinamento. 4. Tinha um programa chamado ZP_SOBE que vocês já devem saber para que serve, rodado em produção e que rendeu uma bela comida do gerente. 5. O outro caso do estagiário (dessa não fui eu) que subiu uma request que desativou TODAS as exits (ou o suficiente) para dar DUMP nas VAs & cia. Resultado, noite varada corrigindo tudo. Causos são o que não faltam 🙂 Abraços! Flavio PS: Maurão, meus sentimentos pela sua vovó
+  Mauro Laranjeira (16/11/2015 19:12): Vlw Furlan 😉 Curti a 3, hahaha… eu tbm não sabia que tinha esse impacto todo, rs… Abraço
+  Mauro Laranjeira (16/11/2015 19:12): Vlw Furlan 😉 Curti a 3, hahaha… eu tbm não sabia que tinha esse impacto todo, rs… Abraço
+Allan (12/11/2015 10:27): KKKKKKKKKKKKKKKKKKKKK… CADEDI DE SEDU … huaauhaua onde fica o GEBRABA no CASOSO… kkkkk

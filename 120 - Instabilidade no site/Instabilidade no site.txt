@@ -1,0 +1,11 @@
+Instabilidade no site
+Autor: Mauricio Cruz
+Data: 23/01/2012 13:00
+
+Pessoal,
+De um tempo para cá estamos percebendo que o site está instável, e alguns visitantes podem estar recebendo mensagens de que o site está offline, ou mesmo que algumas das páginas “não foram encontradas”.
+Estamos trabalhando para resolver esses problemas. Por enquanto, se você entrar em qualquer página do site e receber a mensagem de “página não encontrada”, tente acessar novamente após alguns minutos.
+Agradecemos se você puder nos informar problemas de acesso através da
+nossa página de Contato.
+Obrigado!
+Update: Galera, a culpa foi minha, burrada na hora de configurar umas coisas no wordpress 😛 Acredito que agora está tudo resolvido. Abraços!

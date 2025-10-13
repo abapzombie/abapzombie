@@ -1,0 +1,47 @@
+ABAP Zombie Screen Examples – A Tela de Seleção Turbo
+Autor: Mauricio Cruz
+Data: 30/11/2011 12:52
+
+Este é o primeiro código de exemplo criado pelo ABAP Zombie, é a tela “Megazord” citada nos posts da sequência “Tela de Seleção Turbinada”, que contém todas as coisas que eu comentei (é coisa pra caramba, mas ficou bacaninha haha :D).
+Vamos aos dados!
+Nome:
+ABAP Zombie Screen Examples
+Referências:
+Tela criada com as dicas citadas nos seguintes posts:
+Tela de Seleção Turbinada – Parte 1 – Botões
+Tela de Seleção Turbinada – Parte 2 – Tabstrip
+Tela de Seleção Turbinada – Parte 3 – Esconder Elementos
+Tela de Seleção Turbinada – Parte 4 – Novas Telas!
+Tela de Seleção Turbinada – Parte 5 – Parafernálias para sua Tela
+Descrição:
+Tela criada para ser usada de exemplo para fins de estudos, ou como guia rápido para ser usada no dia-a-dia. Contém subscreens, tabstrips, botões na barra e na tela, ícones, controle de input do usuário nos campos e controle de mensagens.
+Funcionamento:
+Esta é a tela de seleção. Parece simples, mas não é! Note os ícones, comentários e ícones, alem da barra horizontal e espaço entre linhas.
+Clicando no botão "Plant Additional Data", irá aparecer um pop-up com um tabstrip, para preenchimento dos dados.
+Clicando no botão "Storage Location Additional Data", irá aparecer um pop-up simples, para preenchimento dos dados.
+Caso o user não queira colocar os dados adicionais, ele pode colocar direto o número da planta. É só clicar no botão...
+...e os campos adicionais vão ficar desabilitados, além de um novo parâmetro aparecer na tela principal. Note que o comentário vai mudando, e tem até um botão caso o user queira voltar atrás e preencher os dados.
+A parte de Storage Location tem a mesma funcionalidade.
+E finalmente, se o user preencher os dados adicionais, a mensagem embaixo também muda!
+Download do código:
+ABAP_ZOMBIE_Selection_Screen_Examples
+Instruções:
+Crie um report Z ou Y como objeto local. Copie e Cole o conteúdo do arquivo acima para o programa. Ative, aperte F8 e divirta-se! (para quem não se diverte programando, não vai ter diversão, mas talvez poupe o seu tempo :roll:).
+Versão do SAP:
+6.0, mas deve funcionar nas outras, com poucas alterações. Se alguém adaptar, por favor, compartilhe!
+Edit 06/01/10: Conforme comentário da Daiane, também funciona na 4.7 sem precisar alterar nada. Valeu Daiane!
+Caso você tenha alguma dúvida ou descobriu algum problema no código, poste nos comentários que vamos dar uma olhada e corrigir. Sugestões também são sempre bem-vindas! 😀
+Abraços!
+
+
+
+Comentários:
+Deuana (06/04/2021 11:23): Olá, os links para os tutoriais não estão funcionando mais. Foram desativados? Estou tentando replicar a lógica do pop-up com tabstrip, mas como está dando erro ter acesso ao tutorial seria de grande ajuda.
+Claudio Reis (07/10/2020 23:27): Gostaria de saber como faço para quando clicar num checkbox esconder a lista de parametros na tela.. e Quando deflegar eles aparecerem . Vi varios exemplos na internet mas nenhum deu certo. O mais proximo que vi foi clicar e quando executar ele desabilitar mas gostaria de ver ele dinamico sem ter q clicar no executar
+hugo_dc (05/04/2013 20:37): It would be nice if you upload the ABAP code to your GitHub repository, not only the NUGG objects 🙂 Best regards, @hugo_dc
+cristovao sousa (02/10/2012 18:57): Existe alguma possibilidade de salvar uma variante para um programa online ? Varias vezes tive essa necessidade,, e fiz uma zmegagambi_jdi!!  🙂 Tem alguma forma inteligente de fazer ??   ABraço !
+  Mauricio Cruz (03/10/2012 14:40): Cara, até onde eu sei, só no “gato” mesmo hehehehe. Nunca vi um jeito bacana de fazer isso. Inclusive vou pesquisar.. quem sabe eu ache alguma coisa pra compartilhar por aqui 🙂 Abs!
+  Mauricio Cruz (03/10/2012 14:40): Cara, até onde eu sei, só no “gato” mesmo hehehehe. Nunca vi um jeito bacana de fazer isso. Inclusive vou pesquisar.. quem sabe eu ache alguma coisa pra compartilhar por aqui 🙂 Abs!
+Marcelo Correia (22/06/2012 17:35): Cara ! eu achei muito legal a iniciativa e o site , ja curti no face Claro ! Me da umas dicas ai …  programo a 4 anos , conheço delphi , um pouco de clipper e Xharbour ,  tenho muita vontade  entrar no mercado ABAP , mas tenho medo de investir uma grana pra fazer o curso e nao conseguir emprego na area . Oque tem a me dizer ? Abraços !!
+  Mauricio Cruz (25/06/2012 09:15): Minha sugestão inicial: leia todos os posts da nossa sessão “como iniciar no mundo SAP/ABAP”. http://www.abapzombie.com/guias-zumbis/quero-trabalhar-com-sap-e-abap-o-que-devo-fazer/ Você vai ler vários comentários de pessoas na mesma situação que a sua 🙂 Abraços e obrigado!
+  Mauricio Cruz (25/06/2012 09:15): Minha sugestão inicial: leia todos os posts da nossa sessão “como iniciar no mundo SAP/ABAP”. http://www.abapzombie.com/guias-zumbis/quero-trabalhar-com-sap-e-abap-o-que-devo-fazer/ Você vai ler vários comentários de pessoas na mesma situação que a sua 🙂 Abraços e obrigado!

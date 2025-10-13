@@ -1,0 +1,28 @@
+CRM_ORDER_MAINTAIN Nunca mais, UFA!
+Autor: Mauro Laranjeira
+Data: 30/04/2014 15:36
+
+Olá pequeno aprendiz de criação de DUMP.
+Para você que é
+vida loka
+do SAP CRM, sabe como a SAP
+zuou geral quando
+desenvolveu a função CRM_ORDER_MAINTAIN, diversos parâmetros para preenchimento e precisamos contar com a sorte para o funcionamento. Como alternativa podemos usar a orientação a objetos da camada BOL.
+Leia mais sobre a camada BOL neste post
+.
+Quem desenvolve no SAP CRM  acaba se acostumando com o fabuloso mundo das classes e entities, até se esbarrar em uma BADI e acaba se entregando a função CRM_ORDER_MAINTAIN.
+Pois bem amiguinho zumbie, há esperanças.
+Segue um exemplo de uma implementação da BADI ORDER_SAVE
+DATA: o_entity TYPE REF TO cl_crm_bol_entity.
+
+ o_entity = cl_crm_bol_core=>get_instance( )->get_root_entity( iv_object_name = 'BTAdminH'
+                                                               iv_object_guid = iv_guid ).
+Assim podemos utilizar a camada BOL para inserir, alterar e deletar objetos da ordem.
+Lembrando sempre de usar o modify da classe CL_CRM_BOL_CORE para as alterações serem efetivas. Exemplo:
+cl_crm_bol_core=>get_instance( )->modify( ).
+CORREÇÃO
+A partir do SAP CRM 713 com Support Package 005 (SAPKU71305), a utilização da camada BOL dentro da BADI ORDER_SAVE não é recomendado 🙁 pois o RAISE DO_NOT_SAVE não funciona. Segue a nota
+1931099 – Implementation of Badi ORDER_SAVE does not Work in WebUI
+com a explicação SAP.
+Liberte-se da CRM_ORDER_MAINTAIN.
+Abraços a todos

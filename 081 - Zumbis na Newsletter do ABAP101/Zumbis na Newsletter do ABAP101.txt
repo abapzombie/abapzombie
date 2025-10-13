@@ -1,0 +1,21 @@
+Zumbis na Newsletter do ABAP101!
+Autor: Mauricio Cruz
+Data: 21/07/2011 15:42
+
+Pessoal, quem acompanha o blog sabe que nós sempre linkamos artigos do blog
+abap101.com
+por aqui. Recentemente eles criaram uma Newsletter para divulgar artigos do blog via e-mail, e alguns posts do ABAPZombie vão aparecer por lá, mais precisamente os posts da série
+ABAPZombie Guide to ABAP
+.
+Portanto, pare o que você estiver fazendo agora, olhe no menu lateral aqui do blog e
+inscreva-se na Newsletter do ABAP101
+(o box está abaixo do Twitter/Hitcount, eu desenho uma flexa indicativa:
+—>
+).
+Agradeço bloguicamente (blog + publicamente, se você não entendeu 😛 ) a galera do abap101 pela força. Agradeço mais ainda a galera que acessa sempre o ABAPZombie. Rumo aos 100k hits! 😀
+Abraços a todos que se inscrevem em Newsletters!
+
+
+
+Comentários:
+Fl&aacute;vio Furlan (22/07/2011 07:46): Valeu pela indicação! Seguimos acompanhando a saga de você em combater consultores zumbis!

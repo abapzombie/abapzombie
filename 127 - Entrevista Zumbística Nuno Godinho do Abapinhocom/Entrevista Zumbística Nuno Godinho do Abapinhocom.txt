@@ -1,0 +1,67 @@
+Entrevista Zumbística: Nuno Godinho, do Abapinho.com
+Autor: Mauricio Cruz
+Data: 23/02/2012 10:00
+
+Você já se perguntou sobre como o mundo SAP funciona em outros países? Ou já escutou rumores de que “no exterior tem bastante trabalho para SAP”, mas nunca soube se a informação é verídica?
+Pois bem! Na nossa saga para ajudar você a se livrar desse vício em comer cérebros (afinal, você é um Consultor Zumbi!), entrevistamos
+Nuno Godinho
+, um ABAPer experiente, que mora e trabalha em Portugal.
+Além do envolvimento com SAP desde 1998, Nuno possui um site MUITO legal de ABAP, o
+abapinho.com
+. O site, óbviamente, se destaca por ter um layout
+muito familiar
+para a família ABAP, e também pelas diversas dicas úteis para utilizarmos nos nossos trabalhos. Se você não conhece, acesse
+AGORA!
+E vamos à entrevista! E se depois de ler você ainda tiver alguma pergunta adicional, pode deixar nos comentários! O Nuno gentilmente disse que irá responde-lás!
+1. Primeiramente, nos diga quem é você, com o que você trabalha!
+Sou engenheiro informático e a minha profissão é consultoria ABAP, área da qual sempre gostei muito. Também já trabalhei em web e há 12 anos atrás tive uma empresa onde criava e geria portais de comunidades online. Mas sou uma daquelas pessoas que sofrem a sina de não se interessarem apenas por uma área. A engenharia não me chega e preciso de a complementar com uma vertente criativa para me sentir vivo. Gosto muito de escrever e de artes plásticas. Nos últimos anos tirei um curso de artes plásticas, mais concretamente vídeo-arte. Durante esses anos trabalhei metade do ano e estudei a outra metade. Se conseguisse sobreviver das artes, trocaria a consultoria por um atelier onde pudesse criar, escrever, criar, escrever. Não sendo possível, vou tentando conciliar, mas não é fácil. O meu trabalho não-ABAP online:
+http://projects.nunogodinho.com/
+2. Há quanto tempo você trabalha com SAP? Como começou nessa área?
+Trabalho com SAP desde 1998. Comecei logo como consultor freelancer, convidado por uns amigos que tinham um pequena empresa de 5 ABAPers todos freelancers, todos muito bons. Colocaram-me durante 1 mês num cliente que sabia que eu era novato e onde tive oportunidade de aprender com a prática sem ter de fingir que era perito. Passado um mês mandaram-me aos bichos. Ainda hoje somos todos amigos e por vezes trabalhamos juntos. Tive sorte pois hoje seria difícil ou mesmo impossível começar já como freelancer e tão bem apoiado.
+3. Existe muita procura por profissionais que trabalham com ABAP em seu país?
+Bem, Portugal está em crise e, como tal, as coisas não estão como foram no início do século. Até porque as grandes empresas já têm todas SAP e por isso praticamente já não há grandes projectos de implementação. Ainda assim parece que a crise ainda não chegou ao ABAP e continua a haver muita procura. Estou para ver por quanto tempo.
+4. Como é a maneira de contratação para os profissionais de ABAP em seu país?
+Normalmente são contratados por consultoras que lhes dão formação e depois os colocam em clientes. Passados alguns anos, alguns deles despedem-se para arriscar tentar a vida de freelancer, mas normalmente vão fazê-lo para o estrangeiro e muitos acabam por ficar por lá. Outros voltam para as consultorias. Não conheço muitos freelancers a trabalhar em Portugal.
+5. Quais as maiores dificuldades que você enfrenta no mercado ABAP do seu país?
+Até hoje sempre que quis tive trabalho por isso não posso dizer que tenha sentido dificuldades em relação ao mercado. Estive já vários períodos sem trabalhar em SAP (nos anos em que tive a empresa e mais recentemente quando estive a estudar) e sempre que voltei arranjei trabalho muito rápido. No entanto temo que, por ser freelancer, quando a crise afectar esta área poderá tornar-se muito difícil para mim arranjar trabalho. Espero que os 14 anos de experiência que já tenho em ABAP ajudem…
+Em termos económicos, trabalhando aqui em Portugal ganho menos do que noutros países da Europa. Gosto muito de morar em Portugal mas durante os anos em que estudei artes plásticas trabalhei na Letónia, Suiça e Noruega pois lá pude juntar mais dinheiro mais depressa para conseguir ficar uns meses a estudar sem trabalhar. Mas não me posso queixar pois, mesmo em Portugal, esta é uma área onde se ganha muito bem.
+Em termos técnicos, o mais difícil é enfrentar tanto código mal feito. A maior parte dos ABAPers (mesmo quando formados em programação!) pensa que o ABAP é como o BASIC dos anos 80 e não usa OO, abusa das variáveis globais, não modulariza nem reutiliza o código, não usa constantes, e escreve código com uma “caligrafia” péssima. Dá dó. Mas já vi que é assim no mundo todo.
+6. Vocês possuem alguma comunidade específica de desenvolvedores ABAP?
+Infelizmente não. Essa foi, aliás, uma das razões que me levaram a criar o Abapinho, que não é uma comunidade mas um dia pode vir a ser. Essa e também o facto de sentir que há poucos conteúdos técnicos de qualidade escritos em língua portuguesa (ainda não conhecia os Zombies eh eh!). Eu costumo trocar ideias com um conjunto de amigos ABAPers mas é de forma informal, não há comunidade. Noto que mesmo as consultoras que têm dúzias e dúzias de ABAPers não têm forma de eles poderem comunicar eficazmente uns com os outros e acabam por, no máximo, trocar uns emails entre eles. Um desperdício de conhecimento.
+7. Quais as principais dificuldades que um novato encontrar para começar a trabalhar com ABAP em Portugal?
+Os novatos que tenho visto costumam ter boas oportunidades para trabalhar em projectos interessantes. Acho que a principal dificuldade é terem uma má formação logo no início. Sei de muitos casos de jovens recém-formados que são inteligentes e que na faculdade programavam em Java e estavam à vontade com conceitos de OO e depois parece que na formação de ABAP lhes fazem uma lobotomia e começam a programar tudo mal, como eu descrevi acima. Quando lhes pergunto porquê eles explicam que é assim que aprenderam ABAP, que julgavam que era assim que tinha de ser.
+8. O mercado dá chances para o profissional trabalhar com outras tecnologias SAP, ou é difícil conseguir aprender coisas novas?
+Depende inteiramente do cliente. Há clientes que só querem “reports” e “layouts” enquanto noutros é possível experimentar e aprender outras tecnologias, sejam elas SAP ou não. Falando da minha experiência, nos vários clientes onde estive tenho encontrado muita variedade de coisas para fazer e têm-me dado muita liberdade para decidir como implementar o que me pedem. Aproveito essa liberdade para aprender coisas novas, experimentando diferentes áreas e abordagens. Passados alguns anos de ter começado a trabalhar em ABAP lembro-me de que me senti farto e maçado e nada motivado para aprender coisas novas. Depois estive afastado uns anos e nestes últimos 3 anos o meu interesse por aprender aumentou muito. Em parte também estimulado pelo que vou escrevendo no Abapinho. E estou a descobrir uma série de possiblidades, mesmo dentro do ABAP, que nunca tinha explorado. Um exemplo disso é a programação por objectos em ABAP que já está aí há tanto tempo e continua quase ignorada. Só adoptei por completo OO em ABAP quando em 2009 me convidaram para, durante 1 ano, em vez de fazer consultoria, desenvolver um produto de raiz (
+http://www.promptar.com
+) que envolveu uma conector com SAP e, como tive oportunidade de conceber tudo do zero, optei por fazer tudo 100% Object ABAP e foi um abre-olhos. Por tudo isto, acho que eu tenho tido sorte em poder aprender muitas coisas novas.
+Do que observo do mercado, vejo alguns colegas que passam de ABAP para BI ou para PI ou que acabam por se tornar funcionais por isso diria que há abertura para evolução e aprendizagem.
+9. A certificação ABAP faz diferença para as contratações?
+Para quem tem já muitos anos de experiência é indiferente. Mas traz benefícios para alguém com apenas 1 ou 2 anos de experiência. Vejo muitos colegas a certificar-se. No entanto, ainda que faça diferença, diria que não é fundamental e parece-me que traz mais vantagens às consultoras do que aos consultores: uma das razões que leva uma consultora a oferecer a certificação aos seus trabalhadores é poder vendê-los mais caros se forem certificados.
+10. Quais são os maiores sites para troca de experiência de programadores em Portugal?
+O Abapinho, claro! Ok, é verdade que para já a troca de experiência ainda é practicamente só numa direcção… mas é dar-lhe tempo. Além do Abapinho, o mais perto de uma comunidade de programadores é o Linkedin e não só não é português como serve para trocar empregos e não experiência. Talvez haja outras, mas não conheço.
+Claro que as pessoas podem perguntar mais coisas à vontade. Aqui estão alguns links. O 3º tem o e-mail do Abapinho que podem usar para me contactar directamente:
+Abapinho
+:
+http://www.abapinho.com/
+Site pessoal
+:
+http://nunogodinho.com/
+Contacto
+:
+http://abapinho.com/acerca/
+Abraços,
+Nuno
+E não se esqueça de que você pode fazer perguntas adicionais ao Nuno aí nos comentários!
+
+
+
+Comentários:
+Juninho (15/05/2014 18:42): Li apenas hoje, mas já sou “sócio” do abapinho faz tempo, muito bacana a entrevista, parabéns ABAPZOMBIE e parabéns Nuno!!!
+Nuno Godinho (06/03/2012 19:52): E eu estou cá para verificar isso!
+Mauricio Cruz (06/03/2012 19:08): Se algum dia o Rodney for parar em Portugal trabalhando como ABAP, vai ter que usar uma camiseta do ABAPZombie e do ABAPinho como divulgação heim! heheheheheheheheh 😀
+Rodney Amancio (06/03/2012 17:22): Obrigado pela resposta Nuno. Eu tenho um pouco de vontade de ir trabalhar fora. Quem sabe um dia…rs
+Nuno Godinho (06/03/2012 16:53): Eu diria que sim. Há dezenas de milhares de brasileiros a viver em Portugal e penso que a única coisa que precisam é de um contracto de trabalho para poder pedir residência. Não sei pormenores e deve variar conforme o país. Mas penso que te podes informar aqui: http://www.youtube.com/watch?v=2HtcJ2mCiNk&feature=player_embedded Nuno
+Rodney Amancio (06/03/2012 16:44): Obrigado pela resposta Nuno. Essa prática do visto de trabalho é comum? Obrigado!
+Nuno Godinho (06/03/2012 11:02): Olá Rodney, Desculpa a demora mas não sabia e tive de investigar. Falei com um administrador de uma das maiores empresas de consultoria SAP em Portugal (500 pessoas) que me disse que cidadania não é possível, mas que seria possível arranjar um visto de trabalho, algo que na prática permite que fiques a morar em Portugal. Abraço, Nuno
+Rodney Amancio (01/03/2012 09:37): Parabéns pela entrevista e parabéns ao Nuno, pois acompanho o site Abapinho.com e realmente possui um conteúdo interessante. Eu sou Abaper a 5anos e tenho fome de aprender. Então sempre visito o ABAP101, Zombie e Abapinho em busca de conhecimento. Aqui onde trabalho estou tentando mudar a cultura para Documentação e ABAP OO. É dificil mas vamos conseguir..rs Nuno, gostaria de tirar uma dúvida. Recentemente estive na Espanha e em Portugal. Tenho alguns amigos na Espanha. Um dos meus amigos conseguiu a cidadania através de uma empresa que resolveu investir nele. Em Portugal,  no mundo SAP existem empresas que fazem isso? Obrigado!
+Allan Diego Pires de Oliveira (28/02/2012 13:13): Gosto muito do site do Nuno Godinho, pois ele fala de coisas que sempre nos ajuda no dia-a-dia, assim como o Abap Zombie e o ABAP101. Pela entrevista do Nuno, me parece, que seja aqui no Brasil ou em Portugal, é tudo igual para quem esta começando. Parabéns pela iniciativa! Abraço Petter

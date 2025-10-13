@@ -1,0 +1,24 @@
+Pérolas de um mundo ZUMBÍSTICO – Parte 2 – TUDO PRA FUGIR DO HARDCODE
+Autor: Mauro Laranjeira
+Data: 15/06/2012 10:30
+
+A galera Zumbi esta ficando a cada projeto mais criativa, vamos nos armar para combater essa guerra até que o último
+ABAP Criativo
+Zumbi não esteja
+vivo
+de pé.
+Tarefa:
+Utilizar um Hardcode.
+Solução implementada:
+call function 'BAPI_TRANSACTION_COMMIT'
+EXPORTING
+wait = sy-abcde+23(1).
+Pérola enviada por Haroldo Doratiotto
+Meu caro Haroldo Doratiotto essa é muito clássica, projeto sem uma dessas não é projeto. rs
+Continuem enviando as suas pérolas, este inimigo é mais poderoso do que possamos imaginar.
+Abraços a todos os anti-zumbis, FORÇA!
+
+
+
+Comentários:
+Bruno Lucattelli (15/06/2012 10:49): Bem quando você estava quase certo de que já tinha visto todo o tipo de mente doentia… …te mostram isso! /KILL

@@ -1,0 +1,114 @@
+Existe vida após o ABAP?
+Autor: Mauricio Cruz
+Data: 31/05/2017 15:07
+
+Mais de mil setecentos e noventa e três anos se passaram desde a última vez que escrevi pro ABAPZombie. O motivo? Não trabalho com SAP e ABAP há mais de um ano! (se você não sabia, então aproveite e comece a escutar o
+nosso podcast
+– já falei um pouco disso por lá).
+Apesar dos campeões de audiência™ aqui do site serem as
+dicas de como entrar no mundo SAP
+, cansei de encontrar veteranos que sonham em quebrar os grilhões alemães para respirar novos ares. Neste post, irei contar como foi a minha transição para novos mundos tecnológicos na esperança de acalmar (incentivar?) um pouco essas mentes sonhadoras.
+Calma cara… você LARGOU o milionário mundo SAP?
+Logo cedo na minha carreira como ABAPer eu comecei a trabalhar com coisas que saiam fora do padrão da vida de projetos. Comecei com SAP em 2006 e lá no começo de 2009 eu já trabalhava em tempo integral numa área que criava aceleradores em ABAP para outros projetos da consultoria utilizarem.
+Aliás, um pequeno parênteses: foi nessa área que eu conheci o Mauro, com quem eu criei este singelo e florido site. Na época ele entrou nessa área sem manjar muito de ABAP “puro” (ele trampava com outras coisas), e a primeira tarefa que eu lhe dei foi fazer, do zero, um ALV Tree dentro de um container dentro de uma tab dentro de uma subscreen dentro de um online (pra ontem). Bons tempos.
+Voltando à
+“debandada”
+, essa desconexão com os projetos e clientes me fez ter vontade de não ser limitado quanto aquilo que eu poderia criar com meus códigos. E foi ali que eu comecei a estudar outras linguagens e tecnologias. A própria criação do ABAPZombie em 2010 acabou sendo uma forma de aprender mais sobre web. Existia também aquela sensação constante de estar gastando cérebro para acelerar um trabalho e render bons lucros para uma empresa que não me daria nada além de um pagamento no fim do mês (obviamente não estou menosprezando a troca de trabalho por dinheiro… acho que era só o meu lado “empreendedor” falando).
+Às vezes a roda não gira na velocidade que gostaríamos e alguns bons anos se passaram na labuta do ABAP. Entretando, essa vontade de largar tudo e ir fazer o meu próprio negócio com TI voltou com força absurda depois que eu voltei de um evento chamado Business of Software, em 2014. A consultoria para qual eu trabalhava na época foi extremamente generosa comigo (valeu
+brothers
+) e me permitiu ir até Boston para aprender mais sobre o mundo de produtos e startups, afim de aplicarmos conceitos dentro da área interna de produtos. Após muita conversa, acabei saindo da consultoria (zero tretas, antes de você pensar que eu dei o chapéu nos caras) abrindo minha própria startup de tecnologia, a
+Kaipler
+, no final de 2015. Hoje trabalho tempo integral nela, desenvolvendo o nosso produto, o
+Marvios
+.
+Parece fácil, não é não? Largar tudo, fazer uma startup, ficar rico, correr pelado na hora do almoço de um dia de verão no meio da paulista (talvez usando um chinelo pra não queirmar o pé)… Mas o processo foi meio longo e cheio de desvios.
+Adeus ABAP, olá (?)
+Pra que lado apontar antes de dar o tiro? Essa é a pergunta que não quer calar, caro ser cambaleante.
+Inicialmente minha ideia era sair de ABAP pra adentrar o mundo do Ruby on Rails (Ruby é uma linguagem; Rails é um framework feito em Ruby para criar aplicativos web). Meu primeiro contato com o Ruby veio da constatação de que o criador da linguagem era um japonês: como bom geek de cultura japonesa que sou, fiquei mega interessado logo de cara. Ajudou também o fato da comunidade Rails brasileira ser bem ativa na internet (o
+Fabio Akita
+, por exemplo, escreve bons artigos não só sobre Rails, mas sobre programação em geral). Então, em meados de 2013, resolvi investir um pouco e aprender Ruby on Rails para tentar criar algum novo software no meu tempo livre.
+Comecei fazendo um curso básico pelo browser no
+TryRuby
+. Depois, li e fiz todos os exercícios do excelente
+Rails Tutorial
+. No meio do caminho, percebi que, apesar do Rails adiantar muita coisa, eu ainda precisaria manjar um pouco mais do que eu conhecia sobre o combo HTML/CSS/JS. Para suprir essa deficiencia, embarquei em alguns cursos da
+Codeschool
+sobre o(s) tema(s). Aprendi também um pouco mais sobre
+Git pelo Alura
+da Caelum e sobre Vagrant lendo sua
+documentação
+. Isso tudo ao longo de aproximadamente um ano e meio (estudava quando dava). Foi divertido conhecer um outro mundo e eu até cheguei a fazer alguns protótipos promissores.
+Mas como a parada não é fácil pra ninguém, adivinhe só: não faço absolutamente nada em Ruby hoje em dia, pois usamos C# e a plataforma .NET na nossa startup.
+Meus dois amigos que trabalham comigo no Marvios trabalham com tecnologias Microsoft há muitos anos. Foi uma escolha natural seguirmos com o C# (uma das linguagens no .NET) para aproveitar toda a experiência de ambos. Mas isso também queria dizer que eu precisaria “largar” tudo aquilo que eu aprendi de Rails para aprender uma outra coisa. Porém, se essa era a melhor chance que eu tinha de abrir o meu negócio, que assim fosse…
+O Rails Tutorial foi um ótimo guia para apresentar o mundo web para um Mauricio praticamente-completo-web-dev-noob. Como eu já tinha investido bastante nesses conceitos básicos, queria pular algumas etapas no estudo do C#. E foi assim que o livro
+Pro C# 5.0 and the .NET 4.5 Framework
+entrou na minha vida e acabou tomando boa parte do meu tempo em 2015. Ele não é feito para você aprender a programar do zero, ele é feito para quem já trabalha com C# aprender a parte “hard” do negócio. Foi uma leitura bem densa e massante em alguns pontos (1500 páginas…), mas consegui debulhar 85% do livro. Só parei porque, no meio do caminho, conseguimos tirar as ideias do papel e iniciar o desenvolvimento do Marvios.
+A fórmula mágica
+Todo o tempo que eu gastei aprendendo esse monte de baboseiras realmente fizeram a diferença. Eu só consegui performar razoavelmente bem quando comecei a criar o Marvios por conta de todo esse estudo. E não foram só as papagaidas em Ruby, Rails, C# e o escambau: foram também os cursos da OpenSAP, os livros que já li da SAP Press, as pesquisas para escrever os posts do ABAPAZombie, os textos do meu livro de ABAP e as leituras/discussões sobre conteúdos do SCN (agora SAP Community). Eu não faço a mínima ideia se esse caminho que eu segui se aplica para outras pessoas que pensam em trabalhar com outras linguagens e tecnologias, mas no final foi um caminho que, no meu cenário, deu bem certo.
+A chave de tudo para mim foi a disciplina. Por várias vezes eu fiquei puto, quis desencanar e ir jogar meus joguinhos obscuros do Steam (e algumas vezes eu fui). Pensei muito em “deixar o mundo se explodir, fazer meu ALV, ganhar minha grana e é nóis”. Só que, uma das bases para ter disciplina é lutar contra nossa natureza preguiçosa e andar um pouco a cada dia (ou semana) em busca de um objetivo. Um artigo bem legal que fala sobre isso
+é esse aqui
+, do Joel Spolsky. Apesar de ser de 2002, sinto como se ele valesse para qualquer época.
+TL;DR: não tem magia, no meu caso eu ralei de estudar e hoje (acho que) sou um dev .NET mediano. No seu caso, você pode ganhar na mega, vai saber.
+Mas e aí, o outro lado da cerca é bão memo?
+Como já mencionei, eu fundei a minha startup e trabalho com C#/.NET/frontend nela. O lado bom é que podemos fazer as coisas do nosso jeito, além de eu ter contado com dois amigos mais experientes para me ajudarem no começo (por mais que você estude, é na hora de criar algo real que você realmente aprende). O ponto é que eu não sei bem como seria a mecânica de trabalho em uma empresa “tradicional” de desenvolvimento .NET, uma que fizesse algum paralelo com as consultorias do mundo SAP. Portanto, posso somente compartilhar a experiência do desenvolvimento em si.
+Quando eu trabalhava com ABAP, sentia que aquilo que eu queria fazer com a linguagem não combinava com seu propósito. Enquanto a SAP focava em coisas muito loucas para empresas, eu me divertia fazendo
+BETA de joguinho de zumbi com WRITE
+. Mesmo com novas tecnologias interessantes como o Gateway e o SAPUI5, o propósito do ABAP e derivados não batia com as minhas ideias.
+Nesse sentido, trabalhar numa plataforma como o .NET é muito mais fácil. Eu posso fazer, literalmente, qualquer coisa que eu quiser com C#: apps para PC, Mac, celular, web, jogos, etc. E para cada uma dessas coisas, tem uma infinidade de plugins e projetos open source que podem acelerar o processo. É legal também que eu posso utilizar o .NET como backend e usar o que me der na telha no frontend: Angular, React, JQuery, Knockout, Vue (não é hue)…
+Porém, se a plataforma é super abrangente, isso quer dizer que para cada coisa diferente que você vá fazer você precisar aprender um monte de pequenos detalhes. No geral, o processo para fazer algo novo e robusto é bem mais burocrático do que no ABAP.
+Ah, e a velocidade das mudanças também é
+muito
+mais maluca. No ABAP, eu falei pela primeira vez de ABAP no Eclipse em 2012 e até hoje muita gente não o usa. No mundo .NET não é bem assim e as evoluções são abraçadas com mais rapidez (e isso quer dizer, reaprender mais detalhes). Pegue o Visual Studio (IDE de desenvolvimento) por exemplo:
+essa aqui
+é a lista da penca de coisas novas que foram liberadas no último release. Tem um desses pelo menos uma vez por ano para o Visual Studio “core”, mais updates distintos para outras partes complementares da IDE. Se for pra falar do .NET em si, aí é pior ainda: dá uma olhada
+no github
+do barato (sim, é tudo opensource).
+Meu sentimento é que para ser um desenvolvedor muito bom no mundo .NET, você precisa dedicar-se muito mais do que para ser um pica das galáxias no mundo ABAP… e que o conhecimento que você possui tem uma data de duração
+muito mais curta
+. Tenho certeza que existem devs .NET que não se atualizam e trabalham em clientes que usam coisas completamente antigas, mas a minha impressão é que a proporção é muito menor.  Sem contar que os melhores trabalhos estão disponíveis pra quem manja das coisas do momento ou é especializado de forma absurda em uma delas. Se isso é bom ou é ruim, vai depender do quanto você realmente gosta de programação.
+Eu adoro essa “liberdade” de poder usar a mesma linguagem pra fazer tantas coisas distintias, sem relação direta com um programa para uma empresa. Ao mesmo tempo, as vezes eu fico um pouco cansado de sempre ter que fuçar num novo framework, entender as mudanças de uma nova versão, ler um novo howto… Falo isso mas estou quase terminando de ler um
+livro de Unity
+bem denso no momento, então vai ver que é só a minha natureza reclamona momentariamente falando 🙂 .
+Então é o fim? SAP nunca mais?
+É óbvio que eu voltaria trabalhar com SAP, caso um dia eu precisasse. Porém eu tentaria mexer com outras coisas não relacionadas ao ABAP, como por exemplo a vertente de
+advanced analytics dentro do HANA
+. Hoje, eu só voltaria a trabalhar com o bom e velho (e o novo) ABAP se todas as outras portas se fecharem e eu precise de grana.
+O ABAPZombie continua com o resto da galera e eu passo a participar mais do The Walking Dev.
+Por coincidência,
+o meu livro
+acabou ficando pronto logo quando eu estava começando a trabalhar com o Marvios e deixando o mundo ABAP pra trás. Na minha cabeça, o lançamento funcionou meio que como uma “passagem” pra um mundo diferente, deixando publicado um pouco do que eu aprendi em todos esses anos.
+Talvez eu não poste mais textos aqui por um bom tempo. Ou talvez tudo mude e eu apareça do nada com (mais) alguma filosofada vida loka sobre o mercado. Quem sabe?
+Dessa experiência toda, ficou forte em mimm a ideia de que aplicar aquele ditado que diz “se você não tentar, nunca vai saber”, as vezes funciona. Não faço a grana que poderia fazer com ABAP, mas a perspectiva que eu consigo enxergar do meu futuro em TI é muito mais abrangente.
+Por fim, fica aqui o meu abraço para todo mundo que me acompanhou nesses anos em meus textos gigantescos do ABAPZombie. Tenho ideias de criar alguma coisa nova para eu voltar a escrever regularmente no futuro, mas não tenho nada concreto no momento. Assim que tiver novidades, divulgo nas redes sociais aqui do site.
+Até um dia, valeu!
+
+
+
+Comentários:
+José Nunes (02/06/2017 15:14): Fala Mauricio, Para quem veio de fora do mundo SAP como eu, sempre soube que sabia vida FORA do mundo SAP(Java/.NET) e como ela era diferente, metodologias, combinações de tecnologias específicas para resolução de problemas, velocidade de adoção de novidades e tendências, práticas, versionamento… coisas que no mundo SAP parecem andar na velocidade de uma lesma, no mundão aí fora, é quase na velocidade da luz. Sempre fiz questão em me manter antenado ao que rolava fora do mundo SAP e hoje vejo que isso acaba sendo uma vantagem também dentro do mundo SAP, já que a própria gigante alemã vem adotando essas novas tecnologias que estão “brilhando” no mundão, como Node.js, R, Hadoop, entre outros. Eu estou em uma situação parecida, tocando minha startup de edução infantil(Ualabi), mas continuo atendendo a clientela SAP. Então fico dividido, parte do tempo sou ABAP/PI, parte do tempo, desenvolvedor Mobile Ionic/Nativo e Backend c/ .NET. Boa sorte na sua empreitada. Mantenha-se disciplinado, determinado e resiliente, já que essa vida de empreendedor é foda. []’s JN
+  Mauricio Cruz (05/06/2017 12:32): Fala mano, Pô, legal sobre a sua empresa, eu não sabia. Vou acompanhar! E eu desenho o mesmo pra você, vida de startup realmente não é fácil. Um abração!
+  Mauricio Cruz (05/06/2017 12:32): Fala mano, Pô, legal sobre a sua empresa, eu não sabia. Vou acompanhar! E eu desenho o mesmo pra você, vida de startup realmente não é fácil. Um abração!
+Wall (01/06/2017 12:14): Oi Mauricio! Muito tempo sem ler você. Antes de você chegar muito, note que este texto traduzido para o Português por Google Translate. Meu idioma é o espanhol. Mas eu sou um leitor deste blog durante anos. Eu queria desejar-lhe sorte em seus projetos!
+  Mauricio Cruz (01/06/2017 12:29): ¡Hola Wall! Muchas gracias por el mensaje. (E esse é o máximo que vou arriscar escrevendo em espanhol 😀 ) Obrigado por acompanhar o blog ao longo dos anos. Valeu mesmo! Abraço!
+  Mauricio Cruz (01/06/2017 12:29): ¡Hola Wall! Muchas gracias por el mensaje. (E esse é o máximo que vou arriscar escrevendo em espanhol 😀 ) Obrigado por acompanhar o blog ao longo dos anos. Valeu mesmo! Abraço!
+Flavio Furlan (01/06/2017 12:05): Opa Maurício, isso é o fim de uma era! Eu também tentei pegar o bonde do Rails, mas acabei ficando no navio do ABAP mesmo Parabéns pela decisão e espero que você tenha sucesso! Assim com o Custódio disse, não se preocupe que tem ALV e debug a rodo te esperando caso tenha saudades Abraços e sucesso!
+  Mauricio Cruz (01/06/2017 12:21): Hey man! Sobre o Rails, se não me engano você chegou a publicar coisas de Rails no ABAP101, num passado remoto… E eu tb vi aquele sua ideia de tentar implementar o Active Record em ABAP. Mesmo não tendo pego o bonde, muita coisa que eu aprendi me ajuda hoje. Tenho certeza que com você deve ser o mesmo. Abração Furlan e valeu o apoio aqui no ABAPZombie desde sempre!
+  Mauricio Cruz (01/06/2017 12:21): Hey man! Sobre o Rails, se não me engano você chegou a publicar coisas de Rails no ABAP101, num passado remoto… E eu tb vi aquele sua ideia de tentar implementar o Active Record em ABAP. Mesmo não tendo pego o bonde, muita coisa que eu aprendi me ajuda hoje. Tenho certeza que com você deve ser o mesmo. Abração Furlan e valeu o apoio aqui no ABAPZombie desde sempre!
+Custodio (31/05/2017 20:18): Muito boa a historia, obrigado por compartilhar sua experiencia e por comecar esse site/blog totalmente excelente. Boa sorte nas novas aventuras. Se der errado (nao vai dar), tem um BDC e um SAPscript aqui pra voce fazer.
+  Mauricio Cruz (01/06/2017 11:55): Valeu mano Custodio! Bom saber que posso contar com maravilhosas tecnologias da austrália moderna para não morrer de fome. Abraços!
+  Mauricio Cruz (01/06/2017 11:55): Valeu mano Custodio! Bom saber que posso contar com maravilhosas tecnologias da austrália moderna para não morrer de fome. Abraços!
+Felipe aka capivari (31/05/2017 20:14): Fala Maurício!! Sempre fui um leitor do blog e depois viemos a trabalhar juntos na Numem, minha curva de aprendizado foi imensa tendo você como mentor nos projetos que passamos juntos, muito obrigado por tudo (pelas dicas e broncas hehe), um grande abraço  e muito sucesso pelo seu caminho tanto pessoal como profissional.
+  Mauricio Cruz (01/06/2017 11:54): Fala mano! É nóis! Só pra não perder o costume, escreve o nome da empresa direito pelo menos abs até mais nos falamos depois tá ok tchau 😀
+  Mauricio Cruz (01/06/2017 11:54): Fala mano! É nóis! Só pra não perder o costume, escreve o nome da empresa direito pelo menos abs até mais nos falamos depois tá ok tchau 😀
+Cristiane (31/05/2017 19:13): Meu eterno mentorado!!!! Desejo tudo de ótimo pra vc nessa nova etapa da vida!!!! Que essa jornada seja de tanto sucesso como foi a vida de abap!! Bjs, Cris
+  Mauricio Cruz (01/06/2017 11:53): Cris, quanto tempo! Obrigado 🙂 Espero que esteja tudo bom com vc também. Bj!
+  Mauricio Cruz (01/06/2017 11:53): Cris, quanto tempo! Obrigado 🙂 Espero que esteja tudo bom com vc também. Bj!
+Renan William (31/05/2017 16:39): Grande Maurício, fiquei feliz com a notícia. Não sabia que você tinha ido respirar novos ares. Fez muito bem, desejo muito sucesso! Grande abraço
+  Mauricio Cruz (31/05/2017 16:53): Fala Renan! Eu preferi dar um tempo até falar da notícia por aqui também… Agora acho que foi um momento bom, já estou faz um tempo trabalhando com .NET então dá para falar com um pouco mais de base. Abraços e valeu 🙂
+  Mauricio Cruz (31/05/2017 16:53): Fala Renan! Eu preferi dar um tempo até falar da notícia por aqui também… Agora acho que foi um momento bom, já estou faz um tempo trabalhando com .NET então dá para falar com um pouco mais de base. Abraços e valeu 🙂
+Richard (31/05/2017 16:30): Legal o texto! Me abriu um pouco mais a mente, pois sou muito indeciso na escolha da tecnologia para se trabalhar, apesar de já ter uma certa especialização, eu acordo com vontade de trabalhar com uma coisa, e de tarde já mudo de ideia, pensando nas variáveis de como poderia ser,  heheh. Ficamos no aguardo dos proximos podcastas! Abraço!
+  Mauricio Cruz (31/05/2017 16:37): Diz a lenda que o novo episodio está logo ali… cobra o Mauro! haha Abraços!
+  Mauricio Cruz (31/05/2017 16:37): Diz a lenda que o novo episodio está logo ali… cobra o Mauro! haha Abraços!
+Rafael (31/05/2017 15:57): Meu caso foi parecido. Já na faculdade eu era trainee de uma consultoria SAP e atuava como ABAP. Fiquei praticamente 4 anos como consultor, tive alguns conhecimentos fora do SAP em estágios anteriores mas nada sério ou concreto. Posso dizer que meu ponto de partida na área de TI foi no ABAP. Com o passar do tempo estava um pouco saturado pela rotina, viagens ao cliente, noites sem dormir por conta de go-lives e minha vida pessoal e saúde estava bem prejudicada. Sem contar a parte técnica, sempre tive a sensação que minha criatividade estava engessada ou limitada ao que o SAP proporcionava, mas na hora quem falava era o $. Aceitei uma oportunidade de sair da atmosfera SAP e partir para um projeto em Rails, também de startup. Também tive e tenho contato com muitas tecnologias em front-end, noções de SEO, Analytics e coisas que dentro do SAP não sei se conseguiria. Atualmente eu acho que o mundo estranho é dentro do SAP, particularmente trabalhando com ABAP. Utilizar web services, fazer uma chamada de API REST nunca foi tão fácil considerando que no SAP eu precisaria de várias acrobacias, e até mesmo solicitar configurações para Basis. Mas também entendo que são contextos totalmente diferentes. Desconsiderando questões financeiras eu jamais voltaria para o SAP mas nunca se sabe o dia de amanhã. Refletindo, na minha opinião o caminho inverso de aprendizado seria “ideal” para um ABAP. Pra mim é melhor você ter noção e já ter trabalhando com tecnologias “comuns” ou fora do ecossistema da SAP, com mais liberdade e criatividade e depois, quando tiver oportunidade, se aventurar com ABAP. O ABAP em certo momento me limitou muito e quase me deixou em uma “zona de conforto” bastante perigosa, apesar de acompanhar as evoluções do próprio ABAP e novas tecnologias que a SAP está colocando no mercado. Mas este “caminho” não somos nós que planejamos, vai de acordo com a oportunidade e necessidade. Ótimo post!
+  Mauricio Cruz (31/05/2017 16:10): Rafael, Valeu por ter compartilhado sua experiência! Não sei se concordo que o caminho inverso é o “ideal”, já que conheci ótimos desenvolvedores que cresceram no meio SAP. Fora que conhecer a primeira linguagem de programação cria uma vantagem natural pra conhecer segunda. Talvez o lance seja forçar que mais e mais ABAPers tenham contato com outras tecnologias desde o início. Acho que criando uma cultura mais aberta, todo mundo tem a ganhar. Abraçõs!
+  Mauricio Cruz (31/05/2017 16:10): Rafael, Valeu por ter compartilhado sua experiência! Não sei se concordo que o caminho inverso é o “ideal”, já que conheci ótimos desenvolvedores que cresceram no meio SAP. Fora que conhecer a primeira linguagem de programação cria uma vantagem natural pra conhecer segunda. Talvez o lance seja forçar que mais e mais ABAPers tenham contato com outras tecnologias desde o início. Acho que criando uma cultura mais aberta, todo mundo tem a ganhar. Abraçõs!

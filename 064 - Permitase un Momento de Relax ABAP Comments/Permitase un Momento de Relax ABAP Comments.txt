@@ -1,0 +1,39 @@
+Permitase un Momento de Relax – ABAP Comments
+Autor: Mauricio Cruz
+Data: 25/03/2011 09:34
+
+Desde que você entrou no mundo do ABAP, você deve ter escutado falar sobre uma tal
+include maligna
+, que quer mandar demônios chorões em cima de qualquer maluco que ouse perturbar o silêncio ali contido.
+Não conhece? Aí está:
+Diz a lenda que o Tião Macalé tentou alterar essa INCLUDE e acabou daquele jeito...
+Provavelmente inspirados pela include malígna, outros
+camagadas
+da SAP também resolveram expressar seus pensamentos, ou aletar quem estiver aventurando-se pelos caminhos misteriósos do Standard.
+Abaixo, segue um
+compilado com os melhores comentários em códigos standard
+que pude encontrar. Como nem todos estão presentes em todas as versões do SAP, tirei prints dos códigos. 😉
+Divirta-se!
+Eu fiquei com vontade de escrever nums códigos meus "ATENÇÃO: PROIBIDO CAGAR COM A LÓGICA"
+Se ele não liga, quem sou eu pra ligar?
+A única treta aqui é que quando der erro no standard por causa desse sy-subrc = 4 eu não vou poder falar "Eu não sei corrigir o erro"
+Aqui temos um cara inspirado poo Shakeaspere. Não deu pra colocar tudo no print, mas vale MUITO a pena abrir o código, só para depois exclamar: HOW BIZARRE. Detalhe que a include chama MP56PEITOS.
+Imagina se esse cara fosse Brasileiro, que comentário ele faria com o campo BOSTA (vá na se11, coloque BOSTA no domínio e clique em exibir, caso você não conheça este campo).
+Shit happens.
+Pessoas que conversam com o ABAP Editor...
+Interessante o conceito de Inferno de FI do cara haha
+Ah, o meu favorito! Se você não sabe o que dynpro, TIRA A MÃO heauheuaheau. Detalhe para a parte final: "Se você fizer besteira, você que vai ter que virar a noite corrigindo!" hahahahah
+Tudo bem, é engraçado, comédia, mas não me vai colocar isso nos seus programas e depois dizer que viu no abapzombie
+“que pode”
+. Diga que você viu no
+próprio SAP
+que pode! 🙄
+😈 hahhahahahahah 😈
+Abraços à todos!
+
+
+
+Comentários:
+Alexandre Moura (01/04/2011 08:58): [off topic] Manos, na versão mais recente do include LV61BMES eles tiraram o comentário 🙁 Minha contribuição: Include LJ1BCONDTAXF01 Comentário: *         Rates are stored multiplied with a magic factor of 10 Abraço galera!!!
+  Mauricio Cruz (01/04/2011 12:44): A versão mais divertida para isso é a 4.6… Tem vários "fucks" e outras palavras "bunitas" perdidas no código. Mas eles fizeram umas limpezas de código nas últimas versões. Valeu pela contribuição! Abraços
+  Mauricio Cruz (01/04/2011 12:44): A versão mais divertida para isso é a 4.6… Tem vários "fucks" e outras palavras "bunitas" perdidas no código. Mas eles fizeram umas limpezas de código nas últimas versões. Valeu pela contribuição! Abraços

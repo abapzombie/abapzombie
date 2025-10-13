@@ -1,0 +1,18 @@
+Classe de Persistência
+Autor: Mauro Laranjeira
+Data: 13/07/2011 11:14
+
+Ceerrtttooo “Zombizada”.
+Hoje eu acordei bem inspirado para fazer um post sobre Classe de Persistência, mas nem vou fazer =P
+Procurei algo no google sobre este tema, acabei encontrei um post muito bom do Fábio Pagoti no ABAP101.
+Segue o link:
+http://abap101.com/2011/05/02/object-services-parte-2-persistence-service-servico-de-persistencia/
+Apenas adicionando um comentário, toda a estrutura do CRM a partir da versão 6.0, foi elaborada encima deste modelo, ao qual utiliza Query Service.
+Abraços a todos!
+
+
+
+Comentários:
+Thiago Cardin (13/07/2011 11:44): Maurício.. O blog está show de bola! Venho ler sempre pra passar o tempo qnd o trampo tá meio parado haahah Parabéns pra vc e pra quem mais colabora para o funcionamento e crescimento!!!
+  Mauro Laranjeira (13/07/2011 15:46): Opa… Vlw Thiago. Qualquer sugestão ou dúvida so entrar em contato com os Ex_Zombies 😉 rs. Abs, Mauro Laranjeira
+  Mauro Laranjeira (13/07/2011 15:46): Opa… Vlw Thiago. Qualquer sugestão ou dúvida so entrar em contato com os Ex_Zombies 😉 rs. Abs, Mauro Laranjeira

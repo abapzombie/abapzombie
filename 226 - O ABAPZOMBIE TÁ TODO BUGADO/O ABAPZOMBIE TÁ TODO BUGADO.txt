@@ -1,0 +1,9 @@
+O ABAPZOMBIE TÁ TODO BUGADO!!!
+Autor: Mauricio Cruz
+Data: 03/05/2017 13:00
+
+Entrou em uma parte do site e ele parece completamente bugado, com as coisas fora do lugar, sem estilos, sem identação, sem pretty printer?
+Pois é caros amigos da zombielândia, o ABAPZombie comeu algum cérebro estragado e a digestão não está fazendo muito bem.
+Há alguns dias nós tentamos instalar um certificado HTTPS aqui no site, mas infelizmente o template do wordpress que utilizamos não se deu muito bem com a mudança. Nós damos manutenção ao site no nosso tempo livre, portanto, tenham paciência que em breve tudo será resolvido.
+Por hora, sempre que você entrar numa página e ela estiver bizarra, troque de HTTPS para HTTP na barra do seu navegador.
+Obrigado e abraços!

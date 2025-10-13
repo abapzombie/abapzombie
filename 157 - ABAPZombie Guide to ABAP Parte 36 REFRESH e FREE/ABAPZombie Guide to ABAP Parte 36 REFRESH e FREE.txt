@@ -1,0 +1,21 @@
+ABAPZombie Guide to ABAP – Parte 36 – REFRESH e FREE
+Autor: Daiane Medeiros
+Data: 08/10/2012 09:00
+
+Fala Zumbizada! No post de hoje da série “ABAPZombie Guide to ABAP” vamos falar sobre 2 comandos básicos de inicialização: REFRESH e FREE.
+Mas… você sabe qual a diferença entre eles e quando devemos usar cada um??? Vamos lá…
+REFRESH
+Quando usamos o REFRESH, apagamos todas as linhas da tabela interna mas não libera a memória ocupada pelas linhas.
+OBS: Se a tabela interna não tiver header line, o comando REFRESH atuará da mesma forma que o CLEAR (já falamos dele
+aqui
+). Caso contrário, o comando REFRESH irá apagar as linhas da tabela interna e não o header line.
+FREE
+Esse comando atua da mesma forma que o CLEAR, menos para tabelas internas.
+Para tabelas internas, você pode usar o FREE para apagar os registros e liberar o espaço de memória, incluindo a alocação de memória inicial. Como o REFRESH, o FREE acessa os registros da tabela interna, e não do header line. Depois do FREE a tabela interna continua existindo e ocupa uma área necessária para o header (geralmente 256 bytes). Quando você preencher a tabela, o sistema terá que alocar um novo espaço de memória para os registros.
+É isso, sem mágicas e sem segredos! Abraços!
+
+
+
+Comentários:
+Vinicius (18/10/2012 00:37): Comentário rápido: O comando REFRESH nem deve ser mais usado pois é obsoleto. (Se bem que obsoleto é muito relativo num cenário em que muitas empresas ainda usam versão 4.6, ou acham que estão super modernosas com 6.0, né?) Dá uma olhada aqui, ó: http://help.sap.com/abapdocu_702/en/abaprefresh_itab.htm é isso. 🙂 Beijo!
+Fawcs (08/10/2012 09:23): performaticamentementemnetenetnsdf falando, como o programa vai reagir se eu usar somente comandos free ou refresh? parece lógico que nao seria certo ficar usando free toda hora, but who knows?

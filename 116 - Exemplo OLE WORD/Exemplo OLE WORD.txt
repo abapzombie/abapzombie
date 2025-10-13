@@ -1,0 +1,115 @@
+Exemplo OLE – WORD
+Autor: Mauro Laranjeira
+Data: 16/12/2011 08:00
+
+Integrar o SAP com sistema legado..
+Integrar o SAP com PI…
+Integrar o SAP com uma torradeira…
+Integrar o SAP com mundos perdidos… Enfim… Este é o seu jogo, menino ABAP oO
+Sábia que era possível gerar arquivos do pacote Office da Microsoft, mas nunca participei de nenhum projeto com esta demanda.
+Mas, porque esperar a demanda para correr atras, resolvi tentar fazer um programinha de exemplo para gerar um texto no Word do Microsoft Office.
+Meu objetivo era apenas escrever
+AbapZombie.com
+.
+Então vamos:
+REPORT  zombie_teste_ole.
+* Types-Pools
+*-------------------------------------*
+TYPE-POOLS: ole2.
+
+* Variables
+*--------------------------------------*
+DATA: v_word_app TYPE ole2_object, "Word Application
+v_documents TYPE ole2_object, "Documentos
+v_document TYPE ole2_object, "Documento
+v_selection TYPE ole2_object, "Linha de texto
+v_paragraph TYPE ole2_object, "Paragrafo (Alinhamento)
+v_font TYPE ole2_object. "Font (Cor, Tamanho, Fonte)
+
+"Cria o Application do Word
+CREATE OBJECT v_word_app 'WORD.APPLICATION'.
+
+"Documento será aberto após criação?
+SET PROPERTY OF v_word_app 'Visible' = '1' .
+
+"Cria a sessão de documentos
+CALL METHOD OF v_word_app 'Documents' = v_documents.
+
+"Cria um documento dentro da sessão de documentos
+CALL METHOD OF v_documents 'Add' = v_document.
+
+"Cria uma entrada de texto
+CALL METHOD OF v_word_app 'Selection' = v_selection.
+
+"Cria um paragrafo dentro da entrada de texto
+CALL METHOD OF v_selection 'ParagraphFormat' = v_paragraph.
+
+"Cria um font dentro da entrada de texto
+CALL METHOD OF v_selection 'Font' = v_font.
+
+"Insere o alinhamento do paragrafo
+SET PROPERTY OF v_paragraph 'Alignment' = '2' . "Right-justified
+
+"Altera os atributos da fonte
+SET PROPERTY OF v_font 'Name' = 'Arial' .
+SET PROPERTY OF v_font 'Size' = '50' .
+SET PROPERTY OF v_font 'Bold' = '0' . "Not bold
+SET PROPERTY OF v_font 'Italic' = '1' . "Italic
+
+"Insere o Texto
+CALL METHOD OF v_selection 'TypeText'
+EXPORTING #1 = 'AbapZombie.com!'.
+
+"Salva o Documento
+CALL METHOD OF v_document 'SaveAs'
+EXPORTING
+#1 = 'C:/example/abapzombie.ole.doc'.
+Segue também o link de um
+material da SAP
+sobre o assunto.
+Abraços Zombizada
+
+
+
+Comentários:
+Silva (31/05/2017 05:35): Bom dia, Em vez de criar um novo documento Word quero editar um já existente, posicionando-me do fim do documento e acrescentando o que quero. Tem como fazer?
+Luiz Felipe Macias Porta (09/01/2017 09:35): Olá Mauro, sou estagiário e existem algumas especificações técnicas chatinhas de fazer, Você sabe se é possivel preencher uma ET utilizando a mesma função?
+  Mauro Laranjeira (09/01/2017 09:52): Olá Luiz, Também não sou fã de fazer documentos que nunca serão lidos. Mas ja existem vários projetos para gerar documentação, alguns open source. Da uma olhada no AbapDoc ( https://github.com/kctdata/abapDoc ). Abs
+  Mauro Laranjeira (09/01/2017 09:52): Olá Luiz, Também não sou fã de fazer documentos que nunca serão lidos. Mas ja existem vários projetos para gerar documentação, alguns open source. Da uma olhada no AbapDoc ( https://github.com/kctdata/abapDoc ). Abs
+Guilherme Fujii (23/01/2012 14:56): Mauro, trabalho com HR e utilizo bastante a integração. Só uma coisa que colocaria a mais, é o sy-subrc depois do CREATE OBJECT, se retornar algo diferente de zero quer dizer que deu algum erro relacionado a integração e não será possível continuar.. O único problema que vejo nessa integração é em relação a performance, se voce gera um documento um pouco extenso ele demora para completar o processo e até agora não achei a solução para isso…
+  Mauro Laranjeira (09/01/2017 09:43): Guilherme, Realmente a performance pega bastante, o SAP utiliza o word da maquina, seria melhor se ele criasse um arquivo interno e depois so exportava, mas desta forma ainda não vi em nenhum lugar. Abs
+  Mauro Laranjeira (09/01/2017 09:43): Guilherme, Realmente a performance pega bastante, o SAP utiliza o word da maquina, seria melhor se ele criasse um arquivo interno e depois so exportava, mas desta forma ainda não vi em nenhum lugar. Abs
+Sérgio Fraga (19/12/2011 11:48): Conheci o blog através de um outro Blog que sigo regularmente, o http://www.abapinho.com e aproveito para dar vos dar os Parabéns!! Excelente Blog, com excelentes conteúdos e com uma leitura muito apelativa. Quanto ao post, já usei ole2 para gerar ficheiros de excel, mas descobri um projecto no SDN muito bom com uma abordagem totalmente OO. Também existe para Word, por isso deixo o link se quiseres pesquisar. ABAP2DOCX – https://cw.sdn.sap.com/cw/groups/abap2docx Cumprimentos Sérgio Fraga Portugal
+  Mauro Laranjeira (19/12/2011 20:10): Obrigado Sérgio. Claro que irei dar uma olhada. Abs, Mauro Laranjeira
+  Mauro Laranjeira (19/12/2011 20:10): Obrigado Sérgio. Claro que irei dar uma olhada. Abs, Mauro Laranjeira
+Valmir (16/12/2011 12:42): Existe algum procedimento anterior (como instalar alguma lib)? Ao tentar ativar código recebo este erro: The type “OLE2_OBJECT” is unknown, but there is a type with the similar name “OBJECT”. VLW!
+  Mauro Laranjeira (16/12/2011 13:29): Qual Versão do SAP vc esta utilizando? Acabei de fazer o teste na 6.0 e na 4.6, ambas funcionaram. Abs, Mauro Laranjeira
+    Valmir (16/12/2011 13:46): Estou logado no SRM 7.0
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+    Valmir (16/12/2011 13:46): Estou logado no SRM 7.0
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+  Mauro Laranjeira (16/12/2011 13:29): Qual Versão do SAP vc esta utilizando? Acabei de fazer o teste na 6.0 e na 4.6, ambas funcionaram. Abs, Mauro Laranjeira
+    Valmir (16/12/2011 13:46): Estou logado no SRM 7.0
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+    Valmir (16/12/2011 13:46): Estou logado no SRM 7.0
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+      Mauro Laranjeira (19/12/2011 20:09): Valmir, Fiz hoje o teste em um CRM 7.0 também funcionou. Queria fazer o teste no SRM, mas não tenho acesso a nenhum. Assim que descobrir algo respondo aqui no post. Abs, Mauro Laranjeira
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s
+        Valmir (20/12/2011 07:31): Muito obrigado! []’s

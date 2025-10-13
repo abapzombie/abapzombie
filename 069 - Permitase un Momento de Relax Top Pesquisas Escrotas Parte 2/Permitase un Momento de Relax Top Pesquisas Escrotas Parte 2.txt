@@ -1,0 +1,56 @@
+Permitase un Momento de Relax – Top Pesquisas Escrotas – Parte 2
+Autor: Mauricio Cruz
+Data: 08/04/2011 09:06
+
+Eu
+não acredito
+, mas não é que ela voltou?
+A coluna
+“Permitase un Momento de Relax”
+traz para você o tópico mais divertido de acordo com os robôs mancos do google:
+O Top Pesquisas Escrotas do mês de Março!
+Eu achava que o
+primeiro tópico
+iria ser o único, mas não é que o povo tem uma criatividade imensa? É simplesmente impossível ignorar as pesquisas! Precisamos compartilhar umas risadas com os batalhadores do mundo ABAP!
+Então, vamos lá!
+Top Pesquisas Escrotas – Março
+“sap fazer um append em uma tabela standard, perde o suporte?” –
+Olha, só sei que na minha época, append em tabela standard o programador perdia
+UM DEDO
+(append = insert aqui só pra não perder a piada 😛 )
+“microcamp apostila abap”:
+Nostalgia nessa pesquisa, me lembrou a época que eu fiz curso de pacote office na Saliens, em 1997 mais ou menos hahahaha
+“livro segredos alv sap”:
+Esse aqui leu “O Segredo”, “O Segredo no Casamento”, “O Segredo no Trabalho” e acha que tem esse segmento pra tudo, ATÉ PRA ALV
+“include sap demonios”:
+rolou um medo, vai que o cara que fazer uma macumba na se80
+“http://www.abapzombie.gov.br/”:
+A DILMA VAI POSTAR, E SEMANA QUE VEM TEREMOS UM MEMBRO NOVO, O LULA (que perdeu o dedo pq fez update na mara)
+“facebook – projetorally”:
+Não consigo explicar esse. Nem quero.
+“driblar authority check sap”:
+tá vendo porque eu apaguei uns comentários com aquelas funções safadas? eu sabiaaa eu sabiaaaa hahahaha
+abap standard comentário de demônios:
+Você imaginou um demônio sentando em uma mesa, nas profundezas das trevas, fazendo um IF gigante e se perguntando se é AND ou OR que vai na condição? Eu não.
+“abap por conta própria”:
+… tá.
+“post go live” posterior:
+…tá denovo.
+“fuuuuuuuuuuu”:
+O mais legal é que você só vai chegar ao blog se você digitar exatamente essa quantidade de letras “u”. E FORAM SETE ACERTOS NO MÊS hahaha
+Lembrando que vale a mesma regra do primeiro post: Se você escreveu alguma dessas coisas no google,
+muito obrigado!
+😀
+Quem sabe, no futuro, a gente não faz um campeonato para ver quem consegue achar o ABAP Zombie com as pesquisas mais malucas? hhahahahahahah.
+Abraços e
+MUITO OBRIGADO
+à todos que acessam e usam o blog no dia-a-dia. Ficamos
+muito felizes
+com os feedbacks, comentários, com o crescimento do facebook, twitter e dos acessos. O ABAPZombie não é meu, nem do Mauro, nem da Pri, é
+nosso!
+Até semana que vem!
+
+
+
+Comentários:
+F&aacute;bio Luiz Es (17/04/2011 18:28): Ahaha.. muito bom. Façam essa coluna todo mês!

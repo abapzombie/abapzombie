@@ -1,0 +1,141 @@
+ABAPZombie Guide to ABAP – Parte 23 – CASE
+Autor: Mauricio Cruz
+Data: 17/05/2011 14:18
+
+Corre negada! A zumbizada está vontando!
+Estive um pouco ausente nas últimos semanas… mas estou de volta, e com vários outros posts para continuar ajudando (ou atrapalhando, vai saber) o povo por ae 😀 .
+Vamos lá!
+———————————————–
+Eu gosto de CASEs. CASEs são legais. CASEs são “nice”. CASEs funcionam. CASEs, muitas vezes, evitam estruturas malucas com milhões de IFs. Estruturas como o CASE existem em diversas linguagens, ou seja: o negócio é tão bom que
+não
+pode faltar.
+O que ele faz? Vamos primeiro ver a sua estrutura:
+CASE valor
+ WHEN valor/expressão.
+    "Execute algo
+ WHEN valor/expressão 2.
+    "Execute algo
+ WHEN OTHERs.
+    "Execute algo
+Simples!
+Em
+valor
+, você vai colocar uma variável acessível naquele ponto do programa ou um valor qualquer. Você pode colocar qualquer número de “WHENs” abaixo, indicando o valor ou a expressão que fará com que o programa entre naquele bloco. Caso nenhum dos “WHENs” que você colocou seja igual ao valor do CASE, a execução vai ser direcionada para o WHEN OTHERs. Veja Só:
+REPORT  zombie_case.
+
+* Variável
+DATA: v_teste TYPE c.
+
+*--------------------------------------------------------------------*
+* Mais simples que o caso abaixo, impossível :)
+v_teste = 'A'.
+
+CASE v_teste.
+  WHEN 'A'.
+*     Vai Cair Aqui
+  WHEN 'B'.
+  WHEN 'C'.
+  WHEN 'D'.
+  WHEN OTHERS.
+ENDCASE.
+
+*--------------------------------------------------------------------*
+* Usando Expressões no CASE
+v_teste = 'D'.
+
+CASE v_teste.
+  WHEN 'A'.
+  WHEN 'B'.
+  WHEN 'C' OR 'D'.
+*     Vai Cair Aqui
+  WHEN OTHERS.
+ENDCASE.
+
+*--------------------------------------------------------------------*
+* Uso do WHEN OTHERS!
+v_teste = 'E'.
+
+CASE v_teste.
+  WHEN 'A'.
+  WHEN 'B'.
+  WHEN 'C'.
+  WHEN 'D'.
+  WHEN OTHERS.
+*     Não tem E, então cai aqui
+ENDCASE.
+
+*--------------------------------------------------------------------*
+* Maneira cool de usar o CASE com Radiobuttons
+PARAMETERS: rb_one   RADIOBUTTON GROUP rb01,
+            rb_two   RADIOBUTTON GROUP rb01,
+            rb_three RADIOBUTTON GROUP rb01.
+
+CASE 'X'.
+  WHEN rb_one.
+*     Lógica para o RadioButton 1
+  WHEN rb_two.
+*     Lógica para o RadioButton 2
+  WHEN rb_three.
+*     Lógica para o RadioButton 3
+ENDCASE.
+E qual a diferença desse tal CASE para um ‘IF’? Veja só:
+DATA: v_zumbi_que_me_persegue TYPE string.
+
+* Linda estrutura com IFs na sequencia:
+
+IF v_zumbi_que_me_persegue = 'ZUMBI1'.
+ELSE.
+  IF v_zumbi_que_me_persegue = 'ZUMBI1'.
+  ELSE.
+    IF v_zumbi_que_me_persegue = 'ZUMBI2'.
+    ELSE.
+      IF v_zumbi_que_me_persegue = 'ZUMBI3'.
+      ELSE.
+        IF v_zumbi_que_me_persegue = 'ZUMBI4'.
+        ELSE.
+          IF v_zumbi_que_me_persegue = 'ZUMBI5'.
+          ELSE.
+            IF v_zumbi_que_me_persegue = 'ZUMBI6'.
+            ELSE.
+              IF v_zumbi_que_me_persegue = 'ZUMBI7'.
+              ELSE.
+                IF v_zumbi_que_me_persegue = 'ZUMBI8'.
+                ELSE.
+                  IF v_zumbi_que_me_persegue = 'ZUMBI9'.
+                  ELSE.
+*                      Esse seria o WHEN OTHERS haha
+                  ENDIF.
+                ENDIF.
+              ENDIF.
+            ENDIF.
+          ENDIF.
+        ENDIF.
+      ENDIF.
+    ENDIF.
+  ENDIF.
+ENDIF.
+
+* Legal né? Vou escrever a mesma coisa com o CASE
+
+CASE v_zumbi_que_me_persegue.
+  WHEN 'ZUMBI1'.
+  WHEN 'ZUMBI2'.
+  WHEN 'ZUMBI3'.
+  WHEN 'ZUMBI4'.
+  WHEN 'ZUMBI5'.
+  WHEN 'ZUMBI6'.
+  WHEN 'ZUMBI7'.
+  WHEN 'ZUMBI8'.
+  WHEN 'ZUMBI9'.
+  WHEN OTHERS.
+ENDCASE.
+
+* Agora me diz: O QUE É MAIS FÁCIL DE ENTENDER? HEIM? HEIM?
+* *rage zombie detected*
+And it’s done. Depois dessa acho que não tem muito mais o que falar do case aqui.
+Abraços!
+
+
+
+Comentários:
+Henrique Dias (17/05/2011 12:39): <pre lang="abap"> CASE 'X'. WHEN rb_one. *     Lógica para o RadioButton 1 WHEN rb_two. *     Lógica para o RadioButton 2 WHEN rb_three. *     Lógica para o RadioButton 3 ENDCASE. </pre> Isso é a reversal russa do case auehauehaeuhaeuh

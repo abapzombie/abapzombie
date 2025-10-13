@@ -1,0 +1,37 @@
+User-Exit – Não deixe as brechas descontroladas – Parte 1 – Clássicas
+Autor: Mauricio Cruz
+Data: 23/02/2011 08:30
+
+Nova sequência de posts para acabar com suas dúvidas de User-Exits, e organizar em um só lugar tutoriais para User Exits de diversos tipos. Vamos lá!
+Todo mundo sabe que a melhor maneira de customizar o sistema é através dessa
+maravilha da nova-e-velha era
+, as User-Exits.
+Detalhe:
+Aqui estou usando
+User-Exit
+como um termo genérico para todo e qualquer ponto de programas Standard onde os programadores podem colocar lógicas solicitadas pelo usuário, pelo funcional, pela própria sap, por algum maluco no fórum do SDN, e até por deus quando as coisas não funcionam. (AH MEU DEUS O QUE EU FAÇO AGORA? 😯 ).
+A bola da vez são as
+Exits em Subrotinas
+. Essa é, de fato, a mais simples de entender. Vamos analisar o print abaixo:
+Estamos numa include standard (MV45AFZZ), e temos uma subrotina que começa com o nome USEREXIT. Sugestivo, não?
+Esse FORM será chamado em algum momento pelo Standard (no caso, pela transação VA01/02), e você pode colocar código ali dentro!
+Porém, para esse tipo de Exit “Clássica”, você terá que obter a chave de acesso para alterar o objeto standard com o time de
+BASIS
+. Em “brechas” mais modernas, isso não é necessário (ainda bem! ás vezes a burocraria para conseguir essas chaves é, literalmente, um pé no saco 🙁 ).
+Tela que vai "brotar" dos confins do Standard, pedindo uma chave para alterar o objeto.
+Mas aí você me pergunta: “e como eu faço para achar user exits desse tipo?”. Normalmente, uma busca pelo nome “user_exit” no programa principal da transação standard encontra algumas exits em subrotinas:
+Essa foi uma busca que eu fiz no programa principal da transação VL02n. Achei várias chamadas. Um duplo-clique no PERFORM me levaria até o programa onde eu colocaria meu código.
+Mas, se a busca não retornar nada, você tem várias alternativas: pesquisar no SDN, pesquisar no google, debuggar o standard, conversar com amigos e etc. Existem ainda alguns programas que você encontra na Internet para achar todas as User-Exits da transação X ou Y.
+Uma dica importante:
+Galera, quando for para alterar Exits assim, não coloque o código direto na Exit. Depois de 3 demandas,
+fica uma zona sem tamanho.
+Crie um INCLUDE, e coloque o seu código nessa include dentro de um FORM…ENDFORM. Na Exit, coloque um comentario para identificar o programa e chame o FORM com um PERFORM. Sacou? Pelo menos não fica zoneando a subrotina da Exit. Já a zona do código dentro da include, é por sua conta 😛
+Abraços a todos aqueles que decoraram nome de programas standards de tanto fazer exits.
+
+
+
+Comentários:
+Custodio (19/07/2011 20:54): Outra coisa importante eh nao utilizar o comando CHECK dentro dos includes (ou dos enhancements), caso contrario os includes posteriores nao serao executados (exceto se o CHECK for dentro de um loop).
+  Mauricio Cruz (20/07/2011 05:49): Mto bem observado sobre o CHECK, me esqueci de escrever isso. Aliás, esse negócio de CHECK me lembra um certo dump em produção que ocorreu num projeto que eu passei, que parava tudo por causa de um mísero CHECK haha. Então CUIDADO! Sobre os enhacements, vou citar num post separado mesmo 🙂 Abraços!
+  Mauricio Cruz (20/07/2011 05:49): Mto bem observado sobre o CHECK, me esqueci de escrever isso. Aliás, esse negócio de CHECK me lembra um certo dump em produção que ocorreu num projeto que eu passei, que parava tudo por causa de um mísero CHECK haha. Então CUIDADO! Sobre os enhacements, vou citar num post separado mesmo 🙂 Abraços!
+Custodio (19/07/2011 20:51): Porém, para esse tipo de Exit “Clássica”, você terá que obter a chave de acesso para alterar o objeto standard com o time de BASIS. Depende da versao que voce estiver. Se seu sistema suporta implicit enhancement (acredito que veremos um post sobre eles em breve) basta criar um dentro do form e correr pro abraco, sem encher o saco de ninguem de basis.

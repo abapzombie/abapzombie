@@ -1,0 +1,36 @@
+Pérolas de um mundo ZUMBÍSTICO Parte 1 – Eu AMO CRIAR VARIÁVEIS INÚTEIS
+Autor: Mauricio Cruz
+Data: 06/06/2012 10:23
+
+Tarefa:
+Concatenar X variáveis numa string, separadas por vírgula.
+Solução Implementada:
+CONCATENATE l_var1
+            c_virgula_1
+            l_var2
+            c_virgula_2
+            l_var3
+            c_virgula_3
+            l_va4
+            c_virgula_4
+            ...
+       INTO l_linguicao.
+Pérolas zumbísticas: infectando sistemas freneticamente, elevando o nível da nossa classe! Aprenda com elas como
+NÃO
+programar!
+
+
+
+Comentários:
+Haroldo (06/06/2012 13:42): Eu tenho uma aqui tambem. Posso postar ? (rsrsrs)
+  Mauricio Cruz (06/06/2012 16:16): Manda no contato@abapzombie.com e ela pode virar um post, se for boa o bastante! 😀 Com os devidos créditos, é claro hehehehe
+    Lauffer (07/06/2012 19:02): Bahhhh, vou começar a separar uns aqui pra te mandar  hehehehhe
+    Lauffer (07/06/2012 19:02): Bahhhh, vou começar a separar uns aqui pra te mandar  hehehehhe
+  Mauricio Cruz (06/06/2012 16:16): Manda no contato@abapzombie.com e ela pode virar um post, se for boa o bastante! 😀 Com os devidos créditos, é claro hehehehe
+    Lauffer (07/06/2012 19:02): Bahhhh, vou começar a separar uns aqui pra te mandar  hehehehhe
+    Lauffer (07/06/2012 19:02): Bahhhh, vou começar a separar uns aqui pra te mandar  hehehehhe
+Paulo (06/06/2012 10:57): o.O caraca!
+Adriano Miguel (06/06/2012 10:30): Isso foi um caso verídico???
+  Mauricio Cruz (06/06/2012 10:32): Todas as Pérolas serão verídicas!
+  Mauricio Cruz (06/06/2012 10:32): Todas as Pérolas serão verídicas!
+Mauro Laranjeira (06/06/2012 10:27): É meu caro Mauricio, situação vivida em um projeto passado XD

@@ -1,0 +1,65 @@
+Códigos pequenos… e úteis! – Parte 2 – Caracteres Especiais
+Autor: Mauricio Cruz
+Data: 21/01/2011 13:41
+
+Continuando a nossa saga para resolver problemas simples, chatos e que não aguentamos mais resolver, trago hoje um código simples e que eu já devo ter feito umas 192383 milhões de vezes (ao quadrado, claro):
+remoção de caracteres especiais em strings
+. Muitas vezes é só dar um TRANSLATE, mas sempre tem aquela string chata que vem a&s^s*s/i;m (assim) :x.
+Para acabar de vez com isso, fiz uma classezinha para tratar a remoção de caraceteres (especiais, normais, vadios e safados). Veja abaixo:
+REPORT  z_caracteres_zumbis.
+
+* Aqui vai a include mágica
+INCLUDE zaz_remove_characters.
+
+* Objeto da Classe para remoção de caracteres
+DATA o_conv TYPE REF TO lcl_converte_caracter.
+
+* String qualquer
+DATA v_string  TYPE string.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Instânciando a classe
+  CREATE OBJECT o_conv.
+
+* String zuadassa!
+  v_string = 'a;b@a#p$z%o^m>b:i-e!'.
+
+* Removendo todos os caracteres e todos os espaços
+  o_conv->remove_char_mass( EXPORTING
+                             char_remove = ';@#$%^>:-'
+                             no_blanks   = 'X'
+                            CHANGING
+                             string      = v_string ).
+
+* Aqui vai ficar "abapzombie!"
+  WRITE v_string.
+
+* Zuando a string denovo!
+  v_string = 'a#b#a#p# z#o#m#b#i#e!'.
+
+* Vamos remover o #, e somente os espaços onde eles estavam
+  o_conv->remove_char_single( EXPORTING
+                               char_remove = '#'
+                              CHANGING
+                               string      = v_string ).
+
+* Aqui vai ficar "abap zombie!"
+  WRITE v_string.
+A include está aqui:
+ABAP ZOMBIE GEAR – Remove Caracteres.txt
+Você pode remover letras ou números também, usei os caracteres especiais como exemplo porque normalmente são eles
+que enchem o saco.
+Lembrando algumas coisas:
+– Caso você tenha algum outro caso maluco para os códigos aqui postados, e quiser alterar, sinta-se à vontade. E se quiser compartilhar, poste aqui depois da alteração 🙂
+– Estamos fazendo tudo na 6.0, então, em versões anteriores, pode ser necessário fazer algumas adaptações.
+– No final vamos ter um post juntando tudo em uma só classe, e um esquema mágico para você importar a classe da include na se24 e torná-la globlal (esse talvez eu poste antes :D).
+Abraços!
+
+
+
+Comentários:
+jessica (29/07/2011 04:39): Nossaaaa.. essa aqui eu gostei. obrigada!

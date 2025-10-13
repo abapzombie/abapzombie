@@ -1,0 +1,70 @@
+Perdeu preiboi, agora é OO – Parte I
+Autor: Mauro Laranjeira
+Data: 31/01/2011 14:06
+
+“Indignação.. caos… medo… pavor…. HAAAAAAAAA….”
+ABAP com medo de OO
+Sei lá porque, mas essas são as palavras que aparecem no rosto de uma galera quando falamos de Orientação à Objetos, classes, métodos, polimorfismo, encapsulamento e tal dentro do ABAP.
+Pense assim… tudo que é novo tem idéia de vir para melhorar… Dê uma chance para OO 😉
+As classes são nossas amigas =D
+Com este post vou tentar descrever a parte chata de OO, conceitos =S
+Let´sssssssssss
+———————-
+Classe
+———————–
+Primeiro, entenda classe como uma ficha de cadastro, ou seja um
+MODELO
+de um cadastro.
+Exemplo:
+Nome:
+_____________
+Idade:
+_____________
+Sexo:
+______________
+Quando este modelo esta preenchido, então dizemos que este modelo está instanciado.
+Exemplo:
+Nome:
+Fulanito da Silva Abapzombie
+Idade:
+5 anos
+Sexo:
+Machu
+AAIIIi SShhooww =D
+Temos um “modelo preenchido” = “uma ficha de cadastro preenchida” = “uma classe instanciada”.
+Pensando na classe do nosso cadastro, falando agora mais tecnicamente. Podemos entender que NOME, IDADE e SEXO são os atributos da nossa classe de cadastro. Pensando em sistema, para o funcionamento é necessário executar as ações, ou seja, as funcionalidades, como por exemplo INSERIR, ALTERAR e DELETAR. Para que o sistema possa “trabalhar” com o cadastro. Estas ações são os métodos da nossa classe.
+———————————-
+Encapsulamento
+———————————-
+Uma classe, método ou atributo podem ter “categorias de visibilidade”.
+Por exemplo, usamos para permitir ou não quem possa acessar um método da nossa classe.
+Tipos de encapsulamento:
+–
+Private
+: Apenas a própria classe pode acessar. “
+Quando o seu amiguinho egoísta não empresta nada dele, só ele quem usa
+”
+–
+Protected
+: Apenas as classes filhas, ou seja, as classes que herdam esta classe podem acessar. “
+É quando tem aquele cidadão que não empresta o carro pra ninguém, mas o seu filho boyzinho pega o carro escondido. O boyzinho usa um objeto que não é dele
+”
+–
+Public
+: O acesso ao objeto não tem restrição. Uma classe ou um programa pode acessar mesmo sem ter vinculo com a classe onde está a declaração. “
+Quase igual quando você compra um mentos e todo mundo vem e pega, muitas vezes sem nem falar com você
+“.
+Galera… logo mais espero poder continuar esta saga de OO…. até o próximo post….
+Abraços a todos aqueles que acham que as classes são nossas amigas!
+
+
+
+Comentários:
+Marcio (09/01/2020 14:55): Top rapaz!! Explicação exemplificada de forma simples e objetiva. Parabéns
+CARLOS GOMES (02/07/2015 19:40): OBRIGADO !!! PARABÉNS!!
+Emanuel (15/08/2014 10:41): Muito bom a explicação ótima analogia.. Show… Parabéns ao grupo.
+Aline (09/01/2014 08:56): Parabéns! Muito bom conteúdo como sempre! Para quem está iniciando no mundo Abap, o Abap Zombie é um salvador de vidas!! rsrsrs
+Haroldo (25/05/2012 08:39): Muito boa a explicação. Parabéns pelo site. É de ótimo conteúdo. Agora, se for MACHU mesmo, manda mais…rsrsrs Abraços…
+Mauricio (30/03/2012 15:59): Manda mais pu favô!!!!
+Bruno Cappellini (24/02/2012 12:51): “O boyzinho usa um objeto que não é dele.” huAHUHUAHuAHU muito boa aula! muito obrigado!
+Thiago Losilla (22/02/2011 08:56): Ae Maurao! Mandou bem man!! Cara, qdo puder, manda um post desse explicando o que é e para que raios serve os Custom Controller's, os Cucos. Abras man!! Voces tao mandando bem pra caramba com esse blog man!!

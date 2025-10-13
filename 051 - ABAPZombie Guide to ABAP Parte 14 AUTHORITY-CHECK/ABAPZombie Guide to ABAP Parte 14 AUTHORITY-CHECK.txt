@@ -1,0 +1,72 @@
+ABAPZombie Guide to ABAP – Parte 14 – AUTHORITY-CHECK
+Autor: Mauricio Cruz
+Data: 24/02/2011 08:30
+
+E agora, o comando que você já xingou um dia (talvez até sem saber): o
+AUTHORITY-CHECK
+.
+E o que ele faz? Verifica autorizações, dãr. 🙄
+Bom, existem várias maneiras de controlar o acesso dos usuários às coisas do SAP, e uma delas é através de
+Objetos de Autorização
+. Através deles, você consegue controlar/segmentar o acesso do usuário em qualquer tipo de programa.
+NA transação
+SU21
+você pode ver a lista de objetos de autorização do seu sistema, e até criar um novo. A associação de objetos de autorização aos usuários é feita pelo time de perfil/basis, e você consegue analisar pelos perfis do usuário, na SU01 (essa é a mais simples, tem um monte de transações de perfis e controles de acesso).
+Enfim, vamos ao exemplo:
+REPORT zombie_authority_check.
+
+SELECTION-SCREEN BEGIN OF BLOCK bl01.
+
+  PARAMETER: p_werks TYPE t001w-werks.
+
+SELECTION-SCREEN END OF BLOCK bl01.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Verificando a Autorização do User!
+AUTHORITY-CHECK OBJECT 'S_WERKS'
+  ID 'WERKS' FIELD p_werks  "Código do Centro
+  ID 'BUKRS' DUMMY          "Ignora Campo
+  ID 'ACTVT' FIELD '02'.    "Alteração
+
+CASE sy-subrc.
+  WHEN 0.
+*   Parabéns, você tem autorização!
+  WHEN 4.
+*   Xô safado, não tem autorização = não roda o programa!
+  WHEN 12.
+*   Das duas uma: ou o user não tem esse obj associado, ou o obj
+*   não existe!
+  WHEN OTHERS.
+ENDCASE.
+Ou seja, para criar uma verificação, você precisa saber os campos que o Objeto possue e o tipo de atividade que o usuário vai executar (se o campo ACTVT estiver no objeto, é claro). O sy-subrc da checagem pode indicar várias coisas, como mostrado ali no exemplo.
+No meu exemplo, eu tenho o objeto S_WERKS, que possue três campos que devem ser verificados: WERKS, BUKRS e ACTVT. Eu quis verificar o valor somente para o WERKS, deixando o valor de BUKRS não relevante para a checagem. O campo ACTVT indica o tipo de atividade (veja os tipos na tabela TACT).
+Caso você execute uma transação e apareça a mensagem “sem autorização”, abra em outra janela a transação
+SU53
+, para entender o que aconteceu. Ela irá mostrar o log da última verificação de autorização feita para o seu usuário.
+Uma variante do comando:
+DATA l_user TYPE sy-uname.
+
+l_user = 'MRCRUZ'.
+
+* Verificando a Autorização do User!
+AUTHORITY-CHECK OBJECT 'S_WERKS' FOR USER l_user
+  ID 'WERKS' FIELD p_werks  "Código do Centro
+  ID 'BUKRS' DUMMY          "Ignora Campo
+  ID 'ACTVT' FIELD '02'.    "Alteração
+Com o FOR USER, você força a verificação somente para um usuário específico.
+Bom, é isso! Esse comando é simples e faz TODA a diferença para o negócio da empresa. Evita que gente mal intencionada de faça coisas não permitidas, e também evita que panguás desavisados causem com o sistema.
+Ah, e também atrapalha ABAPs e funcionais nas análises de erros. 😀
+Neste post
+, eu comentei sobre o relacionamento entre o Authority-Check e o Call Transaction. Vale a pena dar uma olhada! 😀
+AUTHORITY-CHECK
+: Eternamente útil para a empresa, eternamente xingado para consultores.
+Abraços!
+
+
+
+Comentários:
+Cássio (10/02/2012 09:53): Parabéns pelo site, cheio de bom humor e informações úteis.

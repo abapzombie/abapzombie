@@ -1,0 +1,34 @@
+ZCOPY – Objetos Clonados
+Autor: Daiane Medeiros
+Data: 17/01/2013 13:00
+
+E aí zumbizadaaa!!! FELIZ 2013 PARA TODO MUNDO!!!
+Depois que descobri que o mundo não acabou, vamos voltar ao zumbi mode=ON.
+Bom, na minha experiência nesse mundão SAP, observei que na maioria dos lugares (se não em todos) possuem objetos clonados. Mas afinal de contas, o que é isso???
+Um exemplo de objeto clonado “ZSHEEP”
+Como todos sabem, a SAP não aconselha alterar os códigos standard, então como adaptar um programa? Uma solução encontrada foi criando cópias dos objetos standard e depois modificando para adaptar aos processos e necessidades do cliente. E assim nasce um CLONE!
+Mas quais as vantagens dos clones? Primeiro: é muito prático. Você pode alterar o código do jeito que você quiser sem precisar de uma chave de registro (e toda aquela burocracia chata) para alterar um código standard. Segundo: assim você mantém o programa original lá rodando, bonitão. E, por toda essa praticidade, os clones vêm se multiplicando… maaasssss tudo tem dois lados…
+O ataque dos clones
+Até então tudo parece perfeito, mas devemos levar em conta que os programas standard também são atualizados e, dependendo do objeto clonado, o risco de erro ou inconsistência é muito alto. Em outros casos o programa standard pode ter sido aprimorado com novos recursos, e o clone vai continuar como a versão antiga, sem as novas ferramentas ou integrações. E, a cada upgrade, os clones se tornam mais ultrapassados e mais distantes do programa original. Então, nesses casos, é muito importante analisarmos o impacto dos clones durante o upgrade. Mas, você sabe quantos clones estão rodando aí?
+Descobrindo os clones
+Sim, isso é possível!!! Graças a uma ferramenta desenvolvida pela SAP podemos encontrar programas clonados. Basta executar o programa /SDF/CD_CUSTOM_CODE_CONNECT, ir em “Similarity Analysis” e selecionar “Similarity Check to SAP”.
+*
+*
+*
+Sim, demora um pouquinho…
+*
+*
+*
+Ahá!! Aqui nesse exemplo estão as classes que possuem um código parecido (ou muito parecido). É muito importante sabermos quais são esses objetos, pois assim podemos analisar antecipadamente qual será o impacto e o esforço para implementar novas versões.
+Esse programa não serve só para achar cópias de standard, mas também cópias entre pacotes específicos ou entre ambientes. Imagine um projeto de migração, onde você tem que decidir o que migrar. Esse programa pode te ajudar a ver o que tem igual, para que você não precise migrar duas vezes a mesma coisa.
+Bom, como você viu, pode dar muuuuito trabalho dar manutenção em objetos clonados… então, o que podemos fazer para evita-los?
+Agora, vamos ao zumbi mode=OFF e antes de alguém pedir para você sair copiando um programa standard e criar um ZQUALQUERCOISA, vamos analisar se existe uma solução melhor, como por exemplo o uso de Enhancement Spots, BADIs, BTEs (business transactions events), Validações e Substituições – utilizadas em FI – , fórmulas (VOFM), User-Exits, etc.
+É claro que cada caso é um caso, e todos esses pontos devem ser levados em consideração para encontrar a melhor solução!
+Bom, é isso aí galera… e que a força esteja com vocês!!!
+
+
+
+Comentários:
+Fabio Pagoti (24/01/2013 12:52): Falando em motivos para copiar codigos eu tenho um caso que aconteceu comigo semanas atras… Eu entrei num projeto na fase final e tive a so o papel de documentar o que o ABAPossauro anterior havia feito. A coisa se tratava de um enhancement e um report simples, nada que parecesse de outro mundo. Eu procurei por todos os objetos modificados pelo cara e documentei a funcao de cada um. Ao tentar debugar o enhancement para ver sua execucao meus break-points simplesmente nao funcionavam. Depois de dias de tormento, constatei que houve copias na implementacao da badi. Eu falei para o funcional do projeto que havia coisas copiadas e 2 programas que faziam a mesma coisa praticamente. Nao houve outro jeito de entender a solucao tecnica senao pedir uma ajuda para o ABAPoussauro anterior o que ele tinha feito e porque ele havia copiado objetos. A resposta foi simples: “É porque eu não sabia o que código fazia e para não quebrar nada eu copiei tudo”. Moral da estória, se voce esta copiando as coisas simplesmente por medo ou por nao saber usar o controle de versao documente este medo na especificacao tecnica para todos ficarem cientes de quem voce é.
+  Mauricio Cruz (27/01/2013 08:44): É caro amigo Fábio, é bem o que eu escrevi neste post aqui: http://www.abapzombie.com/dicas-abap/2012/06/11/documentacoes-e-o-tempo-perdido-que-nao-volta-mais/ : o cara perde um tempão escrevendo uma ET que não diz NADA, ao invés de gastar o menor tempo possível escrevendo algo realmente útil para quem for dar manutenção ao programa!
+  Mauricio Cruz (27/01/2013 08:44): É caro amigo Fábio, é bem o que eu escrevi neste post aqui: http://www.abapzombie.com/dicas-abap/2012/06/11/documentacoes-e-o-tempo-perdido-que-nao-volta-mais/ : o cara perde um tempão escrevendo uma ET que não diz NADA, ao invés de gastar o menor tempo possível escrevendo algo realmente útil para quem for dar manutenção ao programa!

@@ -1,0 +1,17 @@
+ABAPZombie Guide to ABAP – Parte 1 – ADD
+Autor: Mauricio Cruz
+Data: 31/01/2011 11:51
+
+Vamos lá, um comando bem simples, o ADD.
+Esse é um daqueles famosos comandos que não precisam de explicação…
+Sintáxe:
+ADD val1 TO val2. Val1 e Val2 devem ser do tipo númericos.
+REPORT z_zombieguide_add.
+
+DATA: vl_contador TYPE i.
+
+* Adicione 1 no Contador. Precisa explicar mais alguma coisa?
+ADD 1 TO vl_contador.
+
+BREAK-POINT.
+Fácil demais 😛 . Agora vai lá adicionar 1 no seu contador dentro de um loop qualquer aí.

@@ -1,0 +1,110 @@
+Tela de Seleção Turbinada – Parte 4 – Novas Telas!
+Autor: Mauricio Cruz
+Data: 03/01/2011 14:17
+
+Feliz 2011! Ano novo, vida nova, post novo!
+Continuando a sequência de posts da tela de seleção, vamos agora criar
+novas telas de seleção
+dentro de um mesmo report. É muito simples e muito útil para tratar
+“aquela”
+tela adicional com parâmetros que o povo sempre inventa de última hora!
+Vamos ao código:
+REPORT z_novatela_zombie.
+
+TYPE-POOLS: icon.
+TABLES: sscrfields.
+
+* Começo criando uma tela dummy
+*------------------------------
+SELECTION-SCREEN BEGIN OF BLOCK BL01 WITH FRAME.
+
+PARAMETER: p_tela1 TYPE char10.
+
+SELECTION-SCREEN END OF BLOCK BL01.
+
+* Esses botões irão chamar as novas telas
+*----------------------------------------
+SELECTION-SCREEN FUNCTION KEY 1.
+SELECTION-SCREEN FUNCTION KEY 2.
+
+* Criação de uma nova tela de seleção. Bem simples!
+*--------------------------------------------------
+SELECTION-SCREEN BEGIN OF SCREEN 9000.
+
+SELECTION-SCREEN COMMENT /1(40) text1.
+PARAMETER: p_nova TYPE char10.
+
+SELECTION-SCREEN END OF SCREEN 9000.
+
+* Outra tela de seleção. Você pode criar quantas quiser
+* (apesar que a numeração de telas tem só 4 digitos.. enfim :P)
+*--------------------------------------------------------------
+SELECTION-SCREEN BEGIN OF SCREEN 9001.
+
+SELECTION-SCREEN COMMENT /1(40) text2.
+PARAMETER: p_popup TYPE char10.
+
+SELECTION-SCREEN END OF SCREEN 9001.
+
+* Evento para colcoar texto no comentários e ajustar os botões
+*-------------------------------------------------------------
+INITIALIZATION.
+
+PERFORM cria_botao.
+
+text1 = 'Tela Nova em Tela Cheia!'.
+text2 = 'Tela Nova como Pop-up!'.
+
+* Acerto das chamadas das novas telas.
+*------------------------------------
+AT SELECTION-SCREEN.
+
+  CASE sy-ucomm.
+
+*  Neste caso, chamando a tela como uma nova tela fullscreen.
+   WHEN 'FC01'.
+    CALL SELECTION-SCREEN 9000.
+
+*  Aqui, chamando a nova tela como um pop-up
+   WHEN 'FC02'.
+    CALL SELECTION-SCREEN 9001 STARTING AT 5 5 ENDING AT 50 8.
+
+  ENDCASE.
+
+* O form abaixo é do post da PARTE 1 da sequência Tela de Seleção
+* turbinada. Estou usando para preencher os dados dos botões.
+*&---------------------------------------------------------------------*
+*&      Form  cria_botao
+*&---------------------------------------------------------------------*
+FORM cria_botao .
+
+ DATA: wa_button TYPE smp_dyntxt.
+
+ wa_button-text      = 'Tela Cheia'.
+ wa_button-icon_id   = ICON_BUSINAV_SZENARIO.
+ wa_button-icon_text = 'Tela Cheia'.
+ sscrfields-functxt_01 = wa_button.
+
+ wa_button-text      = 'Tela Pop-Up'.
+ wa_button-icon_id   = ICON_SYSTEM_MODUS_CREATE.
+ wa_button-icon_text = 'Tela Pop-Up'.
+ sscrfields-functxt_02 = wa_button.
+
+ENDFORM.                    " cria_botao
+Denovo, jogar num Z local e rodar (já pensou em quantas mil vezes você fez isso? :-o). Vai ficar
+bunito
+, como segue:
+Tela de Seleção Simples. Porém, clicando nos botões...
+"Tela Cheia": Nova tela de seleção exibida em fullscreen. Notem que os botões da primeira tela de seleção não se repetem!
+"Tela Pop-up": Mostra uma nova tela de seleção como pop-up! Sim, dá pra salvar variante do pop-up 🙂
+Telas novas em onlines também são simples, mas acho essa alternativa interessante e o resultado visual é praticamente o mesmo. Acho que a principal diferença é poder declarar select-options normalmente, coisa que é bem chata de tratar em telas de onlines.
+Espero que ajude! No próximo post, dicas gerais para selections screens e na sequência, a tela megazord, fechando a saga de posts!
+Abraços!
+
+
+
+Comentários:
+Nantes (31/08/2012 16:36): Muiiito bom ! Parabens! Todas de tela de selação!!!
+Felipe Catelani (01/08/2012 14:58): Boa dica, Mas tenho um dúvida….. o pop up tem os botões executar, verificar, salvar.. Tem como exclui-los? Vlw. Abrçs
+  Mauricio Cruz (01/08/2012 15:22): Se eu não me engano, tem como fazer utilizando a função RS_SET_SELSCREEN_STATUS, no evento AT SELECTION SCREEN OUTPUT. Você passa para ela uma tabela dizendo quais botões você quer excluir da tela que está aparecendo. Tem vários exemplos da utilização da função por aí, infelizmente eu não tenho nenhum aqui comigo agora 🙁 Mas é tranquilo de usar! Abraços
+  Mauricio Cruz (01/08/2012 15:22): Se eu não me engano, tem como fazer utilizando a função RS_SET_SELSCREEN_STATUS, no evento AT SELECTION SCREEN OUTPUT. Você passa para ela uma tabela dizendo quais botões você quer excluir da tela que está aparecendo. Tem vários exemplos da utilização da função por aí, infelizmente eu não tenho nenhum aqui comigo agora 🙁 Mas é tranquilo de usar! Abraços

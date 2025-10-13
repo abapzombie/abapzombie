@@ -1,0 +1,46 @@
+Coisinhas importantes do CRM
+Autor: Mauro Laranjeira
+Data: 17/03/2011 07:36
+
+Este post é dedicado inteiramente ao meu amigo Zé (José Marcelo).
+Creio que pelo menos uma vez por semana eu chamo o Zé e pergunto a mesma coisa que havia perguntado semana passada, isso acontece com ele também.
+“Qual a Tabela…?”
+“Qual transação mesmo…..?”
+Resolvi fazer um post com as transações, visões, objetos e classes mais utilizados no CRM, isto pelo menos vai ajudar o Zé e eu a não perguntar sempre as mesas coisas (vou perguntar so mais uma vez para escrever este post, rs :roll:).
+Cluster Visões (Transação SM34)
+BSPWDVC_CMP_EXT – Cluster com ampliações de componentes;
+Criação de Campo no CRM 7.0 com AET – Vídeo
+Classes e Interface (SE24)
+CL_BSP_WD_MESSAGE_SERVICE –
+Mensagem com BOL
+CL_CRM_IC_5X_EXT_ALERT_SRV –
+Alert Modeler
+CL_CRM_BOL_ENTITY – Classe de objeto BOL;
+IF_BOL_ENTITY_COL – Interface para trabalhar com collections, tanto BOL como de Nó de Valor;
+CL_CRM_BOL_CORE – Core do BOL, pode usar o método get_instance para pegar a instância;
+Transações
+GENIL_MODEL_BROWSER – Hierarquia de todos os objetos BOL;
+GENIL_BOL_BROWSER – Transação para teste de Query BOL (Objetos de pesquisa), com essa transação é possível após a utilização; da query ver os relacionamentos dos objetos atrelados;
+BSPWD_CMP_CMPWB – Ampliação, criação é alteração de componentes;
+AXTSHOW – Para o CRM 7.0, que a criação de EEWB ocorre na aplicação Web, pode acontecer do SAP “travar” durante a criação de algum campo, está transação faz a correção dos campos / atributos com erros;
+PPOMA_CRM  – Estrutura organizacional do CRM, semelhante á PPOME do R3;
+SCC1 – Transporte de request entre Client;
+WUI_SSO – Abri o WebClient já logado
+Tabelas
+CRMC_IU_MD_PROF – Configuração de “Confirmação Automática” para o Interaction Center;
+Query BOL
+BTQuery1O – Consulta de documentos BTOrder;
+BuilHeaderSearch – Consulta de parceiro, objeto BuilHeader;
+SM30
+BSPWDV_EHSET_ASG – Ativa/Desativa o SET de ampliação para o client;
+Função
+ITS_IMPORT_CONTEXT – Valida de um processo esta sendo executado por transaction launcher
+Pretendo criar outros posts explicando algumas transações e algumas configurações, irei fazer referencia neste post 😀
+CCEERRTTOOO!!!
+Abraços a todos aqueles que nunca lembram estas coisas e outras coisas que eu esqueci 😉
+
+
+
+Comentários:
+Jose Ricardo Perez (25/03/2015 17:21): Boa tarde Mauro. Estou com um problema e gostaria de saber se você tem uma luz de como posso fazer. Estou começando a aprender ABAP BOL/BSP para CRM e no sistema em que trabalho tem uma função onde o usuario digita um texto no CRM com algumas tags tipo  etc. Nessa tela o usuario precisa importar uma planilha onde existe a tradução dessas Tags. Essa função, salva o arquivo em tags HTML e preciso criar um botão para imprimir o texto já convertido. Consegui criar o botão, mas estava lendo e o unico jeito de imprimir é com PDF. Existe algum jeito de converter o HTML para PDF? Ou algum outro jeito para que eu possa imprimir essas mensagens? Agradeço a ajuda. Att. Ricardo
+Danilo (08/11/2012 16:05): Aee Mauro!!! Cara, a dica da SM30->BSPWDV_EHSET_ASG salvou minha vida!!! Valeu!

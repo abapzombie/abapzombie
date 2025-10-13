@@ -1,0 +1,19 @@
+Criação de Campo no CRM 7.0 com AET – Vídeo
+Autor: Mauro Laranjeira
+Data: 15/03/2012 10:08
+
+Certo Zombizada,
+Algo que esta gerando muitas dúvidas no mundo do CRM, a ferramenta AET ( Application Enhancement Tool ) da versão 7.0, esta ferramenta veio para substituir a antiga EEW – Easy Enhancement Workbench (Transação EEWB).
+Mas o que é a ferramenta AET ou EEW?
+No resumo, é a ferramenta utilizada para a criação de campos dentro do CRM da SAP.
+Navegando na internet, encontrei esse
+link da SAP
+que tem um vídeo muito bom explicando tanto a criação de um campo, como a utilização deste campo na pesquisa de um documento.
+Abraços a todos e agradecimento a Dmitri Kravchuk
+
+
+
+Comentários:
+Caíque Escaler (11/04/2012 09:35): Mauro, tá mto legal o site… só uma observação… a ferramenta é EEW – Easy Enhancement Workbench 😀 não EEWB(Esta é a transação) 😀 Maurão no mundo crm! esse é o cara! A proposito, não tem nenhuma dica de como checar os campos obrigatórios configurados na ui configuration tool? tentei pelo controller mas se crio mais de um documento fode td! hahahaha Abs!
+  Mauro Laranjeira (24/04/2012 10:04): Certo vlw Caíque, Vlw pela correção vou atualizar no POST. Sobre checar os campos, teria que pesquisar, também não conheço. Abraço é nois queiroizinho kk
+  Mauro Laranjeira (24/04/2012 10:04): Certo vlw Caíque, Vlw pela correção vou atualizar no POST. Sobre checar os campos, teria que pesquisar, também não conheço. Abraço é nois queiroizinho kk

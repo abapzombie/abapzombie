@@ -1,0 +1,24 @@
+ABAPZombie Guide to ABAP – Parte 18 – CALL BADI
+Autor: Mauricio Cruz
+Data: 10/03/2011 14:18
+
+Mais um comando do tipo “eu faço o que tá escrito”, ou seja: O Call BADI faz a Chamada de uma BADI. Simples assim 🙂
+O comando funciona como uma espécie de CALL METHOD, a diferença é que o SAP vai fazer a rotina de verificação para pegar as particularidades da BADI e todos os metódos implementados.
+Para ilustrar, um exemplo do standard:
+* Retirado do programa LMIGOKP2 (transacao MIGO)
+   get badi lr_mb_transfer.
+
+   call badi lr_mb_transfer->check_order_of_steps
+     EXPORTING
+       is_mseg   = ls_mseg
+       is_wueb   = is_wueb
+       is_goitem = ls_goitem
+     IMPORTING
+       e_return  = ls_return.
+Ou seja, o código acima iria buscar todas as implementações da BADI para o método CHECK_ORDER_OF_STEPS, e iria executá-las uma a uma (se elas estivessem ativas e etc).
+O comando funciona em conjunto com o comando GET BADI (uma espécie de CREATE OBJECT), que busca a instância de uma BADI.
+Mas atenção:
+esse comando foi implantado nas versões mais recentes do SAP, e ele faz parte de um novo tipo de tratamento de BADIs feito dentro da ferramenta que cria/controla enhancement spots.
+O que você encontra com frequência no standard para o tratamento de BADIs é a utilização da classe CL_EXITHANDLER para buscar instâncias de BADIs e executar os seus métodos implantados.
+Mas enfim, esse e outros detalhes sobre BADIs estarão em um tópico apropriado. O comando CALL BADI “só” faz o que eu expliquei ali mesmo 🙂
+Abraços!

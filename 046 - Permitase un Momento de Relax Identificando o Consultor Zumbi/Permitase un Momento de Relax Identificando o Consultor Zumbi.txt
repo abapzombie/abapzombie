@@ -1,0 +1,39 @@
+Permitase un Momento de Relax – Identificando o Consultor Zumbi
+Autor: Mauricio Cruz
+Data: 18/02/2011 08:30
+
+Como identificar que o seu amigo
+Consultor tornou-se um zumbi
+? É fácil, é só verificar os seguintes sintomas:
+Ele não chega de manhã (não precisa, ele já estava lá).
+Ele não pisca mais. Nunca.
+Ele reclama que chegou em casa e foi mordido pelo próprio cachorro.
+Ele reclama que chegou em casa e foi arranhado pelo próprio gato.
+Ele reclama que chegou em casa e foi mordido pela própria mãe (?!?!).
+Ele xinga um código por ser “porco”, e depois descobre que ele mesmo codificou, às 4am de uma terça.
+Ele acorda no meio da noite xingando: “que lixo! deu sy-subrc 4 denovo, nãaaaaaaao”.
+Ele faz um IF 1 = 2.
+Ele dirige como se estivesse no Carmageddon, mas de maneira inconsciente.
+O café não faz mais efeito (Nenhum dos 3 litros diários).
+Ele usa mensagem de erros para parar o processamento, ao invés de break-points.
+Ele transporte essas mensagens para QAS ou PRD.
+Ele tenta sair as 17h após três dias de trabalho, mas retorna pois seus pais ligaram para a polícia, alegando que um doido varrido estava tentando arrombar a porta.
+Ele vai tirar dúvida com alguém, mas logo após explicar o problema, ele agradece e diz que a pessoa o ajudou muito(sem a pessoa ter respondido).
+Ele entra em depressão por não ter overtime no próximo fim de semana.
+Mesmo sem overtime, ele trabalha (é mais forte que ele).
+Ao resolver um problema simples, ele dá pulo de alegrias e rola no chão de felicidade, todo descabelado e com a roupa suja.
+Quando não trabalha de madrugada, chega em casa e não faz nada, por não lembrar o que fazia antes de ser zumbi.
+Não se lembra mais como escreve, só sabe digitar.
+Lembra o nome de todas as EXITs, transações e tabelas do SAP, mas esquece o nome do irmão.
+Após 1 dump às 00h esquece o nome das EXITs também, por ter entrado em colapso.
+Inventa palavras que não existem, como trabalhância e debuggancia (“Está rolando uma debuggancia complicada aqui na madruga”)
+Dá boa noite para a(o) Namorada(o) pelo MSN… do trabalho.
+Seus únicos amigos são os caras do projeto.
+Esquece todo dia de almoçar, de jantar, e até de ir embora.
+Lê blogs de ABAP durante a madrugada (você é um deles? hehe).
+Até a próxima semana!
+
+
+
+Comentários:
+William (01/03/2011 07:39): òtemo!!!Principalmente quando o cliente é uma multinacional americana!

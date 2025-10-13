@@ -1,0 +1,32 @@
+Pontos flutuantes, existe solução
+Autor: Mauro Laranjeira
+Data: 31/03/2011 18:46
+
+Existe cálculo após a VA01? oO
+Quem nunca ficou que nem um
+zombie
+fazendo milhões de divisões para cálculos nas exits da VA01, pois é, já fiquei. 🙄
+Nem tudo está perdido, estamos salvos, 😀
+Graças ao….
+Super Zombie
+NNNÃÃÃOOO… Graças ao Report mesmo o/
+Uma solução que encontrei foi, criar um report na SE38 e marcar a opção “Aritmética em ponto fixo”
+Criei as formulas de cálculos dentro de um perform em um report, faço a chamada do perform no momento em que preciso fazer o cálculo.
+Exemplo com um perform “calculo_imp” é um report com o nome “zreport”:
+PERFORM calculo_imp(zreport) USING v_valor1
+                                                 v_valor2
+                                           CHANGING v_resultado.
+Dentro do perform “calculo_imp”, tenho o meu cálculo.
+Este programa também poderia ser uma função, mas vejo um problema, nem sempre iremos fazer um único tipo de cálculo, há situações que iremos precisar de mas de 3 parâmetros, no caso da função teríamos que prever a quantidade de parâmetros de importação e exportação.
+É isso, um dia isso me ajudou muito, espero que ajude a mais alguém.
+Abraços a todos aqueles que estão evitando o processo de virarem zombies 😉
+Agradecimentos ao Ney Luiz Schneider.
+
+
+
+Comentários:
+Rafael Paes (27/12/2016 13:25): fantástico.. salvou meus neurônios este post!²
+Fabio Pagoto (22/06/2016 13:18): fantástico.. salvou meus neurônios este post!
+Daiane (31/03/2011 16:27): Muito bem lembrado Mauro!!! Já tive que fazer isso antes, e passei um tempinho quebrando a cabeça também… rs Abs!
+  Mauro Laranjeira (01/04/2011 05:24): =D Valeu Dai =*
+  Mauro Laranjeira (01/04/2011 05:24): =D Valeu Dai =*

@@ -1,0 +1,72 @@
+ABAPZombie Guide to ABAP – Parte 5 – APPEND
+Autor: Mauricio Cruz
+Data: 08/02/2011 09:52
+
+O APPEND, este velho conhecido dos programadores. Todos os programadores ABAP já deram APPEND em alguma tabela alguma vez na vida.
+Se você ainda não é programador, eu explico: O APPEND adiciona uma nova linha no final da sua tabela interna.
+– Para tabelas do tipo
+STANDARD
+, ele simplesmente adiciona a nova linha no final da tabela.
+– Para tabelas do tipo
+SORTED
+ele vai apendar contato que a nova linha siga a sequência da ordenação da tabela interna, e se a nova linha não criar uma linha duplicada.
+– Para tabelas do tipo
+HASHED
+, desencane porque não dá para appendar.
+Vamos ver o código do APPEND e algumas terminologias:
+REPORT  zombie_append.
+
+* Tabela principal e tabela para cópia.
+DATA: t_mara  TYPE TABLE OF mara,
+      t_mara2 TYPE TABLE OF mara INITIAL SIZE 10.
+*      t_mara2 TYPE TABLE OF mara INITIAL SIZE 2.
+
+* Work area genérica
+DATA: wa_mara LIKE LINE OF t_mara.
+
+* APPEND simples
+wa_mara-matnr = '1'.
+APPEND wa_mara TO t_mara.
+
+* APPEND linha vazia
+APPEND INITIAL LINE TO t_mara.
+
+BREAK-POINT.
+
+* APPEND seguido de SORT
+wa_mara-matnr = '3'.
+APPEND wa_mara TO t_mara2 SORTED BY matnr.
+
+wa_mara-matnr = '1'.
+APPEND wa_mara TO t_mara2 SORTED BY matnr.
+
+wa_mara-matnr = '2'.
+APPEND wa_mara TO t_mara2 SORTED BY matnr.
+
+BREAK-POINT.
+
+* APPEND de dados de uma tabela em outra tabela
+APPEND LINES OF t_mara TO t_mara2.
+
+BREAK-POINT.
+– O
+APPEND INITIAL LINE
+appenda uma linha vazia na tabela interna;
+– O
+APPEND LINES OF tab1 TO tab2
+adiciona linhas de uma tabela em outra tabela.;
+– O
+APPEND wa1 TO tab1 SORTED BY
+faz o APPEND e na sequência já ordena a tabela do maior para o menor valor. Vale dizer que esse comando fica preso no tamanho máximo da área de memória da tabela (“INITIAL SIZE”), e se você ultrapassar o tamanho, o APPEND com SORTED BY apaga registros sem dó nem piedade. Comente a linha com INITIAL SIZE 10, e descomente a linha com INITIAL SIZE 2 para ver isso acontecendo.
+Esse é um dos comandos essenciais no dia-a-dia de programadores. Mas ele ainda perde o IF em quantidade de utilizações 😛
+Abraços!
+
+
+
+Comentários:
+Custodio (20/07/2011 17:27): corrigindo meu comentario, ao usar INSERT vc continua tendo que se preocupar com duplicate key (se a tabela for WITH UNIQUE KEY), vc nao precisa se preocupar eh se a nova linha esta na sequencia do sort ou nao.
+  Mauricio Cruz (20/07/2011 17:29): Quando eu chegar no INSERT vou explicar tudo isso, neste artigo é só o APPEND mesmo 😉
+  Mauricio Cruz (20/07/2011 17:29): Quando eu chegar no INSERT vou explicar tudo isso, neste artigo é só o APPEND mesmo 😉
+Custodio (19/07/2011 19:24): Ola pessoas, Parabens pelo blog, realmente nao ha muitas opcoes em Portugues, principalmente pra quem esta comecando. Tenho algumas observacoes aqui, e se o tempo deixar, farei sempre minha "revisao". – Para tabelas do tipo SORTED ele vai apendar contato que a nova linha siga a sequência da ordenação da tabela interna, e se a nova linha não criar uma linha duplicada. Na verdade, podera criar uma linha duplicada, se a tabela assim permitir (sorted table with non-unique key). De qualquer modo, se voce esta trabalhando com sorted table, esqueca o append e use insert, assim nao precisa se preocupar com duplicate keys. O APPEND wa1 TO tab1 SORTED BY faz o APPEND e na sequência já ordena a tabela do maior para o menor valor. Vale dizer que esse comando fica preso no tamanho máximo da área de memória da tabela (“INITIAL SIZE”), e se você ultrapassar o tamanho, o APPEND com SORTED BY apaga registros sem dó nem piedade. Correto, lembrando que o SORTED BY funciona apenas para standard tables.
+  Mauricio Cruz (20/07/2011 05:48): Custodio, obrigado pelas observações! Sempre que você tiver ressalvas, pode postar, é exatamente pra isso que servem os comentários! Longe de mim ser o dono da verdade, o que eu quero é aprender também! hehe Um abraço!
+  Mauricio Cruz (20/07/2011 05:48): Custodio, obrigado pelas observações! Sempre que você tiver ressalvas, pode postar, é exatamente pra isso que servem os comentários! Longe de mim ser o dono da verdade, o que eu quero é aprender também! hehe Um abraço!

@@ -1,0 +1,25 @@
+Permitase un Momento de Relax – ABAP Warrior!
+Autor: Mauricio Cruz
+Data: 17/06/2011 11:35
+
+Lembrando para o povo esquentadinho que isso é uma paródia, com um intuito só: divertir.
+Enviado pelo meu amigo “Robson Pereira”
+Abap Warrior a história de uma lenda
+Como nem só de ABAP vivemos, transcrevo aqui uma antiga lenda ABAP Warrior:
+Deus criou o mar, a terra, as árvores e os seres humanos. Logo em seguida deu o livre arbítrio para seus queridos filhos. Com isso, logo começaram as caças, o plantio, tudo para o ser humano conseguir manter-se vivo. Porém, logo chegou a ganância e o ser humano começou a plantar mais do que ele mesmo consumia para vender para o vizinho que tinha preguiça de plantar. Como conseqüência, descobriu-se o lucro, a contratação de funcionários e o roubo por parte deles….
+Deus, vendo que a situação estava ficando fora de controle, criou o ERP para deixar os negociantes mais confiantes e não atrasar o desenvolvimento que estava acontecendo.
+Vários programas foram mostrados aos comerciantes, porém o que mais empolgou foi o SAP, vindo de lugares longínquos onde só a mágica e os seres místicos predominavam.
+Alguns abençoados foram escolhidos para o árduo trabalho de aprender suas técnicas e colocá-las em funcionamento. Não foi fácil! Vários pereceram no caminho, contudo os poucos restantes adquiriram o conhecimento necessário para utilização de tal ferramenta e assim acabar com os problemas dos comerciantes. O Diabo, vendo tudo isso acontecer ficou furioso. Não havia mais discórdia e nunca mais haveria roubo. Assim mandou seus mensageiros das trevas para atrapalhar o bom andamento do projeto. Esses mensageiros ficaram conhecidos como os “MALUCOS”. Tudo em que eles colocam suas terríveis garras apodrece, são conhecidos por trazerem a peste para este mundo (também conhecido como o Dump). Entretanto, chegou o dia do go-live. E eis que a surpresa veio! No primeiro lançamento da MIRO em produção aconteceu o desastre. Todos ficaram apavorados, ninguém nunca tinha visto aquilo. O que afinal de contas era esse tal de Dump??? Afinal de contas que mensagem é essa “BDC ZERO DIVIDE” (para os leigos é a mensagem que ocorre quando se tenta fazer uma divisão por zero). Os “MALUCOS” ficaram felizes, pois a discórdia estava estabelecida entre os humanos novamente.
+Deus, vendo isso, ficou muito irritado e assim mandou ajuda: seus mais queridos ajudantes, os quais contribuíram até na arquitetura do universo, aqueles que sempre trazem a solução para os seus e que são muito mais que simples humanos. Sim, Deus teria que mandar para a terra a maior arma que existia entre as divindades para acabar com esse problema que estava assolando o mundo inteiro. Assim o mundo ficou conhecendo os ABAP’s warriors. Aparentemente pessoas comuns, mas na verdade são semi-deuses que vieram acabar com os problemas dos seres humanos. Somente através da crença destes destemidos guerreiros, que seguem combatendo arduamente este mal, é que a humanidade conseguiu chegar até os dias de hoje. Os guerreiros da paz, seguem a F-cincologia, que é o estudo do Dump. Todos são formados e têm o título de
+F-cincólogos. Com seus golpes secretos eles descobrem o que os “MALUCOS” fazem de errado e corrigem possíveis problemas. Seus golpes secretos são:
+THUNDER F5;
+VORTEX F6;
+STARDUST PLASMA F8.
+Diz a lenda que seus golpes são tão poderosos que podem parar um servidor, ou acabar com o faturamento de uma empresa. Com esse arsenal esses indivíduos são a salvação da humanidade desde tempos remotos. E assim, começamos a Lenda de pessoas que lutam por um ideal, diferente do que muitos imaginam, pois acham que são mercenários imundos ou coisa parecida, eles cobram salários exorbitantes para que não percebam que na verdade são serem angelicais, mercenários porém limpinhos, que estão na terra somente para proteger as pessoas e seus interesses, conforme a vontade de Deus.
+O que você deve fazer agora: Leia denovo, mas troque o
+MALUCOS
+por qualquer cargo do mundo SAP: Funcionais, BASIS, Usuários, PIs, BWs, Cordenadores, Líderes, Gerentes… e você vai ver que a história sempre se repete hahahahaha.
+Quem aí se habilita a fazer o Functional Warrior, BASIS Warrior, Project Manager Warrior, User Warrior, BW Warrior, PI Warrior, CRM Warrior…? É só fazer que eu publico haha!
+Se o autor original aparecer, é só falar que eu dou os devidos créditos 😉
+Abraços!
+😀

@@ -1,0 +1,28 @@
+Melhorias no Blog – Feedback de Zumbis para Zumbis
+Autor: Mauricio Cruz
+Data: 26/09/2011 18:00
+
+Galera,
+Nos últimos dias adicionamos várias melhorias ao blog, para que fique mais fácil ler, comentar, compartilhar e dar sugestões. Vou listar tudo que mudamos neste post, e gostaria de pedir a colaboração de você, senhor zumbi que utiliza nossos artigos para se salvar da infestação, para nós dar um feedback e comentar se ficou melhor, e o que ainda precisa ser melhorado. 🙂
+Comentários:
+Colocamos uma barra para você utilizar emoticons nos comments e botões para você dar like/dislike em comentários. Também colocamos um esquema de notificações por e-mail, assim você fica sabendo de novos comentários nos posts em que você tiver feito algum comentário (leia de novo se não entendeu hahahahaha 😛 ).
+Contato:
+Agora tem um form “bunito” para você mandar um e-mail pra gente com o que você quiser. Link ali na barra de cima 🙂
+Ajustes Barra Lateral:
+tava na hora de arrumar a “zona” que estava ali. As tags agora mostram o número de posts, arrumamos os links e colocamos botões maiores para nosso feed RSS e para nosso Twitter. Siga se você ainda não o fez!
+Melhorias nos posts:
+Os posts agora seguem o padrão do “continue lendo ->”, para que fique mais fácil para você comentar e ler os posts. Colocamos também os botões para compartilhar os posts por onde você quiser 🙂
+Celulares:
+Agora temos um template especial para os celulares, você pode acessar e ver o conteúdo do blog otimizado para celulares 🙂
+Estamos sempre fazendo melhorias no nosso blog, e vamos sumarizá-las num post sempre que tivermos um número legal de melhorias implantado. Se você tiver qualquer sugestão pode mandar para gente via e-mail ou pelos comentários.
+Abraços a todos que acessam blogs que são melhorados ou não.
+
+
+
+Comentários:
+Renan William Alves (27/09/2011 07:32): Olá, vocês estão de parabéns, tá nota 10! Só mais uma coisa que acharia legal: vocês colocarem o feed na íntegra para os assinantes. Atualmente ele vai somente o excerpt do post. Parabéns e sucesso!
+  Mauricio Cruz (27/09/2011 08:16): Essa opção estava perdida aqui no WordPress.. coloquei para o Full Text. Eu tb fico bravo qdo um feed de um site não mostra o texto todo, e eu tb não deixo de visitar o site por conta do feed completo.. ou seja, estava mostrando só o resumo pq a gente é besta e nunca se ligou nisso mesmo hahahaha Alterei aqui, e no próximo post já faço o teste. Obrigado pelo feedback, abraços!
+  Mauricio Cruz (27/09/2011 08:16): Essa opção estava perdida aqui no WordPress.. coloquei para o Full Text. Eu tb fico bravo qdo um feed de um site não mostra o texto todo, e eu tb não deixo de visitar o site por conta do feed completo.. ou seja, estava mostrando só o resumo pq a gente é besta e nunca se ligou nisso mesmo hahahaha Alterei aqui, e no próximo post já faço o teste. Obrigado pelo feedback, abraços!
+Furlan (26/09/2011 16:08): Template para mobile funcionando perfeitamente no iPhone. Obrigado por ter incluído essa funcionalidade! Abraços!
+  Mauricio Cruz (26/09/2011 16:18): Valeu pelo Feedback Furlan! Só pra constar, o Mauro deu essa idéia pq ele achou ANIMAL a versão do abap101 para mobile 😀 Abraços!
+  Mauricio Cruz (26/09/2011 16:18): Valeu pelo Feedback Furlan! Só pra constar, o Mauro deu essa idéia pq ele achou ANIMAL a versão do abap101 para mobile 😀 Abraços!

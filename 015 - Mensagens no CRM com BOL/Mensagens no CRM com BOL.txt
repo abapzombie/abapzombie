@@ -1,0 +1,38 @@
+Mensagens no CRM com BOL
+Autor: Mauro Laranjeira
+Data: 12/01/2011 11:10
+
+VIVA OO !!!
+O CRM fica ate chato por causa da Orientação a Objetos. Ainda não sei como tem gente que tem “medo” disso.
+Reutilização de código é o futuro. Se um dia o objeto sofrer alteração, não mudaremos nada em nossos códigos Z, pois todo o processo das coisas estão centralizados no mesmo lugar.
+Este exemplo funciona na versão 6.0 (2007) do CRM e superiores, nunca teste nas versões anteriores. 😉
+Então.. “siga-me os bons” (by Chapolin)
+" Declaração da variável
+DATA: o_msg  TYPE REF TO cl_bsp_wd_message_service.
+
+"Pega a instância singleton da classe que controla todas as mensagens no CRM
+o_msg = cl_bsp_wd_message_service=>get_instance( ).
+
+"Adiciona a mensagem na classe
+o_msg->add_message( iv_msg_type       = 'S'
+                    iv_msg_id         = 'ZCLASS'
+                    iv_msg_number     = '000'
+                    iv_msg_v1         = 'Parametro 1'
+                    iv_msg_v2         = 'Parametro 2'
+                    iv_msg_v3         = 'Parametro 3'
+                    iv_msg_v4         = 'Parametro 4' ).
+A classe de mensagens é semelhante a classe que controla o
+Alert Modeler
+, é uma classe
+Singleton
+, ou seja, existe uma unica instância da classe por sessão, por este motivo apenas pegamos a instância que ja existe e inserimos as mensagens a serem exibidas.
+Como todo o processo fica na classe standard, caso algum dia a SAP resolva exibir a mensagem de uma outra forma, ou tenha alguma alteração, não será necessário alterar nosso código Z. 😀
+Esta é uma das vantagens de utilizar Orientação a Objetos, ganho na manutenção. pode ser que durante o desenvolvimento de uma classe, você gaste mais tempo do que em um código estruturado. Mas que não concorda comigo que em um projeto o maior tempo gasto gira em torno de manutenção é correção?
+É isso ai NegadS!!!
+Abraços a todos que agora sabem exibir mensagem no CRM 6.0 ou superior.
+Abraço especial a Renata Bacaro que ira pagar a torta de limão que esta me devendo 😀
+
+
+
+Comentários:
+bruno (14/01/2011 07:57): Da hr essas dicas :]

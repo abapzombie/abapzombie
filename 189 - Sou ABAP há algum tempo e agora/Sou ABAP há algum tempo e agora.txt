@@ -1,0 +1,172 @@
+Sou ABAP há algum tempo… e agora?
+Autor: Mauricio Cruz
+Data: 02/06/2014 09:00
+
+Você trabalha com ABAP há algum tempo,já passou da fase de empolgação, descobriu um mundo gigaaaante dentro do ecossistema SAP, e agora não sabe qual caminho seguir. E agora?
+Esse tipo de dúvida é muito comum, principalmente entre os ABAPers que estão entre Júnio~Pleno. Normalmente, a pessoa começa a descobrir que existem MILHARES de caminhos e uma KCTADA de ferramentas SAP para aprender, mas não sabe exatamente no que focar. E o pior: a mesma dificuldade que as pessoas tem para ingressar na área se repete, ou seja, as oportunidades são escassas, e dependem muito de casar necessidade, vontade, e até sorte.
+Mas e aí,
+#comofaz
+?
+Este post nasceu de uma dúvida de um camarada zumbi, que entrou em contato conosco por e-mail (valeu Diego!). Eu e o Mauro conversamos, e decidimos fazer este post em conjunto: primeiro vamos analisar algumas opções e situações existentes no mercado para os plenos, e depois vamos compartilhar nossas próprias experiências, para que vocês possam ter idéia de como as coisas rolam na pratica.
+Se você é Sênior, some daqui que este post não é pra você! (mentira, cola ae e zoa com nóis 😀 ).
+Enfim, pegue o seu café com redbull, largue esse ticket-urgente-do-fim-da-pilha-de-urgências, e prepare-se para ficar ainda mais com dúvidas após ler este post (é por uma boa causa, eu juro) 😀 . O post é longo, mas espero que seja uma experiência divertida, e sirva para você refletir sobre a sua carreira. Vamos lá!
+MANO, “ABAP WTF” GANHA MAIS QUE “ABAP PURO”, QUERO APRENDER ESSA PARADA!
+Bom, vou começar direto com a questão principal da vida de praticamente todo mundo que trabalha com ABAP: o que eu posso aprender, para que eu ganhe mais no futuro? Responder essa questão é muito mais difícil do que você imagina.
+Nessa altura do campeonato, você já deve ter percebido que as consultorias não têm interesse nenhum em investir em profissionais “
+porque sim
+“. Consultorias vendem serviços, e é extremamente importante que elas tenham profissionais competentes e especializados, para poder ofertar serviços de alta qualidade para seus clientes.
+A lógica é bem simples: a consultoria X está no cliente Y, e esse cliente Y pede para ela uma alocação de alguém especializado (ex. ABAP+PI). Se a consultoria X não conseguir atender essa demanda, ela deixa de faturar pela alocação, e abre espaço para uma outra consultoria começar a ganhar terreno no cliente. Deixar de ganhar dinheiro e ainda liberar território para o inimigo?
+TENÇO
+.
+Estratégias comerciais à parte, o que eu quero dizer é o seguinte:
+na maioria das vezes, para que você aprenda uma coisa nova você dependerá da vontade da consultoria/cliente
+. (já consigo ver sua cara de desgosto ao ler essa frase). Essa é a realidade nua e crua do que acontece no dia-a-dia. Você depende do cliente ter um projeto com a tecnologia “ABAP WTF”, depende da consultoria alocar você para trabalhar com “ABAP WTF”, depende dos gestores organizarem treinamentos de “ABAP WTF”…
+A coisa fica ainda pior: pode ser que você não seja incluído no “grupo super especial de desenvolvedores que merecem fazer o treinamento XYZ”. Eu já vi gestores discutindo sobre quem poderá ou não fazer um treinamento. Alguns já são descartados logo de cara. (cara de desgosto – o retorno).
+Mas e aí?
+O que você pode fazer?
+Comece
+TRABALHANDO DIREITO
+. O que eu mais vejo é gente brandando aos quatro cantos que são “injustiçados”, que “mereciam mais” que querem aprender a “coisamegapowerquedágrana”, mas que se sentarem num projeto e pegarem uma demanda TRETA de ABAP puro, vão decepcionar.
+No seu nível, pleno,
+você precisa dar o máximo
+no seu trabalho, todos os dias, para que você se destaque como um bom profissional. Não adianta chorar que não tem oportunidade, se você não faz o feijão com arroz direito. Muitas consultorias
+irão sim  investir em bons profissionais
+, mas antes de lhe ensinar algo novo, ela precisa ter certeza que você já faz
+direito
+o trabalho do dia-a-dia.
+E vamos falar das outras questões nos próximos tópicos.
+TRABALHO DIREITO FEITO UM CAMELO E NINGUÉM INVESTE EM MIM, E AÍ?
+Essa situação também é real: muitos plenos bons e competentes estão em
+consultorias que não se preocupam em investir nos seus profissionais
+.
+Aqui cabe analisar se a consultoria realmente não liga para disseminar o conhecimento, ou se a estratégia de treinamentos não está bem definida. Primeiramente,
+troque uma idéia sincera com o seu gestor
+e demonstre seu interesse em aprender coisas novas. Muitos gestores querem realizar coisas bacanas, mas o dia-a-dia acaba os consumindo. Ter pessoas na equipe que demonstram interesse em cursos irá motivá-lo a tirar idéias da gaveta e montar cursos e workshops internos.
+Mas tem também
+aquele gestor que não liga pra nada
+, e quer mais é que você trabalhe que nem um idiota mesmo. Neste caso, parceiro comedor de cérebros, o jeito é mudar de empresa e deixar o gestor anta se virar sozinho (olha lá que a anta pode ser você heim! 😛 ).
+Entretanto, na hora de procurar um novo emprego, é preciso ter muito cuidado. Quando você se mata de trabalhar sem ser reconhecido, cresce uma raiva interna por conta da injustiça, e muitas pessoas tem a tendência de
+se achar “a última bolacha do pacote”
+. O que eu escuto de casos de plenos com 3 anos de experiência que chegam cobrando taxas absurdas e se achando os picas das galáxias…
+Se você se sente injustiçado e não vê perspectiva de melhora no emprego atual, procure um novo, mas
+saiba muito bem qual é o seu lugar
+. Não é demérito nenhum entender que você ainda tem diversas áreas onde pode melhorar, e que o seu conhecimento ainda não é o suficiente para cobrar como um sênior.
+Sério
+: não vá munido de arrogância e do sentimento de “eu posso cobrar MILHÕES”, porque
+ninguém vai te contratar
+, e você pode perder ótimas oportunidades. Diz a lenda que eu já vi isso acontecer. Mais de uma vez.
+E ESSA HISTÓRIA DE APRENDER SOZINHO HEIM?
+Nós do ABAPZombie encorajamos fortemente que você estude e desenvolva seus skills por conta própria.
+Só que a gente não é besta. Sabemos que
+cursos do Mundo SAP são extremamente caros
+(fazer uma acadêmia específica por conta própria é uma facada).  Se você for optar por bancar um curso  sozinho, tente conseguir alguma confirmação com o seu gestor de que aquele conhecimento será empregado em algum projeto. A não ser que seja algo que você queria muito fazer, e não se preocupa em ter certezas antes do curso (eu te entendo, eu sou meio assim 🙂 ), vale a pena garantir que o investimento não seja “perdido”.
+Particularmente, acredito que você nunca irá
+perder
+aprendendo, mas entendo que não é fácil colocar 5k~10k num curso,  não utilizar esse conhecimento em uma situação real e acabar “esquecendo” tudo depois de um tempo.
+Utilizar o SCN no seu dia-a-dia também pode ajudá-lo a aprender muita coisa. Eu sigo o ABAP Space e olho os novos posts criados quase diariamente, e isso me ajuda muito a aprender coisas novas e saber o que acontece no Mundo ABAP e no mercado.
+Não enxergue a ferramenta como um lugar para “tirar dúvidas”
+, enxergue como uma plataforma que irá agregar conhecimento no seu dia-a-dia de trabalho. E não precisa postar não se você não quiser, só como leitura já vale muito. Tire 10 minutos do facebook matinal e troque pelo SCN, aposto que você irá curtir 🙂 . Se você não curtir, talvez esteja na hora de cogitar trocar de área heim…
+MAS TEM MTA TECNOLOGIA, EM QUAL EU APOSTO?
+Como pleno, minha dica é:
+aprenda tudo que vier pela frente.
+Tente se envolver em desenvolvimentos comuns em projetos hoje em dia, mas fora do dia-a-dia do abap puro: Workflow, PI, NFe, Webdynpro,IDOC,  LSMW, Querys, SmartForms, SAPSCript, BSP, CRM, SRM, etc. Eu citei algumas coisas velhas, eu sei, mas é importante que você tenha conhecimento do velho para entender o novo. Eu ODEIO Sapscript, mas o pouco conhecimento que eu tenho dessa joça já me salvou na análise de alguns problemas.
+Se tiver um workshop
+de grátis
+na sua empresa, não pense duas vezes:
+faça
+! Imagine quanto custaria pagar para estudar algo desse assunto?
+E se você tiver alguma oportunidade em algum projeto, melhor ainda. Se existir uma demanda assim em um projeto, e estiverem pensando em mandar para outra pessoa, tente conversar com os gestores e “puxar” a demanda para você.
+Não tenha medo
+, a pressão da entrega pode revelar-se benéfica para o seu aprendizado na prática. Talvez o primeiro não saia exatamente como você quiser, nem o segundo, mas se você não der o primeiro passo, nunca vai conseguir dominar completamente o assunto.
+Aprender determinadas tecnologias podem ter impacto na sua taxa/hora, fato. Mas ainda vale a premissa inicial de não se achar só porque você sabe trabalhar com a ferramenta X ou Y.  Diz a lenda que eu já vi isso também. Mais de uma vez.
+CARREIRA EM X, CARREIRA EM Y, e CARREIRA EM Z DE ZUMBI
+Não é verdade que você
+“precisa”
+virar um funcional ou gestor ou comercial ou baba-ovo de sócio para ganhar mais no Mundo SAP. Você
+não precisa
+, mas isso não quer dizer que seja
+errado
+(baba-ovo de sócio é SEMPRE ERRADO)
+.
+A
+realidade
+do mercado, é que funcionais de alguns módulos e gestores em geral ganham um pouco mais do que pessoas 100% técnicas. O que você  precisa se perguntar é
+se você está disposto a fazer o trabalho
+que esses cargos exigem. É o que diz o tio do nosso amigo aranha: “com grandes poderes, vem grandes responsabilidades”. Não é nada de outro mundo, mas tanto a área funcional como a área de gestão requer um contato mais aproximado com clientes, horários bem mais flexíveis, conhecimento de áreas de negócios ou de metodologias de projetos…
+O
+seu verdadeiro potencial se revela quando você trabalha naquilo que gosta
+, e você pode chegar a ganhar mais do que a maioria se realmente for bom em determinada área técnica. O clichê “dinheiro não é tudo” é verdadeiro, pois muitas vezes conta muito mais trabalhar num ambiente legal com algo que você gosta e se interessa, do que ter um trabalho ruim e ser infeliz só pela questão do dinheiro. Mas eu sei que tem gente que não tá nem aí e só quer ganhar mais, normal.
+Pense bem antes de escolher a carreira técnica. Mas se escolhe-la, fique tranquilo pois oportunidades não irão faltar. Nossa área já carece de um nível acima do Sênior, e você pode chegar até a dois níveis acima do Sênior. Ou 3 níveis. Ou 4. Ou 5, e daí você realmente ganha o tútulo de pica das galáxias. Pode até colocar no CV, sério
+VIAJAR, VIAJAR, QUERO PROJETO DE FRENTE PRA PRAIA… OU NÃO
+Há quem adore viagens, há que odeie.
+Você gosta de viajar?
+Então lembre-se que viagens = custos para a consultoria. O cliente paga as despesas, mas o custo operacional de controlar as viagens, despesas, telefonas, notebooks e etc continua sendo da consultoria. E ninguém gosta de gastar com pessoas que não “resolvem” os problemas do cliente. A premissa de cima continua valendo: demonstre seu interesse em viajar para os gestores, mas faça por merecer. Eu não mandaria um cara meia boca para um cliente crítico com um escritório de frente para o mar, mandaria alguém responsável, e que trabalhe direito.
+Você odeia viajar?
+Então trabalhe direito (haha). Não existem problemas em acordar com a gestão da empresa sobre o fato de não fazer viagens longas, é um direito seu e ninguém pode julgá-lo por isso. Mas tenha em mente que, no nosso mercado, você precisa demonstrar um trabalho de alto nível para que a sua voz seja ouvida. Consultorias
+precisam de profissionais bons
+em suas equipes. Mesmo para fazer trabalhos remotos ou para atender clientes locais.
+Pra você, tanto faz?
+Então tá.
+É importante dizer que, apesar de parecer que as melhores oportunidades de trabalho com SAP estão ligadas à viagens, não é assim que funciona. A verdade é que impossível para uma consultoria prever o que os clientes irão  precisar. Exemplo:
+Pode ser que um cliente DO LADO DA SUA CASA peça uma proposta de implantar a ferramenta ZYXPOWERBLASTER, e você seria a pessoa ideal para ser alocada. Mas daí, o cliente DO LADO DA SUA CASA decide que é melhor fazer a implantação na sua filial no ACRE.
+Um mês depois, o mesmo o cliente DO LADO DA SUA CASA pede outra proposta, da ferramenta ZUZPOWERMEGABLASTER2. E essa vai ser feita DO LADO DA SUA CASA.
+Se você viajou na primeira proposta, perdeu a chance de trabalhar do lado de casa. Mas, e se você não viajou, pode ser que exista esse 2 projeto e você vá trabalhar a pé. Mas pode ser que o 2 não exista, e você vai ter que se contentar arrumando erro em em exit da VA na 4.6 .
+Não tem como prever!
+O mais importante é não se arrepender. Faça a sua escolha e seja feliz, abraços.
+_____________________________________
+E ae, dúvidas? Os caminhos e as escolhas são muitas, eu sei. Agora eu e o Mauro vamos contar o que rolou conosco, para você ficar com mais dúvidas ainda aeeeeeeeeeee!
+Mauricio
+Passei toda a minha fase Júnior e Pleno trabalhando na fábrica de uma das gigantes do mercado de consultoria. Eu trabalhei com muita gente boa, e aprendi muito, muito, MUITO mesmo. Apesar de ter trabalhado em áreas bem legais naquela época, a evolução natural da carreira na empresa me levaria para o caminho gerencial, e eu realmente odeio controlar projetos. Eu fico muito infeliz tendo que fazer esse tipo de trabalho. Portanto, mesmo com medo e
+cheio
+de dúvidas, resolvi sair e seguir a tal carreira em Y.
+Essa decisão de ser técnico me fez entrar para o mercado de consultorias médias-pequenas com alocações em clientes (e não mais na fábrica), e foi nessa época que eu e o Mauro criamos o ABAPZombie. Ter escolhido seguir a área técnica foi algo decisivo para minha carreira, e eu não me arrependo nem um pouco de ter tomado essa decisão. Mas
+não
+foi fácil: eu tinha conseguido boas posições naquela empresa, e sair para o mercado dava a impressão de que eu iria “perder” tudo que eu havia construído. Precisei recomeçar a fazer networking, conhecer mais gente, mais empresas, mais clientes… Deu tudo certo, e se voltasse no tempo com o conhecimento que tenho, faria exatamente a mesma coisa!
+Mauro
+Eu comecei minha carreira no SAP na mesma empresa que o
+Maurequio
+Mauricio (inclusive, o Mauricio foi meu chefe). Nesta consultoria tive a oportunidade de trabalhar com SAP CRM, e por este motivo, a grande maioria dos meus posts são voltados para o SAP CRM.
+Como qualquer júnior, sonhava como seria viajar pela empresa, até que aconteceu algo meu caro zumbie: minha primeira viagem foi para a Buenos Aires – Argentina. Já imaginei o tango, as carnes e a cultura, seria lindo *-*.  Quando o grande dia chegou, só trabalhava das 7 da manhã até as 22:30, só consegui jantar no Mc Donalds, almoço só no refeitorio da empresa, os famosos alfajores só ganhei alguns de presente do pessoal do projeto pois não consegui sair, e eu era o único brasileiro da equipe.
+Com o passar do tempo, troquei de consultoria,casei e pedi para não viajar mais. Mas daí surgiu a oportunidade de ir para um projeto no Rio Grande do Sul e levar a minha esposa, e eu fui. Hoje estou em outro projeto em Curitiba e também trouxe minha esposa, e de uma certa forma gosto dessa vida pois detesto o trânsito e a violência de SP. Mas não é uma vida que pretendo levar por muito tempo,já que assim eu não consigo estudar e minha esposa não consegue ter uma rotina fixa e sofre com oportunidades de emprego.
+Um ponto que é certeza: quando você está fora da sua base você trabalhar mais, deixa de fazer suas coisas e ver a sua família. Tenho amigos que tem preferencia por projetos fora de suas bases, pelo motivo despesas pagas, ficar longe do caos de SP, conhecer outros lugares.
+Outro ponto que se deve levar em consideração, é a logistica dos aeroportos brasileiros, isso é uma coisa que me revolta muito, por este motivo chego a ir para os projetos de moto ( já que gosto muito de viajar de moto), e junto o útil ao agradavel.
+Minha dica: pense bem, tudo tem seus prós e contas. Conhecer lugares é ótimo, mas não se esqueça que o seu objetivo
+é o trabalho
+e não o lazer.
+_____________________________________
+E aí? Se decidiu? Como você vai encarar sua carreira daqui pra frente? Conte pra gente nos comentários!
+Se você é um Sênior e tem dicas para essa galera que está começando, compartilhe com a galera. A não ser que você tenha medo deles tomarem o seu lugar, daí não compartilha não, e vai trabalhar no vírus para derrubar o SCN.
+Abraços a todos aqueles que são Plenos em ABAP, e somente para os que são plenos. Quem é júnior já ganhou abraço no
+Guia do ABAP Noob
+, e quem é sênior já deveria ter aprendido onde conseguir abraços.
+
+
+
+Comentários:
+Tico Tico (03/02/2016 23:10): Post muito interessante Mauricio, obrigado por compartilhar.
+Tico (29/01/2015 09:11): onde faz o download?
+  Mauricio Cruz (29/01/2015 12:18): … do que?
+  Mauricio Cruz (29/01/2015 12:18): … do que?
+Michel da Costa Silva (17/06/2014 11:47): Grande post me ajudou muito! Eu já estava pensando em desistir da carreira em ABAP, mas esse post me fez enxergar que só depende de mim para alcançar meus objetivos na carreira,  e não de gestores “anta” que temos por ai. Também estava com medo de sair para o mercado e ter que encarar diversas viagens a trabalho, mas vi que não é bem assim :D. Estou seguindo o caminho de SAP e mobilidade, enxergo como um bom começo para sair do mundo Júnior/Pleno e avançar para Sênior, mas com certeza, preciso ainda aprender novas tecnologias, padrões e tendencias de desenvolvimento para o futuro. Obrigado por me incentivar a continuar vivendo e amando ABAP.
+  Mauricio Cruz (18/06/2014 11:31): Michel, Fiquei muito contente com o seu feedback. Que bom que te ajudou! 🙂 Abs e sucesso ae nas decisões!
+  Mauricio Cruz (18/06/2014 11:31): Michel, Fiquei muito contente com o seu feedback. Que bom que te ajudou! 🙂 Abs e sucesso ae nas decisões!
+Daniel Jesus (10/06/2014 10:15): Irado como todos nós passamos essas experiências antes de chegar a Sênior. As viagens, aprender a dizer não para o chefe e sobretudo não se contaminar com a opinião de outros consultores infelizes. Vou contar minha historinha… Já como abap Sênior, trabalhei algum tempo com NF-e em uma das empresas que passei, e lá me interessei por PI…mas ninguém me dava curso, eu não tinha tempo e nem ambiente disponível. Fiquem encudado e meti na cabeça que iria aprender…comecei a procurar vaga para PI Junior ( eu ja tinha exp como PI em NF-e ). Acabei encontrando, ganho 60% do que ganhava antes…mas estou enfim aprendendo, praticando e o melhor, todos estão adorando minha colaboração aqui na empresa. As vezes é preciso dar 1 passo para trás para poder avançar. O recado que eu queria deixar pro Juniors e Plenos é: trabalhe bem, ajude seus amigos, seja humilde e tenha foco. Não pare de estudar…e participe da comunidade !
+  Mauricio Cruz (10/06/2014 14:25): Valeu por ter compartilhado a sua experiência Daniel! Eu também tive que dar um passo para trás antes de entrar no mundo de TI (antes eu era, acredite, metalúrgico). Fui de CLT para estag. , e também não me arrependo. Abs!
+  Mauricio Cruz (10/06/2014 14:25): Valeu por ter compartilhado a sua experiência Daniel! Eu também tive que dar um passo para trás antes de entrar no mundo de TI (antes eu era, acredite, metalúrgico). Fui de CLT para estag. , e também não me arrependo. Abs!
+VANESSA (09/06/2014 09:36): Srs O post foi muito util para mim que estava com o mesmo sentimento de “e agora?” rs,  o mesmo sentimento em relação às viagens, e aos colegas que recebem as oportunidades e vc fica pensando: Mas por que “fulano”?,  terá sido 1 ano e meio perdido pra chegar até aqui e não saber pra onde vou daqui pra frente? O post esclareceu muita coisa, Parabéns mais uma vez!
+  Mauricio Cruz (09/06/2014 09:44): Vanessa, Muito legal receber um feedback como o seu! É isso que nos motiva a continuar postando no site. Abraços e boa sorte na sua jornada!
+  Mauricio Cruz (09/06/2014 09:44): Vanessa, Muito legal receber um feedback como o seu! É isso que nos motiva a continuar postando no site. Abraços e boa sorte na sua jornada!
+Fawcs (04/06/2014 11:54): tl;dr?
+  Mauricio Cruz (04/06/2014 17:15): sou mais a dupla sertaneja nemly e nemlerey
+  Mauricio Cruz (04/06/2014 17:15): sou mais a dupla sertaneja nemly e nemlerey
+Renan A. Ferreira (03/06/2014 17:36): Ótimo post pessoal! Momento de reflexão em 3.. 2.. 1…
+Mateus Oliveira (02/06/2014 13:06): Onde acho o ABAP SPACE? é um blog? Comunidade?
+  Mauricio Cruz (02/06/2014 13:16): Valeu Mateus! Sugestões de posts são bem vindas, mas sabe como é, a “consultoria” que decide hehehehehe Para seguir o ABAP Space do SCN, crie uma conta em http://scn.sap.com/ , depois abra o link http://scn.sap.com/community/abap , e clique no “Follow” no canto superior direito.  A interface não é 100% intuitiva, mas um space é como se fosse uma página do facebook, ou seja, você vai receber todos os posts que a galera fizer por lá. Abs!
+  Mauricio Cruz (02/06/2014 13:16): Valeu Mateus! Sugestões de posts são bem vindas, mas sabe como é, a “consultoria” que decide hehehehehe Para seguir o ABAP Space do SCN, crie uma conta em http://scn.sap.com/ , depois abra o link http://scn.sap.com/community/abap , e clique no “Follow” no canto superior direito.  A interface não é 100% intuitiva, mas um space é como se fosse uma página do facebook, ou seja, você vai receber todos os posts que a galera fizer por lá. Abs!
+Mateus Oliveira (02/06/2014 13:00): Mauricio e Mauro. Só tenho que parabenizar vocês, o post foi ótimo. Acho que vocês poderiam fazer um post também comparando as áreas técnicas, tipo, Webdynpro, PI,…
+Priscila (02/06/2014 12:29): Meninos ótimo post!!! Agora baseado na minha experiência se eu pudesse dar um único conselho seria: Usem filtro solar! haha Falando sério eu sofri um pouco nos 2 primeiros anos de profissão pois eu me “contaminava” muito com o que acontecia com meus colegas de trabalho, sempre que eu via as jornadas malucas, as viagens (que eu não curto) entre outras coisas e via como essas pessoas sofriam e reclamavam, ficava bem em dúvida se deveria ou não seguir nessa profissão. Mas com o tempo eu pude ver que essas pessoas que “sofriam” demais tinham algo em comum: elas não sabiam dizer NÃO. Acho que isso é essencial para que possamos trilhar uma carreira mais de acordo com nossas expectativas, muito embora no começo da carreira você não sabe onde quer chegar, geralmente você começa a perceber o que NÃO QUER então é essencial alinhar com o gestor afinal se você não disser acho que ninguém tem bola de cristal pra adivinhar e se você simplesmente aceitar TUDO mesmo sabendo que aquilo não vai te fazer bem, poderá se desencantar totalmente com a área como já vi alguns casos, sendo que existem sim outras possibilidades, mesmo que sejam em outra empresa. Hoje com esse aprendizado me sinto MUUUUITO melhor e aprendi que é possível sim “guiar” sua carreira mais de acordo com seus objetivos, mas assim como os meninos mencionaram você obviamente para ter o seu NÃO ouvido em alto em bom som rs deve sempre se preocupar como está executando o seu trabalho, pois não adianta fazer altas exigências se você não fizer a sua parte, e é claro, não se pode dizer não pra tudo, deve se sempre manter a  flexibilidade juntamente com o bom senso, pois nem tudo vai sair exatamente como queremos!!
+  Mauricio Cruz (02/06/2014 13:21): Haha, é aquele esquema Pri: o cara reclama PRA KCT do trabalho, mas não sabe levantar e dizer “eu NÃO vou trabalhar no dia do natal, dane-se!”. O problema é que muita gente tem medo da consequência de um não, sem nem ao menos ter tentando discutir as possibilidades com os gestores. Se o gestor pede algo absurdo, você não precisa gritar “NAO, VAI SE FERRAR” na cara dele, mas conversar e expor seu descontentamento não faz mal. Valeu Pri, que fique claro que fomos nós que dissemos NÃO para você!
+  Mauricio Cruz (02/06/2014 13:21): Haha, é aquele esquema Pri: o cara reclama PRA KCT do trabalho, mas não sabe levantar e dizer “eu NÃO vou trabalhar no dia do natal, dane-se!”. O problema é que muita gente tem medo da consequência de um não, sem nem ao menos ter tentando discutir as possibilidades com os gestores. Se o gestor pede algo absurdo, você não precisa gritar “NAO, VAI SE FERRAR” na cara dele, mas conversar e expor seu descontentamento não faz mal. Valeu Pri, que fique claro que fomos nós que dissemos NÃO para você!
+Vinicius Silva (02/06/2014 11:15): Ótimas dicas, ótimo post! O melhor para quem QUER aprender uma tecnologia é ficar no pé do gerente/coach/etc e lembrá-lo em uma frequência “não infernizante” de que você quer aprender aquele “treco”, seja em treinamentos, seja na marra, no projeto e não desistir… Não ter medo nem preconceitos ajuda, às vezes estamos querendo tanto aprender uma coisa e tem uma outra, tão lucrativa quanto, tão divertida quanto, bem no nosso nariz, só falta acordar e lavar a cara pra enfiar a mesma no aprendizado.
+  Mauricio Cruz (02/06/2014 13:18): Valeu Vinicius! Concordo com você: as vezes a gente insiste tanto em algo por teimosia, e deixa de aproveitar uma oportunidade que está bem debaixo do nosso nariz. Todo mundo já passou por isso, ctz. Abs!
+  Mauricio Cruz (02/06/2014 13:18): Valeu Vinicius! Concordo com você: as vezes a gente insiste tanto em algo por teimosia, e deixa de aproveitar uma oportunidade que está bem debaixo do nosso nariz. Todo mundo já passou por isso, ctz. Abs!

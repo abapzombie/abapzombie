@@ -1,0 +1,42 @@
+Decisões Polêmicas, ou “Como entrar em discussões com seus pares”
+Autor: Mauricio Cruz
+Data: 06/02/2012 15:33
+
+MAMILOS, disse o ABAPer polêmico. (e se você não entendeu nada, clique na imagem e veja o vídeo 🙂 )
+No final do ano passado, em conversas com amigos que acompanham o ABAPZombie, eu disse para eles que iria tomar uma decisão polêmica para 2012. Pois finalmente chegou a hora de
+mudar pra valer
+. A partir desse ano eu estou
+deixando de programar em ABAP de forma procedural, pelo menos para programas novos.
+E você pode se juntar à mim, se quiser arrumar
+tretas
+😀
+Notem que eu não estou falando de colocar a lógica “principal” em classes, e deixar o resto de lado. É praticamente tudo em OO mesmo. Se for para copiar algum código de algum lugar, eu vou adaptar para o modelo de classes, tentando não criar classes burras, obviamente. Eu também não vou
+“causar”
+no código dos outros, afinal, durante a resolução de erros eu provavelmente não vou ter tempo para converter e adaptar as rotinas – eu trabalho em clientes, e tenho prazos à cumprir. Mas, para programas novos e criados por mim, vou utilizar 100% OO. Simples assim.
+Que fique claro:
+não estou fazendo isso para ser “cool”, a idéia é fazer uma espécie de laboratório, e relatar os resultados aqui no site. Acredito que após alguns meses vou poder mostrar uma lista de prós e contras baseados nas minhas experiências. Essa também é uma forma de me desafiar no meu trabalho, sem ter que mudar de empresa ou de posição hierárquica. A decisão de como o código vai ser escrito é minha, e eu tenho que garantir a qualidade, não importando qual estrutura meu programa vai seguir.
+Você também pode se juntar a mim, caso queira escutar
+daquele
+ABAP do cliente que o seu programa é “bizarro” e é “impossível de dar manutenção”. Sim, eu já escutei isso, mas o mais legal foi que, depois que eu expliquei, o cara ficou tão empolgado que foi estudar OO por conta. 😉 E vamos ser sinceros: se os seus programas são 100% procedurais, qual o problema de criar programas 100% orientados à objetos? Ah, e sem medinho ou preguiça, o negócio é re-inventar seu próprio trabalho, para não cair na mesmice e acabar encostado 😀
+Abraços à todos aqueles que casaram no último final de semana (parabéns Mauroooooo), e para todos aqueles que vão usar faixas do Rambo com as letras OO estampadas. Boa sorte. Para
+todos
+nós.
+
+
+
+Comentários:
+Gisele Oliveira (04/09/2012 11:58): Então, eu não tenho muito conhecimento em OO… Faço parte da leva de ABAPers que ainda se arrepia quando encontra um código orientado. =( Mas já estou tentando me adaptar! Tenho estudado por aqui mesmo os conceitos e tentando aplicar no dia a dia. Ainda não me arrisco num código todo OO até mesmo pq ainda nem comecei a engatinhar nesse assunto… Mas sei que a tendência é essa e que quem não se adaptar vai estar fora do mercado em muito pouco tempo!
+will (17/02/2012 08:37): Legal, vou me render a essa prática…mas vai deixando seus “caminhos” por aqui, pra gente ir seguindo…
+Giovanni Diniz Frois (13/02/2012 08:52): Idéia interessante.Estou aprendendo os conceitos de ABAP OO agora, então ainda não tenho muita prática em como implementar estes conceitos nos desenvolvimentos do dia a dia.Vai ser interessante poder acompanhar sua experiência pelo blog. Quase apanhei em um projeto de implantação quando perguntei se iriam usar os conceitos de OO nos desenvolvimentos. =(
+  Mauricio Cruz (13/02/2012 08:54): Pois você é quem deveria ter batido! 🙂
+  Mauricio Cruz (13/02/2012 08:54): Pois você é quem deveria ter batido! 🙂
+Jose Nunes (07/02/2012 23:45): Teve um projeto onde implementei todos os custom developments em ABAP OO. Até hoje tem nego que dá manutenção no meu código reclamando da “complexidade”. Sabe o que é mais triste? Não foi nenhum dinossauro-ABAPer vindo do COBOL. É nego de 20 anos de idade que ainda tava cursando faculdade de sistemas.
+  Mauricio Cruz (08/02/2012 07:11): Realmente isso é muito triste. Eu costumo falar que boa parte do povo que trabalha com programação é muito preguiçoso… E eu ainda me pego pensando em como o cara pode ficar reclamando ao invés de ir lá, tentar entender e aprender alguma coisa.
+  Mauricio Cruz (08/02/2012 07:11): Realmente isso é muito triste. Eu costumo falar que boa parte do povo que trabalha com programação é muito preguiçoso… E eu ainda me pego pensando em como o cara pode ficar reclamando ao invés de ir lá, tentar entender e aprender alguma coisa.
+Flávio Furlan (07/02/2012 10:27): Eu lembro quando você me comentou sobre essa resolução e resolvi também adotar. Acabei de publicar um post onde digo que no ABAP101 código procedural não entra mais! Além do mais, até na minha turma de treinamento ABAP, está proibido procedural! Eu sou obrigado a ensinar começando com procedural, mas após as aulas de Orientação a Objetos, está proibido programar procedural. Um PERFORM já é suficiente para eu colocar para fora da sala :-p ! Em outras linguagens não temos mais essa discussão besta! Experimenta comentar sobre isso num fórum de Ruby ou qualquer outra linguagem decente. E mensagem para quem está migrando: “Evitem o primeiro gole”, ou seja, façam TUDO OO, não caiam na tentação “mas é somente uma validação”. Abraços! May the ABAP be with you! PS: aqui onde eu trabalho, programação procedural está proibido, acredita!
+Fabio Pagoti (06/02/2012 21:24): Falando em codigo sem qualidade, pressa e procedural, será que de tras dos panos da nova SDN agente acha codigo ABAP antigo e escrito em alemao? 😛 Acrescentando ao post, mesmo que fosse só para ser cool já é preferível OO. O procedural para mim já morreu e tem gente órfã que não se deu conta.
+william (06/02/2012 20:14): Verdade…. mas, é que te falo…Quinta-feira , pediram minha ajuda, pra pegar uma informação que estava na memória do SAP…o colega  ABAP tinha achado o “monstro”, que era uma tabela com diversas tabelas dentro dela…fui dar um assign, e jogando em um field-symbol dentro de uma exit, mas o que era para ser uma tarefa simples, se mostrou um saco pelo tempo que passava e o gerente ligando pra encher o saco… não conseguia achar uma workarea compatível com o pedaço que eu queria daquela tabela louca (meu estômago roncando de fome), fui quebrando em vários pedaços o assign e mesmo assim não estava a contento…ai cedi, e simulei o processo que deveria pegar da memória por meio de função Standard…Foi um desafio, (que arreguei, mas posso voltar a ver futuramente) só havia feito Assign simples de tabelas “normais”, mas o tempo teve que vencer senão ia tomar na orelha.
+william (06/02/2012 18:58): vige menino, que coragem…eu tinha feito uma entrevista na bbko que o cara faltou me engolir, porque falei que faria o que o Projeto/cliente pedia dependendo da prazo ( por exemplo, usando algo dito como “antiquado” para alguns)…claro que algumas formas de programas ficam mais interessantes e melhores para reutilizar, mas quando o Gerente da conta grita no telefone para poder colocar algo na produção no mesmo dia, num dá pra “testar coisas novas”, vai no que vc domina mesmo…se puder, modifica depois. O aprendizado é continuo. Hoje em dia me foco mais em aprender processos, pois percebo que existem muitos funcionais na dúvida do que precisa realmente ser feito e se existe determinada função Standard que possa vir a ser utilizada.
+  Mauricio Cruz (06/02/2012 19:52): Concordo que na hora do aperto a gente acaba usando o que a gente mais domina, porém, quem disse que essa coisa não pode ser OO? Depois de usar por um tempo, talvez seja muito mais natural criar algo em OO ao invés de criar de forma procedural. Mas só vai saber isso quem de fato for lá e tentar usar OO como prioridade por um tempo.
+  Mauricio Cruz (06/02/2012 19:52): Concordo que na hora do aperto a gente acaba usando o que a gente mais domina, porém, quem disse que essa coisa não pode ser OO? Depois de usar por um tempo, talvez seja muito mais natural criar algo em OO ao invés de criar de forma procedural. Mas só vai saber isso quem de fato for lá e tentar usar OO como prioridade por um tempo.
+Antelio Abe (06/02/2012 18:56): Simple words: Think Different Rocks! Go Ahead. http://www.youtube.com/watch?v=4oAB83Z1ydE

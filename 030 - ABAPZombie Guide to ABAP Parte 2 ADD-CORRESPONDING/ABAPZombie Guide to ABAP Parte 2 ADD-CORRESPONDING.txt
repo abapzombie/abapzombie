@@ -1,0 +1,50 @@
+ABAPZombie Guide to ABAP – Parte 2 – ADD-CORRESPONDING
+Autor: Mauricio Cruz
+Data: 03/02/2011 09:02
+
+* Atenção, este comando é obsoleto na versã0 6.0!
+Muita gente conhece o MOVE-CORRESPONDING, mas pouca gente sabe que existe um comando similiar, o ADD-CORRESPONDING.
+Sintaxe:
+ADD-CORRESPONDING wa_add TO wa_add2.
+O comando vai procurar os campos de mesmo nome nas duas estruturas, somá-los, e guardá-los na segunda estrutura (wa_add2). Exemplo:
+REPORT  zombie_add_corresponding.
+
+* Types - Note que tem o campo adicional char em cada uma das
+* estruturas
+TYPES: BEGIN OF ty_add1,
+        val1 TYPE i,
+        val2 TYPE i,
+        name TYPE char10,
+       END OF ty_add1.
+
+TYPES: BEGIN OF ty_add2,
+        nome TYPE char10,
+        val1 TYPE i,
+        val2 TYPE i,
+      END OF ty_add2.
+
+* Work Areas
+DATA: wa_add1 TYPE ty_add1,
+      wa_add2 TYPE ty_add2.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Valores
+wa_add1-val1 = 10.
+wa_add1-val2 = 10.
+
+wa_add2-val1 = 5.
+wa_add2-val2 = 5.
+
+* Magicamente, ele vai deixar os valores somados na estrutura wa_add2
+ADD-CORRESPONDING wa_add1 TO wa_add2.
+
+BREAK-POINT.
+Coloque num programa Z qualquer e testes. Os valores estarão somandos na estrutura wa_add2.
+Lembrando que esse comando pode dar vários problemas por conta de não compatibilidade de tipos entre campos de mesmo nome em estruturas diferentes (respire e leia denovo, você vai entender 😀 ).
+Eu, particularmente, nunca usei… mas vai que você precise algum dia 😛
+Ah, e desencane se for para usar em classes, é proibido!
+Abraço!

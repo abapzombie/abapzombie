@@ -1,0 +1,21 @@
+ABAP Zombie Gear – Artefatos para Sobrevivência
+Autor: Mauricio Cruz
+Data: 30/11/2011 12:54
+
+Cansados de fazer o mesmo código chato para tratar aquela coisa chata 1 milhão de vezes, pensamos em ir criando alguns códigos pequenos na forma de classes locais, que servem para todos usarem no  dia-a-dia de projetos.
+Vamos fazer uma compilação final quando a sequência de posts acabar, e essa compilação ira se tornar a
+ABAP Zombie Gear
+,
+ou seja: todos os equipamentos (ou quase todos 🙄 ) que você precisa para tratar coisas chatas, em um só lugar.
+Enquanto a compilação não fica pronta, vou atualizar este tópico com os posts da série
+“Códigos Pequenos… e úteis!”
+. O todo não está pronto, mas dá pra ir usando os pedacinhos 🙂
+Acessando a TVARV
+Códigos pequenos… e úteis! – Parte 1 –  TVARV
+– Tratar Caracteres Especiais
+Códigos pequenos… e úteis! – Parte 2 – Caracteres Especiais
+Para usar as classes em vários programas, sugiro utilizar o guia de importações de classes na SE24, ou deixar a classe local numa include mesmo (fica mais bonito como classe global na Se24, mas cada faz o que quer 😀 ). Só usamos includes nos posts dos pedaços porque ficaria inviável mostrar tudo pela se24 aqui no blog.
+Guia para Importar Classes Locais na SE24
+Quando tivermos itens suficientes para a compilação, eu atualizo este post com um TXT da classe local e todos os seus métodos, prontinha para ser importada na se24, ok? 😀
+Dúvidas desse “projeto” podem ser postadas aqui neste tópico, mas comentários de um pedaço específico ficam melhor localizados nos tópicos correspondentes, beleza?
+Valeu e Abraços!

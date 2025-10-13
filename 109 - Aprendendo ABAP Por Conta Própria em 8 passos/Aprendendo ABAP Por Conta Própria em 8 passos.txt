@@ -1,0 +1,208 @@
+Aprendendo ABAP Por Conta Própria em 8 passos!
+Autor: Mauricio Cruz
+Data: 05/12/2011 12:13
+
+*** Atualização do futuro ( 02/10/2015) ***:
+Olá, tudo bem? Desde sua publicação este guia já ajudou milhares de pessoas nos primeiros passos em suas carreiras com ABAP. Organizei tudo que aprendi em 9 anos de SAP/ABAP em um livro, que pode ser um
+ótimo
+ponto de partida para sua carreira.
+Dê uma olhada neste link
+(a capa está no menu do site!).  O livro conta com um guia atualizado desse post, com dicas um pouco mais atuais. E fique tranquilo: todo o conteúdo do site ABAPZombie continuará 100% gratuito. Abraços, boa sorte e fique com o post + comentários!
+———————————
+Desde que começamos a migração para o novo site, vários comentários brotaram
+do nada
+perguntando, basicamente, a mesma coisa:
+“Trabalho com X e quero migrar  para o ABAP, alguma dica?”.
+Eu já postei
+neste artigo
+o básico para aqueles que desejam ingressar no mundo ABAP, e muita gente da área comentou dando suas dicas e compartilhando suas impressões. Mas em vista das constantes perguntas, achei interessante “
+pavimentar
+” o caminho das pedras para aqueles que decidiram aprender ABAP por conta própria.
+Vou dividir o post em alguns passos, e quero deixar claro que eu não sou responsável por todo o material dos links e, portanto, não adianta vir com perguntas do tipo
+“Mauricio não consegui instalar o Minisap”
+ou
+“Mauricio, não sei como criar um report”
+, pois este
+não é
+o intuito
+deste post.
+O ideal é você perguntar direto nos lugares para onde eu vou te redirecionar, beleza? (esse parágrafo pode ser lido como
+“não me encha e corre atrás colega”
+, mas só aqueles de corações impuros vão ler dessa forma, certo? 😀 ).
+E posts como o meu não substituem academias ou cursos pagos. Se fosse assim, não existiriam cursos de Java, PHP, SQL, C++ e por aí vai…
+Enfim, se você quer mesmo aprender ABAP por conta própria, só posso desejar uma coisa: que você se divirta no processo!
+1 – Aprenda inglês
+Você
+não
+vai conseguir absorver nem metade das coisas que eu postar aqui sem saber inglês. É uma pena eu ainda ter que falar disso aqui no blog, mas é
+impressionante
+a quantidade de profissionais de TI que não ligam para o inglês –  e ligar aqui quer dizer
+ESTUDAR
+.
+Eu poderia dedicar milhões de palavras sobre o quanto o inglês é importante para aprender qualquer coisa de tecnologia, mas vou resumir tudo numa só sentença:
+Se você não quer aprender inglês,
+dane-se
+. Viva feliz sendo um profissional limitado.
+Afinal, eu não posso forçar ninguém a fazer nada, falaí? 😛
+2 – Entenda o que diabos SAP e ABAP querem dizer
+Manja a Wikipedia? Pois é, vamos acessá-la:
+SAP? Que empresa é essa?
+Como funciona o ERP da SAP
+(sim, a SAP tem MUITO MAIS COISAS além do ERP)
+Overview do ABAP
+E sem preguiça! Você vai gastar, no máximo, uns 30 minutos lendo. E isso se você ler devagar…
+É costume de desenvolvedor querer aprender a linguagem, sem se importar com a história da coisa toda. Porém, é muito fácil se perder no meio de tanta informação cruzada que existe no mundo SAP, daí a importância de entender um pouco do ecosistema e de onde surgiu a linguagem.
+3 – Instalando o SAP em casa e criando sua estação de trabalho
+Se você chegou até aqui, já entendeu que precisa do ERP da SAP instalado para programar em ABAP. Felizmente, a SAP disponibiliza uma versão Trial do ERP para que você possa instalar na sua casa e fazer o que você quiser (no meu caso, os posts do ABAPZombie 🙂 ).
+Essa questão já foi muito discutida em diversos lugares da internet, ou seja, é só pesquisar. Mas, como eu sou legal pra caramba e estou fazendo um passo-a-passo ( 🙄 ), vou passar o link do post que eu fiz dedicado à esse tema:
+Instalando o MiniSAP – ABAP em Casa!
+No link acima você encontra dois guias em português, mas tem quilos e litros e sacos e baldes de guias sobre como instalar o MiniSAP na internet. É só Googlar!
+4 – Aeeeee instalei, posso começar a programar? NÃO
+Antes de sair criando programas bestas na SE38, você deve conhecer e se familiarizar com o
+SDN – SAP Developer’s Network
+.
+É só acessar
+www.sdn.sap.com
+. Você vai dar de cara com um portal feito para pessoas que desenvolvem nas plataformas da SAP.
+Como você é iniciante, preste atenção principalmente nas seguintes seções:
+E-learning:
+Guias e aulas grátis sobre diversas coisas, muitas delas sobre ABAP
+Articles:
+Artigos em PDF ensinando de tudo, desde truques até guias completos de configurações obscuras
+Forum:
+Sua casa daqui pra frente, 95% das perguntas de iniciante que você nem fez já estarão respondidas lá, acredite.
+Search:
+A busca do portal não é perfeita (e é meio lenta as vezes), mas ele busca em todas as seções de uma vez, o que é extremamente útil.
+Lembrando que eu já fiz um post dedicado ao SDN, que você acessa
+neste link
+. Tenha em mente que o SDN pode responder praticamente todas as suas dúvidas, e você deve utilizá-lo diariamente.
+5 – E, finalmente, aprenda a programar o básico
+Se você já leu tudo aí em cima, não pode desistir! Eu não desistiria 🙂
+O maior problema da galera que vai começar é achar que vai aparecer um
+PDF mágico
+na internet com 456 páginas, com notas, respondendo dúvidas, e explicando tudo com o máximo de detalhes.
+Colega
+, ABAP é uma linguagem utilizada para um software de uma
+EMPRESA
+alemã, que é utilizado por
+EMPRESAS
+do mundo todo. Você acha mesmo que a galera ia sair explicando todos os detalhes, assim, de graça?
+Sim e Não
+🙂
+Enquanto o
+PDF mágico
+realmente não existe, vários tutorias, livros impressos e e-learnings bacanas
+existem sim
+. E se você seguir tudo, eu tenho certeza que você vai ter uma boa base de como o ABAP funciona, e estará pronto para encarar um primeiro projeto.
+E sabe por onde você deve começar? Por este tópico aqui:
+ABAP Trial Version for Newbies
+São 18 lições explicando detalhadamente tópicos desde a instalação do MiniSAP, programa Hello World e debugging, até WebDynpro Básico.
+O mais legal é que, apesar de a série apresentar coisas bem básicas, ela ensina as coisas DIREITO. Eu arrisco dizer que quando você terminar de fazer essa série de posts, você vai saber algumas coisas que muitos ABAPers velhos de guerra não sabem que existem. É alarmante, mas é verdade.
+Ah, e se você não sabe inglês,
+PERDEU
+.
+6 – Ok, segui o guia e já sai de Noob para Beginner. Quero virar Intermediate #comofaz ?
+Calma lá, colega! Antes de querer atingir o nível “Intermediate” por conta própria, aprenda mais algumas coisas utilizando esses e-learning aqui:
+ABAP OO Tutorial
+Introdução à Webdynpro
+Novo ABAP Debugger para Novatos
+Novo Editor ABAP
+Obs.: Alguns links são só da parte 1, o resto você acha nos E-Learnings do SDN.
+Algumas aulas tem exemplos e os caras explicam as coisas de forma bem detalhada. Eu já fiz alguns desses e-learnings, e gostei bastante.
+Ah, e se você não sabe inglês,
+PERDEU DE NOVO
+.
+7 – O maravilho mundo dos livros que ensinam tudo e mais um pouco
+Como em qualquer outra linguagem de programação, existe uma grande quantidade de livros que explicam a linguagem em ABAP, alguns deles nos mínimos detalhes (é sério, tem coisa explicada lá que até quem criou o ABAP não sabe. Sério).
+A SAP tem uma editora própria, a SAP Press, que publica livros sobre diversos temas. O
+Fabio Pagoti do ABAP101 fez este post
+muito legal sobre o tema, inclusive recomendando a compra pela Amazon de livros usados, o que vale muito a pena mesmo.
+Minha recomendação principal é o livro
+“ABAP Objects”
+, ao qual eu já tive acesso e posso garantir que o conteúdo é muito bom. Você vai aprender MESMO a programar desde o básico utilizando Orientação a Objetos, e o negócio é detalhado até demais. Tem também o livro
+“ABAP Basics”
+, que eu não conheço, mas já vi citarem ele por aí como uma boa fonte para novatos.
+Se você já devorou o(s) livro(s) acima e quer aprender um pouco mais, tente o livro
+“Next Generation ABAP”
+, que, aliás, é um livro que eu
+estou para comprar (só estou esperando fechar a fatura do cartão 😛 )
+comprei no final de 2011 e é muito bom. Conceitos um pouco mais avançados e descrição de ferramentas que o pessoal normalmente não usa, como o ABAP Unit. Ah, e foi escrito em parte pelo Thomas Jung, SAP Mentor que eu acompanho e manja muito de quase tudo em ABAP.
+E galera,
+não reclamem do preço
+. Livros assim são um investimento animal, afinal, você está comprando CONHECIMENTO, algo que muita gente da área tem “medo de compartilhar porque vai abaixar a taxa”. Idiotas 😛
+Ah, e se você não sabe inglês,
+PERDEU DE NOVO!
+8 – Tá na hora de trabalhar de verdade!
+Você aprendeu e ainda não tem nenhum trabalho? Quer fazer algum projeto e conseguir reconhecimento da galera da área? Quer melhorar o seu currículo?
+Antes isso não era possível, mas nosso camaradas do
+ABAP101
+estão criando Projetos Open Source, e já tem um caso de sucesso de contratação por uma empresa, de uma pessoa que trabalhou em um desses projetos e mostrou resultados para a comunidade.
+Neste post
+o Fábio explica como utilizar o Open Source à seu favor, e o Furlan fez uma palestra muito legal no
+SAP Inside Track São Leopoldo 2011
+explicando como o Open Source pode ajudar os “recém-formados em ABAP”. (link para a palestra em breve!).
+Eu realmente acredito nessa empreitada, é uma forma animal de enriquecer o seu CV. Falei bastante do tema
+nest post.
+Você provavelmente deve saber que as empresas sempre querem gente com experiência, e não existe forma mais bacana de ganhar experiência do que com esses projetos Open Source!
+Compilado gigante, mas eu espero, de verdade, que este post ajude você a ingressar no mundo do ABAP, ou até mesmo a se aprofundar em alguns tópicos.
+Para trabalhar com TI (desenvolvedor ou não) e não ser “mais um” você tem que se dedicar, estudar, ter paciência e não desistir nos momentos “tensos”, que não são poucos. Mas lembre-se que para tudo que você fizer com total dedicação, hora ou outra você vai ser recompensado.
+Tenha certeza disso!
+Abraços!
+
+
+
+Comentários:
+Gustavo (27/06/2022 15:48): Olá! Estou tentando aprender ABAP e o primeiro grande obstáculo que vejo é onde praticar. Ao exemplo do html, que é extremamente fácil encontrar uma plataforma para testar seu código, o ABAP não é nada simples, na verdade, em 2022 é impossível para mim, até o momento. Diante disso, pergunto a vocês, profissionais com anos de ABAP, onde posso ter um ambiente de teste e aprendizado? Antigamente existia o “minisap”, mas todos os links que vejo, já não existem mais… Podem, por favor, me darem uma luz neste sentido? Obrigado!
+Ronaldo Modanez (01/02/2019 21:39): Muito  bom. Trabalho com SAP a 11 anos mas não passo de um pseudo-funcional sem nenhuma prática em programação. É esse tipo de post que te incentiva a ir além…
+Deyg (01/02/2017 02:43): Fantastico
+Mauricio Cruz (02/10/2015 20:00): Pessoal, tudo blz? Muitas pessoas me perguntam sobre como iniciar no mundo ABAP, o que esperar, se vale a pena investir, quais os maiores desafios… A melhor resposta que eu posso dar é contar tudo aquilo que aprendi neste anos de mercado. Fiz isso na forma de um livro que avalia não só os aspectos técnicos, mas toda a trilha da carreira de um desenvolvedor. Eu não poderia dar uma melhor resposta do que essa. Se você tiver interesse, dê uma olhada neste link: http://www.casadocodigo.com.br/products/livro-abap . E podem continuar perguntando, respostas que não tenham sido cobertas no post serão respondidas por alguém aqui do site. Abraços!
+Rodrigo Aoki (13/08/2015 07:13): Olá Maurício, Graças ao Linkedin fiz minha primeira visita ao ABAP Zombie. Faz tempo que estou afastado do meio acadêmico então não sei o que as faculdades estão ensinando por aí. Mas sei o que fiz na minha época: aprender a aprender. Só tem um jeito de transformar teoria em prática, e as dicas aqui estão bem legais. Eu sugeriria um tema, antes dos ABAPers se aventurarem em um projeto: “Desmitificando o Sistema de Transportes”… ou “Monte o seu setup.exe no mundo SAP”. Assim como perfil de autorização, parece que muita gente esquece de ver o conceito de instalação do seu programa fonte e vai descobrir somente quando se depara (e empaca) na governança de TI das empresas. Abs, Rodrigo
+Conrado (12/06/2015 09:16): Fala Maurício, show de bola o artigo. Deu pra ter uma noção de como funciona o mundo ABAP. Aí eu te pergunto: eu sou dev .net jr atualmente e, nessa plataforma sei que tenho um mundo de coisas a aprender ainda. Consigo aprender e evoluir em ABAP com meu know-how atual em .Net? Grande abraço.
+  Mauricio Cruz (06/07/2015 12:49): Putz, demorei para responder né.. Desculpe! Certeza que você irá conseguir usar bastante do seu conhecimento de programador no mundo ABAP, mas não espere ser muito reconhecido pelo seu background de .Net :/ Abs!
+  Mauricio Cruz (06/07/2015 12:49): Putz, demorei para responder né.. Desculpe! Certeza que você irá conseguir usar bastante do seu conhecimento de programador no mundo ABAP, mas não espere ser muito reconhecido pelo seu background de .Net :/ Abs!
+Alexandre (29/04/2015 21:22): Olá, no mundo da programaçao nao tem muito disso…sou java, sou …C…e etc, e quero migrar para abap, final das contas é a mesma coisa, porem o mercado de abap é menor…muitas das vezes  é preciso mudar para outras cidades para realizar o projeto, mas nao se iludam, é como aquela velha questao…grama boa é do vizinho, emprego bom é do fulano, o segredo mesmo é se especializar no que ja esta engessado, tenho amigos de Cobal….tao no mercado e bem remunerados, mas um detalhe inportante, sap é um produto carissimo, nao é qq empresa que compra o produto….agora o ingles vc ira precisar em abap, pois as reunioes no geral sao todas em ingles com os clientes.
+RÍZIA (13/02/2015 15:23): Para quem não sabe inglês basta ir no google tradutor e em dicionários, mas não desista, não deixe de aprender. Ao longo do tempo você vai acabar aprendendo inglês assim (caso não tenha oportunidade de fazer um intercambio ou um curso). Foi assim que eu aprendi. Abraço!
+Ricardo (04/11/2014 15:14): Cara, muito bom o seu post, e foi o primeiro link que eu achei quando coloquei no Google “Manual de ABAP”. Sou consultor de ferramentas fiscais, e me deu uma vontadezinha de aprender ABAP depois de ver muita mer*** por aí…. Parabéns pelo post. Espero aprender muito com ele! Grande abraço!
+SAMSON (29/08/2014 05:47): To imprecionado com estes  assunto  eu esto interesado em aprender o abap  ,como eu faso para aprender
+Elder Monteiro de Almeida (21/08/2014 13:09): Estou vendendo o livro ABAP BASICS. Quem interessar, entre em contato.
+Thiago (04/08/2014 22:51): Olá Mauricio, tudo bem? Cara, estou começando a fazer analise de sistemas e desenvolvimento. Acabei de voltar de um intermcabio na Irlanda, e voltei com o ingles fluente. você acha que a curva de aprendizado do ABAP e do JAVA são parecidas? Eu sei que depende da dedicação do individuo. Mas em média quanto tempo leva ? E se para quem esta começando do zero novamente, é mais fácil aprender alguma linguagem assim do que quem esta migrando?
+  Mauricio Cruz (07/08/2014 19:57): Cara, para todas as suas perguntas, existe uma só resposta: depende. O lance de ter tido uma experiência boa com o inglês pode lhe ajudar a consumir mais rapidamente material de qualidade para aprender a linguagem de programação. Alguém que já sabe alguma linguagem de programação SEMPRE vai ter uma vantagem em relação a quem não sabe nada, se souber dividir o que faz parte de lógica de programa, e o que faz parte da linguagem que ele já conhece. Capacidade de abstração é tudo. Abs!
+  Mauricio Cruz (07/08/2014 19:57): Cara, para todas as suas perguntas, existe uma só resposta: depende. O lance de ter tido uma experiência boa com o inglês pode lhe ajudar a consumir mais rapidamente material de qualidade para aprender a linguagem de programação. Alguém que já sabe alguma linguagem de programação SEMPRE vai ter uma vantagem em relação a quem não sabe nada, se souber dividir o que faz parte de lógica de programa, e o que faz parte da linguagem que ele já conhece. Capacidade de abstração é tudo. Abs!
+Luciano Martins (18/11/2013 15:04): Gostaria de material e/ou quem pode me fornecer, sobre SAP PP PM
+Danillo (18/10/2013 11:40): Belíssimo passo a passo. Sou programador Java a 6 anos e estou querendo iniciar no mundo ABAP. Como não tenho verba para bancar o curso, vou seguir os passos daqui e ver o que dá para aprender… Valeu…
+Renan (15/10/2013 11:04): Leio muito na internet, mas queria saber de profissionais que estão nesta área.. Nos dias de hoje, existem poucos profissionais ABAP como se diz por aí? eu pelo menos não conheço muitos. Como está a procura por profissionais Jr. e piso salarial. Há necessidade de se certificar, ou experiência conta mais? Obrigado.
+Magnaldo Melo (09/10/2013 16:20): Mauricio, To na idade de 3.8 Já programei em diversas linguagens, desde o delphi até o java atualmente, sempre com ERP. Sou formado em Analise de Sistemas. Você acha que a essa altura do campeonato, vale a pena investir no abap? Obrigado!
+  Everson (31/10/2013 16:28): Sou Java SR e tenho a mesma duvida…
+    Bruno (06/07/2014 13:41): Sou programador Java há 2 anos e tenho a mesma dúvida
+    Bruno (06/07/2014 13:41): Sou programador Java há 2 anos e tenho a mesma dúvida
+  Everson (31/10/2013 16:28): Sou Java SR e tenho a mesma duvida…
+  Everson (31/10/2013 16:28): Sou Java SR e tenho a mesma duvida…
+    Bruno (06/07/2014 13:41): Sou programador Java há 2 anos e tenho a mesma dúvida
+    Bruno (06/07/2014 13:41): Sou programador Java há 2 anos e tenho a mesma dúvida
+  Everson (31/10/2013 16:28): Sou Java SR e tenho a mesma duvida…
+Bruno (22/08/2013 11:28): Mauricio parabens! forte abraço de Portugal
+alvaro (21/08/2013 14:37): Amigo, Eu nao tenho Ingles mais pretendo começar logo, eu consigo acompanha o aprendizado mesmo tendo o ingles basico e ir melhorando ele?
+Tiago (13/08/2013 23:20): ola parabeniza pelo blog,gostaria de saber como posso fazer pra começa na área sap pq sou formado em logistica quero faze área de distribuição e mm, vc pode me dizer qt tempo leva pra ser consultor pois preciso ter formação em TI ou se esfossa em consigo aprende rapido qual caminho seguir grato.
+Ferrari (12/08/2013 20:08): Melhor post ever.. Jah estou na “fase 5” ou mais e ainda dei a sorte de achar uma boa alma que me deu o tal do PDF salvador com tudo em pt-br. Gostei demais do novo blog. T+
+Fabrício Angelis Pires (20/06/2013 08:28): Pretendo desenvolver uma importação de arquivo XML para a nova versão do R/3 SAP, esse arquivo contém dados de nota fiscal (DANFE) para que eu possa aproveitar alguns dados para entrada em estoque, tipo o que faz a transação MIGO ! imagino que seja duas tabelas uma para gravar os dados que preciso e outra para selecionar o que vai entrar….É muito complicado fazer isso mesmo ? uma consultoria disse que isso é como criar um monstro dentro do sistema ! Agradeço desde já, Fabrício
+Victor Rocha (23/05/2013 11:45): Parabéns pelo Post… Estou iniciando os estudos na área de BW e gostei muito da primeira impressão. Aprender Abap vai ser decisivo pro meu futuro, e pretendo fazer isso aos poucos! Abração!
+Valdeir Gomes (03/04/2013 20:24): Ótimo Conteúdo, entrei apenas por curiosidade e estou saindo com grandes informações, com certeza para concluir o nível newbie leva-se muito tempo, quando tiver tempo irei usar esse guia para iniciar no ramo, parabéns pelo post.
+Pedro Henrique (01/04/2013 16:22): Cara, muito bala seu blog e seu post vai me ajudar de mais! Trabalho em uma empresa de médio porte onde temos o B1 porém temos uma empresa contratada de belo horizonte que nos dá suporte. O destino quis que na grade do meu curso de Sistemas de Informação tivesse matérias relacionadas a ERP, B1 e ABAP ou seja, vou ter o privilégio de estudar sobre na faculdade pois fizeram uma parceria com a universidade SAP então temos essas matérias e alguns cursos sobre o assunto. Então esse post vai ser bem útil pra eu começar a dar uma estudada por conta própria e quando chegar a hora de estudar na facul não vou estar tão “NOOB” assim. Parabéns brother! Abrass
+André Ribeiro Moes (14/01/2013 09:42): Excelente!!! O post assim como o site são incríveis! Nunca vi nada parecido pela internet! Completo e extramamente detalhado, dá até vontade de aprender ABAP 😀 , mas infelizmente estou sem tempo no momento, no futuro utilizarei o site como referência para aprender ABAP! Muito Obrigado tirou todas as minhas dúvidas
+Bruno Alves de Oliveira (06/11/2012 15:05): Mauricio, fiz a leitura de todo o seu blog, ainda vou lê as apostilas e tudo mais, porem só da leitura percebi e reconheci que suas palavras foram excelentes. Trabalho com o Protheus a 3 anos, sou programador ADVPL, faço virada de versão, tenho conhecimento de vários módulos e estou querendo começar a estudar SAP para ser desenvolvedor ABAP. Pelo conteudo do Blog percebi que você é bem experiente, para ter os conhecimentos e o salario que recebo hoje, sofri muito. Minha pergunta é….Se eu fizer o curso ABAP na própria empresa SAP em São Paulo você acha que vou ter grandes dificuldades de arrumar um emprego com o curriculum que tenho hoje (analista protheus senior)? Vou começar a fazer o curso em Julho, valor de 12.000 mil reais…Estou procurando informações de ensino na internet para que eu possa iniciar o curso com alguma informação. Mas fica minha pergunta…Estou com duvida no retorno que vou ter nesse investimento. Obrigado
+  Mauricio Cruz (12/11/2012 07:31): Olha Bruno, Gostaria muito de dizer que seu conhecimento vai ser valorizado, e que as pessoas tomam bastante cuidado ao avaliar os candidatos para as vagas. E também que é muito fácil conseguir um emprego, e que só um curso vai lhe garantir uma vaga. Mas, prefiro dizer a verdade e falar que a coisa é bem mais complicada, do que lhe passar uma ilusão 🙂 Nunca conheci ninguém numa situação parecida com a sua. O máximo que eu cheguei foi de um amigo da minha namorada que também queria migrar do ADVPL para o ABAP, mas, até onde eu sei, ele ainda não tentou. Porém, acho pouco provável que algum recrutador vai conseguir identificar que você tem conhecimentos parecidos com o do mundo SAP, no caso, pelo seu trabalho com o Microsiga. Para você ter idéia, é bem comum as recrutadoras não saberem diferenciar um ABAP de um Funcional, imagine entender o que é ADVPL… 😛 No post do “Guia do ABAP Noob” nós discutimos várias dicas para pessoas que querem entrar no mundo SAP, recomendo que você dê uma lida no post e em todos os comentários, pois elas valem também para você. Eu, no seu lugar, usaria o conhecimento de um ERP como um diferencial, mas não me apoiaria nisso não. Abraços e boa sorte!
+  Mauricio Cruz (12/11/2012 07:31): Olha Bruno, Gostaria muito de dizer que seu conhecimento vai ser valorizado, e que as pessoas tomam bastante cuidado ao avaliar os candidatos para as vagas. E também que é muito fácil conseguir um emprego, e que só um curso vai lhe garantir uma vaga. Mas, prefiro dizer a verdade e falar que a coisa é bem mais complicada, do que lhe passar uma ilusão 🙂 Nunca conheci ninguém numa situação parecida com a sua. O máximo que eu cheguei foi de um amigo da minha namorada que também queria migrar do ADVPL para o ABAP, mas, até onde eu sei, ele ainda não tentou. Porém, acho pouco provável que algum recrutador vai conseguir identificar que você tem conhecimentos parecidos com o do mundo SAP, no caso, pelo seu trabalho com o Microsiga. Para você ter idéia, é bem comum as recrutadoras não saberem diferenciar um ABAP de um Funcional, imagine entender o que é ADVPL… 😛 No post do “Guia do ABAP Noob” nós discutimos várias dicas para pessoas que querem entrar no mundo SAP, recomendo que você dê uma lida no post e em todos os comentários, pois elas valem também para você. Eu, no seu lugar, usaria o conhecimento de um ERP como um diferencial, mas não me apoiaria nisso não. Abraços e boa sorte!
+Gabriel Pereira (01/10/2012 13:49): Fantástico o post, um amigo abaper já havia me enviado o link do blog, mas confesso que não tinha visto direito…rs. Hoje trabalho com outro sistema também de grande importância no mercado, porém tenho muito interesse em me tornar consultor SAP em breve. Esse post vai ajudar muito como um bom ponto de partida, uma vez que não tenho patrocinadores (empresa) e ainda não trabalho em um consultoria !!! Grande abraço a todos !!!
+  Mauricio Cruz (02/10/2012 08:28): Fico feliz por ele ter lhe ajudado! Abraços!
+  Mauricio Cruz (02/10/2012 08:28): Fico feliz por ele ter lhe ajudado! Abraços!
+Michel Felipe (23/07/2012 18:54): Simplesmente ótimo o post, e o blog em si… Estou ingressando agora em uma consultoria SAP em Curitiba como estagiário e tinha/tenho muitas dúvidas sobre o assunto, irei ganhar treinamentos pela empresa, porém seguindo esses passos e me dedicando posso ficar a frente do que irei aprender.. Obrigado pelo conteúdo disponibilizado.
+MARCO ENRICO REIS ALBERTO (21/03/2012 17:20): Cara, animal esse post, e mais animal ainda o site todo! Fiz a academia na KA Sollution, mas ainda não prestei o exame de certificação (estou pesquisando, estudando e tomando coragem) Seria interessante ter um guia para estudo pra quem quer se certificar (não sei se já tem…) Sucesso!
+Alexsandro Felix (13/03/2012 00:17): Estou iniciando na área de ABAP e gostei muito das informações e colocarei em prática tudo, obrigado!
+Jairo (08/03/2012 17:10): Muito legal esse post, estou querendo partir para a área de ABAP, já comprei o livro ABAP BASICS por indicação, e assim que estiver com ele em mãos posto aqui falando se é mesmo bom. Valeu pelo post, muito bom para me ajudar a começar a estudar nessa área. Abração, Jairo.
+  Mauricio Cruz (09/03/2012 10:06): Opa, fico feliz que tenha ajudado. Um abraço!
+  Mauricio Cruz (09/03/2012 10:06): Opa, fico feliz que tenha ajudado. Um abraço!
+Marcello Ganzaroli (27/02/2012 15:59): Adorei o post, estou para começar como “estagiario” em uma empresa de consultaria SAP e flerto com o a possibilidade de virar um programador ABAP e estava perdido em como existe material para isso e como são confusas as informações! Esse post me deu motivação (mais do que já estou) para seguir em frente. Abraçp
+Jonas Alvarenga (23/01/2012 14:04): Primeiro, parabéns pelo Blog e por este post! Sobre o livro ‘Abap passo-a-passo’. Comprei ele quando estava começando e sinceramente achei ótimo, pois em seguida fiz um workshop e eu estava muito a frente do resto da turma, pois já tinha lido este livro. Recomendo o mesmo para quem está iniciando. abs.
+Leonardo (09/12/2011 13:42): O post ficou muito bom! Achei meio óbvio os passos, mas acho que a galera não se liga nestas coisas, então fica perguntando! Parabéns! abs
+Custodio (06/12/2011 00:16): Faco minhas as palavras do Furlan, post simplesmente excelente, parabens.
+Fl&aacute;vio Furlan (05/12/2011 13:44): Post muito bom! Eu devo ouvir essa pergunta "como faço para aprender ABAP?" dia sim e dia não também. Esse post estará no meu bookmarks para eu passar quando alguém me perguntar novamente. Abraços!

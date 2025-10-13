@@ -1,0 +1,47 @@
+SAP Forum… para Developers? (quem não ler, perdeu)
+Autor: Mauricio Cruz
+Data: 30/01/2014 18:47
+
+Você conhece o SAP Forum?
+Talvez você conheça como aquele evento que “
+invoca
+” as pessoas do cliente que você mais precisa . Ou talvez você conheça como aquele evento onde a sua consultoria tem um estande, e tenta desesperadamente proteger seus clientes dos urubus das outras consultorias. Ou talvez você conheça como aquele evento hyper mega caro que não faz a menor diferença, afinal, você é um
+Developer
+, e esse monte de baboseiras de negócios não lhe dizem respeito.
+É amigo pútrido, eu  também já pensei que era alguma dessas coisas (tá bom vai, acho que já pensei em
+todas
+elas).
+Mas sempre há uma luz no fim do túnel,
+acredite
+. Pela iniciativa dos SAP Mentors (em destaque o camarada
+Marlo Simon
+), o SAP Forum (
+11 a 13 de FEV/14, em SP
+) agora também é dedicado aos
+Developers
+. Isso mesmo amigo ABAP/PI/CRM/SEILÁ sofredor , dedicado à você.
+O evento irá ter uma tonelada de palestras dedicadas a nós developers. Você pode dar uma olhada na agenda
+clicando aqui
+.
+Abra a segunda aba, “Sessões”, e filtre “Audiência Foco” para “Desenvolvedores”. Tem Hands On, coisas novas, CodeJam, etc, etc, etc… coisa fina camarada.
+“Mas Mauricio, eu sou um humilde ABAP e a minha taxa está caindo, como você quer que eu pague os milhões de dinheiros necessários para ir ao evento?”.
+É muito fácil,
+clica
+aí:
+REGISTRO FREE DO SAPFORUM PARA DEVELOPERS
+NÃO É ZUEIRA — REPITO — NÃO É ZUEIRA (VAI CLICA LOGO).
+Dito isso, apareçam no
+Mezanino M2 – Desenvolvedores, na Quinta-Feira das 15:30 ~ 16:00
+.  Vou falar (mais) um pouco sobre as novidades do mundo do desenvolvimento ABAP.
+A entrada foi de graca, mas você ainda vai ter que convencer seu chefe a te liberar no dia. Tente dizer para ele que você é tão VIP que foi convidado para o evento. Aposto que vai rolar uma invejinha 🙂
+Abraços à todos aqueles que vão ficar parados no trânsito da ponte transamérica!
+
+
+
+Comentários:
+Daniel Jesus (03/02/2014 13:45): Já perdi o SIST por conta de liberação, agora só falta perder o Sapis Foris tmb para completar a formação de abapossauro rex ahuahuahaauh
+  Daniel Jesus (13/02/2014 14:36): É tentei, mas não deu….. Jesus evolui para ABAPOSSAURRRRR ahhahahhaa
+  Daniel Jesus (13/02/2014 14:36): É tentei, mas não deu….. Jesus evolui para ABAPOSSAURRRRR ahhahahhaa
+Kaio (31/01/2014 10:22): Estou no mesmo barco que o Fabio, fiz a inscrição agora só falta a liberação
+Fabio Pagoti (31/01/2014 10:11): Inscrito!. Próximo passo: solicitar ausência do trabalho para o evento.
+Marlo Simon (30/01/2014 21:18): Epic! Sensacional, vamos ver a adesão da zumbizada! Valeu pelo mention! E boa sorte na sua palestra!

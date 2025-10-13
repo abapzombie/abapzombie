@@ -1,0 +1,16 @@
+Pérolas de um mundo ZUMBÍSTICO – PARTE 4 – Síndrome do Robô de constante dinâmica
+Autor: Mauro Laranjeira
+Data: 29/06/2012 10:28
+
+— Ninguém esta seguro;
+— Ninguém esta ileso de seus ataques;
+— Chamem o Batman para pegar as chaves da justiça (SE37 função BATMAN_GETKEYS);
+CONSTANTS: cc_p(01) TYPE c VALUE 'P'."sy-langu.
+A cc_p é usada em um select para buscar um descrição, logo abriram o chamado “Quando estou logado em inglês sempre é mostrado o texto em português”
+O programador ate tentou colocar o sy-langu, mas como não funcionou…
+Abraços a todos que igual ao Batman tem um grupo de funções próprio (BAPIDEPEND)
+
+
+
+Comentários:
+Paulo (25/07/2012 15:32): Caraca, essa foi de lascar!!!

@@ -1,0 +1,41 @@
+Códigos de Zumbis para Zumbis
+Autor: Mauricio Cruz
+Data: 23/03/2012 08:00
+
+Se você chegou até aqui procurando algum código fonte
+“bacanudo”
+para te ajudar a fazer alguma coisa, saiba que veio ao lugar
+certo!
+Mas você sabe como funciona: no pain, no gain! 😈
+Eu pensei bastante em como estruturar uma sessão de códigos aqui no site, mas dai eu pensei:
+e quem disse que os códigos precisam ser colocados aqui no site
+?
+Se você se diz "programador" e nunca sequer ouviu falar do Github, eu só posso dizer uma coisa: SHAME ON YOU
+O mais divertido do
+github
+é que qualquer um pode copiar o seu código, alterar, propor alterações, subir novas versões e etc. Normalmente o povo não utilizaria para fazer Social Coding através do ABAP, mas daí eu pensei…
+porque não?
+Utilizando o SAPLink + Github qualquer programador ABAP pode se divertir alterando códigos ou gerando pacotes para serem usados posteriormente.
+Obviamente alguém vai precisar organizar a coisa toda… ou seja, o repositório vai ficar no meu usuário, e você pode acessar por aqui:
+https://github.com/mauriciorcruz/ABAP-Toolbox
+. Se alguém fizer um repositório próprio e quiser divulgar por aqui, é só mandar um e-mail!
+Se você não está entendendo NADA,
+SHAME ON YOU
+leia estes dois posts do Furlan do ABAP101:
+–
+Github: Onde estará o seu Currículo?
+–
+SAPLink – Introdução ao SAPLink
+E daí você vai pensar: “Tá Mauricio, eu dúvido que alguém vai fazer isso tudo só para contribuir com seus códigos.”. Mas daí eu digo:
+Será?
+🙂 Eu vou compartilhar todos os meus códigos que possam ser reutilizáveis. Ao menos de “RPMM” eu sei que vai funcionar! (Repositório Para Mim Mesmo 😛 ).
+Criei uma página explicando o processo, e listando os códigos ativos no site, e você pode acessá-la pelo link “Códigos” na barra lateral aqui do ABAPZombie.
+Abraços!
+
+
+
+Comentários:
+Luiz Vasconcelos (03/07/2012 14:14): Olá pessoal do ABAP101! Instalei o SAPlink no meu ambiente SAP, juntamente com os plugins para exportação de objetos. Quando vou exportar um objeto do tipo ‘Function Group’, o programa retorna um DUMP http://imageshack.us/photo/my-images/846/saplinkdump.jpg/ Mesmo exportando apenas o Function Group para o arquivo .NUGG, o erro continua acontecendo. O que poderia ser?
+  Mauricio Cruz (05/07/2012 13:01): Cara, acho que você errou de blog 😀 hahaha
+  Mauricio Cruz (05/07/2012 13:01): Cara, acho que você errou de blog 😀 hahaha
+Daiane Zigiotto (23/03/2012 08:47): SHAME ON ME! 🙁

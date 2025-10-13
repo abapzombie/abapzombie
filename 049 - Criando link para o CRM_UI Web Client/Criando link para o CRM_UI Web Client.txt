@@ -1,0 +1,15 @@
+Criando link para o CRM_UI (Web Client)
+Autor: Mauro Laranjeira
+Data: 22/02/2011 14:27
+
+Ja aconteceu comigo…
+Está acontecendo com a Pri…
+E porque não!? pode acontecer com você meu amigo…
+Estava em um projeto de CRM 6.0, equipe de Basis, nem sombra, funcional era luxo, eu queria acessar o Web Client do CRM e não tinha o link de acesso.
+Então, criação de link de atalho para a aplicação Web Client do CRM :p
+Na tela inicial do SAP, clique com o botão direito do mouse em “Favoritos” depois clique em  “Inserir Outros Objetos “.
+Escolha a opção “Aplicação BSP”.
+No campo “Aplicação BSP”, coloque CRM_UI_FRAME
+No campo “Pag Inicial”, coloque default.htm
+Depois é só dar um duplo clique sobre o ícone criado e correr para o abraço 😀
+Abraços a todos que estão precisando deste post neste exato momento 😉

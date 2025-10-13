@@ -1,0 +1,39 @@
+Zombie Attack – Vídeo da versão BETA
+Autor: Mauricio Cruz
+Data: 07/10/2011 14:00
+
+Eae zombizada!
+Seguinte! Já que eu sei que nem todo mundo vai poder estar presente no SAP Inside Track São Paulo, resolvi lançar este post no mesmo dia do evento, para que os leitores aqui do blog possam ver o Zombie Attack funcionando. Na verdade, no momento em que este post for ao ar eu devo estar apresentando este jogo maluco no SAP Inside Track 🙂
+Gravei um vídeo no youtube para mostrar como o jogo funciona. Assistam, e deixem o seus comentários!
+Espero que vocês curtam esta primeira versão do jogo. Me digam do que gostaram, do que pode melhorar… mas dentro dos limites gráficos do ABAP, é claro 🙂 No futuro vou fazer um post dedicado à explicação do jogo, com os diagramas UML, a explicação da implantação e etc! Mas isso só depois que ficar pronto!
+E este é o
+post do abap101 sobre o SAPLink
+. Aproveitem e estudem sobre o SAPLink, porque ela é uma ferramenta opensource fantástica.
+Abraços!
+
+
+
+Comentários:
+Janfer (14/11/2011 10:31): ahuauhhuahua mto bom!!! Quando fiz curso técnico em informática criei um joguinho em Clipper nesse estilo, um ladrão que roubava casas e por incrível coincidência tinha uma casa com sistema de segurança que trancava as portas e janelas com chapas de ferro quando o ladrão entrava na casa. Mas como não manjava de OO imagine a linguiça de código q ficou rsrs Vou esperar a versão full do jogo =D
+carlos (10/10/2011 11:45): Acabei de tentar com o link direto e não consigo. Os videos que parecem ao lado quando abre o youtube (de karate, taekowndo, sei la). todos estão normais. Até os videos malucos de Zumbi eu consigo ver. mas beleza não esquenta, vou ver a noite em casa na máquina da minha esposa.
+  Mauricio Cruz (10/10/2011 11:48): É hapkido, pô! 😛 Blz.. anyway a noite vou tentar também nas 3 máquinas virtuais que tenho aqui no micro. Qlqr coisa eu dou um update aqui e aviso! Abraços
+  Mauricio Cruz (10/10/2011 11:48): É hapkido, pô! 😛 Blz.. anyway a noite vou tentar também nas 3 máquinas virtuais que tenho aqui no micro. Qlqr coisa eu dou um update aqui e aviso! Abraços
+carlos (10/10/2011 11:27): boa tarde. Não da para ver nada no video.
+  Mauricio Cruz (10/10/2011 11:33): Olá Carlos! Dá sim, acabei de ver aqui na minha máquina, e várias pessoas já entraram em contato comigo para dar as suas opiniões sobre o vídeo. Provavelmente a rede onde você está conectado deve estar bloqueando o acesso ao Youtube, ou você está com algum erro no seu browser. Abraços!
+    carlos (10/10/2011 11:40): boa tarde. Eu tentei aqui na empresa e na minha casa. Eu usei o Firefox e o IE 8. E nada. Vou fazer o teste hoje a noite em outra máquina na minha casa. Demais videos no youtube eu vejo normalmente, aqui na empresa. mas ovu fazer mais uma tentativa.
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+    Henrique Dias (10/10/2011 11:35): Aqui tb tá OK, tenta ver direto no youtube: http://www.youtube.com/watch?v=DNmYxE5zBqU
+    carlos (10/10/2011 11:40): boa tarde. Eu tentei aqui na empresa e na minha casa. Eu usei o Firefox e o IE 8. E nada. Vou fazer o teste hoje a noite em outra máquina na minha casa. Demais videos no youtube eu vejo normalmente, aqui na empresa. mas ovu fazer mais uma tentativa.
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+    Henrique Dias (10/10/2011 11:35): Aqui tb tá OK, tenta ver direto no youtube: http://www.youtube.com/watch?v=DNmYxE5zBqU
+  Mauricio Cruz (10/10/2011 11:33): Olá Carlos! Dá sim, acabei de ver aqui na minha máquina, e várias pessoas já entraram em contato comigo para dar as suas opiniões sobre o vídeo. Provavelmente a rede onde você está conectado deve estar bloqueando o acesso ao Youtube, ou você está com algum erro no seu browser. Abraços!
+    carlos (10/10/2011 11:40): boa tarde. Eu tentei aqui na empresa e na minha casa. Eu usei o Firefox e o IE 8. E nada. Vou fazer o teste hoje a noite em outra máquina na minha casa. Demais videos no youtube eu vejo normalmente, aqui na empresa. mas ovu fazer mais uma tentativa.
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+    Henrique Dias (10/10/2011 11:35): Aqui tb tá OK, tenta ver direto no youtube: http://www.youtube.com/watch?v=DNmYxE5zBqU
+    carlos (10/10/2011 11:40): boa tarde. Eu tentei aqui na empresa e na minha casa. Eu usei o Firefox e o IE 8. E nada. Vou fazer o teste hoje a noite em outra máquina na minha casa. Demais videos no youtube eu vejo normalmente, aqui na empresa. mas ovu fazer mais uma tentativa.
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+      Mauricio Cruz (10/10/2011 11:42): Blz, tenta tb ver direto pelo youtube, no link que o Henrique passou aí em cima… Abraços!
+    Henrique Dias (10/10/2011 11:35): Aqui tb tá OK, tenta ver direto no youtube: http://www.youtube.com/watch?v=DNmYxE5zBqU

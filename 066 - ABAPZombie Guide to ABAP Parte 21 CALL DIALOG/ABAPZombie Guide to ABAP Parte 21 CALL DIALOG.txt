@@ -1,0 +1,43 @@
+ABAPZombie Guide to ABAP – Parte 21 – CALL DIALOG
+Autor: Mauricio Cruz
+Data: 05/04/2011 11:16
+
+Obs.: Esse comando é obsoleto heim!
+Nos primórdios dos tempos, o
+homo-abapiens
+(nossa espécie) utilizava um comando chamado
+CALL DIALOG
+, para executar processos modularizados, ou partes de outros programas.
+Ele podia passar/importar parâmetros, ou até mesmo enviar o passo a passo de execução de uma tela, que estaria associada ao dialog.
+Primeiramente, ele tinha que criar o dialog (ou encontrar) na transação
+SE35,
+verificar os parâmetros, as telas e o código, para ver como montar a sua chamada. Por exemplo:
+REPORT  zaz_call_dialog.
+
+* Variável para o retorno
+DATA: l_tcode TYPE sy-ucomm.
+
+* Dialog bem bobo, com uma tela de seleção e um processamento qualquer
+CALL DIALOG 'ZDIALOG_ZUMBI'
+  EXPORTING
+    user  FROM sy-ucomm
+  IMPORTING
+    tcode TO l_tcode.
+
+* Nenhum dado enviado ou retornado no comando é relevante. Viva o exemplo!
+Falando de um jeito simples, o
+homo abapiens
+chamava a tela Y de um programa X, e essa amarração era feita na hora que o Dialog era criado na SE35. Com o comando CALL DIALOG, “ele iniciava a coisa toda”.
+Mas o tempos mudaram, e inventaram o
+CALL FUNCTION
+e o
+CALL TRANSACTION
+, e logo, o
+homo abapiens
+desencanou dos dialogs e seguiu sua jornada.
+Abraços!
+
+
+
+Comentários:
+F&aacute;bio Luiz Es (17/04/2011 18:33): Entrei no mundo ABAP no momento certo.

@@ -1,0 +1,42 @@
+Hana? WTF?
+Autor: Henrique Dias
+Data: 28/05/2013 07:00
+
+Só escuta falar dessa pqp de Hana e não entende nada? Você só lembra de hinduísmo, da música do Nando Reis ou do indiano do fórum da SCN? Chegou a hora de aprender então! Começou ontem o curso online
+Introduction to Software Development on SAP HANA
+da
+openSAP
+sobre
+SAP Hana
+🙄 e computação
+in-memory
+.
+O curso será ministrado nas próximas 6 semanas, terão até 9 vídeo aulas por semana e 1 exercício por vídeo. Você pode repetir os vídeos e os exercícios quantas vezes quiser e no final da semana haverá um teste valendo 30 pontos (ainda não descobri pra que serve). Além disso, o curso é apoiado por um fórum de discussão para tirar dúvidas e no final do curso haverá uma prova de avaliação.
+O conteúdo da primeira semana será:
+Unit 1: SAP HANA Native Application Basics
+Unit 2: SAP HANA Application Development Tools
+Unit 3: SAP HANA Software Downloads
+Unit 4: Access to SAP HANA Systems (in the Cloud)
+Unit 5: Example Application
+Também está disponível o curso
+Warm-Up: In-Memory Data Management
+que mostra uma introdução ao SAP Hana e os conceitos básicos de gerenciamento de dados
+in-memory
+.
+A inscrição pode ser feita no
+open SAP
+e é totalmente grátis
+na compra de um AB Shaper da Polishop
+Uma última observação é que a primeira prova tem que ser feita até segunda feira para trollar todos os ABAPs que conseguiram pegar folga no feriado :shock:. Valeu champz SAP por alegrar nossas vidas até fora dos projetos…
+PS: O prazo foi adiado para dia 10, aproveitem! (Obrigado pelo aviso Giovanni e Felipe)
+embed
+
+
+
+Comentários:
+Henrique Dias (04/06/2013 16:16): Valeu pelo aviso Giovanni e Felipe, post atualizado com os devidos créditos. Abs!
+Giovanni Diniz Frois (04/06/2013 13:32): Aquele momento em que você fica sabendo do curso no dia da entrega da primeira prova, fica chateado por ser impossível cumprir o prazo, e um dia depois eles aumentam o prazo pro dia 10. Se você aproveitou o feriado como eu e agora vai virar a noite assistindo tudo pra cumprir o novo prazo, que a força esteja com você…XD
+  Felipe Tieppo (04/06/2013 13:44): É isso ai Giovanni, vim aqui justamente para avisar o pessoal que curtiu o feriadão, que ainda é possível fazer o primeiro assignment. Boa sorte!
+  Felipe Tieppo (04/06/2013 13:44): É isso ai Giovanni, vim aqui justamente para avisar o pessoal que curtiu o feriadão, que ainda é possível fazer o primeiro assignment. Boa sorte!
+Fawcs (29/05/2013 10:45): Fiz a prova ontem depois de dormir assistindo a ultima aula ZzZzZz..
+Camila (28/05/2013 15:11): Obrigada pela dica! =)

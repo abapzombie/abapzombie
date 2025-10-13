@@ -1,0 +1,176 @@
+SAPUI5, OpenUI5 e Fiori: Do que se tratam essas paradas
+Autor: Mauricio Cruz
+Data: 06/07/2015 10:48
+
+“Consultoria XYZ contrata: Desenvolvedor Fiori para projeto de 6 meses”
+.
+Essa singela frase já demonstra o CAOS que essas três siglas vêm criando na cabeça de recrutadoras, gerentes, clientes e, até mesmo, consultores. Minha missão neste post é explicar de forma rápida para você, ser horripilante, o por que de eu dar um leve sorriso sarcástico toda vez que penso nas recrutadoras aliciando desenvolvedores do SAP Labs. Afinal, “desenvolvedor Fiori” só lá mesmo.
+Se você também está meio perdido nesse monte de coisas, segura esse abraço…
+… e vamo que vamo! 🙂
+O que é SAPUI5 e OpenUI5
+SAPUI5 é um conjunto de bibliotecas javascript que desenvolvedores podem usar para criar aplicativos responsivos que rodam em browsers. A cara dos aplicativos é essa aí:
+Você acha mais um monte de exemplos no
+site oficial
+.
+O uso de bibliotecas que facilitam a criação de interfaces para usuários é algo extremamente trivial no mundo do desenvolvimento web. Neste exato momento, o ABAPZombie está usando e abusando do
+JQuery
+para permitir que você possa ver o site de qualquer browser (inclusive de celulares) sem que ele fique “quebrado”. O SAPUI5 foca exatamente nisso, em permitir que desenvolvedores criem telas que funcionem em diferentes browsers sem “quebrar” a experiência.
+A idéia é que o uso dessa biblioteca torne-se um padrão para criação de telas produtos SAP daqui para frente. Como diz a galera de marketing:
+“Pseudo-adeus SAPGui, você não fará falta”.
+Você precisa do ABAP ou qualquer outra parafernália da SAP para criar telas usando o SAPUI5?
+NÃO
+Basta um broswer. Olhe esse guia para criar um
+hello world SAPUI5
+. Dá até para publicar seu app no Google Drive, olha esse
+outro guia aqui
+.
+“Ai minha divindade zumbística, então eu posso usar para fazer meu sáiti?”
+Até onde eu sei,
+NÃO
+(essas tretas legais mudam toda hora, sabe como é). Maaaas
+qualquer empresa que tenha licenças SAP pode usar o SAPUI5 “à vonts”, pois a licença de uso do SAPUI5 já está embutida em outras licenças.
+“Ah, que zuado, SAP mercenária!! Eu queria usar no meu sáiti!”
+Calma pequeno mancebo. Felizmente a SAP liberou uma vertente opensource que você pode usar para o que você quiser, desde aplicativos corporativos ultra high-techs até uma
+versão do 7×1 eterno
+. Esse é o papel do
+OpenUI5
+, disponibilizar as mesmas funcionalidades sem depender de tretas jurídicas. Vai lá, aprenda e fique doidão.
+Como existem duas bibliotecas como a sigla UI5, é super divertido ver pessoas falando dos seus apps sem especificar de qual estão falando. Na frase: “criei um app ui5”, estou falando da SAPUI5 ou da OpenUI5? A SAP precisa manter um bom nível de confusão, para a gente não desacostumar, falaí…
+“Pera, pera… cadê o ABAP, cadê o ECC? Já perdi meu emprego e nem sei?????”.
+Ahá, chegamos na indagação do momento. Alguns meses atrás eu criei um post explicando o propósito do
+SAP Netweaver Gateway
+(Se você não leu, leia antes para entender melhor como a coisa toda se conecta). Você pode linkar um aplicativo criado com o SAPUI5 no ECC através de um serviço OData, gerado pelo Gateway. Pronto, com isso você criar um aplicativo usando ABAP no backend e SAPUI5 no frontend, dando um “chega-pra-lá” na SAPGui.
+Importante dizer que o HANA também consegue expor serviços Odata, ou seja, dá para criar um aplicativo SAPUI5 que consome um serviço OData direto do HANA, dispensando o ABAP. Prooooonto,
+a
+gora sim
+você pode começar a ficar com medinho 😀 .
+Onde entra o Fiori nessa história
+Repita comigo:
+SAP Fiori é um
+PRODUTO
+da SAP
+SAP Fiori é um
+PRODUTO
+da SAP
+SAP Fiori é um
+PRODUTO
+da SAP
+SAP Fiori
+não é
+o aplicativo UI5 que você criou do zero, SAP Fiori é um conjunto de aplicativos
+criados pela SAP
+que utiliza SAPUI5 + Gateway. A idéia é levar funcionalidades que antes somente existiam em programas standards para essas novas telas buuunitas, coloridas e felizes.
+Meio confuso? Não deveria, já que todo santo dia você faz exatamente a mesma coisa! Ué, você não vai lá e cria uns programas Zs muito loucos? E a SAP não cria os Standards muito loucos? Pois bem:
+Fiori está para Standard
+assim como um
+app SAPUI5 “do zero” está para um Z
+.
+Melhorou?
+A confusão toda é criada quando alguém fala que fez um aplicativo “
+Fiori-like
+“. “
+Fiori-like
+” quer dizer “
+parecido com Fiori
+“, o que é
+extremamente óbvio
+para um app feito puramente com o UI5 (SAP ou Open). Falar que seu app UI5 é “
+Fiori-like
+” é a mesma coisa que chamar os seus programas Z de “
+Standard-like
+“. A coisa é tão parecida que apps Fiori também permitem extensões e alterações “controladas”, tipo aqueles artifícios ABAP para injetar lógicas em processos standards.
+Ah, instalar apps Fiori é de graça para qualquer cliente que já tenha uma licença SAP. O trabalho de instalaçao é meio chato, mas é um trabalho de BASIS e não tem nada a ver com desenvolvimento ABAP (a não ser que seja preciso fazer algum ajuste “tipo exit”, mas isso é outra história).
+Portanto, toda vez que você ver uma vaga:
+“Consultoria XYZ contrata: Desenvolvedor Fiori para projeto de 6 meses”,
+dê um foward para
+povo-do-fiori@sap.com
+. Quem sabe lá eles encontram 😉
+Abraços a todos os desenvolvedores UI5 que nunca serão encontrados!
+
+
+
+Comentários:
+Luiz André (27/02/2018 14:03): Quais são as funcionalidades prontas que tem no Fiori?
+  Leo Schmidt (08/03/2018 15:02): Olá Luiz, Aqui tem a lista de aplicações disponíveis. Abraços!
+  Leo Schmidt (08/03/2018 15:02): Olá Luiz, Aqui tem a lista de aplicações disponíveis. Abraços!
+Douglas Oliveira (12/02/2018 19:39): Cara… Adorei o post bem legal a maneira de passar a informação de forma divertida, parabéns Mauricio. sem falar nos comentários então foram ilários.
+Debora (09/12/2015 18:31): Uma dúvida for dummies … este ui5 … é baseado em HTML5 ou nao tem nada a ver? Parabéns pelo site!
+  Mauro Laranjeira (05/01/2016 16:20): Firme Debora? Para responder sua pergunta peguei um trecho do livro do Fábio Pagoti “Antes de mais nada, vamos dar nomes aos bois. UI5 é simplesmente um nome curto para UI development toolkit for HTML5. Trocando em miúdos, uma nada singela caixa de ferramentas para construção de interfaces gráficas no padrão HTML5.” Abs
+    Fabio Pagoti (05/01/2016 17:48): Olha só.. o livro respondeu a dúvida no primeiro parágrafo da primeira página! Imagina o quanto dá para aprender lendo as mais de 100 páginas! 😉 Abraços!
+    Fabio Pagoti (05/01/2016 17:48): Olha só.. o livro respondeu a dúvida no primeiro parágrafo da primeira página! Imagina o quanto dá para aprender lendo as mais de 100 páginas! 😉 Abraços!
+  Mauro Laranjeira (05/01/2016 16:20): Firme Debora? Para responder sua pergunta peguei um trecho do livro do Fábio Pagoti “Antes de mais nada, vamos dar nomes aos bois. UI5 é simplesmente um nome curto para UI development toolkit for HTML5. Trocando em miúdos, uma nada singela caixa de ferramentas para construção de interfaces gráficas no padrão HTML5.” Abs
+    Fabio Pagoti (05/01/2016 17:48): Olha só.. o livro respondeu a dúvida no primeiro parágrafo da primeira página! Imagina o quanto dá para aprender lendo as mais de 100 páginas! 😉 Abraços!
+    Fabio Pagoti (05/01/2016 17:48): Olha só.. o livro respondeu a dúvida no primeiro parágrafo da primeira página! Imagina o quanto dá para aprender lendo as mais de 100 páginas! 😉 Abraços!
+filipemarruda (04/10/2015 09:17): Prazer, desenvolvedor SAP UI5!!
+Flavio Furlan (09/07/2015 16:05): Ah, esqueci de citar: sugiro os posts do DJ Adams: “30 Days of UI5”: http://pipetree.com/qmacro/blog/category/30ui5/
+Flavio Furlan (09/07/2015 16:02): Depois de SAP HANA, SAPUI5 foi a segunda tecnologia da SAP que me empolgou. Já usei aplicações WDA e achei uma bosta (mesmo as standards), muito lentas. Hoje uso um sistema de controle de demanda feito em SAPUI5 e achei MUITO bom, rápido e responsivo. Desde então venho estudando essa parada e ficando muito contente com os resultados. Até onde eu entendi, a frase “Fiori está para Standard assim como um app SAPUI5 “do zero” está para um Z” faz muito sentido! Essa frase me lembrou da frase do Paul Hardy no livro que ele acabou de publicar: “Java resembles JavaScript in the same way a duck resembles duct tape.”. BTW, já passou da hora de marcarmos um podcast para discutir esses assuntos. Se animam?
+  Mauricio Cruz (10/07/2015 10:27): Eaeee Furlan! Opa, sempre animado para isso 🙂 Já pensei mais de uma vez em lançar algum podcast “esporádico” por aqui.. quem sabe? Valeu de novo pelo comentário, abs!
+    Mauro Laranjeira (05/01/2016 16:22): E não é que ele veio \o/
+    Mauro Laranjeira (05/01/2016 16:22): E não é que ele veio \o/
+  Mauricio Cruz (10/07/2015 10:27): Eaeee Furlan! Opa, sempre animado para isso 🙂 Já pensei mais de uma vez em lançar algum podcast “esporádico” por aqui.. quem sabe? Valeu de novo pelo comentário, abs!
+    Mauro Laranjeira (05/01/2016 16:22): E não é que ele veio \o/
+    Mauro Laranjeira (05/01/2016 16:22): E não é que ele veio \o/
+Renan William Alves de Oliveira (06/07/2015 12:13): The zueira never ends
+Mauro Laranjeira (06/07/2015 10:54): Abraços a todos os desenvolvedores UI5 que nunca serão encontrados! Maaalandro eu ri…
+  Mauricio Cruz (06/07/2015 10:56): Pois é! Tem cara que até lançou livro para ser encontrado! hahahahaha ( abs mano Fábio 😀 )
+    Fabio Pagoti (07/07/2015 07:56): Eu particularmente não vejo algo errado com o termo “Desenvolvedor Fiori”. O que entendo deste título é que o desenvolvedor, (que via de regra é um ABAP) deve conhecer UI5 para poder modificar uma aplicação standard no lado do front end e conhecer Gateway + Badi + Workflow para modificar o backend. Eu apenas acho que este termo não vai ser muito usado pois o profissional deverá saber muito mais que além disso. Mas Fiori já é uma realidade, até dentro do Brasil e existe sim um grande interesse por parte de profissionais ABAP aprenderem UI5. Abraços!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+    Fabio Pagoti (07/07/2015 07:56): Eu particularmente não vejo algo errado com o termo “Desenvolvedor Fiori”. O que entendo deste título é que o desenvolvedor, (que via de regra é um ABAP) deve conhecer UI5 para poder modificar uma aplicação standard no lado do front end e conhecer Gateway + Badi + Workflow para modificar o backend. Eu apenas acho que este termo não vai ser muito usado pois o profissional deverá saber muito mais que além disso. Mas Fiori já é uma realidade, até dentro do Brasil e existe sim um grande interesse por parte de profissionais ABAP aprenderem UI5. Abraços!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+  Mauricio Cruz (06/07/2015 10:56): Pois é! Tem cara que até lançou livro para ser encontrado! hahahahaha ( abs mano Fábio 😀 )
+    Fabio Pagoti (07/07/2015 07:56): Eu particularmente não vejo algo errado com o termo “Desenvolvedor Fiori”. O que entendo deste título é que o desenvolvedor, (que via de regra é um ABAP) deve conhecer UI5 para poder modificar uma aplicação standard no lado do front end e conhecer Gateway + Badi + Workflow para modificar o backend. Eu apenas acho que este termo não vai ser muito usado pois o profissional deverá saber muito mais que além disso. Mas Fiori já é uma realidade, até dentro do Brasil e existe sim um grande interesse por parte de profissionais ABAP aprenderem UI5. Abraços!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+    Fabio Pagoti (07/07/2015 07:56): Eu particularmente não vejo algo errado com o termo “Desenvolvedor Fiori”. O que entendo deste título é que o desenvolvedor, (que via de regra é um ABAP) deve conhecer UI5 para poder modificar uma aplicação standard no lado do front end e conhecer Gateway + Badi + Workflow para modificar o backend. Eu apenas acho que este termo não vai ser muito usado pois o profissional deverá saber muito mais que além disso. Mas Fiori já é uma realidade, até dentro do Brasil e existe sim um grande interesse por parte de profissionais ABAP aprenderem UI5. Abraços!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+      Mauricio Cruz (07/07/2015 08:07): Eu discordo de duas coisas: 1 – Eu não me chamo de desenvolvedor de standard, portanto, continuo achando o termo incorreto 2 – Acredito que o termo vai ser usado pra kct ainda, até a maioria entender essa papagaiada toda. Abs!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+        Fabio Pagoti (07/07/2015 08:09): Mas Fiori não é apenas standard. Os clientes e parceiros podem construir aplicações Fiori. https://open.sap.com/courses/fiux1
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!
+          Mauricio Cruz (07/07/2015 08:10): Para mim isso é a SAP abraçando o branding que saiu de controle. Nada mais!

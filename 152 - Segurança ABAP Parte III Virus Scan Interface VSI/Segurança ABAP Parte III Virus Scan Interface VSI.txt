@@ -1,0 +1,86 @@
+Segurança ABAP – Parte III – Virus Scan Interface (VSI)
+Autor: Leo Schmidt
+Data: 22/08/2012 10:00
+
+Fala, bando de morto-vivo! Admito que demorei, mas estou aqui de volta pra seguir esta série. Pois bem, com o assunto “vulnerabilidades ABAP” esgotado, desta vez vou falar um pouco sobre a interface que dá suporte à proteção contra vírus do SAP, a
+Virus Scan Interface
+(VSI).
+AS DEFINIÇÕES DE VÍRUS FORAM IGNORADAS
+“O QUE? O SAP TEM ANTI-VÍRUS?”
+Na verdade não tem. O que vem instalado no SAP é apenas uma interface, chamada
+NetWeaver Virus Scan Interface
+(NW-VSI)
+, que faz o meio de campo entre código ABAP ou Java e o programa anti-vírus de verdade. O programa anti-vírus específico deve ser escolhido pelo cliente e é fornecido por parceiros certificados da SAP.
+A maior parte do trabalho aqui fica com o Basis, que tem que instalar o
+servidor de anti-vírus e fazer todas as configurações correspondentes. Uma vez que tudo esteja no lugar, a parte ABAP é bem simples: basta verificar os arquivos usando os métodos da classe CL_VSI, que como dá pra ver abaixo, usa o padrão
+singleton
+.
+* Busca instância do scanner
+DATA: lo_scanner TYPE REF TO cl_vsi.
+
+CALL METHOD cl_vsi=>get_instance
+  EXPORTING
+    if_profile         = '/MEU_PACOTE/MINHA_APLICACAO'
+  IMPORTING
+    eo_instance        = lo_scanner
+  EXCEPTIONS
+    profile_not_active = 1
+    OTHERS             = 2.
+
+CASE sy-subrc.
+  WHEN 0.
+* Tudo certo com a interface
+  WHEN 1.
+* O antivírus está desabilitado para a aplicação /MEU_PACOTE/MINHA_APLICACAO.
+* Aqui, a SAP recomenda exibir o erro com a mensagem da exceção se o
+* escaneamento anti-vírus for obrigatório.
+  WHEN OTHERS.
+* Este caso é sempre um erro, e a SAP também recomenda que seja sempre usada
+* a mensagem da exceção.
+ENDCASE.
+O nome /MEU_PACOTE/MINHA_APLICACAO deve ser fornecido pelo Basis, que vai fazer a configuração desse perfil na transação VSCANPROFILE. Com a instância da CL_VSI na mão, é só chamar o método que faz o escaneamento e avaliar o retorno.
+DATA: lv_scanrc TYPE vscan_scanrc,
+      lv_data   TYPE xstring,
+      lv_text   TYPE string.
+
+* A variável LV_DATA aqui deve receber o conteúdo do arquivo a ser escaneado
+
+CALL METHOD lo_scanner->scan_bytes
+  EXPORTING
+    if_data             = lv_data
+  IMPORTING
+    ef_scanrc           = lv_scanrc
+  EXCEPTIONS
+    not_available       = 1
+    configuration_error = 2
+    internal_error      = 3
+    OTHERS              = 4.
+
+* Se o SY-SUBRC voltar diferente de 0 aqui, é erro da VSI
+IF sy-subrc <> 0.
+* MESSAGE...
+* EXIT.
+ENDIF.
+
+* Para cada valor de LV_SCANRC retornado pelo SCAN_BYTES, existe um texto
+* correspondente que pode ser buscado com o GET_SCANRC_TEXT. Se voltar 0,
+* nenhum vírus
+lv_text = cl_vsi=>get_scanrc_text( lv_scanrc ).
+
+WRITE: / 'Resultado do escaneamento:',
+       / 'Return code: ',              lv_scanrc,
+       / 'Descrição: ',                lv_text.
+Além do SCAN_BYTES, existem dentro da classe CL_VSI os métodos SCAN_FILE para escanear arquivos no
+application server
+, e também o SCAN_ITAB, que escaneia uma tabela interna.
+Eu particularmente nunca vi VSI ser aplicada em nenhum projeto/cliente, mas é óbvio que pode ser algo útil. A própria
+documentação da SAP
+sobre o assunto sugere que a VSI pode ser útil em aplicações que envolvam o recebimento de arquivos externos de usuários, como por exemplo uma interface de HR que recebe currículos de candidatos para uma seleção através da internet. É claro que é uma coisa que nem sempre vai ser usada, mas é bacana saber que existe.
+Tenho que assumir que esse foi um post meio enchedor de linguiça, mas acontece que a chibata está cantando pro meu lado no trampo, então não está muito fácil de parar e escrever. Na sequência desta série, prometo falar de algo mais interessante que é o suporte a criptografia e assinaturas digitais dentro do SAP. Até lá.
+
+
+
+Comentários:
+Hector (14/05/2013 15:51): Bom post, pena que zombie não consegue abrir foto da festa, pois ao invés disso ele passa a noite debugando !!
+Custodio (23/08/2012 00:08): Fui usar essa classe uma vez, o Dev Leader falou “precisa nao, ninguem vai ‘upar’ arquivo com virus” 😀
+Mauricio Cruz (22/08/2012 13:05): Curti o post. Complementando o assunto com o que eu sei sobre VSI: por mais bizarro que possa parecer, eu tive contato com um time de indianos experts em segurança no SAP, e o guide dos caras era usar SEMPRE a VSI quando um prog ABAP tiver acesso a arquivos externos. Para eles, o esquema é deixar tudo codificado, pra funcionar automático quando (se) o cliente implementar a VSI. Meio extremista, mas cada um faz o que quiser, falae 😛

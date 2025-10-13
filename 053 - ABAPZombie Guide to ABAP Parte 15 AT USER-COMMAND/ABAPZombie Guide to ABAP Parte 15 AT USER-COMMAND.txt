@@ -1,0 +1,28 @@
+ABAPZombie Guide to ABAP – Parte 15 – AT USER-COMMAND
+Autor: Mauricio Cruz
+Data: 28/02/2011 14:51
+
+Phew! Finalmente cheguei ao fim da letra A. Espero que eu termine tudo até o final do ano… ano de 2012 é claro 😀
+Bom, o
+AT USER-COMMAND
+é bem simples. Ele irá ser executando quando o usuário efetuar alguma ação em uma lista, porém, essa ação não pode ser qualquer ação…
+Normalmente o que são capturadas são ações não-standard, aquelas que você cria quando insere um novo status gui para o programa, por exemplo. (para ver a lista todas de restrições, F1 no comando 😛 ).
+Exemplo:
+REPORT zombie_at_user_command.
+
+START-OF-SELECTION.
+
+* Criei um novo Status GUI com o comando "TCHAU" para o botão
+* de fechar (a Bolinha vermelha com o X ou o F12).
+  SET PF-STATUS 'ZOMBIE_STATUS'.
+
+* Criando uma lista qualquer, de zumbis famintos.
+  WRITE 'Braaaaaaaaaaaaaaaaains!'.
+
+AT USER-COMMAND.
+  IF sy-ucomm = 'TCHAU'.
+    BREAK-POINT.
+  ENDIF.
+No caso acima, o programa vai parar quando você clicar no botão vermelho, mas só irá funcionar nos reports feitos com WRITE.
+Easy né? Esse comando meio que caiu no esquecimento, já que as listas em WRITE são cada vez menos comuns. Mas talvez você encontre ele por aí em algum SAP antigo da vida 🙂
+Abraços, e rumo à letra B!

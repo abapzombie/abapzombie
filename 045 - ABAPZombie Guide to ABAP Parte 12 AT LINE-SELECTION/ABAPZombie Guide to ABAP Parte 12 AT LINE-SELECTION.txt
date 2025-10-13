@@ -1,0 +1,37 @@
+ABAPZombie Guide to ABAP – Parte 12 – AT LINE-SELECTION
+Autor: Mauricio Cruz
+Data: 17/02/2011 08:30
+
+O
+AT LINE-SELECTION
+é um comando bem simples, para disparar um evento sempre que o
+sy-ucomm
+retornado de uma lista seja igual a
+PICK
+. Esse sy-ucomm é retornado por default sempre que o usuário clicar duas vezes em uma linha de uma lista, ou selecionar a linha e clicar em F2, ou clicar num hotspot de uma lista. Vejamos:
+REPORT zombie_at_line_selection.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Testando o duplo clique, ou a seleção + F2
+*--------------------------------------------------------------------*
+  WRITE 'Clique aqui duas vezes!'.
+  SKIP 1.
+
+* Teste para o HOTSPOT
+*--------------------------------------------------------------------*
+  WRITE 'Clique aqui uma vez :P!' HOTSPOT.
+
+*--------------------------------------------------------------------*
+* AT LINE-SELECTION
+*--------------------------------------------------------------------*
+AT LINE-SELECTION.
+
+  BREAK-POINT.
+Só fique ligado no seguinte: se você trocar o sy-ucomm de F2 para qualquer coisa que não seja PICK, o uso dele não vai mais cair no AT LINE-SELECTION e você só conseguirá tratá-lo no
+AT USER-COMMAND
+.
+Abraços!

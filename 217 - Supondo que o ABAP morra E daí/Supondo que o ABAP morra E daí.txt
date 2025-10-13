@@ -1,0 +1,160 @@
+Supondo que o ABAP morra. E daí?
+Autor: Mauricio Cruz
+Data: 13/01/2016 10:20
+
+A cada 13 noites de lua cheia aparece mais alguém cogitando se o ABAP vai, enfim, ser enterrado em um cemitério alemão. Sinceramente eu não posso afirmar quando isso vai acontecer, mas eu tenho uma impressão de que vai demorar, ahm,
+P-A-R-A C-A-C-E-T-A
+até que o ABAP perca a relevância dentro do ecossistema SAP (se é que isso sequer chegue a acontecer em algum dia).
+Porém, como já dizia uma velha banda desconhecida do cenário post-punk nacional,
+nada dura para sempre
+. Já li textos advogando contra a morte do ABAP, apostando sabiamente em sua constante evolução. Eu mesmo já tive vontade de escrever algo assim… mas ao invés de chutar cachorro morto, pensei em fazer um exercício diferente e discutir o que poderia acontecer se fôssemos além da discussão do “se” vai ou não acabar.
+Para isso,
+assumirei
+somente
+nesse post que o ABAP está com os dias contados.
+Acabará. Vai para o vinagre. Baterá as botas. Acordará com a boca cheia de formiga. Irá para terra de pés juntos. Deixará de existir. Virará funkeiro.
+E daí, como fica?
+Importante: não estou nem aí para o que aconteceria com a SAP, esse post trata do programador, bele? 🙂
+Caos, medo e destruição
+Na primeira manhã, ao abrir o ECC e não conseguir escrever um mísero READ TABLE, muitos sentirão medo e vontade de destruir tudo e todos ao seu redor. Alguns apelarão para suas velhas apostilas de COBOL em 21 dias e Clipper for Dummies, na tentativa de preservar velhos (aliás, bem velhos) hábitos.
+Nós seres humanos respondemos muito mal à mudanças, mesmo sendo naturalmente capazes de nos adaptarmos a situações bem adversas. Esse desconforto aflora principalmente quando não estamos no controle, como é o caso de quando a SAP resolver dar SHIFT+DEL no ABAP. Só de pensarmos em todo o processo de adaptação já bate uma leseira…
+Mas não há escolha, será preciso mudar. Nada mais de SELECT em LOOPs, nada mais de SELECTION SCREENs ou REPORTs zqualquercoisa. Esqueça a SAPGui. Siga em frente.
+QUE VENHA A REVOLUÇÃO!! …?
+Quem está descontente com a situação atual de ambientes desatualizados e práticas escrotas de programação geralmente tem ao menos um pingo de vontade de ver o circo pegar fogo quando o ABAP sumir. Exagerando, frases como: “
+Chupa, falei para você aprender OO
+“, “
+Pega essa trouxa, nem sabe o que é versionamento
+“, “
+Aff, não manja subir um servidor?
+“, “
+Pffff, nunca usou IDE ou editores power de texto?
+” poderão ser usadas pelos extremistas de plantão.
+Vou confessar que eu já fui um extremistinha e achava que quem era ruim ia para a vala junto com a linguagem. Mas conforme você é exposto a mais e mais tecnologias e linguagens de programação você passa a entender que a coisa é bem mais complexa. Sempre existirá um lugar para cada tipo de programador, seja ele bom em algo, mediano em algo ou ruim em algo.
+É só você perceber que para cada dúzia de artigos enaltecendo as partes boas de alguma tecnologia, há uma outra dúzia dizendo o porque você deveria correr dela como diabo foge da cruz. Quer exemplos?
+Rails é legal faça dele sua vida
+Rails é um lixo fuja o mais rápido possível
+NodeJs é legal faça dele sua vida
+NodeJS é um lixo fuja o mais rápido possível
+OO é legal faça dela sua vida
+OO é um lixo fuja o mais rápido possível
+Swift é legal faça dela sua vida
+Swift é um lixo fuja o mais rápido possível
+E assim por diante. Duvido muito que as pessoas envolvidas na criação de todas essas tecnologias a criaram para ser ruins propositalmente, só para “causar” na internet. Cada uma delas (e tantas outras) foram criadas porque os seus autores acreditavam que elas tinham um grande potencial dentro daquilo que elas foram feitas para resolver. Uma vez que ela é lançada, as pessoas podem ou não simpatizar com as suas premissas e passar a utilizá-las, ou podem mesmo simplesmente não ligar se ela é ou não a melhor tecnologia para resolver o problema e a usarem mesmo assim. É um mundo livre, saca?
+Se há tantos mundos para abrigar programadores com perfis tão distintos, certamente os bons, medianos e péssimos programadores ABAP encontrarão uma outra tecnologia que lhes dará casa comida e roupa lavada. Para alguns, o que vai determinar qual caminho seguir será uma análise complexa sobre um novo mercado que poderá atender todas as suas expectativas de um futuro sem muitas amarras (talvez o meu caso? haha), para outros dane-se, o que aparecer e pagar mais “é nois”, seja SAP, não SAP, de deus ou do capeta, tô nem aí.
+Duvida? Pois sabe aquele ABAPer zuado que caga com todo o ambiente e é endeusado pelos usuários por ter feito um REPORT horrível mas que resolve os problemas do negócio? Esse cara existe em todos os lugares e você, você mesmo que não entende como esse ABAPer pode ganhar uma taxa/hora maior que a sua, pode estar ajudando outro cara igual a ele. O pior:
+você não dá a mínima.
+Me diga: o código dos apps que você tem no seu celular e que usa muito todos os dias têm códigos perfeitos que foram feitos por ótimos programadores? Nós assumimos que o código é minimamente bom, mas deve ter muito, mas muito lixo no meio. Geralmente o usuário está cagando para a qualdade o código, ele quer saber é da qualidade do produto… e às vezes, nem isso. Veja o fenômeno
+Flappy Bird
+, qualquer programador que se empenhasse uma semana faria uma cópia (tanto que sairam 2938923 cópias). Até eu fiz, joga aí:
+ClonyBird
+(tem que instalar o plugin do Unity).
+Teria um programador mobile raiva DE VOCÊ por ajudar software escrotos feitos por programadores escrotos fazerem sucesso? Fica a dúvida.
+Assim como programadores têm níveis diferentes de exigência com seus códigos,
+usuários têm níveis diferentes de exigência com seus produtos.
+Num mundo de trabalho abundante (para nossa sorte) como o da programação, sempre há lugar para programadores ruins onde há usuários pouco exigentes. Pense no seu sistema escroto de apontamento de horas. No sistema de gerenciamento de rede da empresa que nunca funciona. No software da impressora que sempre dá pau. Nos inúmeros programas horríveis de VPN que zoam todo o seu sistema. Até onde eu sei nenhum deles foi feito em ABAP.
+Portanto, não vai haver revolução nenhuma, todo mundo vai achar algum trabalho.
+Ah, mas você não faz parte dessa galera do “deixa a vida me levar”, certo? Você quer saber como suas skills de ABAP poderão ser utilizadas para trabalhar numa coisa firmeza no futuro? Sabe como é,
+DEPENDE.
+Acorda, encostado!
+Se você é aquele cara com o perfil do bom profissional: gosta de estudar, experimenta outras tecnologias, se dedica ao máximo a sua profissão… relaxa que não há o que temer. Talvez você até já saiba o que vai acontecer com você com a morte do ABAP. Talvez você até já esteja mexendo os seus pauzinhos para trabalhar com aquilo que você quer (SAP ou não), independende do fim da linguagem. Vai na fé que você encontrará tranquilamente seu caminho.
+AGORA
+, o que eu conheço de gente com capacidade que é capada por sua própria preguiça…
+Sabe quem eu acho que vai mais sofrer com a morte do ABAP? Essa galera que fica encostada, que acorda de manhã e reclama da vida por saber que está num trampo que não extrai toda sua capacidade. Essa galera que adora reclamar em rodas de café que está tudo uma merda, mas quando senta de volta na sua baia olha para um método e pensa
+“aihm, eu sei que eu vou conseguir entender um dia o que é SAPUI5, mas deixa para depois do meu facebook aqui”
+. O cara que é escroto, ruim e fala que não está nem aí para nada
+É MAIS SINCERO
+do que aqueles que reclamam feito baratas tontas mas não fazem absolutamente nada para ir em frente. Mesmo capazes, eles simplesmente deixam a vida profissional passar.
+O mais legal de falar do suposto fim do ABAP é dizer o quanto ele é
+irrelevante
+para a sua carreira como programador. ABAP, Rails, NodeJS, ReactJS, SAPUI5, Angular, .NET, Java, Oracle… dane-se! Se você realmente dedica a sua capacidade em focar em conceitos básicos para poder transitar entre as mais diversas linguagens de programações
+O FIM DE QUALQUER LIGUAGEM
+não deveria te preocupar.
+O problema maior não está nem no cara que é ruim e não liga para nada, nem no cara que se dedica e é interessado. Está na galera do meio. Esses sim vão sofrer e sucumbir dentro de si mesmos, por saberem que aquele objeto de reclamação e que também era a sua sustentação não existe mais, por saberem que terão que se mexer. E o facebook piscando. E o zapzap notificando. Será que eles aguentam?
+Mas hey, relaxa é tudo fantasia
+Se você é um ABAPer, entenda que ele é somente uma das muitas ferramentas disponíveis no mercado para você exercer a sua profissão de programador, e contém várias formas de fazer com que você possa aprender os mais diversos conceitos que podem ser replicados em outras tecnologias. Basta que você pare de ficar encostado no mais do mesmo e reinvente a sua forma de trabalhar.
+Esse monte de “balela” que a comunidade fala sobre novas formas de trabalho e novas tecnologias que convergem com o ABAP podem parecer um pouco irreais, mas a base teórica que o estudo delas te dá é extremamente importante para que você seja capaz de transitar entre outras linguagens de programação. Ao longo desses quase 10 anos de programação eu já fiz projetos pessoais/profissionais em Actionscript, Ruby, Java, C#, C++, Unity, HTML5, JS… e a base teorica para todo esse monte de coisas foram coisas que aprendi com o ABAP. Acredite que dá.
+Termino deixando algumas pergunta para você que leu tudo isso: como você reagiria ao fim do ABAP? Com o que você iria trabalhar? Sente-se preparado para encarar o fim dos tempos? Conte para nós nos comentários.
+Abraços a todos aqueles que estão pouco se lixando se o ABAP vai ou não acabar \o/.
+
+
+
+Comentários:
+Matheus (19/01/2017 09:57): Mauricio. Estou me vendo neste post e o triste é perceber que a tecnologia passou e eu fiquei para trás. Agora aqui estou eu tentando estudar mas estou sem um norte. Tem tanta coisa nova/velha que eu nem sei por onde começar. HANA, Gateway, UI5… Poderia dar uma ajuda para este humilde e perdido desenvolvedor?
+  Murilo Cruz (22/03/2017 21:50): estava que nem você e acabei de me encontrar em: videos do abap101 – https://www.youtube.com/user/abap101 novo blog bar8.com.br
+    Flavio Furlan (23/03/2017 11:15): Olá Murilo, Obrigado pela indicação 🙂 Para adicionar um ponto ao post, veja isso: https://www.sap.com/developer/topics/abap-platform.html Abraços!
+    Flavio Furlan (23/03/2017 11:15): Olá Murilo, Obrigado pela indicação 🙂 Para adicionar um ponto ao post, veja isso: https://www.sap.com/developer/topics/abap-platform.html Abraços!
+  Murilo Cruz (22/03/2017 21:50): estava que nem você e acabei de me encontrar em: videos do abap101 – https://www.youtube.com/user/abap101 novo blog bar8.com.br
+    Flavio Furlan (23/03/2017 11:15): Olá Murilo, Obrigado pela indicação 🙂 Para adicionar um ponto ao post, veja isso: https://www.sap.com/developer/topics/abap-platform.html Abraços!
+    Flavio Furlan (23/03/2017 11:15): Olá Murilo, Obrigado pela indicação 🙂 Para adicionar um ponto ao post, veja isso: https://www.sap.com/developer/topics/abap-platform.html Abraços!
+Bruno Wittmann (07/08/2016 17:10): O Abap não vai morrer e quem faz terrorismo dizendo isso, faz sem necessidade. No próprio SAP fórum de 2016 nem sequer foi cogitada essa hipótese. Eu programo hoje no eclipse, amanha talvez em outra ferramente se precisar mas isso não me assusta pois o abap esta evoluindo e oque tem demais nisso? Quem programa em java vê sempre coisas novas dentro da linguagem e isso natural. Trabalhar com fiori e UI5 é justamente a maneira que a sap encontrou de não deixar o abap morrer, pois tudo aquilo que não desenvolve morre e vamos ser francos, o abap hoje é uma das linguagens de programação mais robustas que existe. Uma empresa como a SAP jamais vai deixar isso acontecer e quem questiona isso, não a conhece!
+Willi (27/04/2016 14:33): Ótimo Post… eu não acho que o ABAP chegue a morrer, avaliando ainda que tem empresas que usam o ECC 4 ainda até hoje!
+Fabio Vertamatti (31/03/2016 15:16): Bem… vcs estão falando da possibilidade do ABAP morrer… eu trabalho com mainframe a quase 10 anos e ainda estou ouvindo que COBOL vai morrer… continuo trabalhando com COBOL e afins de Mainframe IBM, estou aprendendo ABAP por conta… nem um nem outro vai morrer nos próximos 20 anos (mínimo) … (e vc pergunta, “por que não?”)… simples… custo x benefício de migrar um sistema inteiro, robusto, funcionando, estável e seguro  por outro que ainda está , ao menos, tentando adaptar ao que o ecossistema anterior provia. Eu ainda vejo rotinas em assembler que ninguém toca ou tira, pq simplesmente funciona e funciona bem sem precisar dar manutenção. Da mesma maneira… SAP está evoluindo… qual o custo de você fazer todo o upgrade to sistema e linguagem, mesmo usando uma IBM Rational para migrar as diretivas de negócio, chega la na frente… “pq a folha de pagamento está dando diferença de 1 centavo todo mês para nossos 1 milhão de clientes?”  ” aaahhh, foi aquele código escroto que ninguém deu bola com o upgrade.. ” ou “aahh… acho que foi aquela rotina de acerto que achamos que não fazia porra nenhuma no meio do processo” resumindo… o custo de uma mudança impacta bastante em algo deixar de existir. sempre vai existir uma padaria de bairro usando aquele sistema arcaico em Clipper … pq? é barato e funciona, só adaptar os logs para enviar pra Receita Federal.
+Paulo Jonas de Freitas (22/01/2016 14:41): Parabéns pelo texto Mauricio! Quero também parabenizá-los pelo blog. Acho que sempre irá existir novas tecnologias, mas que nem todas irão entrar na “moda”. Como o próprio Mauricio comentou no texto ” Uma vez que ela é lançada, as pessoas podem ou não simpatizar com as suas premissas e passar a utilizá-las, ou podem mesmo simplesmente não ligar se ela é ou não a melhor tecnologia para resolver o problema e a usarem mesmo assim. É um mundo livre, saca?” Então acho que é questão uma adaptação de mercado, de novas tecnologias. Eu confesso que estou ansioso (e preocupado) com o futuro da linguagem ABAP, pois como o próprio Mauricio comentou, “Nós seres humanos respondemos muito mal à mudanças, mesmo sendo naturalmente capazes de nos adaptarmos a situações bem adversas.” Enquanto houver colaboração e blogs bons e dedicados como este, sempre teremos como nos adaptarmos e trocarmos informações, aprendizado. Parabéns novamente e até a próxima!!
+  Mauricio Cruz (18/03/2016 10:09): Demorei um pouco para responder, mas cá estou 🙂 Confesso que eu fiquei preocupado por algum tempo com a nova onda do ABAP, mas a idéia do texto é demonstrar o quanto eu não me preocupo mais com essas coisas. Se a gente se dedicar e gostar de aprender coisas novas, estamos de boa 🙂 Abs e vlw pelo comentário!
+  Mauricio Cruz (18/03/2016 10:09): Demorei um pouco para responder, mas cá estou 🙂 Confesso que eu fiquei preocupado por algum tempo com a nova onda do ABAP, mas a idéia do texto é demonstrar o quanto eu não me preocupo mais com essas coisas. Se a gente se dedicar e gostar de aprender coisas novas, estamos de boa 🙂 Abs e vlw pelo comentário!
+Furlan (13/01/2016 16:22): Olá Maurício, Excelente pontos! Concordo com o Fábio, a escolha do título foi boa mesmo! E se o ABAP acabasse hoje? Quem ainda acha isso, não tem a menor noção do universo SAP. Primeiro, a quantidade de código ABAP ainda é muito grande e não só isso, a quantidade de código ABAP ainda sendo produzido é MUITO grande! Somente para se ter uma idéia, de acordo com a última contagem de linhas de comando, somente código customizado, temos cerca de 800 milhões de LOC… isso mesmo 800 milhões! Comparando com o Windows 7 com cerca de 30M, esse número é realmente muito significativo. Eu realmente não dou a mínima para se o ABAP vai acabar ou não. Se eu acordasse hoje e o ABAP não existisse, teria sim perdido mais de 15 anos de experiência. Ok, não todos esses anos, mas boa parte dele. Mas você não ficou apenas lendo help do ABAP nesse meio tempo, certo? Geralmente em projetos temos a oportunidade de aprender outras coisas além do ABAP, então o prejuízo não seria todos os 15 anos. Gostei muito do texto e inclusive adorei o tom de “PARA CACETA!” dele. Vida longa ao ABAP, mas se não for tão longa assim, abriremos nossos editores e usaremos o que nos for colocado na fuça. Abraços! Furlan
+  Mauricio Cruz (14/01/2016 07:39): Issae mano! Podemos dizer então que aqueles que não dão a mínima para o fim ou não do ABAP têm grande chances de serem bons ABAPs? Não que eu esteja puxando o saco da galera que comenta aqui, longe disso hahahah 🙂 Vlw, abs!
+    Furlan (22/01/2016 13:06): Brincadeiras a parte, acho que sim 🙂 Não porque são especiais, mas por não estar apegado a uma tecnologia específica a tentedência é estudar outras coisas o que inevitavelmente ajuda na forma de programar em ABAP. Abs!
+    Furlan (22/01/2016 13:06): Brincadeiras a parte, acho que sim 🙂 Não porque são especiais, mas por não estar apegado a uma tecnologia específica a tentedência é estudar outras coisas o que inevitavelmente ajuda na forma de programar em ABAP. Abs!
+  Mauricio Cruz (14/01/2016 07:39): Issae mano! Podemos dizer então que aqueles que não dão a mínima para o fim ou não do ABAP têm grande chances de serem bons ABAPs? Não que eu esteja puxando o saco da galera que comenta aqui, longe disso hahahah 🙂 Vlw, abs!
+    Furlan (22/01/2016 13:06): Brincadeiras a parte, acho que sim 🙂 Não porque são especiais, mas por não estar apegado a uma tecnologia específica a tentedência é estudar outras coisas o que inevitavelmente ajuda na forma de programar em ABAP. Abs!
+    Furlan (22/01/2016 13:06): Brincadeiras a parte, acho que sim 🙂 Não porque são especiais, mas por não estar apegado a uma tecnologia específica a tentedência é estudar outras coisas o que inevitavelmente ajuda na forma de programar em ABAP. Abs!
+Roberto Aran (13/01/2016 15:46): Ótimo post, vou um pouco além, hoje em dia é comum a abertura de vagas para “Full Stack developer”. O Mercado mudou, as linguagens dificilmente morrem, pois sempre tem algo importante e crítico em linguagens “old”. O que precisamos refletir é que a tecnologia é meio, portanto estar preparado, não parar de estudar e criar uma boa base de conhecimento técnica e de negócio faz toda a diferença para um programador ou qualquer profissional de TI.
+  Mauricio Cruz (14/01/2016 07:34): Muitas das discussões sobre a morte do ABAP esquecem desse ponto que você destacou Aran. de que a tecnologia é meio. Manter isso na cabeça é decisivo para ser um bom profissional mesmo. Obg, abs!
+  Mauricio Cruz (14/01/2016 07:34): Muitas das discussões sobre a morte do ABAP esquecem desse ponto que você destacou Aran. de que a tecnologia é meio. Manter isso na cabeça é decisivo para ser um bom profissional mesmo. Obg, abs!
+Fabio Pagoti (13/01/2016 12:42): Apesar de ter brincado no Twitter que eu iria abrir uma franquia do Subway, o fim do ABAP poderia me deixar mais próximo de trabalhar com Big Data de fato. Obviamente, com o HANA. Abraços,
+  Mauricio Cruz (13/01/2016 12:49): É nada mano, vc pode trabalhar com o que você quiser e você tá ligado. \o/  Você é certamente um exemplo de cara que não dá a mínima para o fim ou não da linguagem, vontade de trampar é o que não falta. Abs!
+    Fabio Pagoti (13/01/2016 13:19): Bem… Hoje eu não gasto nem 30% do meu tempo com ABAP… mas não teria nenhum receio se o ABAP de fato morresse. Estou me perguntando quantas pessoas começaram a ler este post desesperadas. Isso pq a escolha do título foi boa.
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+    Fabio Pagoti (13/01/2016 13:19): Bem… Hoje eu não gasto nem 30% do meu tempo com ABAP… mas não teria nenhum receio se o ABAP de fato morresse. Estou me perguntando quantas pessoas começaram a ler este post desesperadas. Isso pq a escolha do título foi boa.
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+  Mauricio Cruz (13/01/2016 12:49): É nada mano, vc pode trabalhar com o que você quiser e você tá ligado. \o/  Você é certamente um exemplo de cara que não dá a mínima para o fim ou não da linguagem, vontade de trampar é o que não falta. Abs!
+    Fabio Pagoti (13/01/2016 13:19): Bem… Hoje eu não gasto nem 30% do meu tempo com ABAP… mas não teria nenhum receio se o ABAP de fato morresse. Estou me perguntando quantas pessoas começaram a ler este post desesperadas. Isso pq a escolha do título foi boa.
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+    Fabio Pagoti (13/01/2016 13:19): Bem… Hoje eu não gasto nem 30% do meu tempo com ABAP… mas não teria nenhum receio se o ABAP de fato morresse. Estou me perguntando quantas pessoas começaram a ler este post desesperadas. Isso pq a escolha do título foi boa.
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+      Mauricio Cruz (13/01/2016 13:21): Meu trabalho estará concluído se alguém, em alguma roda de café, começar a discussão de que o ABAP está morto pq viu a chamada do post mas não leu o artigo. hehehe
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+        Fabio Pagoti (13/01/2016 22:56): Disso não tenho a menor dúvida. Com certeza tem gente que não está dormindo neste momento
+Antelio I. Abe (13/01/2016 12:17): Mais um ponto muito importante e deixado de lado. Certamente a empresa que tem a maior quantidade de programadores ABAP é a própria SAP, desenvolvendo, aprimorando e principalmente suportando sistemas que a SAP distribui. Não interesse da própria SAP matar o ABAP, pois acarretará jogar fora todo o investimento em formação e aprimoramento sem ter uma ótima alternativa para abdicar do ABAP. Se é que vai existir um caminho, talvez a implementação de um linguagem que gerasse o mesmo código compilado no Basis. Para variar só pensar um pouco que a “neura” de abap morrer vai embora.
+  Mauricio Cruz (13/01/2016 12:48): Cara, só de levar em consideração toda a base instalada de clientes que usam o ABAP como forma primária de gerenciar a empresa já dá pelo menos mais uns 20 anos de trampo. Até lá eu já produzi o novo Zelda. 🙂
+  Mauricio Cruz (13/01/2016 12:48): Cara, só de levar em consideração toda a base instalada de clientes que usam o ABAP como forma primária de gerenciar a empresa já dá pelo menos mais uns 20 anos de trampo. Até lá eu já produzi o novo Zelda. 🙂
+Thiago Alves (13/01/2016 11:55): Ótimo texto. Caí na real desde janeiro do ano passado, onde comecei a estudar Java de verdade. Se o ABAP morrer mesmo, vou para Java. Mas sinceramente? Depois de 7 anos trabalhando só com ABAP, estou com um pensamento extremista igual ao seu no ínicio… Pior: vendo as maravilhas do mundo de desenvolvimento fora da caixa do SAP, eu começo a me perguntar… vale a pena ficar só no ABAP? Eu mesmo não vou ficar por muito tempo. abs
+  Mauricio Cruz (13/01/2016 12:47): Acho que todo mundo que fez aqueles artigos falando mal sobre determinada tecnologia podem ter pensando se valia a pena ou não trocar para outra coisa melhor. Penso que se somos capazes, o negócio é ir atrás daquilo que nos faz felizes e pronto. No caso da programação, acredito que o ABAP tem milhares de ferramentas que ajudam muito a aprender coisas de outras linguagens, mas ficando só no report e no select em loop, n tem como descobri-las. Vlw, abs!
+  Mauricio Cruz (13/01/2016 12:47): Acho que todo mundo que fez aqueles artigos falando mal sobre determinada tecnologia podem ter pensando se valia a pena ou não trocar para outra coisa melhor. Penso que se somos capazes, o negócio é ir atrás daquilo que nos faz felizes e pronto. No caso da programação, acredito que o ABAP tem milhares de ferramentas que ajudam muito a aprender coisas de outras linguagens, mas ficando só no report e no select em loop, n tem como descobri-las. Vlw, abs!
+Antelio I. Abe (13/01/2016 11:39): ABAP antes de pensar como linguagem de programação é necessário entender que a linguagem funciona sobre uma plataforma de aplicação. O ABAP era uma linguagem moderna para a época, herdando do COBOL e do ADABAS, o que melhor existia na época, hoje somo quase paleontólogos trabalhando com os dinossauros vivos no servidor Basis. O Servidor Basis por outro lado é sólido, estável, escalável, extremamente gerenciável. Proporcionando por exemplo DEBUG em servidor de Produção com código fonte aberto. Até hoje a única plataforma de aplicação que permite isto “Out of Box”. O único ponto ruim é questão de segurança, onde existem vários buracos, sejam em aplicações de negócio, na camada de abap e sabe lá quais falhas no próprio kernel, sapgui, rfc, etc. Só não é caótico este assunto pois o servidor em sí ainda é restrito e somente um nicho restrito de profissionais sabe e tem meios para trabalhar. ABAP ainda perdurará muito tempo, o trabalho de recode do ABAP em outra linguagem é um investimento gigante, com um retorno irrisório e acompanhado de uma avalanche de bugs que vão surgir só porque um demagogo não gosta da linguagem. A SAP vai migrar aplicações ABAP por novas aplicações mais modernas e isto vai perdurar uma ou duas gerações até lá nós já teríamos morrido. Então quem acha que abap vai morrer é preciso olhar no seu umbigo primeiro. P-A-R-A C-A-C-E-T-A.
+  Mauricio Cruz (13/01/2016 12:44): Haha, gostei bastante do final. Realmente quem se preocupa com morte da linguagem deve estar preocupado é com a morte da sua sombra e água fresca. Valeu pelos pontos mencionados e pelo comentário. Abs!
+    Antelio I. Abe (08/06/2016 20:02): Mauricio, Segue um post dando seguimento ao assunto: –> ABAP é mais forte do que você imagina https://bar8.com.br/abap-e-mais-forte-do-que-imagina-1778fcc480fd#.k1taz83nj abs.
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+    Antelio I. Abe (08/06/2016 20:02): Mauricio, Segue um post dando seguimento ao assunto: –> ABAP é mais forte do que você imagina https://bar8.com.br/abap-e-mais-forte-do-que-imagina-1778fcc480fd#.k1taz83nj abs.
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+  Mauricio Cruz (13/01/2016 12:44): Haha, gostei bastante do final. Realmente quem se preocupa com morte da linguagem deve estar preocupado é com a morte da sua sombra e água fresca. Valeu pelos pontos mencionados e pelo comentário. Abs!
+    Antelio I. Abe (08/06/2016 20:02): Mauricio, Segue um post dando seguimento ao assunto: –> ABAP é mais forte do que você imagina https://bar8.com.br/abap-e-mais-forte-do-que-imagina-1778fcc480fd#.k1taz83nj abs.
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+    Antelio I. Abe (08/06/2016 20:02): Mauricio, Segue um post dando seguimento ao assunto: –> ABAP é mais forte do que você imagina https://bar8.com.br/abap-e-mais-forte-do-que-imagina-1778fcc480fd#.k1taz83nj abs.
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+      Murilo Cruz (22/03/2017 21:47): Excelente post! mais um ótimo blog para seguir!
+Paulo Rios (13/01/2016 11:10): Excelente texto! Penso que se o ABAP acabar (na vdd antes disso) eu migraria pra alguma área de processos ou abriria franquia de algum restaurante ou cafeteria. Acho que o mais importante é se sentir bem com o que faz independente da área e tentar sempre fazer o melhor.
+Leo Schmidt (13/01/2016 10:53): “Se eu pudesse dar só uma dica sobre o futuro seria esta: aprenda JavaScript.” (favor ler com a voz do Pedro Bial)
+  Mauricio Cruz (13/01/2016 12:43): Ou com a voz do ET bilu
+  Mauricio Cruz (13/01/2016 12:43): Ou com a voz do ET bilu

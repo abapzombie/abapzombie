@@ -1,0 +1,54 @@
+Meus maiores erros como ABAPer
+Autor: Mauricio Cruz
+Data: 19/03/2015 10:06
+
+É muito legal falar sobre as coisas boas que construímos ao longo do nosso caminho. Mas são as coisas ruins que nos marcam, fazendo com que a gente repense nossa conduta.
+Eu já cometi uma pancada de erros na minha carreira de ABAPer, em todos os níveis. Destaquei os quatro principais que moldaram muito minha conduta hoje em dia. Vamos à eles.
+Acreditar que a programação é superior a tudo e todos
+É fácil cair no erro de achar que somente a programação é que importa no mundo de TI. Quando eu era um programador iniciante que não tinha a visão do todo, achava que somente a equipe técnica fazia alguma coisa que prestava e que todo o resto era um bando de malucos que perdiam tempo correndo atrás do próprio rabo ao invés de trabalhar.
+Acontece que a mecânica de funcionamento de qualquer área envolve muito mais do que o “trabalho puro” em si. Há uma pancada de gente envolvida para que a programação sequer inicie e
+todas
+essas pessoas têm o seu valor. A partir do momento que  passei a entender isso, tornei-me um programador melhor.
+Confrontar alguém mais experiente por birra
+Você passa horas debugando alguma transação standard, virando códigos alheios de ponto cabeça, mas não consegue resolver o maldito problema. Nem mesmo o Google e o SCN conseguem ajudar. Você acredita ter lido tudo sobre o tema e começa a se convencer de que o problema não terá solução.
+Ao lado da sua baia aparece ela, a pessoa com mais experiência. Você conta a sua história triste de forma a confrontá-la, já com a prepotência formada de que “se eu não resolvi com tanta pesquisa, ela também não irá”. Sua mente
+acha
+que o problema é extremamente complexo, sendo tarefa para poucos resolvê-lo.
+A pessoa pensa um pouco e lhe dá uma resposta bem simples, que parece completamente sem sentido. Você vê a solução como uma afronta à sua inteligência e resiste muito a acatá-la, continuando a sua pesquisa por mais algumas horas. Nem a pau que é “só” aquilo.
+…até que você coloca o orgulho de lado, vai lá e ajusta a pqp do IF. Tudo funciona. O que resta é aquela cara de bunda e percepção de que não era “só” um solução simples. É uma resposta criada com base em toda a experiência da pessoa como desenvolvedor. Não identificar isso é um erro tremendo.
+Subestimar alguém por conta de sua idade
+Recentemente fui escalado para um projeto onde eu precisava estrutura um programa bem complexo. O processo era cheio de nuances, caminhos e features malucas, com regras de negócio muito chatas. Usei e abusei do ABAP Objects na solução, desenhando diagramas UML e mockups durante o BBP para serem implantados na fase de execução.
+Eu não fazia idéia de quem seria o ABAPer que iria para aquele projeto, mas pedi para que fosse alguém aberto a trabalhar de forma diferente. Acontece que o ABAP que o cliente mais gostava tinha mais de 50 anos, uma idade bem alta em comparação com a massa de programadores de hoje em dia. Na hora eu pensei “não vai dar certo”.
+Realmente ele não tinha muita noção de orientação a objetos. Conceitos básicos como herança ou visibilidade não eram o seu forte. Porém, vi poucas pessoas nessa carreira com tanto prazer de aprender alguma coisa nova. Passei por toda a explicação de polimorfismo, casting, RTTS, herança, abstração, redefinição… até chegar num ponto que ele percebeu falhas na minha própria arquitetura e contribuiu com uma solução extremamente melhor e mais robusta do que eu havia inicialmente pensando. Foi um momento de muita alegria para mim, afinal, ele havia aprendido.
+Errei completamente ao associar idade com capacidade. O termo “ABAPossauro” não tem absolutamente nada a ver com idade: tem a ver com a falta de paixão por aquilo que é feito.
+Essa é uma história mais recente, mas queria deixar um abraço para as duas pessoas que me mostraram que não há idade para um desenvolvedor aprender, repensar conceitos e reinventar-se. Há sim ABAPossauros cinquentões, mas há bem mais ABAPossauros nos seus 20 ou 30 anos.
+Colocar a culpa de algo que você fez em outra pessoa
+Acredite quando eu digo que odeio gente que coloca a culpa nos outros pelos seus problemas. De verdade. Sempre fui assim desde pequeno e sempre assumi minhas cagadas por piores que elas fossem. Mas uma única vez, com dois anos de mundo ABAP, cometi o erro de culpar outra pessoa por um problema que eu havia gerado.
+Era um mísero erro reportado pelo cliente em um programa que eu havia feito em conjunto com outro desenvolvedor (que era um estagiário). Claramente era um erro na minha parte do código, mas eu falei para o líder do projeto que o problema havia acontecido por conta do código do estagiário.
+Os motivos que me levaram a fazer isso era uma percepção de que eu estava me queimando fortemente com o líder por conta de
+outros
+erros prévios que o cliente havia reportado em meus códigos. Meu líder sabia que eu, com dois anos de ABAP, havia criado um código de 6mil linhas para um processo bizarramente complexo (a EF tinha umas 40 páginas), portanto erros eram naturais. Mas a cada novo erro que aparecia, sentia-me um lixo completo, pensava que aquilo mostrava minha total incapacidade de criar um código consistente.
+Foi por isso que quando aquele pequeno erro num READ TABLE chegou, não pensei muito e falei, meio relutante, que o erro era do estagiário. Sinceramente, me arrependi no momento exato que a frase acabou de sair da minha boca, mas não havia o que fazer. Não dava para “desfalar” a frase. Estava feito.
+Acontece que o estagiário, homem que eu respeito muito, me chamou de canto e corretamente confrontou minhas palavras. Ele disse que eu estava completamente errado em tentar queimar ele, sendo que o erro era claramente meu. Concordei em silêncio, voltei ao líder, pedi desculpas por ter colocado a culpa em outra pessoa e assumi o erro. Era o
+certo
+e pronto.
+Essa pequena passagem aconteceu em menos de 10 minutos, entre eu ter colocado a culpa, o confronto e meu pedido de desculpas. Dez minutos que me marcaram profundamente.
+Quantas vezes eu já vi nesse mundo SAP pessoas colocando a culpa nas outras pelos seus erros?
+Muitas
+. Quando vejo algo assim, sempre me lembro desse história, de como me senti um lixo assim que falei aquela frase e fico pensando como é possível que as pessoas mintam tanto para prejudicar os outros sem sentir-sem mal por isso. É muito bizarro. Muito.
+Errar é ABAPer
+Sim, todo mundo erra, inclusive ABAPers. Mas por menor (ou maior) que seja o seu erro, assuma. Aprenda com ele.
+Se você sentir-se confortável, compartilhe algum deles nos comentários. Vai que nessa reflexão você aprende alguma coisa. Eu, certamente, aprendi ainda mais com a criação deste texto.
+Agradeço a sua leitura. Abraços a todos e a culpa é sua! 🙂
+
+
+
+Comentários:
+Simone Barros (02/04/2018 17:39): Texto perfeito! Acredito que vale para qualquer setor de atividade, são questões primárias para se desenvolver um bom trabalho. Como já comentado, o texto é excelente para reflexão.
+Waldir Corazza (17/06/2016 11:04): Acho que o pior é o ABAP depender de um Funcional que não está com aquela vontade de ajudar, ou mesmo não foi com a cara do ABAP e resolve por areia nas coisas, sem nem pensar no projeto ou no Cliente, em Dez anos o mercado SAP tornou-se canibal demais,
+Romerito (20/03/2015 10:19): Esse texto traz várias lembranças. Dentre elas as minhas discussões, quando eu não entendia a solução proposta por alguém mais Senior. A forma como eu falava não era legal, mas de qualquer forma foi útil, me fez entender e aprender como funcionava a lógica deles… Por exemplo, quando discuti/aprendi muito com você, quando eu era só um estagiário…
+Henrique Pedro (20/03/2015 10:11): Ótimo Texto! Muito bom para fazer uma reflexão.
+Gerson Carraro (20/03/2015 09:33): Esse Texto é Ótimo ! No Texto “Colocar a culpa de algo que você fez em outra pessoa”, serve para todos. Independente até da Área ABAP/SAP. Já fiz isso e me arrependi e voltei atrás e pedi desculpas. Claro que aprendemos também com os nossos Erros. Hoje numa situação dessas, paro, penso e analiso e independente de quem estiver errado. E vamos se ajudar para manter um bom Relacionamento e a solução do problema ! rs
+Anonymous (19/03/2015 13:47): Vou contar esse de forma anônima. Uma vez eu estava alocado em um cliente junto com um consultor de SD. O problema era que esse cliente tinha uma burocracia enorme pra conceder acesso de desenvolvedor pros consultores, então já tinham passado 3 dias de alocação com o SD trabalhando e gerando demanda pra mim e nada do meu usuário conseguir a chave de desenvolvedor. No quarto dia eu me irritei. Escolhi um usuário com licença de desenvolvedor, que provavelmente era de um chinês que não logava fazia bastante tempo, e troquei a senha. Aí usei esse usuário pra desenvolver. A alocação terminou e um tempo depois, quando eu estava na consultoria, a gerente da consultoria me ligou descendo o sarrafo porque o cliente reclamou de mim e disse que não queria nunca mais que eu fosse alocado lá.
+Paulo Rios (19/03/2015 12:10): Ótimo texto, Maurício. Já passei por algumas dessas situações e posso dizer que foram muito importantes pro meu desenvolvimento profissional e pessoal. Uma situação que vivi como espectador mas que me chamou muito a atenção foi um abaper trainee que estava com dificuldade e pediu ajuda para um abap sênior. O sênior explicou como deveria ser feito, perguntou se tinha ficado claro e voltou aos seus afazeres. Outro dia o líder do projeto foi cobrar o trainee pois o programa ainda estava com erro, no que o trainee disse que o senior o havia ensinado errado. Quando foram olhar o código, nada do que o sênior havia ensinado tinha sido feito. Estava totalmente diferente e mesmo assim o trainee o culpou. O pior é que vi esse trainee fazer isso com outras três pessoas! Absurdo!
+Henrique (19/03/2015 10:41): Acho que todo mundo já cometeu pelo menos uns 3, senão todos erros dessa lista mas nem todo mundo é capaz de reconhecer isso. É legal quando as pessoas reconhecem seus erros, isso nos torna pessoas melhores. O segundo item é o mal da nossa geração, todo mundo se acha o ser supremo naquilo que faz. Um a dia a gente aprende que não é assim, ou não.

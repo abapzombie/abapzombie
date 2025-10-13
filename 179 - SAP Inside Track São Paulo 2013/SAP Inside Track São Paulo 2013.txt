@@ -1,0 +1,32 @@
+SAP Inside Track São Paulo 2013
+Autor: Mauricio Cruz
+Data: 02/12/2013 07:47
+
+E finalmente chegamos na época do ano mais divertida para a galera que desenvolve coisas bizarras neste mundão SAP. É o
+SAP Inside Track São Paulo 2013
+, que acontece no dia
+13/12/2013
+, no auditório da SAP em São Paulo.
+O evento rola no Brazil há bastante tempo. Veja aqui nosso
+anuncio de 2011
+e aqui
+o de 2012
+. Você encontra fotos do eventos no SCN, ou no twitter oficial do evento (
+@sitbrazil
+). O lugar é o mesmo do ano passado, próximo ao Shopping Morumbi em São Paulo.
+Para se inscrever no evento deste ano,
+acesse este link
+. Diz a lenda que alguns zumbis estarão lá… 🙂 Caso o seu chefe for um carrasco e não deixe você ir, ou caso você tenha feito besteira em PRD e tenha que ficar debugando o standard, assista as palestras online (links no site do evento).
+Abraços e aproveitem!
+
+
+
+Comentários:
+Fabio Pagoti (02/12/2013 10:41): Pior que no cliente que estou tem um proxy bem rígido. Para piorar não aceitam fone de ouvido (!). Se não conseguir ir vai ficar difícil por isso melhor não fazer besteira em prod.
+Daniel Jesus (02/12/2013 09:23): Deveríamos ja combinar o almoço agora heim, senão acabaremos indo no almoço ostentação ahahahahhaha
+  Mauricio Cruz (02/12/2013 09:27): hahaha melhor comentário. Minha namorada trabalha ali perto, vou perguntar para ela onde tem um PF nervoso por 15 reais. #porumalmoçomaisbarato
+    Marlo Simon (10/12/2013 17:00): Pô, o dia do SITSP é o dia do almoçodaostentação!! Por favor escolher: A – Churrascaria CaraPaCaraleo; B – Árabe (Putz de novo não); C – PF 10pila com refresco; D – Unlimited comida Mexicana por 20conto; 😛
+    Marlo Simon (10/12/2013 17:00): Pô, o dia do SITSP é o dia do almoçodaostentação!! Por favor escolher: A – Churrascaria CaraPaCaraleo; B – Árabe (Putz de novo não); C – PF 10pila com refresco; D – Unlimited comida Mexicana por 20conto; 😛
+  Mauricio Cruz (02/12/2013 09:27): hahaha melhor comentário. Minha namorada trabalha ali perto, vou perguntar para ela onde tem um PF nervoso por 15 reais. #porumalmoçomaisbarato
+    Marlo Simon (10/12/2013 17:00): Pô, o dia do SITSP é o dia do almoçodaostentação!! Por favor escolher: A – Churrascaria CaraPaCaraleo; B – Árabe (Putz de novo não); C – PF 10pila com refresco; D – Unlimited comida Mexicana por 20conto; 😛
+    Marlo Simon (10/12/2013 17:00): Pô, o dia do SITSP é o dia do almoçodaostentação!! Por favor escolher: A – Churrascaria CaraPaCaraleo; B – Árabe (Putz de novo não); C – PF 10pila com refresco; D – Unlimited comida Mexicana por 20conto; 😛

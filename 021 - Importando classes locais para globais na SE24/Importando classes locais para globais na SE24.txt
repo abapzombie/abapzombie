@@ -1,0 +1,81 @@
+Importando classes locais para globais na SE24!
+Autor: Mauricio Cruz
+Data: 24/01/2011 07:00
+
+Então você olha para essas classes que nós estamos compartilhando em includes e pensa “classes locais? heim? não é mais fácil na se24? eu tenho que ficar usando include? zuado!?”… :S
+Já que é assim, vamos acabar de vez com o seu problema.
+O SAP sendo esse sistema hyper amigável e que sempre facilita a vida do programador :roll:, dessa vez surpreendeu a todos:
+Se você tem classe local em um include ou report, você pode
+importar ela na se24
+, acho que com uns 4 cliques e um nome.
+Dúvida?
+– Estou eu lá, feliz  e contente, com a minha classe local em um include. Se você usar algum dos códigos que estamos postando na sequência “Códigos úteis…” então você vai ter a classe na include.
+Exatamente assim.
+Faça o seguinte:
+Entre na SE24 e vá direto ao menu da figura
+Nessa tela, coloque o nome do report/include onde está a classe local (ZAZ_TVARV da primeira figura) e aperte Enter. As classes locais vão aparecer, e você deve dar um nome para a classe global (da se24) que ela vai gerar.
+Agora, selecione a classe local que você quer importar, e clique em "Importar" (dãr)
+Ele vai gerar a classe. Daí você deve entrar nela e ativa-lá. Caso apareça algum erro que precise de ajuste manual, corrija ou poste aqui que a gente ajuda. E... PRONTO!
+Hahahaha, mais fácil impossível! Ficou espantado? Ele ficou:
+O SAP é cheio dessas coisas legais,
+o problema é que as chatas são mais fáceis de achar
+🙁
+Vamos supor que você queira modificar o
+código do post da tvarv
+para se ajustar à nova classe global. Ficaria assim:
+REPORT z_tvarv.
+
+* Parametro e Range de Exemplo
+DATA: p_param TYPE char10.
+DATA: r_range TYPE RANGE OF char10.
+
+****************************************************
+* É só tirar a linha da include, e mudar o TYPE REF aqui
+* para a classe global. Sim, só isso!
+* Objeto da TVARV
+****************************************************
+DATA: o_tvarv TYPE REF TO zaz_cl_tvarv.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Aqui estamos criando o Objeto e acessando a TVARV.
+* PREFIX: valor que vem antes do separador. Exemplo: em GAP1-VARIAVEL1
+*         o valor de PREFIX seria GAP1, pois todas as variáveis devem
+*         iniciar com GAP1 para o programa GAP1.
+* SEPARATOR: O Separador. Não precisa de exemplo né? :P
+*-----------------------------------------------------------*
+  CREATE OBJECT o_tvarv
+    EXPORTING
+      prefix    = 'AUDI' "Exemplo de Prefixo
+      separator = '_'.
+
+* Busca Valor de um paraâmetro simples.
+  o_tvarv->get_parameter(
+   EXPORTING
+     suffix = 'KONTENPLAN' "Sufixo qualquer de Parâmetro
+   IMPORTING
+     VALUE  = p_param ).
+
+* Busca os Valor de um SelOption da TVARV, e ainda monta o range.
+* Agora ficou fácil :D
+  o_tvarv->get_seloption(
+   EXPORTING
+     suffix = 'KONTENPLAN' "Sufixo qualquer de Select Option
+   IMPORTING
+     VALUE = r_range ).
+Curtiu? Caso tenha problemas, é só comentar!
+Para qualquer classe aqui compartilhada, use isto se quiser usar na se24. Abraços!
+
+
+
+Comentários:
+Thiago Pessoa (28/01/2011 11:20): Caros, fazendo uma analogia! Eu gostaria de saber como seria a instalação ou se existe do SAP GUI para linux ?! Obrigado pela atenção. Mauricio Abraço.
+  mauricio.cruz (28/01/2011 12:04): Cara… um amigo meu que usava um Macbook emulava a SAPGui do Windows usando um programa que chama WineHQ. Esse programa serve pra emular qlqr coisa de windows em linux, mac, etc… E no Macbook dele ficava muito bom, pelo que eu me lembro. Deve ter algo direto pra linux, mas deve ser um pouco mais obscuro 🙂 Abraços!
+    Thiago Pessoa (07/02/2011 11:43): Opa, Obrigado cara me ajudou !
+    Thiago Pessoa (07/02/2011 11:43): Opa, Obrigado cara me ajudou !
+  mauricio.cruz (28/01/2011 12:04): Cara… um amigo meu que usava um Macbook emulava a SAPGui do Windows usando um programa que chama WineHQ. Esse programa serve pra emular qlqr coisa de windows em linux, mac, etc… E no Macbook dele ficava muito bom, pelo que eu me lembro. Deve ter algo direto pra linux, mas deve ser um pouco mais obscuro 🙂 Abraços!
+    Thiago Pessoa (07/02/2011 11:43): Opa, Obrigado cara me ajudou !
+    Thiago Pessoa (07/02/2011 11:43): Opa, Obrigado cara me ajudou !

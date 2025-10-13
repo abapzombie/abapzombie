@@ -1,0 +1,30 @@
+ABAPZombie Guide to ABAP – Parte 11 – AT PFxx
+Autor: Mauricio Cruz
+Data: 16/02/2011 08:30
+
+Bom, o
+AT PFxx
+é um daqueles comandos que a SAP não recomenda serem usados em programas, salvo para testes.
+O funcionamento é bem simples, nada muito complicado! Ele cria um evento novo para os códigos de função de 1 até 24, para o tratamento das funções de usuários em listas (reports com o WRITE). Exemplo para o F5:
+REPORT zombie_at_pf.
+
+*--------------------------------------------------------------------*
+* START-OF-SELECTION
+*--------------------------------------------------------------------*
+START-OF-SELECTION.
+
+* Print de uma lista qualquer para o teste
+  WRITE 'Teste de comandos! Aperte o F5'.
+
+*--------------------------------------------------------------------*
+* EVENTO para F5 em Listas
+*--------------------------------------------------------------------*
+AT PF5.
+  BREAK-POINT.
+Se você trocar o PF5 por PF1, PF2, PF3, etc… ele vai disparar um evento para um botão diferente. Agora, eu disse ali que a SAP não recomanda o uso (e é bem explícito isso na documentação oficial do comando), mas ela nos dá uma alternativa que eu acho muito melhor… tratar os códigos de funções 1-24 dentro do evento
+AT USER-COMMAND
+, tratando o valor da variável
+SY-UCOMM
+num laço CASE…ENDCASE, por exemplo.
+Mas enfim, agora se você ver isso num standard por aí não vai ficar boiando! 😀
+Abraços!

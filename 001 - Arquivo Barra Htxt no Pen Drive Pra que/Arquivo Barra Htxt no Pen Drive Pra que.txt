@@ -1,0 +1,88 @@
+Arquivo “Barra H.txt” no Pen Drive? Pra que?
+Autor: Mauricio Cruz
+Data: 16/12/2010 15:49
+
+Pois é!
+Lá no passado, quando eu estava começando no mundo do ABAP eu descobri as maravilhas do arquivo
+“Barra H.txt”
+. Primeiro, vamos entender:
+Arquivo “Barra H.txt”
+– técnica (alguns chamam de
+“gato”
+!), utilizada por programadores ABAP para debuggar pop-ups onde não é possível acessar o Campo de Comandos (a barra onde se escreve os nomes das transações). A técnica consiste em deixar a janela do pop-up aberta, selecionar o arquivo “Barra H.txt” numa pasta qualquer do windows e
+arrastar o mesmo para a tela do SAP com o pop-up
+. Com isso, é possível
+debuggar o programa que disparou o pop-up
+:
+Pop-up me desafiando…
+Mas eu tenho a solução! (aqui não tá no pen drive, mas vcs entenderam hehehehe)
+Eu arrasto o arquivo para cima do pop-up…
+Pronto! O Debug foi ligado!
+Fiquei empolgado quando descobri que isso era possível, e tratei de copiar o “Barra H.txt” para meu Pen Drive, pra nunca mais ficar na mão na hora de Debuggar.
+Porém…
+Um dia, eu esqueci meu pen drive em casa…! E eu
+precisava
+resolver um erro debuggando um pop-up.
+Achei que o mundo tinha acabado, pensei em debuggar o programa todo desde o início, comecei a procurar o “Barra H.txt” no Google…
+Mas aí veio a luz!
+Me ensinaram como gerar um “Barra H.txt”, até um “Barra N.txt”, ou até mesmo um “Barra O se16.txt”.
+Portanto, esqueçam os arquivos e sigam o procedimento abaixo sempre que vocês quiserem gerar um
+arquivo para simular
+um comando da Barra de Comandos em um pop-up:
+1 – Na tela inicial do SAP (ou qualquer tela), cliquem no botão
+“Ajustar Layout Local” (Alt+F12)
+, e depois em
+“Criar ligação…”
+2 – Troque o campo
+“Tipo”
+para
+“Comando do Sistema”
+.
+3 – No campo
+“Comando”
+, escreva
+“/h”
+. Você pode ajustar também o
+Título
+e o
+Local
+onde o arquivo vai ser gravado.
+4 – Clique em
+Completar
+e pronto. Uma mensagem irá aparecer dizendo que o arquivo foi gerado com sucesso. O arquivo irá ficar com a extensão
+“.sap”
+, mas você pode abri-lo no bloco de notas e ver o que foi gerado.
+Com isso você gera arquivos para os
+comandos que você quiser
+.
+Divirtam-se com os “Barra N VA03.sap”, “Barra O se37.sap”, “Barra N j1bnfe”, “Barra….
+
+
+
+Comentários:
+Glauco Silva (06/02/2015 07:58): Bom dia! Não sei se já falaram.. bom.. não vi nada escrito aqui pelo menos… Mas se você salvar esse arquivo no SAP Logon… ele ficará listado junto com as suas conexões… então quando precisar debugar um POP_UP é só clicar duas vezes e irá ativar o debug. Att. Glauco Silva
+Amanda P.F. (10/01/2012 15:19): Muito interessante! Valeu pela dica e parabéns pelo blog!!! 😉
+  Mauricio Cruz (10/01/2012 15:31): Obrigado Amanda! 🙂
+  Mauricio Cruz (10/01/2012 15:31): Obrigado Amanda! 🙂
+Diego (13/05/2011 15:46): Ctrl + ;  tambbém rola?
+  Mauricio Cruz (17/05/2011 08:49): Sim. Só não vale dar CTRL+; no Notepad.
+  Mauricio Cruz (17/05/2011 08:49): Sim. Só não vale dar CTRL+; no Notepad.
+Petter (20/01/2011 11:34): Legal o blog… continue postando!!!!
+Marcos (06/01/2011 17:24): Parbéns pelo blog cara! To vendo que nos coments só tem gente conhecida xP!
+  mauricio.cruz (07/01/2011 06:20): Normal! No começo a gente tem que divulgar para os amigos né? hehe. Abraços e obrigado!
+  mauricio.cruz (07/01/2011 06:20): Normal! No começo a gente tem que divulgar para os amigos né? hehe. Abraços e obrigado!
+Eric Cassaro (16/12/2010 14:25): Aê! Parabéns pela iniciativa! Trocando dicas aprenderemos a debugar até o hardware e as paredes do escritório. Aí vai uma dica dentro do tópico: duas posições pra esquerda do botão 'Ajustar layout local' tem o botãozinho com icone de seta, 'Cria uma ligação', que também dá no mesmo lugar. Eu não sabia que dava pra usar esse arquivinho em qualquer lugar, achava que só servia no ambiente. Parabéns e um abraço!
+  mauricio.cruz (16/12/2010 20:25): Opa, valeu Eric! Valeu lembrar que o SAP é cheio de links que levam para o mesmo lugar.. Tudo para facilitar a nossa vida 😀
+  mauricio.cruz (16/12/2010 20:25): Opa, valeu Eric! Valeu lembrar que o SAP é cheio de links que levam para o mesmo lugar.. Tudo para facilitar a nossa vida 😀
+Valids (16/12/2010 14:06): Disse Bilú "Busquem conhecimento!" Abs.!
+Daiane (16/12/2010 14:01): Parabéns ae pelo blog e pela iniciativa! Mauro, faz um post com suas composições musicais abapeiras!  Hushuahsuaha Beijos
+Janfer (16/12/2010 13:50): Faaaaala Maur*o! (se dar um F4 vem Maurício e Mauro rssr) Legal o post… o tema do blog tb haha Vou acompanhar tb. Abraços!
+Camila Bittencourt (16/12/2010 13:46): Ai sim heinnn!! O Google ta deixando a desejar com problemas que os ABAPers sofrem! rsrs Mto bom! Beijos!
+Mariane (16/12/2010 13:45): E ai mano Mauricio! Gostei mto da iniciativa… Parabéns!
+Arley dos Anjos (16/12/2010 13:42): Ai sim hein!! Ta nos favoritos já, muito bom. Abss
+Leonardo Marchiori (16/12/2010 13:33): Ae mulecada! show de bola o primeiro post! vou acompanhar!! Abs.
+Priscila Silva (16/12/2010 13:25): Oi Meninos =D Ficou loko esse primeiro post, vou acompanhar hein! 😉 Bjus
+Erik Bormann (16/12/2010 13:19): Aêêê! Abraços a todos os presentes! Popups chatos! DEBUG Neles! =D JA, NEIN, cancelar ¬¬ uhauhauhauha…
+  mauricio.cruz (17/12/2010 07:30): POPUP_TO_CONFIRM, já vem com os valores assim por Default.. e fica engraçado pra caramba hehehehehehehehhe Abraços a todos aqueles que falam alemão com português!
+  mauricio.cruz (17/12/2010 07:30): POPUP_TO_CONFIRM, já vem com os valores assim por Default.. e fica engraçado pra caramba hehehehehehehehhe Abraços a todos aqueles que falam alemão com português!
+Felipe Rodrigues (16/12/2010 13:06): Fala pessoal, Parabéns pelo trabalho, o primeiro post ficou bem legal. Curti quando vocês debugaram o pop-up vacilão, mó folgado! Hahahahaha Valeu! Grande abraço!

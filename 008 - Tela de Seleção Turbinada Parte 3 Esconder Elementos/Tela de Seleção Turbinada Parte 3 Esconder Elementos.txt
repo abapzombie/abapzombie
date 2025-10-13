@@ -1,0 +1,151 @@
+Tela de Seleção Turbinada – Parte 3 – Esconder Elementos
+Autor: Mauricio Cruz
+Data: 28/12/2010 17:11
+
+Essa dica é mais para aquele Consultor que curte uma
+tela bonita
+. Eu sei que muita gente acha que o correto é simplesmente “fazer funcionar”, mas eu sempre penso que “
+se é pra fazer, tem que fazer direito
+“!
+O código abaixo possue a explicação de como fazer para
+esconder e mostrar objetos numa tela
+de seleção de acordo com a ação do usuário. É meu, fica muito
+style
+a tela hehe. Vamos ao código:
+REPORT  z_mudatela_zombie.
+
+TABLES: mara.
+
+* Vamos controlar a mudança de tela através de dois radiobuttons
+*---------------------------------------------------------------
+SELECTION-SCREEN BEGIN OF BLOCK bl01 WITH FRAME.
+
+* É importante colocar o user-command aqui, pois sem ele o report não
+* irá passar pelo evento AT SELECTION SCREEN OUTPUT quando o user
+* clicar em qualquer um dos radio buttons. É um pseudo-gato ;)
+* Também tem que deixar o DEFAULT, senão o radio button não chega
+* com o X marcado na primeira visualização da tela! :(
+*---------------------------------------------------------------------
+PARAMETERS: rb_tela1 RADIOBUTTON GROUP rb01 USER-COMMAND muda_tela
+                                                  DEFAULT 'X',
+            rb_tela2 RADIOBUTTON GROUP rb01.
+
+SELECTION-SCREEN END OF BLOCK bl01.
+
+* Tela com Select Options.
+* O MODIF ID deve ser o MESMO para todos os elementos da tela
+*------------------------------------------------------------
+SELECTION-SCREEN BEGIN OF BLOCK bl02 WITH FRAME.
+
+SELECT-OPTIONS: s_matnr FOR mara-matnr MODIF ID t1,
+                s_mtart FOR mara-mtart MODIF ID t1.
+
+SELECTION-SCREEN END OF BLOCK bl02.
+
+* Tela com Parameters.
+* O MODIF ID deve ser o MESMO para todos os elementos da tela
+*------------------------------------------------------------
+SELECTION-SCREEN BEGIN OF BLOCK bl03 WITH FRAME.
+
+PARAMETERS: p_matnr TYPE mara-matnr MODIF ID t2,
+            p_mtart TYPE mara-mtart MODIF ID t2.
+
+SELECTION-SCREEN END OF BLOCK bl03.
+
+* Evento que irá controlar a mudança da tela. Lembre-se que
+* é necessário o USER-COMMAND nos RadioButtons para o Report passar
+* por aqui!
+*------------------------------------------------------------------
+AT SELECTION-SCREEN OUTPUT.
+
+  PERFORM modifica_tela.
+
+*&---------------------------------------------------------------*
+*&      Form  MODIFICA_TELA
+*&---------------------------------------------------------------*
+FORM modifica_tela .
+
+* O MODIF ID deixa o objeto "Modificavel" na tela de seleção.
+* Vamos usar um Loop at Screen para modificá-la.
+*------------------------------------------------------------
+  LOOP AT SCREEN.
+
+*   Se o user quiser telas com parametros
+*------------------------------------------------------------------
+    IF rb_tela1 = 'X'.
+
+*     Dentro do campo GROUP1 vai ficar o valor do MODIF ID.
+*     Daí é só tratar os atributos do elemento como necessário
+
+*     Esconde Tela com Parameters
+*--------------------------------
+      IF screen-group1 = 'T2'.
+        screen-invisible = 1.
+        screen-input     = 0.
+        screen-active    = 0.
+        MODIFY SCREEN.
+        CONTINUE.
+      ENDIF.
+
+*     Mostra tela com Select Options
+*-----------------------------------
+      IF screen-group1 = 'T1'.
+        screen-invisible = 0.
+        screen-input     = 1.
+        screen-active    = 1.
+        MODIFY SCREEN.
+        CONTINUE.
+      ENDIF.
+
+    ELSE.
+
+*     Esconde tela com Select Options
+*-------------------------------------
+      IF screen-group1 = 'T1'.
+        screen-invisible = 1.
+        screen-input     = 0.
+        screen-active    = 0.
+        MODIFY SCREEN.
+        CONTINUE.
+      ENDIF.
+
+*     Mostra tela com Parameters
+*--------------------------------
+      IF screen-group1 = 'T2'.
+        screen-invisible = 0.
+        screen-input     = 1.
+        screen-active    = 1.
+        MODIFY SCREEN.
+        CONTINUE.
+      ENDIF.
+
+    ENDIF.
+  ENDLOOP.
+
+ENDFORM.                    " MODIFICA_TELA
+Rodando o código acima num Report Z local, fica assim:
+Tela mostrando os Select Options
+Quando o user escolher o radio button de baixo a tela irá mudar! Os select options somem e dão lugar aos parameters.
+Animal e bem simples, não é?
+Agora dá pra fazer aquele user carrancudo ficar de boa aberta.
+Aproveito este post para desejar um ótimo ano novos a todos que acessam o blog. 2011 promete!
+Abraços!
+
+
+
+Comentários:
+Vinícius Andrade (10/08/2014 12:58): Muito bem construído. Quero utilizar em minhas video-aulas . Posso?
+  Mauricio Cruz (10/08/2014 19:56): Olá Vinícius! Pode sim! Só peço para você deixar um link no vídeo dizendo de onde você pegou o código, beleza? E força ae nessas vídeo-aulas, sei que não é fácil gravar esse tipo de material. Abraços!
+    Vinícius Andrade (11/08/2014 20:03): Opa! Obrigado, pode deixar eu coloco o link. No trabalho todos já usam o abapzombie como guia!
+    Vinícius Andrade (11/08/2014 20:03): Opa! Obrigado, pode deixar eu coloco o link. No trabalho todos já usam o abapzombie como guia!
+  Mauricio Cruz (10/08/2014 19:56): Olá Vinícius! Pode sim! Só peço para você deixar um link no vídeo dizendo de onde você pegou o código, beleza? E força ae nessas vídeo-aulas, sei que não é fácil gravar esse tipo de material. Abraços!
+    Vinícius Andrade (11/08/2014 20:03): Opa! Obrigado, pode deixar eu coloco o link. No trabalho todos já usam o abapzombie como guia!
+    Vinícius Andrade (11/08/2014 20:03): Opa! Obrigado, pode deixar eu coloco o link. No trabalho todos já usam o abapzombie como guia!
+renan zenkner roggia (24/07/2012 13:14): Usei o código mas em uma demanda que recebi, mas no meu caso um dos campos é obrigatório para a seleção. Ou seja, não consigo trocar de tela, alguma dica ?
+  Mauricio Cruz (24/07/2012 13:16): “Ser obrigatório” não quer dizer que você tenha que escrever o OBLIGATORY no parâmetro da tela de seleção. O que o usuário quer é que aquele campo seja obrigatóriamente preechido. Tire o obligatory do parâmetro, e faça a validação se o campo está preenchido no começo da sua lógica. Resolvido! 🙂
+    renan zenkner roggia (24/07/2012 13:33): Obrigado Mauricio, atualmente o código esta com esta logica. Fiquei com receio de não ser o  mais adequado.
+    renan zenkner roggia (24/07/2012 13:33): Obrigado Mauricio, atualmente o código esta com esta logica. Fiquei com receio de não ser o  mais adequado.
+  Mauricio Cruz (24/07/2012 13:16): “Ser obrigatório” não quer dizer que você tenha que escrever o OBLIGATORY no parâmetro da tela de seleção. O que o usuário quer é que aquele campo seja obrigatóriamente preechido. Tire o obligatory do parâmetro, e faça a validação se o campo está preenchido no começo da sua lógica. Resolvido! 🙂
+    renan zenkner roggia (24/07/2012 13:33): Obrigado Mauricio, atualmente o código esta com esta logica. Fiquei com receio de não ser o  mais adequado.
+    renan zenkner roggia (24/07/2012 13:33): Obrigado Mauricio, atualmente o código esta com esta logica. Fiquei com receio de não ser o  mais adequado.
+Thiago Losilla (04/10/2011 08:52): Maan! Very Naaaice esse post kra! Acabei de usar esse códego ! Voces estao mandando mto bem no site kra! Abraçao !!  😛  😛

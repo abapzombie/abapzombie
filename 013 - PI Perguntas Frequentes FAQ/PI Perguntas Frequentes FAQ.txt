@@ -1,0 +1,52 @@
+PI – Perguntas Frequentes (FAQ)
+Autor: Mauricio Cruz
+Data: 10/01/2011 16:53
+
+Vamos lá, primeiro post da parte PI do blog!
+E quem já mexeu com PI sabe… cada Adapter tem suas particularidades e configurações,
+que não são poucas
+! E, vamos ser sinceros, não há ser vivo que decore tudo que pode ser feito dentro de cada um dos adapters. Na verdade, a chance de você nunca mexer com algum deles é
+muito
+grande!
+No passado, sempre que eu tinha problemas com algum adapter, eu gastava um tempão pesquisando para descobrir como resolver (antigo procedimento padrão). E eis que um tempo atrás, eu achei uma coisa que mudou a minha vida (óóóóóó 🙄 ) as notas de FAQ para os adapters.
+(
+FAQ
+é um termo frequentemente usado na internet para
+Frequently Asked Questions
+, ou
+Perguntas Frequentes
+.)
+Então, caro PI senior, PI pleno ou
+PI wannabe
+, se você tiver problema com algum adapter, acesse a nota correspondente:
+Note 856599 – FAQ: XI 3.0 / PI 7.0 / PI 7.1 Mail Adapter
+Note 856597 – FAQ: XI 3.0 / PI 7.0 / PI 7.1 SOAP Adapter
+Note 831162 – FAQ: XI 3.0 / PI 7.0 / PI 7.1 JDBC Adapter
+Note 774854 – FAQ: XI 3.0 / PI 7.0/ PI 7.1 BC Adapter
+Note 821267 – FAQ: XI 3.0 / PI 7.0/ PI 7.1 File Adapter
+Note 730870 – FAQ: XI 3.0 / PI 7.0/ PI 7.1 RFC Adapter
+Note 856346 – FAQ: XI 3.0 / PI 7.0/ PI 7.1 JMS Adapter
+Note 816022 – FAQ: XI/PI 3.0/7.0/7.1 J2EE Adapter Engine/Messaging System
+Note 830039 – FAQ: Deployment of the XI adapter framework
+Note 813993 – FAQ: Message status in the adapter framework
+Note 1000528 – FAQ: XI 3.0 / PI 7.0 Adapter and Channel Monitoring
+Isso pode salvar a sua vida  e seu tempo, além de prevenir que você torne-se um
+PI num dia de fúria
+:
+Consultor PI nervoso com o File Adapter
+Evite ficar como nosso amigo acima!
+Novo procedimento padrão para problemas com adapters:
+1- Olhar as notas FAQs da SAP
+2 – Procurar nos fóruns ou no Google pela solução
+3 – Ficar nervosão 👿
+Ah, e como nenhum consultor sobrevive sem contatos, dedico este post ao meu camarada Consultor PI Rafael Vieira, que me ajudou num outro esquema aí. É nóis integrando PI com o Iphone!
+Abraços!
+
+
+
+Comentários:
+Priscila (28/01/2016 07:52): Olá, sou iniciante e tem como eu treinar por conta própria o PI?
+  Victor (18/08/2016 10:53): Estou no mesmo barco Priscila. Existe algum jeito de aprender por conta própria?
+  Victor (18/08/2016 10:53): Estou no mesmo barco Priscila. Existe algum jeito de aprender por conta própria?
+mauricio.cruz (12/01/2011 07:07): heoaheoaheouhe imagina só: "boa noite, meu nome é mauricio e eu não quebro um monitor há 2 meses" *aplausos* hahahaha Abraço e valeu! 😀
+Rafael Vieira (12/01/2011 06:25): hehehe… valeu pela homenagem ! Me identifiquei pra caramba com esse fdp ficando vermelho aí por causa de um mail adapter. Da até vontade de fazer igual nos grupos de apoio, contar seu problema e depois ser aplaudido kkkkkk. É isso ae Mauricião, legal o blog, parabéns!

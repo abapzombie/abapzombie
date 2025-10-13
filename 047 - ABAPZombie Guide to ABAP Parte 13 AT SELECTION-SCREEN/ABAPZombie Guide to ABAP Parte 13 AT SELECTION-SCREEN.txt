@@ -1,0 +1,120 @@
+ABAPZombie Guide to ABAP – Parte 13 – AT SELECTION-SCREEN
+Autor: Mauricio Cruz
+Data: 22/02/2011 08:40
+
+O AT SELECTION-SCREEN é um evento que permite manipular ações do usuário e do sistema durante o processo de exibição/alteração da tela de seleção de reports.
+Ele também é conhecido com o
+“evento divertido que nos ajuda a fazer as loucuras que usuários/funcionais nos pedem”
+. 🙂
+Antes de mais nada, eu utilizei diversas técnicas do AT SELECTION SCREEN no post:
+ABAP Zombie Screen Examples
+. Vale a pena dar uma olhada 🙂
+Vamos lá…
+Basicamente, você pode criar eventos para manipular a tela em diversos momentos. Quando o SAP estiver processando a tela, ele poderá passar pelos seguintes eventos:
+AT SELECTION-SCREEN OUTPUT:
+Evento no PBO (process before output) da tela de seleção (antes dos valores serem exibidos).
+AT SELECTION-SCREEN ON parameter/sel-option:
+Evento do PAI (process after input) para um PARAMETER ou SELECT-OPTIONS. Ideal para validar o input dos usuários em campos específicos. Lembrando que radiobuttons devem ser tratados no evento apropriado.
+AT SELECTION-SCREEN ON RADIOBUTTON GROUP nomedogrupo:
+Mesmo coisa que o de cima, mas para Radiobuttons
+AT SELECTION-SCREEN ON END OF sel-option:
+Irá passar aqui no final do preenchimento do sel-options em questão.
+AT SELECTION-SCREEN ON BLOCK nomedobloco:
+No PAI também, no final do processamento do bloco XXX (aqueles que você define na declaração da tela!).
+AT SELECTION-SCREEN (sim, nada mais):
+Esse é o mais chato. Sempre vai ser disparado, e sempre por último hahaha.
+AT SELECTION-SCREEN ON HELP-REQUEST FOR parameter/sel-option:
+Quando alguem apertar F1 no campo especificado após o FOR.
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR parameter/sel-option:
+quando alguem aertar F4 no campo especificado após o FOR
+AT SELECTION-SCREEN ON EXIT-COMMAND:
+Sempre que o usuário quiser sair da tela, através do EXIT, BACK ou o CANCEL, vai passar por aqui 🙂
+Bom, chega de teoria (eu sei, eu sei.. é chato mas precisa, po! 😛 ).
+Eu criei um programinha
+firmeza
+, bem didático para você ver os diferentes momentos em que o programa dispara cada um destes eventos. Divirta-se testando:
+REPORT zombie_at_selection_screen.
+
+TABLES: mara.
+
+* Tela de Seleção beeeem simples!
+SELECTION-SCREEN BEGIN OF BLOCK bloco1.
+
+* Um simples enter irá passar pelos eventos:
+* AT SELECTION-SCREEN ON p_any.
+* AT SELECTION-SCREEN ON RADIOBUTTON GROUP rb1.
+* AT SELECTION-SCREEN ON BLOCK bloco1.
+* AT SELECTION-SCREEN.
+PARAMETER: p_any  TYPE mara-matnr.
+
+* Apertando F1 nesse campo, irá parar no evento:
+* AT SELECTION-SCREEN ON HELP-REQUEST FOR p_f1.
+PARAMETER: p_f1   TYPE mara-matnr.
+
+* Apertando F4 nesse campo, irá parar no evento:
+* AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_f4.
+PARAMETER: p_f4   TYPE mara-matnr.
+
+* Se você preencher várias linhas aqui, ele irá parar no evento:
+* AT SELECTION-SCREEN ON END OF s_any.
+SELECT-OPTIONS: s_any FOR mara-matnr.
+
+PARAMETER: p_sim RADIOBUTTON GROUP rb1,
+           p_nao RADIOBUTTON GROUP rb1.
+
+* Se você sair do Report, irá passar no evento
+* AT SELECTION-SCREEN ON EXIT-COMMAND.
+
+SELECTION-SCREEN END OF BLOCK bloco1.
+
+* Como é no PBO, vai passar aqui antes de exibir a tela.
+AT SELECTION-SCREEN OUTPUT.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON p_any.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON RADIOBUTTON GROUP rb1.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON END OF s_any.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON BLOCK bloco1.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON HELP-REQUEST FOR p_f1.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_f4.
+  BREAK-POINT.
+
+* Se você tentar sair, vai parar aqui :)
+AT SELECTION-SCREEN ON EXIT-COMMAND.
+  BREAK-POINT.
+
+AT SELECTION-SCREEN.
+  BREAK-POINT.
+É só fazer o que os comentários mandam para ver funcionando. 😀
+Abraços!
+
+
+
+Comentários:
+Hilda (02/06/2016 10:07): Como posso usar o AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_f4 pegando o valor do parametro para um select.
+Joao Mendes (03/12/2013 09:43): A página http://www.abapzombie.com/?p=168 nao existe mais.
+  Mauricio Cruz (03/12/2013 09:46): Ajustado! 🙂
+    Acho que não (30/12/2013 07:29): acho que não.
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+    Acho que não (30/12/2013 07:29): acho que não.
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+  Mauricio Cruz (03/12/2013 09:46): Ajustado! 🙂
+    Acho que não (30/12/2013 07:29): acho que não.
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+    Acho que não (30/12/2013 07:29): acho que não.
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+      Mauricio Cruz (30/12/2013 07:31): Ok, melhorando a explicação: Arrumei o link no post. Essa página que o cara postou no comentário não existe mesmo. Abs!
+Rafael Chagas (15/11/2013 08:15): Muito bom post. Parabéns.

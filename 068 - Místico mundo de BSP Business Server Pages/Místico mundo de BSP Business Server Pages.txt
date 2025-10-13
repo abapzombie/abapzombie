@@ -1,0 +1,34 @@
+Místico mundo de BSP (Business Server Pages)
+Autor: Mauro Laranjeira
+Data: 06/04/2011 13:39
+
+Já ouvi dizer que as Tags do BSP são inventadas na hora, assim como estatísticas em conversas informais 😕
+Calma, não prevemos pânico, sem anarquia…
+Bem semelhante ao F1, existe na SE80 explicações e utilizações das Tags BSP e Tags HTML.
+Acesse SE80 -> Tag Browser
+Tag Browser
+Você pode navegar nas categorias das Tags, tanto para BSP (Extensões BSP) como para HTML.
+Outra forma de abrir o menu do Tag Browser seria na SE38, clique no menu Ambientes -> Ferramentas Web -> Tag Browser.
+A SAP foi tão “boazinha” 🙂 que detalhou a explicação dos parâmetros das Tags e colocou ate programas de exemplos o/
+Exemplo:
+Como criar um botão com uma Tag BSP? ❓
+Acesse SE80 -> Tag Browser -> Extensões BSP -> Transportáveis -> htmlb -> <htmlb:button>
+Serão exibidos todos os parâmetros possíveis para esta tag.
+Tag para botão em BSP
+Mas como usar esse
+treco
+comando?
+Para visualizar a explicação da Tag, de um duplo clique sobre a mesma 8)
+Aparece um popup com a explicação da Tag, explicação dos parâmetros e até um programa de exemplo.
+” width=”300″ height=”226″ />
+Ajuda Tag <htmlb:button>
+Para executar o programa de teste, acesse SE80 -> Repository Browser -> Aplicações BSP -> <nome do programa de exemplo>, aperte “enter”, dê um clique com o botão direito do mouse no nome do programa -> testar.
+Vai abrir o navegar pedindo o usuário e senha do SAP. Logo após abre a página do programa de exemplo.
+Programa de exemplo SBSPEXT_HTMLB
+Certo “Zombizada” eu sei que este exemplo não resolve todos os problemas de BSP, mas ajuda na procurar das tags e suas utilizações.
+Abraços a todo aquele que inventam estatísticas para explicar algo. 😉
+
+
+
+Comentários:
+Lucas Rocha (20/02/2017 14:37): Topzera Maurão!! To iniciando meus estudos sobre BSP para um GAP de SRM, e o artigo ajudou bastante! Vlw!!!

@@ -1,0 +1,41 @@
+Ferramentas ABAP Free e Projetos Open Source – Sim, eles existem!
+Autor: Mauricio Cruz
+Data: 08/07/2011 10:12
+
+Quem aqui nunca se perguntou “nossa, e se existisse uma ferramenta que fizesse a coisa X ou a coisa Y?”, para então, depois de alguns instantes, pensar “ah, mas por padrão não tem isso no SAP, e criá-la sozinho seria praticamente
+impossível
+“.
+…
+Será mesmo?
+Pouco gente deve ter notado um link ali na barra da direita do site, para um site que se chama Dalestech Solution, no link “
+Ferramentas em ABAP de Graça
+“, que tem ferramentas úteis e muito bacanas (inclusive que transforma coisas abap em html, com links entre os objetos!), mas também não é disso que eu vou falar.
+Voltando à questão inicial, tem uma galera por aí que curte unir forças, por um bem comum. Não estou falando de ONGs, nem de Comunidades Virtuais, hoje vou falar do
+Code Exchange
+.
+O Code Exchange é uma divisão da SCN, que organiza projetos open-source para desenvolver ferramentas que podem melhoradas por programadores de qualquer lugar do mundo. Cool não é?
+Os projetos por lá são dos mais variados, desde jogos até ferramentas para processos diversos.
+Destaque para três projetos já “consolidados” e que são, simplesmente, animais:
+–
+SAPLink
+: Então você já pensou em uma ferramenta para fazer download e upload de objetos no SAP, como programas, telas, etc? Pois deixa eu te contar: já fizeram uma, e ela é boa pra caramba. Praticamente tudo no CodeExchange é compartilhado para ser importado/exportado com o SAPLink, então este aqui deve ser o seu ponto de partida.
+–
+ABAP2XLS
+: O esquema aqui não é criar um “Excel” usando ABAP, é criar “O” arquivo Excel usando ABAP. Muito louco ver funcionando 🙂
+–
+ABAPGames
+: Essa é para descontrair, diversos jogos em ABAP, inclusive velhos conhecidos da galera, como campo minado, e poker. O interessante aqui é ver a critividade do pessoal, porque criar um jogo com as limitações “visuais” do SAP, não é uma tarefa das mais “prazerosas”. Um dia eu ainda crio um Adventure usando o SAP, ou não 👿
+Para baixar, é só ter um cadastrado na SCN, e aceitar os Termos em qualquer página de projeto do Code Exchange. Demora um ou dois dias para aprovarem.
+Pretendo fazer alguns reviews de projetos no futuro, mas gostaria de deixar registrada aqui esta dica, que pode ajudar os novatos nos estudos, e os mais experientes no dia-a-dia.
+A partir da semana que vem, vou continuar com a minha lista de comandos em ABAP, vamos ver até onde eu chego antes do final do ano 😛
+Abraços à todos que não são
+bitolados
+e não tem medo de descobrir e contribuir com coisas novas!
+
+
+
+Comentários:
+F&aacute;bio Pagoti (08/07/2011 14:13): Olá Maurício e Zumbizeiros! AH!! Quantas e quantas vezes já não tive necessidades não atendidas pelo ABAP Workbench…. infelizmente não tenho mais que uma vida para desenvolver tudo que já pensei… aí vem a importância dos projetos open source.. levar ideias que podem resolver problemas de outros adiante. O SAPLink é simplesmente um absurdo. Com certeza não existiria Code Exchange hoje se ele não tivesse provado seu potencial. Na minha visão é único projeto que deu certo na era A.C. (Antes do Code Exchange). O SAPLink hoje é tão importante que talvez seja um dos projetos que necessitem mais incrementos e atualizações para alavancar a comunidade ABAP Open Source. Ele ainda carece muito quando falamos de objetos SAP não utilizados frequentemente, por exemplo Web Dynpro, MIMEs, ABAP Units etc mas mesmo assim hoje é indispensável. O ABAP2XLSX tem feito muito barulho na comunidade. Sinceramente não estudei este projeto mas está no meu to-do list. O Excel é muito poderoso e familiar ao usuário, o que faz esse projeto ter muito potencial. O ABAP Games definitivamente não é só para aqueles que querem se divertir jogando com um game presente no Application Server. Ele é voltado para aqueles que encaram ABAP como um hobby. O que vejo na maioria dos games deste projeto são simplesmente milagres usando o comando WRITE. Ainda, este projeto é especial para mim, pois submeti o jogo de "Jan-Ken-Pon" que é o mais novo e com maior número de downloads neste projeto, o que me faz sentir muito orgulhoso. (veja mais sobre o Jan-Ken-Pon <a title="ABAP101 – Jan-Ken-Pon" href=" http://abap101.com/2011/05/10/abap-unit-exercicio-jan-ken-pon/&quot ; rel="nofollow"> aqui ) . Maurício, com certeza seu projeto será muito bem visto lá! 🙂 Aproveito para citar sobre o projeto <a title="ABAP101 Tic-Tac-Toe" href=" https://cw.sdn.sap.com/cw/groups/abap-101-tic-tac-toe&quot ; rel="nofollow"> ABAP101 Tic-Tac-Toe  no Code Exchange, que tem por objetivo  incentivar e instruir a participação em projetos Open Source (apesar de também ser um jogo, ele é um projeto separado). Também, é interessante aqui falar sobre o ABAPdoc pois o ABAP101 deu início a uma movimentação em massa para contribuir com esse projeto, para saber mais veja Projeto: ABAPdoc . Para aqueles que procuram experiência, esta na minha visão é uma oportunidade mais interessante e enriquecedora do que ser um sombra. Abraços! @fabiopagoti – abap101.com
+Maxsuel Maia (08/07/2011 09:31): Muito bom o blog, me ajuda muito, como sou novo no Mundo ABAP sempre vejo o site, e sempre tem coisa nova. Me baseio muito nos Posts de vocês, me ajuda muito além de não ser apenas informações, é uma forma descontraida de ajudar a galera no mundo do abap. Parabéns ! Sou Maxsuel Maia, sou do RS, trabalhei com Aduardo Araujo, que é ai de SP, que conhece você…Abraço e fico no aguardo por novos posts !.. xD
+  Mauricio Cruz (08/07/2011 10:56): Obrigado mesmo pelo apoio Maxsuel! Comentário como o seu que nos motivam a continuar postando 🙂 Um abraço!
+  Mauricio Cruz (08/07/2011 10:56): Obrigado mesmo pelo apoio Maxsuel! Comentário como o seu que nos motivam a continuar postando 🙂 Um abraço!

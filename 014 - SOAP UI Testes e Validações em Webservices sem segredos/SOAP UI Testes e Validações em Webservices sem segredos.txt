@@ -1,0 +1,54 @@
+SOAP UI – Testes e Validações em Webservices sem segredos
+Autor: Mauricio Cruz
+Data: 12/01/2011 08:55
+
+Tem um fato que sempre ocorre alguma vez na vida de um Consultor PI (ou ABAP, ou CRM, ou whatever) que é, ao mesmo tempo,
+frustante
+e
+revelador
+:
+Você está lá…
+se matando
+para testar “aquela” interface com um webservice que depende de dados de cinco transações diferentes. E como se não bastasse a dificuldade imensa para gerar uma
+droga
+de cenário de teste,
+o
+dado é consumido
+após o disparo da interface. Daí, vem aquele cara que já te viu  xingando o computador de tudo quanto é nome a semana toda, e fala: “po, tem um programa aqui que pode ajudar…”.
+…
+E depois de
+muito stress,
+você descobre que tem um
+programa mágico
+que resolve os seus problemas. O
+SOAP UI
+é um desses programas, e sim, eu o descobri numa situação parecida com essa acima ( 🙁 ou 🙂 ? frustante e revelador, sacaram? 🙄 ).
+A idéia é bem simples… você configura a url e a porta de um webservice, escolhe um dos métodos (ou ações, tanto faz), monta o XML e o programa dispara a mensagem pra você e mostra a resposta.
+Isso quer dizer que você
+não depende mais do SAP ou do PI
+para validar se o formato que o PI está enviando está correto, ou como o Webservice vai se comportar se você mandar X ou Y em determinada tag do XML.
+Parece bobo, mas isso
+salva MUITO TEMPO
+na fase pré-build/build/unit test, onde você precisa ter uma noção de quais dados você tem que mandar e de como interpretar o retorno de um método do webservice. Veja só:
+Foto 1 – Configuração básica do SOAP UI
+Basicamente, você cria um projeto e importa um WSDL (arquivo que contém a definição dos métodos/ações do webservice) Normalmente isso entra no External Definitions, no PI
+Você configura também o endereço do Webservice, para o SOAP UI conectar-se e mandar as mensagens XMLs. Dá até pra configurar o protocolo (soap 1.1, 1.2 e tal)
+Daí você colocar o XML "na mão" na esquerda e aperta o play. O programa irá conectar no webservice e te mostrar a resposta na direita. Você pode pegar o XML da SXMB_MONI e disparar por aí para testes, manjou? 😉
+Mais fácil só a interface pronta, falae? Tem mais coisas, mas dá para ter uma noção do poder da ferramenta.
+O site para baixar é o
+http://www.soapui.org/
+, mas qualquer coisa, é só procurar no google, pois é um programa bastante usado pela galera que trabalhar com Webservices mundo afora.
+Vale a pena dar uma olhada… afinal, você nunca sabe quando uma interfaces “daquelas” com Webservice vai aparecer na sua frente!
+Abraços!
+
+
+
+Comentários:
+Nilton de Araújo (17/02/2017 08:43): Olá obrigado por dividir o seu conhecimento, sou novo em automação  e estou me deparando com a seguinte barreira no uso da ferramenta SoapUi, ao criar o projeto e apontar para o serviço somente 3 métodos retornam o arquivo Request que possibilita gerar os casos de teste. Os demais métodos retornados pelo serviço não trazem o arquivo, é preciso informar usuário e senha em algum lugar para acessar esses arquivos? Fico no aguardo caso alguém possa me indicar um norte para solução.
+juliano (25/07/2016 09:06): bom dia.estou com um problema: só consigo enviar um mregistor por  vez.teria como mandar  vários para meu projeto  da  url? exemplo: xpto só que tenho 2000 empresas para  cadastrar, e aí? ficar  copiando o xml e colando um por um, é de  lascar!!!
+Julio (02/07/2015 21:55): Olá Zombie manager, gostei do seu post. eu estou com esse problema agora e nao mas nao estou conseguindo configurar certo o SOAP UI, por causa do certificado, eu achei que ia explicar certinho isso, mas nao falo nada disso. Sera que podeme explicar como que se faz? Obrigado
+Sergio (19/11/2014 22:20): Muito bom seu post foi muito útil. Gostaria de saber se você já transferiu arquivos PDF pelo SAP PI SOAP por WSDL
+Toni (06/01/2013 20:46): Segue um post de como usar o SoapUi para testar o web service dos correios http://regifelix.com/2013/01/06/testes-de-web-services-com-a-ferramenta-soapui/
+Fabio (14/12/2012 15:11): Maurício, Sou leigo na ferramenta e estou tentando realizar um teste de carga num webservice. Preciso inserir alguns valores de parâmetro para testar a resposta do WS, porém não consigo os campos para que eu possa inserir os valores já definidos para teste (mesmo no Request). Existe alguma forma de puxar estes campos para que eu possa inserir estes valores? Desde já agradeço a força.
+Luciane Santos (25/10/2012 14:08): Olá Mauricio, Estou com um problema aqui testando meu webservice no soapUI esta dando o seguinte erro: org.xml.sax.SAXException: SimpleDeserializer encountered a child element, which is NOT expected, in something it was trying to deserialize. Pelo que li em alguns posts esta dando erro na deserialização do xml,  mas desenvolvi uma aplicação cliente que passa por parametro o xml e funciona só dá erro quando faço o teste no soapUI, acho que pode ser alguma coisa relacionada a forma que o soapUI interpreta o xml. Mas como sou novata com o soapUI estou tendo dificuldades em resolver este problema. 🙂
+Sebastião Andrade de Oliveira (19/06/2012 15:42): Fala Mauricio! Obrigado pela dica ai mano, esse programa salvo minha vida….kkkkkk. Parabéns pelo Blog. Um grande abraço pra essa galerinha firmeza ai do AbapZombie. Aspira.

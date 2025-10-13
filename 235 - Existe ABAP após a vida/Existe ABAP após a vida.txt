@@ -1,0 +1,64 @@
+Existe ABAP após a vida?
+Autor: Leo Schmidt
+Data: 17/01/2023 09:19
+
+Nessa “retomada” aqui dos posts no ABAP Zombie, eu estou escrevendo sobre alguns temas off-topic, muito embora os grandes campeões em tema de acesso por aqui sempre são os posts de referência que tem links nos menus aqui no entorno. Isso, aliás, é indicativo das divergências de que eu falei de passagem no meu
+último post
+aqui, mas é um assunto à parte. Vamos ao tema.
+No meu último post eu disse que entrei na SAP (agora em abril vou completar o primeiro ano 🎂), uma mudança com a mesma direção da que o
+Maurício fez alguns anos atrás
+, mas no sentido inverso: em vez de deixar o mundo de consultoria SAP pra trabalhar com outras paradas, eu deixei o mundo de consultoria SAP pra trabalhar com
+mais SAP ainda
+. À primeira vista, pode parecer algo contraditório, sendo que eu já falei no passado aqui no blog que
+software empresarial não é divertido
+ou que eu tenho
+pelo menos 3 grandes problemas com ABAP
+. Porém, vou tentar me explicar aqui.
+Faz um bom tempo que eu acompanho aquele
+site laranja sobre tecnologia
+, e como dá pra imaginar esses assuntos brotam por lá também com alguma frequência. Lá já teve gente dizendo que
+você não deveria se chamar de programador
+, mas também teve gente dizendo que sim,
+você deveria se chamar de programador
+. Esses dois posts em particular são antigos, mas ambos concordam em pelo menos um ponto: a imensa maioria dos empregos na área de software existem pra criar soluções chatas e de baixa complexidade técnica – software empresarial. Pra você lendo o blog que já trabalha com consultoria SAP, isso não é novidade nenhuma. Com a experiência que eu tenho na área, posso dizer com tranquilidade que por mais tecnicamente complexos que sejam as
+plataformas
+e os
+produtos
+da SAP, as soluções que são entregues como projetos de consultoria são grandes pilhas de CRUDs, modificações, melhorias e integrações.
+Foi só depois de sair da consultoria onde eu trabalhava que eu consegui entender de verdade porque os projetos de consultoria são assim: simplesmente porque existe
+demanda
+. A necessidade que as empresas têm por software customizado – também chato e simples, não se esqueça – é tão grande e constante que cria um espaço amplo pra prestação desse serviço com:
+demanda por profissionais especializados em um tipo de serviço que exige conhecimento técnico, que são contratados por sua capacidade e experiência;
+um ciclo de trabalho que exige alto envolvimento dos profissionais durante o projeto, mas que se encerra no momento que o período de manutenção acaba;
+a execução do trabalho, por mais que seja supervisionada, deixa várias decisões nas mãos dos técnicos; porém, tendo em vista os requerimentos e as pressões, esses técnicos são levados – e muitas vezes até
+encorajados
+– a tomar decisões tecnicamente ruins que podem ser no mínimo pouco planejadas e no máximo prejudiciais ao cliente.
+Depois de muitos anos, esse último ponto era talvez o meu maior problema com a carreira de consultor. Eu gosto bastante de desenvolvimento de software, e a experiência de desenvolver software como consultor é restrita de muitas formas, simplesmente por não haver tempo nem incentivos pra fazer as coisas do jeito certo. Refatorações, pagamento de dívida técnica, testes unitários, automação de testes, revisão por pares, integração/implantação/entrega contínua… todas essas atividades fazem parte de um ciclo de vida saudável de desenvolvimento de software, e infelizmente como consultores temos que ignorar todas ou quase todas por conta de vários tipos de pressões. O Joel Spolsky
+também já falou sobre isso uns 15 anos atrás
+, se referindo ali a programadores “de casa”, mas a mesma coisa se aplica a consultorias.
+É triste constatar isso, mas a consultoria se torna
+menos competitiva
+se todos os custos relacionados com essas atividades  entrarem no preço do projeto – sempre vai ter um
+body shop
+prometendo atender as necessidades de um cliente num prazo mais apertado, com menos pessoas e um preço menor. Uma frase repetida em todo canto que estava me irritando muito nos últimos tempos de consultor era a famigerada “sair do outro lado”, geralmente se referindo a situações onde o time sofreu muito com pressões diversas mas entregou o requerimento. Isso me preocupava bastante porque geralmente significava que vários sacrifícios foram feitos, e por mais que o requisito tenha sido atendido diversos aspectos foram deixados de lado – segurança, manutenibilidade, metodologia, princípios ou padrões de desenvolvimento, reusabilidade, só pra citar alguns. Mas, reforçando o argumento, isso acontece porque o incentivo comercial que as consultorias tem ao competir no mercado impede que esses aspectos sejam atendidos. O resultado final que se busca é software que é apenas bom o suficiente pra atender os requisitos do cliente.
+Por outro lado, um aspecto bom a ser aproveitado quando se trabalha num mercado assim é a
+diversidade
+. Eu particularmente gostava bastante de pensar que cada projeto teria um desafio novo a ser resolvido, e que assim que acabasse eu iria pra um ambiente novo, seja outro cliente, outro projeto, outra tecnologia, outra consultoria, o que seja. A promessa dessas renovações me mantinha motivado. É claro que essas oportunidades não vem de graça; eu sempre fiz questão de me manter preparado para ir adiante aproveitando o tempo livre nos projetos pra estudar. Foi desse jeito eu construí a maior parte da minha carreira.
+A diversidade foi uma característica muito boa pra mim por muito tempo, mas aquelas restrições de que eu falei sempre estiveram presentes e sempre me incomodaram. Por mais que eu tivesse a oportunidade de trabalhar com coisas novas de vez em quando, saber que eu tinha que tomar vários atalhos pra entregar os projetos e que eu teria que lidar com atalhos dos outros  pra fazer manutenções me desanimava muito. E por mais que eu me juntasse com outras pessoas muito experientes na área e tentássemos pensar em alguma alternativa que fizesse sentido e resolvesse esses problemas, no fim das contas os imperativos do mercado desmanchavam todas essas tentativas. É por isso que, a menos que o próprio cliente da SAP trate o desenvolvimento de software com cuidado e esmero, não há saída pra ter um ciclo de vida saudável. Por exemplo, posso contar nos dedos a quantidade de projetos Scrum em que participei como consultor ABAP/SAP, e foram projetos estruturados assim porque o cliente fez questão. Iniciativas internas da consultoria de usar metodologias ágeis se tornavam “cascatágeis” em pouquíssimo tempo.
+No começo do ano passado eu refleti bastante sobre tudo isso, e o meu primeiro impulso foi tentar mudar de consultoria, pensando nesse conceito de diversidade. Mas, por uma conjunção de fatores (obrigado, amor ❤️), eu decidi tentar uma vaga na SAP. E eu posso dizer que foi uma das melhores coisas que eu fiz pra minha carreira. Hoje em dia, eu sinto que estou escrevendo o melhor ABAP que já escrevi na vida – não porque é dentro da SAP ou porque talvez fosse tecnicamente perfeito (isso nem existe), mas sim porque hoje eu escrevo
+produtos
+de software. É de total interesse da SAP que os produtos em ABAP sejam aperfeiçoados o máximo possível, então todos aqueles aspectos que eu descrevi como fazendo parte de um ciclo de vida saudável são
+necessários
+, porque tornam a empresa mais competitiva. Eu nunca tive tanta satisfação entregando código ABAP quanto a primeira vez que eu entreguei uma classe com ABAP Unit e com cobertura de 100% no ano passado. As verificações de código a nível de transporte, ou também quando usamos abaplint em tempo de review, são excelentes. Os testes de regressão automatizados são de cair o queixo. Enfim, todo o ferramental envolvido no desenvolvimento, mais a metodologia ágil aplicada corretamente, mais os incentivos pra sempre aumentar a qualidade das entregas criam um ambiente onde o desenvolvimento de software faz sentido.
+Eu estou descrevendo aqui um pouco da minha experiência e da minha visão, mas o conceito geral não é nada diferente do que aqueles posts que eu linkei lá pra cima já disseram: se você gosta e se preocupa bastante com o trabalho de desenvolvimento de software, você deveria procurar dedicar seu esforço a empresas onde o software importa de verdade, onde é parte de um centro de lucro e não de custo – um conceito que inclusive não se aplica só na nossa área, mas pra outras que de alguma forma tangenciam a atividade de uma empresa. Embora o trabalho de consultoria tenha seus próprios desafios e ajude a formar desenvolvedores eficientes, sempre tenha em mente que se trata de uma prestação de serviço, e na prestação de serviço a moeda principal é o tempo – por isso se fala tanto em estimativas, alocações e prazos.
+Enfim, essa é a história até o momento. Não posso prometer nada sobre podcasts, guias ou mesmo próximos posts, mas pretendo continuar escrevendo esse ano. Até uma próxima!
+
+
+
+Comentários:
+Marcos (09/03/2025 15:57): Olá pessoal, espero que tenham sobrevivido às mudanças da SAP. Mais uma vez eles mudaram e mexeram com o mercado. Agora falam do ABAP Cloud, BTP, etc… a verdade é que estão cada vez mais fechando o código e tornando tudo SaaS. Muitos amigos perderam emprego e estão tendo que se adaptar as novas “tecnologias”… Se puderem, falem mais a respeito. Abraços a todos. Sucesso sempre!
+Davi (20/04/2023 19:33): Excelente post, parabéns !!!
+Giuseppe (22/02/2023 17:43): Excelente post, por favor continue com os artigos.
+Guilherme Machado (26/01/2023 12:08): Excelente conteudo, Obrigado por compartilhar
+  Giovanni (04/11/2023 23:39): Top demais !
+  Giovanni (04/11/2023 23:39): Top demais !

@@ -1,0 +1,76 @@
+#005 – Comenta, documenta e senta que é de menta
+Autor: Mauricio Cruz
+Data: 24/05/2016 09:00
+
+Com o espírito de reviver
+clássicos da música brasileira
+trazemos para vocês mais um The Walking Dev!
+Conseguimos juntar toda a equipe do site para discutir comentários de código e documentações em projetos. Apesar de ser um tema já bem discutido aqui no site, atualizamos nossa visão (por vezes anárquica) desse tema sempre polêmico. Escute, comenta, divirta-se e lembre-se: se for sexta-feira, rode a SE14 na MARA (por sua conta e risco, claro).
+Críticas? Dúvidas? Sugestões? Você já foi passear com o cachorro e falou que estava testando um ALV? Então comente aí embaixo!
+Muito obrigado por ter escutado e até a próxima! \o/
+Quer baixar o “Dia de Maldade ABAP” separadamente para mandar para os coleguinhas?
+Clique aqui (com o direto > Salvar como)
+Links e recomendações do episódio:
+Mágico que traz o GoLive em 3 dias
+ESL Pod (para aprender inglês)
+Palestra “Agile is Dead”
+Carreta Furacão
+e o joguinho
+Carreta Legends
+ABAPDoc
+Duolingo (idiomas)
+Memrise (idiomas)
+Faça backup
+Transação ABAPDOCU
+Posts do ABAPZombie sobre o tema:
+Documentações e o tempo perdido que não volta mais
+A arte milenar de comentar códigos ABAP
+ASCIIDOC
+Porque comentar código não é legal
+Comentários bizarros do Standard
+
+
+
+Comentários:
+Wesley Fernandes (30/01/2017 20:03): Muito bom o podcast já ouvi algumas vezes esse episódio e sempre curto muito e recomendo para todos amigos e colegas, um texto que li que remete muito alguma dessas historias foi: https://bar8.com.br/documentação-sap-trabalho-jogado-no-lixo-depois-de-um-tempo-9551c437031c#.pifhgdfoe e https://bar8.com.br/tdd-abap-sap-f8b5c1780049#.2bncfsiq0 Espero ter contribuido com a galera!
+Luiz Guilherme Cerqueira Campos (29/06/2016 01:49): Poxa galera, muito bacana!! Sou iniciante no mundo ABAP e fico comparando as vantagens da orientação a objetos com as desvantagens da estrutural. A maioria das pessoas que conversei do mundo ABAP não usam orientação a objetos, acho que existe uma certa preguiça e quebra de paradigma em usar orientação a objeto. As pessoas não compreendem que o trabalho que é exigido no momento e a “perda de tempo” em escrever mais linhas com a orientação a objetos nos promovem ganhos com manutenção. Continuem postando e acrescentando aos nossos conhecimentos, aprendi muito com vocês. Valeu galera, abraco
+  Wesley Fernandes (30/01/2017 19:58): Também achava isso até  conhecer esses caras: https://bar8.com.br/sap-abap-dominio-rico-4968741116f1#.4shlfydbi Bar8 mostrando que não estamos sozinhos. VAleu!
+  Wesley Fernandes (30/01/2017 19:58): Também achava isso até  conhecer esses caras: https://bar8.com.br/sap-abap-dominio-rico-4968741116f1#.4shlfydbi Bar8 mostrando que não estamos sozinhos. VAleu!
+Carlos (22/06/2016 08:56): Seria interessante colocar o MP3 em WINRAR para evitar bloqueios de download nas empresas. rs
+Allan (22/06/2016 08:45): Mauro é o cara! Gente boa!
+Guilherme (31/05/2016 11:39): Acabei de passar pelo seguinte comentário: * Do the calculations by hand. This is going to be slow. This is going to be a pain. * What is a man to do? cl_abap_zip=>crc32
+Ricardo dos Santos (24/05/2016 19:27): Fala Zumbis, Sou ouvinte assíduo e admirador do trabalho do Maurício (Leitor Número 1 do Livro™) e mesmo não trabalhando com ABAP me divirto (e aprendo, por que não?) ouvindo os podcasts. Prometi pra mim mesmo que vou comentar todos os casts, já que valem a pena! Com relação a documentação, nos meus 10 anos trabalhando com TI, vi que não difere muito não a questão de documentar o que é feito (os famosos procedimentos) e segue uma história que representa bem a preguiça de documentar: Entrei em uma empresa e os erros de alguns sistemas éramos orientados a falar com o Paulo Pereira*. “Passa pro PP” “Ah, isso é com o PP” “Liga pro PP que ele resolve!” E nos e-mails de resolução o PP somente escrevia “Atendido por Paulo Pereira”. Até o dia que o PP saiu da empresa e todos que trabalhavam com ele ficaram na mão, a solução foi ligar para outras pessoas que já sabiam as soluções ou muita, muita buscas nas comunidades e no google (com agravante que não tínhamos nem código, nem programa, nada para debugar e encontrar uma solução!). Um abraço e até o próximo cast! *Nome fictício Ricardo
+  Mauricio Cruz (24/05/2016 19:49): Gostaria de dizer que o Ricardo de fato tem o título de Primeiro Leitor Pós-Publicação™ e que se você tem algum problema com isso, fale com o PP. Atendido por Mauricio Cruz (valeu mano! 😀 )
+  Mauricio Cruz (24/05/2016 19:49): Gostaria de dizer que o Ricardo de fato tem o título de Primeiro Leitor Pós-Publicação™ e que se você tem algum problema com isso, fale com o PP. Atendido por Mauricio Cruz (valeu mano! 😀 )
+Renato Bonini Neto (24/05/2016 19:24): Prá deixar meu curtir do face aqui…. comentário esse Leo é uma farsa, posso provar com códigos que ele mexeu recentemente e não removeu os comentários !!!… kkk Quero ver vcs ganharem do nome da Tabela de Transações de Analistas, que um gerente do cliente (que era pago para revisar nossas documentações) deu um chilique esbravejando “- Quem tem coragem de criar uma tabela com este nome….ZTRAxxx_ANxxx !!!”… bem acredito que não preciso completar os “xxx”… []s
+  Mauricio Cruz (24/05/2016 19:47): Ooooooooooorraaaaaaaaaaaa Quer dizer que o movimento anárquico é uma farsa? ME ENGARAM
+    Leo Schmidt (25/05/2016 08:09): Caro Bonini, Obrigado pelo comentário (estou me controlando para não deletá-lo). Ultimamente neste projeto não estou com muito tempo (tampouco paciência) para limpar comentários inúteis, então algumas coisas estão realmente escapando. Prometo retornar ao comportamento xiita em breve. Grato, Leo
+    Leo Schmidt (25/05/2016 08:09): Caro Bonini, Obrigado pelo comentário (estou me controlando para não deletá-lo). Ultimamente neste projeto não estou com muito tempo (tampouco paciência) para limpar comentários inúteis, então algumas coisas estão realmente escapando. Prometo retornar ao comportamento xiita em breve. Grato, Leo
+  Mauricio Cruz (24/05/2016 19:47): Ooooooooooorraaaaaaaaaaaa Quer dizer que o movimento anárquico é uma farsa? ME ENGARAM
+    Leo Schmidt (25/05/2016 08:09): Caro Bonini, Obrigado pelo comentário (estou me controlando para não deletá-lo). Ultimamente neste projeto não estou com muito tempo (tampouco paciência) para limpar comentários inúteis, então algumas coisas estão realmente escapando. Prometo retornar ao comportamento xiita em breve. Grato, Leo
+    Leo Schmidt (25/05/2016 08:09): Caro Bonini, Obrigado pelo comentário (estou me controlando para não deletá-lo). Ultimamente neste projeto não estou com muito tempo (tampouco paciência) para limpar comentários inúteis, então algumas coisas estão realmente escapando. Prometo retornar ao comportamento xiita em breve. Grato, Leo
+Diego (24/05/2016 11:05): Galera, Bacana o posto eim. Algumas coisas também concordo com o que vocês falaram, mas numa próxima tinha que trazer um para defender os comentários. KKKK.. Abraço!!!
+  Leo Schmidt (24/05/2016 16:16): Olá Diego, muito obrigado pelo elogio. Até procuramos alguém pra defender os comentários de código, mas ninguém quis participar pois estavam todos muito ocupados em projetos de enxugamento de gelo e desentortagem de banana. Abraços.
+    Diego (24/05/2016 16:25): Leo, Não muda nada mesmo. Não que eu seja um defensor de comentário, mas como estava falando com o pessoal aqui, as vezes o cara comenta simplesmente porque sem comentário parece que falta algo até por isso sai os “Selecionar tabela Mara” logo antes da seleção da MARA.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+    Diego (24/05/2016 16:25): Leo, Não muda nada mesmo. Não que eu seja um defensor de comentário, mas como estava falando com o pessoal aqui, as vezes o cara comenta simplesmente porque sem comentário parece que falta algo até por isso sai os “Selecionar tabela Mara” logo antes da seleção da MARA.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+  Leo Schmidt (24/05/2016 16:16): Olá Diego, muito obrigado pelo elogio. Até procuramos alguém pra defender os comentários de código, mas ninguém quis participar pois estavam todos muito ocupados em projetos de enxugamento de gelo e desentortagem de banana. Abraços.
+    Diego (24/05/2016 16:25): Leo, Não muda nada mesmo. Não que eu seja um defensor de comentário, mas como estava falando com o pessoal aqui, as vezes o cara comenta simplesmente porque sem comentário parece que falta algo até por isso sai os “Selecionar tabela Mara” logo antes da seleção da MARA.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+    Diego (24/05/2016 16:25): Leo, Não muda nada mesmo. Não que eu seja um defensor de comentário, mas como estava falando com o pessoal aqui, as vezes o cara comenta simplesmente porque sem comentário parece que falta algo até por isso sai os “Selecionar tabela Mara” logo antes da seleção da MARA.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+      Leo Schmidt (24/05/2016 16:43): Ah, é que nem a gente comentou mesmo, a galera às vezes faz por tradição. Se vc para e pensa antes de fazer, dificilmente vc vai encontrar uma utilidade.
+Rafael (24/05/2016 10:31): HOJE É DIA DE MALDADE!!! haha
+  Rafael (24/05/2016 10:46): Link de cabeceira para dúvidas da sintaxe do ABAP 7.4 http://scn.sap.com/docs/DOC-68458
+    Mauro Laranjeira (24/05/2016 13:21): Rafael, Caraca.. curti esse link… Show =D
+    Mauro Laranjeira (24/05/2016 13:21): Rafael, Caraca.. curti esse link… Show =D
+  Rafael (24/05/2016 10:46): Link de cabeceira para dúvidas da sintaxe do ABAP 7.4 http://scn.sap.com/docs/DOC-68458
+    Mauro Laranjeira (24/05/2016 13:21): Rafael, Caraca.. curti esse link… Show =D
+    Mauro Laranjeira (24/05/2016 13:21): Rafael, Caraca.. curti esse link… Show =D
+Ricardo (24/05/2016 10:24): Muito bom o Podcast… poderia ser diário! Quanto ao comentários, sou igual ao Leo…. mas como eu tenho que seguir os padrões da empresa, deixo tudo comentado! rs
+  Mauricio Cruz (24/05/2016 19:46): ENTRE PARA O MOVIMENTO DA ANARQUIA só não perca seu emprego né haha
+  Mauricio Cruz (24/05/2016 19:46): ENTRE PARA O MOVIMENTO DA ANARQUIA só não perca seu emprego né haha

@@ -1,0 +1,43 @@
+ABAPZombie Guide to ABAP – Parte 31 – GET TIME STAMP
+Autor: Mauricio Cruz
+Data: 08/03/2012 10:00
+
+Pois é, o ABAP tem um comando nativo para criar um timestamp, o
+GET TIME STAMP
+.
+A minha falta de ânimo na frase acima tem um só motivo: esse é um comando que poderia ser bem mais flexível, sem termos que ficar fazendo conversões para utilizar o valor retornado. Aliás, acredito que essa falta de flexibilidade é o que faz com que a galera continue montando TIMESTAMPs “na mão”, ou por funções/classes.
+Anyway, vamos aos exemplos:
+O GET TIME STAMP é um comando bem direto: ele retorna um timestamp curto ou longo, da data e hora do sistema. O que define o “tamanho” do timestamp, é o tipo da variável que você usar para capturar o timestamp. Veja abaixo:
+REPORT zombie_timestamp.
+
+DATA: l_curto TYPE timestamp,
+      l_longo TYPE timestampl.
+
+
+* "Estampa" o Tempo! (péééééssima piada)
+GET TIME STAMP FIELD l_curto.
+GET TIME STAMP FIELD l_longo.
+Mas tem um porém: o timestamp vai te retornar o horário de acordo com o UTC (
+Tempo Universal Coordenado
+). Ou seja, para usar o timestamp no horário daqui do Brazil, você tem que fazer uma conversão levando em conta o timezone do lugar em que você se encontra. A conversão pode ser feita por diversos comandos, mas segue um exemplo com o comando WRITE:
+REPORT zombie_timestamp.
+
+DATA: l_curto TYPE timestamp,
+      l_longo TYPE timestampl.
+
+GET TIME STAMP FIELD l_curto.
+GET TIME STAMP FIELD l_longo.
+
+* Conversão de acordo com o TimeZone.
+* Para ver as conversões possíveis, veja a tabela TTZZ
+WRITE / l_curto TIME ZONE 'BRAZIL'.
+WRITE / l_longo TIME ZONE 'BRAZIL'.
+E é isso. Se você quiser trabalhar de verdade com timestamps, você pode utilizar a classe
+CL_ABAP_TSTMP,
+que tem milhões de opções. E bem que o comando poderia ter algumas opções a mais, tipo uma conversão direta de acordo com o Timezone… 😛
+Abraços!
+
+
+
+Comentários:
+Flavia Lima (07/03/2023 06:19): Parabens para o Blog que afinal é sensacional. Mauricio, uma duvida no entanto. Em uma situação onde o serviço de mensageria é de um parceiro, por exemplo Mastersaf, o CRE_TIMESTAMP criado via SAP ou recebemos essa informação no retorno do envio a Sefaz? Obrigada Flávia

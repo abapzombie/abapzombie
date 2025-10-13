@@ -1,0 +1,88 @@
+Nota Fiscal Eletrônica (NFe) – Upgrade sem segredos
+Autor: Mauricio Cruz
+Data: 07/02/2011 13:35
+
+Então você é daqueles que vê “aquele” e-mail com a sua nova alocação e pensa: “Ferrou! Não sei nada de NFe, muito menos do upgrade da versão 1.0 para a 2.0… Danou-se!”. Pois é, parece eu uns tempos atrás 🙁
+Mas a boa notícia é que
+tudo que você precisa
+pode ser encontrado em dois lugares: No site da SAP e pelo Google. Eu passei bastante tempo pesquisando e encontrei bastante coisa bacana para guiar os Consultores na implantação.
+Como agora temos o nosso blog, nada mais justo do que compartilhar as informações que eu achei sobre
+o upgrade para a versão 2.0
+. Vamos lá!
+* Se o seu sistema não utiliza o GRC para conectar-se a SEFAZ, esse post não foi feito pra você. Pretendo criar posts com sugestões para uma implantação desse tipo no futuro 🙂
+Manual do Contribuinte
+Antes de mais nada, adquira imediatamente uma cópia em .pdf do Manual do Contribuinte
+neste link
+. Ele vai ajudá-lo em diversos problemas, pois contém o mapemaento de todos os campos do layout 2.0, além das amarrações que existem no XML (Ex.: A mensagem X irá aparecer se o campo Y não for informado). Extremamente útil e extremamente necessário para qualquer implantação.
+Notas SAP
+Tudo começa na análise de algumas
+notas da SAP
+que contém as informações sobre o upgrade. São elas:
+1438295
+– Guia Técnico para alterações NFe 2.0
+1465726
+–  Configurações para GRC no Layout 2.0
+Nessa última nota, a 1465726, a SAP disponibiliza um arquivo anexo que contém o passo-a-passo das alterações de devem ser feitas na instância PI do GRC. É muito importante seguir os passos descritos no anexo, para você não apanhar com besteiras nas fases de testes e homologação.
+Clique aqui
+para visualizá-lo.
+Uma outra nota importante é a nota que mostra o caminho para os links onde é possível
+visualizar todas as notas dos suporte packages
+de NFe (SLL-NFe 1.0).
+1487119
+– Acessando os Support Packages no Portal da SAP
+Essa nota explica especificamente para o SP15, mas você pode ver de qualquer um, é só ser um pouquinho esperto 😛
+Alterações Parte ABAP
+Com a alteração do layout, provavelmente você terá que adicionar algumas consistências na BADI que preenche os dados nos campos da NFe, antes dela ser enviada ao GRC.
+BADI
+: CL_NFE_PRINT
+Aí você pode fazer consistências e modificar os valores da NFe que será enviada ao GRC.
+Como eu faço para saber que o campo X no SAP é o campo Y no manual do contribuinte?
+– Analise as tabelas
+/XNFE/FLDVALID
+e
+/XNFE/NFEVALID
+no GRC. Essas tabelas fazem parte do validador do GRC, e contém uma espécie de de-para do campo SAP com o campo do Manual do Contribuinte.
+– Abra a função
+J_1B_NF_MAP_TO_XML
+e dê um FIND (CTRL+F) pelo nome do campo do manual do contribuinte (Ex. B02). Não se esqueça de fazer a busca no modo  “Global no Programa Básico”. A função é bem comentada com relação à numeração dos campos, então fica fácil de achar.
+Interpretando Erros do GRC
+Impossível não citar dois fóruns que são direcionados somente à discussão da implantação de NFe e SPED no SAP. São eles:
+Fórum NFe do SDN:
+Aqui você pode tirar suas dúvidas com quem conhece MESMO a solução. Pelo que eu entendi, parte dos moderadores dessa sala ajudou a criar a solução de NFe da SAP, portanto os caras manjam muito disso tudo.
+Fórum Localização Brasil:
+um fórum menor e independente que tem bastante informação bacana sobre solução de problemas.
+Em ambos, procure pelo código do erro e provavelmente você vai achar diversos tópicos relacionados. Daí é garimpar a solução e ser feliz 😀
+Dicas e outras fontes de informação
+Utilize o
+fórum do SDN
+antes de se matar analisando um problema. Ele é muito completo e tem muita muita informação útil. E se mesmo assim você não encontrar a resposta, é só postar que o pessoal normalmente responde rápido.
+Para a galera do PI, impossível implantar com tranquilidade sem o guia com os
+links dos Webservices e Actions da SEFAZ.
+Só não vale confundir Produção com Homologação na hora de preencher os Canais de Comunicação heim! hehe.
+Aliás, o trabalho que o Henrique Pinto desenvolveu no seu
+Wiki de NFe
+é sensacional. Está tudo ali, é só ler 🙂
+O mesmo Henrique também
+fez um guia longo
+sobre a determinação dinâmica de destinatários de e-mail através de umas RFCs e umas alterações nos objetos importados no PI. Eu achei bem útil, já vi implantado e funciona muito bem!
+Ah, e se você estiver pensando em implantar a solução de NFe em seu sistema, sempre tente atualizar o seu sistema com o
+último Support Package disponível
+. O SP15, por exemplo, contém diversas falhas que são corrigidas nos SPs 16 e 17. Portanto, para não ter dor-de-cabeça procurando notas, aplique sempre o último SP disponível. A nota 1487119 ali em cima tem o caminho para você analisar os SPs.
+Este é um compilado de informações que eu acho úteis para fazer a migração para o layout 2.0 da NFe sem muita crise.
+Claro que muitas outras notas, um número gigantesco de posts por aí sobre o assunto… mas este compilado é para guiar aqueles caras que caíram de gaiato no meio de um projeto de upgrade, que nem eu uns tempos atrás 😉
+Dúvidas é só postar (ou visite o fórum do SDN. Lá tem tudo, é sério hahaha 😛 )!
+Abraços!
+
+
+
+Comentários:
+jorge (27/10/2016 11:32): “Se o seu sistema não utiliza o GRC para conectar-se a SEFAZ, esse post não foi feito pra você. Pretendo criar posts com sugestões para uma implantação desse tipo no futuro” Ola, sobre o tema acima, vc chegou a escrever alguma coisa? grato
+Genilda Rocha (05/03/2013 21:07): Poderia me ajudar: Onde configuro na aba mensagem da Nota Fiscal Eletronica o texto do IPI, para aparecer em Dados Adcionais na hora da impressão. Obrigada. Genilda
+Leonardo (16/01/2012 22:43): Caramba! Acho que vou fechar o LeoABAP.com.br!!! Nem dá pra criar posts super legais assim! rs Ótimo Cruz, parabéns! abs Léo
+  Mauricio Cruz (23/01/2012 07:22): Hahahah claro que não po 🙂 Quanto mais blogs, mais informações pra galera. Obrigado pelos parabéns! Abraços!
+  Mauricio Cruz (23/01/2012 07:22): Hahahah claro que não po 🙂 Quanto mais blogs, mais informações pra galera. Obrigado pelos parabéns! Abraços!
+Maikel Calgaroto (27/04/2011 06:34): Excepcional meu amigo…. You are PHODA!!!! 😀 abraçosss Maikel
+Henrique Pinto (10/02/2011 11:57): Bem, já que fui citado, para que eu nao o processo por direitos autorais de uso de minha imagem (:-P), vou te pedir pra vc gerar uma página no Wiki do SCN com esse guia de migração. 🙂 Nós criamos uma seção em Português no wiki que está sendo finalizada e estará liberada ao público nas proximas semanas, daí vc poderá criar lá uma página com esse guia. Combinado? 😀
+Victor Clemente (07/02/2011 11:22): Post feito pra mim o/ || /'
+  mauricio.cruz (07/02/2011 11:41): Pior que ele foi a inspiração mesmo O_O heoauheouaheouah
+  mauricio.cruz (07/02/2011 11:41): Pior que ele foi a inspiração mesmo O_O heoauheouaheouah

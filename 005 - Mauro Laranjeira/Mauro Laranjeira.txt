@@ -1,0 +1,294 @@
+Mauro Laranjeira
+Autor: Mauricio Cruz
+Data: 20/12/2010 12:48
+
+Consultor SAP ABAP/ ABAP-CRM
+Heim? Mauro Quem?
+Gosto muito de trabalhar com SAP e de programar, pode falar que eu sou nerds, nem ligo 😆
+Moro na Zona Leste de São Paulo, sou evangélico, tenho uma
+namorada
+esposa que amo S2.
+Curto preparação de carros, tenho um Gol Quadrado Turbo ano 95.
+Como ninguém e de ferro, jogo PS3 nas horas livres, mas acreditem só jogo GTA e Street Fighter II 😯
+Contatos
+E-mail: maurocesarsl@uol.com.br
+MSN: maurocesarsl@uol.com.br
+Skype: maurocesarsl
+GTalk: maurocesarsl
+Cel.: (11) 7675-1787
+Formação Acadêmica
+Pós-Graduação: Engenharia de Software
+Instituição: Faculdade Impacta Tecnologia
+Trancado
+Graduação: Desenvolvimento de Aplicações para internet
+Instituição: Faculdade Impacta Tecnologia
+Conclusão: 07/2008
+Cursos de Aperfeiçoamento
+Workflow
+– BBKO Consulting.
+Webdynpro Java
+– Accenture do Brasil Ltda.
+ABAP Objects
+– Accenture do Brasil Ltda.
+Unit Test
+– Accenture do Brasil Ltda.
+Orientação a Objetos e Java (FJ-11)
+– Caelum. – 40 horas
+Programação em ABAP
+– Accenture do Brasil Ltda. – 160 horas.
+Lógica de Programação
+– Accenture do Brasil Ltda. – 40 horas.
+Introdução a Análise e Engenharia de Softwares
+– Tata Consultancy Services Brazil.
+Photoshop 7
+– Senai. – 32 horas.
+HTML
+– Impacta. – 32 horas.
+Conceitos e Infra-estrutura de Redes
+– Impacta – 24 horas.
+Hardware
+– Microcamp/UNICID. – 162 horas.
+Hardware
+– Assindic. – 48 horas.
+Windows, Word, Excel, Work’s, Internet
+– Soft Alvim. – 96 horas.
+Idiomas
+– Inglês
+– Básico.
+– Espanhol
+– Básico.
+– Português
+– Língua Pátria.
+Experiência Profissional
+Empresa:
+BBKO Consulting / Resource IT Solutions
+Período:
+08/2010 – Atual
+Cargo:
+Consultor ABAP
+Principais realizações:
+– Atuação no desenvolvimento de aplicativos e programas nos módulos de FI / MM / PP / SD / QM / CRM da plataforma SAP;
+– Desenvolvimentos On Site, com suporte ao time local do cliente em todas as fases do Projeto.
+– Desenvolvimento e manutenção junto ao time da fabrica de software outsource;
+– Criação de desenho técnico;
+– Desenvolvimento e manutenção de interfaces Inbound e Outbound, Batch Input, BSP, Call Transaction, Smartforms, Sapscripts, Funções, RFCs, BAPIs, BADIs, Module Pools, Classes e Objetos (OO) e Reports (ALV);
+– Desenvolvimento no CRM 2007 e 2009;
+– Instrutor de treinamento sobre Programação Orientada a Objetos, CRM (2007 e 2009) e BSP;
+Empresa:
+Accenture Brasil Ltda.
+Período:
+09/2007 – 08/2010
+Cargo:
+Consultor ABAP
+Principais realizações:
+– Atuação em projetos de conversão de dados;
+– Atuação no desenvolvimento de aplicativos e programas nos módulos de CRM / QM / MM / SD da plataforma SAP;
+– Desenvolvimentos On Site, com suporte ao time local do cliente em todas as fases do Projeto.
+– Criação de desenho técnico.
+– Desenvolvimento e manutenção de interfaces Inbound e Outbound, Batch Input, BSP, Call Transaction, Smartforms, Sapscripts, Funções, RFCs, BAPIs, BADIs, Module Pools, Classes e Objetos (OO) e Reports (ALV);
+– Desenvolvimento no CRM 2007 e 2009;
+– Instrutor de treinamento sobre Programação Orientada a Objetos, CRM (2007 e 2009) e BSP no Brasil e na Argentina;
+Projetos SAP
+–
+ONE – BASF (Resource IT Solutions)
+–
+Duração: Atual
+–
+Tipo de Projeto: Upgrade do CRM 5.0 para o CRM 7.0
+Migração de componentes, visões, estruturas, tabelas de atualização, configuração de Repository.xml , alteração de visão e componente standard, GENIL_MODEL_BROWSER, GENIL_BOL_BROWSER, BSP_WD_CMPWB..
+—————————————
+–
+Implantação EComex – Schaeffler Group (Resource IT Solutions)
+–
+Duração: 3 Semanas
+–
+Tipo de Projeto: Criação de interfaces para sistema de gestão de comercio exterior com o SAP ERP
+Criação e alteração de IDoc entre o ERP da SAP para o sistema legado de gestão de comercio exterior (EComex).
+—————————————
+–
+Melhorias CRM 7.0 – Whirlpool (Resource IT Solutions)
+–
+Duração: 4 meses
+–
+Tipo de Projeto: Melhorias
+Criação de componentes, visões, estruturas, tabelas de atualização, configuração de Repository.xml , alteração de visão e componente standard, GENIL_MODEL_BROWSER, GENIL_BOL_BROWSER, BSP_WD_CMPWB.
+—————————————
+–
+Interfaces DES – Zurich (Resource IT Solutions)
+–
+Duração: Pontual
+–
+Tipo de Projeto: Interfaces
+Ajustes em programas de interface outbound para envio de arquivos para prefeituras diversas.
+—————————————
+–
+Continental – Louis Dreyfus Commodities (Resource IT Solutions)
+–
+Duração: Pontual
+–
+Tipo de Projeto: Continental – Incorporação da usina Continental pela LDC SEV
+Criação de programas de carga, ajustes em Smartforms e relatórios.
+—————————————
+–
+Melhorias CRM 7.0 – Funcef (Resource IT Solutions)
+–
+Duração: Pontual
+–
+Tipo de Projeto: Melhorias
+Correções e criações no IC do CRM 7.0
+—————————————
+–
+Integração SAP x PC-Factory – Schaeffler Group (Resource IT Solutions)
+–
+Duração: Pontual
+–
+Tipo de Projeto: Interface
+Projeto de interface de PP por IDOC com sistema legado para envio e recebimento de ordens e apontamentos de produção.
+—————————————
+–
+Melhorias CRM 7.0 – Funcef (BBKO Consulting)
+–
+Duração: Pontual
+–
+Tipo de Projeto: Melhorias
+Correções e criações no IC do CRM 7.0
+—————————————
+–
+Automação WM – Videolar (BBKO Consulting)
+–
+Duração: 2 meses
+–
+Tipo de Projeto: Implementação do SAP Console – Automação Logística dos centros de Distribuição
+Criação de programas Online (Module Pool) para coletor, tabelas, manutenção de tabelas (SM30), criação de classe para impressão de etiquetas.
+—————————————
+–
+SAP Console – Faber-Castell (BBKO Consulting)
+–
+Duração: 2 meses
+–
+Tipo de Projeto: Implementação do SAP Console – Automação Logística dos centros de Distribuição
+Criação de programas Online (Module Pool) para coletor; tabelas, manutenção de tabelas (SM30).
+—————————————
+–
+LES / Transportation – Camargo Correia (BBKO Consulting)
+–
+Duração: 3 meses
+–
+Tipo de Projeto: Transporte
+Criação de programas de cargas, Classes, Online (Module Pool), Funções e formulas.
+Screen Exits e Exits do módulo de Transportation.
+Criação de monitores em ALV Orientado a Objetos.
+Participação no Go-Live.
+—————————————
+–
+Novas Políticas PVC – Amanco (BBKO Consulting)
+–
+Duração: 3 meses
+–
+Tipo de Projeto: Adaptação a novas políticas da empresa
+Levantamento de performance.
+Criação de relatórios, Classes, Online (Module Pool), Funções e formulas.
+Alteração em Work Flow, Screen Exits e Exits do módulo de SD.
+Participação no Go-Live.
+—————————————
+–
+CRM 6.0 – Maritima (BBKO Consulting)
+–
+Duração: 5 semanas
+–
+Tipo de Projeto: Manutenção pós-Go Live
+Criação e manutenção no IC do CRM 6.0 com BOL e BSP, manutenção de performance em relatórios Web Dynpro.
+Manutenção nas interfaces por Web Service.
+—————————————
+–
+Areva (BBKO Consulting)
+–
+Duração: 1 Mês
+–
+Tipo de Projeto: Ajustes de relatórios para a junção da Alstom e a Sheneider
+Correção e alteração de Sapscript, classes e programas para a criação de relatórios diversos, nos módulos de MM, QM e SD.
+—————————————
+–
+Projeto Samba – Johnson & Johnson (BBKO Consulting)
+–
+Duração: 1 Mês
+–
+Tipo de Projeto: Interfaces entre o SAP e sistemas legados
+Criação de classes, programas e funções para a comunicação do SAP com sistemas legado.
+—————————————
+–
+NF-e – Decathlon (BBKO Consulting)
+–
+Duração: 1 Mês
+–
+Tipo de Projeto: Implantação de NF-e
+Alteração de programas, tabelas, estruturas e funções para emissão de NF-e
+—————————————
+–
+Projeto Cost Variance – Johnson & Johnson (BBKO Consulting)
+–
+Duração: 2 semanas
+–
+Tipo de Projeto: Melhorias
+Correções de programas e criação de novos programas para controle de variação de custo.
+—————————————
+–
+Projeto Mercure CRM 7.0 – ESAB (BBKO Consulting)
+–
+Duração: 1 Mês
+–
+Tipo de Projeto: Melhorias
+Criação de desenho técnico, suporte ao time de desenvolvimento e funcional, Criação dos programas para carga, controle de requests, alteração do WebClient, criação e alteração de componente Z, criação de Smartforms, implementações de BADI.
+—————————————
+–
+Projeto CRM 7.0 – Caterpillar / Sotreq (Accenture)
+–
+Duração: 4 Meses
+–
+Tipo de Projeto: Implantação
+Criação de desenho técnico, suporte ao time de desenvolvimento e funcional, revisão de código e boas praticas, controle de requests, alteração do WebClient, criação e alteração de componente Z e desenvolvimento de rotinas de carga.
+Participação no Go-Live.
+—————————————
+–
+Projeto Interno (RTL) – Accenture
+–
+Duração: 9 Meses
+–
+Tipo de Projeto: Implantação
+Criação de ferramentas genéricas no SAP para aceleração de produtos e processos do cliclo de desenvolvimento da Accenture nos demais projetos. Desenvolvimento de classes, interfaces, reports, ALVs e Onlines.
+—————————————
+–
+Projeto DNA CRM 6.0 – Comgás (Accenture)
+–
+Duração: 11 Meses
+–
+Tipo de Projeto: Implantação
+Desenvolvimento CRM 6.0 (2007) / BOL (Business Object Layer) WebClient, BSP, ABAP Orientado a Objetos, Componente, View, BSP_WD_CMPWB, GENIL_BOL_BROWSER, GENIL_MODEL_BROWSER, CCS e criação de desenho técnico.
+Participação no Go-Live.
+—————————————
+–
+Projeto Rally – Corn Products International (Accenture)
+–
+Duração: 11 Meses
+–
+Tipo de Projeto: Implantação
+Equipe de inspeção de dados de QM, carga com a ferramenta SAP Legacy System Migration Workbench (LSMW), criação e atualização de documentação, programação ABAP, Transação SHDB, criação de Smartforms, tabelas e elementos de dados. Implantação do Chile, Argentina, Uruguai, Colômbia, Equador e Coréia.
+Participação no Go-Live.
+—————————————
+Outras Experiências Profissionais
+Empresa:
+AmidiA Soluções Digitais
+Período:
+06/2007 à 09/2007
+Cargo:
+Programador e desenvolvedor Web
+Principais realizações:
+Desenvolvimento de Layout em tableless com CSS e XHTML, JQuery, ExtJs, analise e programação de sistemas em PHP com banco de Dados MySql.
+Empresa:
+Folha da Manhã S/A
+Período:
+12/2002 à 07/2007
+Cargo:
+Auxiliar de Direção
+Principais realizações:
+Auxilio a repórteres e diretores da redação, esclarecimento de dúvidas de leitores.

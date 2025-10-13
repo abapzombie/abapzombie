@@ -1,0 +1,51 @@
+Usabilidade em programas ABAP
+Autor: Mauricio Cruz
+Data: 18/08/2011 15:08
+
+Este artigo foi feito originalmente para um blog no SDN:
+http://www.sdn.sap.com/irj/scn/weblogs?blog=/pub/wlg/25976
+Você comentar lá, comentar aqui, tanto faz 😀
+Vamos começar este post analisando uma situação “clássica” do dia-a-dia da vida de um ABAP:
+Você inicia num projeto e recebe algumas Especificações Funcionais para transformar em programas ABAP “firmeza”
+Depois de você ter terminado, você explica para os Funcionais como utilizar os programas. Eles testam e aprovam, SEM ERROS (quase impossível, mas é só um exemplo galera!)
+O Time Funcional então explica o programar para o usuário, que também testa não encontra erros, aprovando os desenvolvimentos.
+2 dias depois do Go Live, começam a aparecer diversos erros falando que
+“os dados de saída estão errados”
+e que
+“os dados entrados na tela de seleção não estão sendo usados corretamente como filtros”
+.
+O pessoal do projeto descobre que a maioria desses erros foram levantados porque os usuários não entenderam completamente como os programas funcionavam, e por conta disso o projeto todo fica “feliz” ( 😀 ), já que todos os
+“erros”
+foram corrigidos e o sistema está online e funcionando, pronto para ajudar os usuários nas suas atividades diárias.
+Você já se encontrou em situações como esta, com estes mesmos “erros”? Tenho certeza que a maioria de vocês já encontrou cenários assim nos projetos em que trabalharam. Nós podemos dizer com certeza que o sistem está
+online e funcionando
+, mas…
+ele realmente está pronto para ajudar os usuários nas suas atividades diárias?
+Porque será que o usuário disse que estava tudo errado, quando na verdade, o programa estava correto, do ponto de vista do negócio?
+Bem… você compraria algo numa loja online se ela não fosse fácil de usar? Numa loja onde você não sente que seus dados estão seguros e sendo usados corretamente? E se você
+tivesse
+que comprar nessa loja, porque ela é a única que tem o produto que você está procurando? E se você tivesse que usá-la todos os dois? Talvez seja assim que o usuário esteja se sentido à respeito dos programas ABAP que foram recém-entregues naquele projeto. Eu aposto que você também diria que muitas coisas estão erradas, porque elas
+parecem
+erradas.
+Eu já vi muitos ABAPers reclamando de usuários por estarem tomando seu precioso tempo com perguntas simples. Esses ABAPers pensam que, por terem explicado como o programa funciona e terem feito uma documentação consistente, o usuário automaticamente se torna um expert no programa, mesmo que as coisas não estejam completamente claras na interface de saída de dados.
+O importante não é só buscar e mostrar os dados. O importante também é pensar em
+COMO
+você vai apresentar esses dados para o usuário. Eles são o motivo pelo qual estamos aqui, e eles devem receber algo que seja fácil de usar. Uma dos grandes erros de vários projetos por aí é
+ignorar
+a opinião do usuário. É muito comum ver especificações de programas Online (module-pools) com 5 telas que foram desenhadas sem a mínima opinião de um usuário. Como você pode desenhar alguma coisa sem saber o que o usuário realmente precisa? E eu não estou falando de regras de negócio que devem ser cumpridas, eu estou falando de usabilidade.
+Às vezes parece que algumas empresas estão criando software de trás pra frente, pensando primeiro na estrutura do programa e modelagem de dados ao invés de pensarem primeiro no usuário. Do que ele realmente precisa? Como ele vai usar a aplicação? Quem tipo de design pode ajudá-lo à ganhar tempo em suas tarefas diárias? Como o design de software pode ajudar a prevenir seus erros? Essas são questões que, infelizmente, quase nunca são feitas.
+Agora é sua vez: Você já lidou com situações parecidas? Você também acha que a preocupação com a Experiencia do Usuário pode ajudar a entregar projetos bem sucedidos?
+Este post é o primeiro que eu fiz sobre usabilidade no ABAP, e eu estou planejando criar mais posts mostrando programas que foram “porcamente” desenhados, e como eu acredito que eles podem ser melhorados. Vocês também poderão das sugestões e fazer comentários. Você pode começar a estudar um pouco sobre usabilidade usando o ABAP através
+deste link
+, do site SAP Design Guild.
+Abraços à todos!
+
+
+
+Comentários:
+F&aacute;bio Pagoti (19/08/2011 11:47): Oi Maurício! Post dando o que falar na SDN! Parabéns! Uma grande prova que muitos compartilham da mesma opinião. Fato é que o ABAP fez brotar dentro do mundo SAP a veia da Engenharia de Software e grande parte da comunidade não está preparada culturalmente (e diria até psicologicamente) preparada para isso. Ainda há muito o que evoluir para chegarmos no nível de muitos outros. A usabilidade é ignorada desde o levantamento das necessidades do cliente até a má vontade do programador em criar uma classe de exceção nova. Abraços! Abraços!
+  Mauricio Cruz (19/08/2011 11:50): Valeu Fábio! Para falar a verdade, fiquei um pouco surpreso por encontrar uma galera que pensa como eu penso… Espero que após alguns posts sobre esse tema, algumas pessoas consigam mudar um pouco seus pensamentos 🙂 Abraços!
+  Mauricio Cruz (19/08/2011 11:50): Valeu Fábio! Para falar a verdade, fiquei um pouco surpreso por encontrar uma galera que pensa como eu penso… Espero que após alguns posts sobre esse tema, algumas pessoas consigam mudar um pouco seus pensamentos 🙂 Abraços!
+Diego (18/08/2011 15:18): Esse foi meu TCC, era para ser pensado no SAP, mas acabou sendo Usabilidade de web… muito interessante o tema…
+  Mauricio Cruz (19/08/2011 06:03): E eu pensei em fazer pós sobre esse tema. Quem sabe um dia 🙂
+  Mauricio Cruz (19/08/2011 06:03): E eu pensei em fazer pós sobre esse tema. Quem sabe um dia 🙂

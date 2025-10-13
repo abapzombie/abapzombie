@@ -1,0 +1,170 @@
+Zumbis no HANA – Parte 1 – O básico do básico
+Autor: Mauricio Cruz
+Data: 29/09/2014 09:00
+
+Volta o
+HANA
+arrependido, com suas orelhas tão fartas, com seu osso roído e com o rabo entre as patas. Volta o
+HANA
+arrepen… (o verso repete-se 44 vezes).
+Há grandes chances de você ter escutado falar do SAP HANA algumas dezenas de milhares de vezes, numa espécie de mantra, claramente inspirado por Roberto Gomés Bolaños e seu magnífico poema
+“O Cão Arrependido”
+:
+🙄
+Começou na semana passada mais um curso da
+OpenSAP
+, chamado
+ABAP Development for SAP HANA
+.
+É uma plataforma para que você possa aprender tecnologias SAP sem precisar pagar absolutamente nada para ninguém. Nós já comentamos sobre o openSAP aqui, porém se você não sabe como funciona, recomendo a leitura
+deste
+post do Fábio Pagoti do ABAP101, que explica tudo e mais um pouco sobre o tema.
+Só que a vida não é assim, tão fácil. Há 3 anos atrás, quando eu fiz o post ensinando as opções para
+aprender ABAP por conta própria
+, disse a sentença “se você não sabe inglês, PERDEU”. Adivinha só em que idioma é dado o curso da OpenSAP? Alemão? Aramáico? Tupi-guarani? É claro que é inglês. E se você não sabe, PERDEU PELA TRIGÉSIMA VEZ.
+Ok, ok… Eu sei que você que não sabe inglês não aprenderá o idioma da noite para o dia, portanto, resolvi criar posts compartilhando minhas anotações do curso. Vou criar 1 post por semana até o curso acabar, e tentarei resumir os conceitos principais que eu absorver.
+ISSO NÃO IRÁ SUBSTITUIR A PQP DO CURSO, OBRIGADO.
+POSSO FALAR BESTEIRAS JÁ QUE TAMBÉM ESTOU APRENDENDO. PODE ME XINGAR PARA EU CORRIGIR, ABRAÇOS
+😈
+Qual é a desse ABAP com HANA?
+Primeiro, é bom ficar claro que NADA do que você já sabe será totalmente desnecessário no futuro. Um sistema que tem o HANA integrado ainda utilizará construções “clássicas” e técnicas “mais do que conhecidas” no desenvolvimento ABAP. Fica sussa que você não vai perder nada que já conhece (mas talvez isso não seja o
+suficiente
+).
+O que muda é que com o HANA você pode utilizar um monte de parafernálias que farão com que as suas aplicações rodem na velocidade da luz (ou assim diz a SAP). É preciso aprender sobre essas coisas novas para realmente aproveitar tudo que o HANA tem a oferecer.
+Boa parte dessas novas features estão disponíveis a partir da versão 7.4 do ABAP. Voltamos à mesma história de sempre: “
+mas nos clientes ninguém tem 7.4, blablabla
+“. Essas coisas levam tempo, mas uma hora elas acontecem. Já passei por mais de um cliente que está instalando Personas e Fiori, o que indica que a SAP realmente está conseguindo disponibilizar novos produtos em clientes reais, e não só nos slides.
+Se você quiser experimentar as novas features, utilize o
+guia deste link
+para criar um sistema trial 7.4 com HANA, e seja feliz. O processo não é tão chato quanto o do miniSAP, mas é preciso um pouco de persistência para que as coisas funcionem.
+#souzumbienãodesistonunca
+E esse tal HANA aí, é de comer?
+Explicar tudo do HANA seria impossível neste singelo post, além de existirem lugares com explicações muito detalhada (usa o google aê mano!). Mas para efeito das explicações deste curso, acredito que é importante que você saiba ao menos os conceitos e diferenças entre o armazenamento em linhas e armazenamentos em colunas, que é uma das bases do funcionamento do HANA (além do lance do in-memory, etc,etc). Tentarei sumarizar:
+– Armazenamento de
+dados em linhas
+é o que ocorre hoje nos ambiente em que você trabalha sem o HANA. Cada registro tem a sua linha e pronto:
+*OV   Cliente        Status       Deleção
+3201  'Casas Bahia'  Finalizado   (vazio)
+3202  'Americanas'   Pendente     'X'
+3203  'Casas Bahia'  Pendente     (vazio)
+3204  'Wallmart'     Finalizado   (vazio)
+3205  'Casas Bahia'  Pendente     'X'
+OV é a chave primária. Você pode ter chaves secundárias e aquela coisa toda que todo mundo já sabe.
+– No armazenamento de
+dados em colunas
+a coisa muda um pouco. Veja só como ficaria a mesma tabela:
+*OV   Cliente        Status       Deleção
+3201  'Americanas'   Finalizado   (vazio)
+3202  'Casas Bahia'  Pendente     'X'
+3203  'Wallmart'
+3204
+3205
+Percebeu que cada coluna contém somente os valores únicos possíveis para cada coluna(compare as duas)? É bem diferente do que temos usado em larga escala hoje em dia. E o que o banco de dados ganha com isso? Saca só algumas coisas legais:
+Não existe informação duplicada armazenada, ou seja, a
+compressão de dados
+é enorme em comparação ao modelo antigo.
+Campos vazios em tabelas no armazenamento em linhas ocupam espaço no banco de dados. Essa abordagem por colunas é ótima para tabelas com milhares de campos, onde muitas vezes parte deles ficam vazio. Imagine a BSEG, que nunca tem valores em todos os campos para cada um dos seus bilhares de registros. A compressão é enorme!
+Não existe a necessidade de índices secundários. Cada coluna já ficará organizada com uma espécie de “SORT” nos valores possíveis. Isso quer dizer que também não é preciso as tabelas espelhos (BSIK, BSAD, BSID, BSAK, e tantas outras… ADEUS!).
+Operações analíticas serão extremamente mais rápidas. Um SELECT SUM, por exemplo, finalmente rodará liso.
+Beleza, tudo lindo, tudo bom, mas como o HANA faz para encontrar uma “linha” para um registro nesse monte de colunas? Internamente o banco de dados guarda uma “tabela auxiliar” (veja só, T_AUX liberada) com os índices de cada registro. Para o exemplo anterior, ficaria algo assim:
+*Registro    Índice das Colunas
+1            1,2,1,1
+2            2,1,2,2
+3            3,2,2,1
+4            4,3,1,1
+5            5,2,2,2
+Ou seja: O registro 1, é composto do valor 1 da coluna 1, valor 2 da coluna 2, valor 1 da coluna 3 e valor 1 da coluna 4. Por baixo dos panos não é EXATAMENTE assim que a coisa ocorre, mas a idéia geral é essa aí.
+Divertido, não é? Mas nem tudo são flores:
+Obviamente, “reconstruir” o registro com essa tabela auxiliar tem um custo. Operações exatas como por exemplo “achar a linha onde OV = 3205” custam maior processamento por conta do banco. Como o HANA utiliza armazenamento em memória, e não em HDs clássicos esse tempo é imperceptível, mas na comparação com tabelas em linhas, a operação leva mais tempo.
+Não vale a pena todo esse trabalho para tabelas pequenas. Se a tabela tem 2 registros, para que toda história, não é verdade?
+Se a tabela for “Fully Buffered”, aquela opção que quase ninguém sabe para que serve, também é desnecessário utilizar o sistema de colunas, pois os ganhos seriam imperceptíveis. Isso se a tabela que estiver “Fully Buffered” seguir os guidelines de bufferização corretamente (não ser tabela imensa, tabela de dados mestres, etc).
+Pode parecer estranho esse negócio de que “a
+s operações de buscas exatas têm um custo maior
+“. Porém, pense comigo: em grande parte do tempo, precisamos selecionar os registro de forma exata para poder trabalhar os dados dentro do ABAP sem destruir a performance do sistema, já que operações analíticas estão fora de cogitação no cenário atual. Se o sistema tiver o HANA, não existe necessidade de trazer uma cacetada de registros para a memória do programa, só para fazer uma sumarização ou agregação. É melhor mandar o Banco de Dados fazer os cálculos e agregações, trazendo o registro “
+mastigado
+“. É exatamente o
+contrário
+do que seguimos hoje como guideline.
+Imagine fazer uma coisa dessas no seu projeto sem HANA? É pedir para ser mandado embora.
+Essa explicação é o básico do básico do básico ao quadrado. Faça
+esse curso
+e
+esse curso
+para entender melhor. Se não sabe inglês…
+Chega de conceitos, cadê o ABAP?
+O ABAP vai ter um monte de coisas novas amiguinho. Muitas delas estão agrupadas num novo paradigma chamadado “Code-to-data”, ou o tal “Code-pushdown”, que no final querem dizer:
+SE VIRA BANCO DE DADOS, TÔ NEM AÍ
+. Quanto mais processamento você jogar para o banco de dados, mais performance você trará para a sua aplicação.
+As novas versões do ABAP contém uma série de otimizações por baixo dos panos para funcionar melhor em conjunto com o SAP HANA. Contém também mudanças que irão impactar diretamente o nosso trabalho:
+Novas funcionalidades para o OpenSQL:
+a SAP aumentou a quantidades de funções do OpenSQL, criando novos comandos e aumentando as capacidades dos comandos existentes (SELECTs, INSERTs, etc).
+Views Externas
+: o HANA contém uma série de views malucas que podem ser criadas para tratar coisas que antes eram de responsabilidade da aplicação. Cálculos malucos, regras de negócios, joins bizarros… tudo isso pode ser feito direto no HANA. Da parte ABAP, você irá conseguir chamar essas Views Externas direto do código, inclusive utilizando para base em declarações ( DATA… TYPE <nomedaviewexterna> ).
+Procedures:
+novo comando CALL DATABASE PROCEDURE, que é auto explicativo. E você poderá criar essas procedures direto pelo ABAP, usando SQLScript (linguagem do HANA). Doidera.
+SQL Nativo:
+O OpenSQL cria uma abstração entre o ABAP e o Banco de Dados, ou seja: um SELECT é sempre igual, seja Oracle, SQL Server, MaxDB, MS Access 🙄 . Alguns ajustes foram implementados nos SQL Nativos, para poder fazer uns acessos muitos loucos no HANA, sem passar pelo OpenSQL.
+Tanto para Views Externas quanto para Procedures existem formatos diferentes de criá-las. Você pode começar criando as views/procedures no HANA para depois referência-las em um objeto ABAP (bottom-up), ou criar um objeto do lado ABAP que poderá ser referênciado na hora de criar os objetos no HANA (top-down).
+No caso do bottom-up, existe uma complexidade relacionada as trilhas de desenvolvimento, pois não existe nenhuma ligação direta entre a view do HANA e o objeto que a referencia do lado ABAP. Colocaram até um botão manual para manter a sincronização entre o lado ABAP e o lado HANA. Prevejo muita confusão nesses casos. Já no top-down, quem manda no transporte é o objeto ABAP, e isso facilita o versionamento da aplicação como um todo. Provavelmente irão entrar em mais detalhes desses objetos nas próximas semanas, e eu pretendo trazer uma explicação mais detalhada.
+Por fim, achei bem interessante o fato de terem adicionado uma nova aba na SE11 (Technical Settings), permitindo que você altere o tipo de armazenamento de uma tabela Z (em linhas ou colunas) direto da camada ABAP. Pensou no caos parecido com o da SE14? Eu também.
+Quais ferramentas utilizarei para essas coisas novas?
+ADIVINHA
+? Notepad? Sublime? Microsoft Word? Editor Backend? Não:
+ABAP no Eclipse – Post do ABAPZombie
+ABAP no Eclipse – Palestra no SITSP 2012
+ABAP Eclipse Space no SCN
+As coisas podem demorar, mas uma hora elas acontecem…
+Parte dessas coisas novas do ABAP
+poderão ser criadas SOMENTE utilizando o Eclipse
+(como os novos objetos cds view e abap managed procedure). Aquela história de que a SAP iria parar de melhorar a SE80
+era
+verdade
+, e não somente historinha para boi dormir. A SAP ainda vai rir da sua cara, já que você conseguirá visualizar esses objetos da SE80, mas não conseguirá editar/criar. Ótima forma de forçar as pessoas a mudarem, é ou não é?
+E olha…
+todos
+os novos produtos da SAP utilizam o Eclipse para desenvolvimento, portanto, é um bom momento para você conhecer um pouco mais sobre o assunto.
+E com isso terminamos a primeira semana. Se você fizer o curso conforme ele for lançado, rola uma prova para testar os seus conhecimentos e até uma certificaçãozinha no final, mas o que realmente importa é o conhecimento que você irá adquirir durante o curso.  Para terminar deixo alguns pensamentos que surgiram conforme passei pelas lições.
+Pensamentos Randômicos
+Como que fica a história de abstrair o banco de dados, se estamos jogando toda a lógica para dentro do HANA? Hoje, teoricamente, alguém com o SAP ERP poderia trocar do Oracle para o SQL Server porque o ERP e o banco de dados trabalham de forma separada. Com esse monte de lógica no HANA, como fica? O cliente assina com sangue que é SAP de carteirinha e fim?
+Se já demorou milhares de anos para as coisas novas chegarem, vai ser MUITO difícil mudar a cabeça dos ABAPers que estão por aí. Nem OO a galera aprende, quanto mais SAP HANA. O que tem por debaixo dos panos que ajudaria um desenvolvedor que programa EXATAMENTE do mesmo jeito de sempre dentro do HANA?
+Talvez isso seja respondido nas próximas semanas (a primeira eu duvido, a segunda já vi que será respondida na week 2). Nos vemos daqui a alguns dias.
+Abraços a todos do mundo SAP que ficam diariamente com Poker Faces ao escutarem sobre Personas, Fiori e HANA.
+
+
+
+Comentários:
+Rangel (04/05/2023 17:11): Estamos migrando do sap ecc para o hana, e não tá sendo fácil, muito problema, e claro o cliente o mais prejudicado.
+Alessandro Norce (15/02/2019 13:46): E ai pessoal,, depois de quase 5 anos destas publicações,, como anda o Hana ?  A SE80 ?  o ABAP?
+Felipe Tieppo (02/10/2014 08:42): Olá Mauricio, parabéns pelo post, realmente é um belo complemento para o curso. Referente ao serviço da AWS indicado no curso, alguém sabe como funciona exatamente o sistema de cobrança? Alguém já contratou isso alguma vez? Eu suspeito que existem mais taxas (de suporte por exemplo) que a Amazon cobra por dia. Estou muito interessado em “brincar” com a versão 7.40 do ABAP, porém infelizmente nenhum dos clientes com quem trabalho (óbvio) abraçou este caro update.
+  Mauricio Cruz (02/10/2014 08:53): Cara, existem diversos custos envolvidos, mas não é nada do outro mundo. Basicamente, quanto maior for a necessidade de máquina (memória, hd, etc) ou a transferência de dados, mais você irá pagar. Isso, claro, sem levar em conta o tempo que você vai deixar a máquina “ligada” (você para por hora de acordo com o estado da máquina). Tem um calculadora aqui ó: http://calculator.s3.amazonaws.com/index.html . Se você fuçar no SCN, vai encontrar bastante blogs e posts explicando os custos, e como você pode fazer para tentar minimizá-los. Mas mesmo com toda essa informação, acho que o negócio é ir lá montar e ver o que acontece. Só não deixa a máquina ligada direto, ou você vai criar um rombo na conta. Abs!
+    Henrique Pinto (06/10/2014 12:40): Outra coisa sao as opcoes da AWS. Primeiro que vc pode dar stop e start na maquina apenas quando for usar, o que reduz muito o preço. Outra é a utilizacao das instancias spot, que nao tem prioridade de recursos mas q tem custo MUITO reduzido. http://aws.amazon.com/ec2/purchasing-options/spot-instances/ http://scn.sap.com/community/developer-center/hana/blog/2013/11/11/using-aws-spot-instances-with-sap-cal
+    Henrique Pinto (06/10/2014 12:40): Outra coisa sao as opcoes da AWS. Primeiro que vc pode dar stop e start na maquina apenas quando for usar, o que reduz muito o preço. Outra é a utilizacao das instancias spot, que nao tem prioridade de recursos mas q tem custo MUITO reduzido. http://aws.amazon.com/ec2/purchasing-options/spot-instances/ http://scn.sap.com/community/developer-center/hana/blog/2013/11/11/using-aws-spot-instances-with-sap-cal
+  Mauricio Cruz (02/10/2014 08:53): Cara, existem diversos custos envolvidos, mas não é nada do outro mundo. Basicamente, quanto maior for a necessidade de máquina (memória, hd, etc) ou a transferência de dados, mais você irá pagar. Isso, claro, sem levar em conta o tempo que você vai deixar a máquina “ligada” (você para por hora de acordo com o estado da máquina). Tem um calculadora aqui ó: http://calculator.s3.amazonaws.com/index.html . Se você fuçar no SCN, vai encontrar bastante blogs e posts explicando os custos, e como você pode fazer para tentar minimizá-los. Mas mesmo com toda essa informação, acho que o negócio é ir lá montar e ver o que acontece. Só não deixa a máquina ligada direto, ou você vai criar um rombo na conta. Abs!
+    Henrique Pinto (06/10/2014 12:40): Outra coisa sao as opcoes da AWS. Primeiro que vc pode dar stop e start na maquina apenas quando for usar, o que reduz muito o preço. Outra é a utilizacao das instancias spot, que nao tem prioridade de recursos mas q tem custo MUITO reduzido. http://aws.amazon.com/ec2/purchasing-options/spot-instances/ http://scn.sap.com/community/developer-center/hana/blog/2013/11/11/using-aws-spot-instances-with-sap-cal
+    Henrique Pinto (06/10/2014 12:40): Outra coisa sao as opcoes da AWS. Primeiro que vc pode dar stop e start na maquina apenas quando for usar, o que reduz muito o preço. Outra é a utilizacao das instancias spot, que nao tem prioridade de recursos mas q tem custo MUITO reduzido. http://aws.amazon.com/ec2/purchasing-options/spot-instances/ http://scn.sap.com/community/developer-center/hana/blog/2013/11/11/using-aws-spot-instances-with-sap-cal
+Henrique Pinto (30/09/2014 02:49): Post show, Mauricio. 🙂 Só uma correção, acho que o poema do Chaves deveria ser: “Volta o ABAP arrependido, com suas orelhas tão fartas, com seu osso roído e com o rabo entre as patas.” (x44) Quanto aos pensamentos, duas considerações: 1) quanto ao “assinar com sangue” o HANA. Já ouviu aquela história de que, na média, um projeto que custou X de licença custa 3X de consultoria? Pois é, ela é verdade (na média – ou seja, têm projetos que isso é 10+ vezes). E o licenciamento de runtime de bancos de dados para utilização com aplicações SAP é uma taxa percentual da licença de aplicação (15% na maioria dos casos). Ou seja, o custo do DB é 0.15:3 ou 1:20 do custo de consultoria. Se vc pegar o custo total de um projeto de implementação SAP (SW + HW + serviços), o custo do DB representa 3% na média. Claro que nao estou levando em consideração custos como treinamento dos DBAs, adaptação da infraestrutura (ferramentas de backup, monitoração, job schedulers etc.) a um novo DB. Porém, frente às infinitas possibilidades de melhoria de processos e arquitetura que o HANA permite, é um custo ínfimo. Na prática, a “assinatura com sangue” do cliente acontece quando ele decide implementar o ERP (ou outra aplicação) SAP. Óbvio que estou simplificando, mas deu pra passar a idéia geral. 2) O que vai acontecer na prática é que as proximas versões do ERP (não, não estou falando de 6.0 EHP8+) vão ter features que para serem customizadas/adaptadas, já deverão ser implementadas de uma maneira diferente. O que vc falou do ABAP4Eclipse é um primeiro passo. Claro que na realidade, vai levar um tempo para todo o mercado SAP, principalmente os clientes, passarem a se acostumar com a amplitude do que é possível, mas prevejo um mercado cada vez menos tolerante a “fazer as coisas do mesmo jeito”. BTW: um comentário adicional (fase bônus): no seu post, vc mencionou que tabelas colunares (Column Tables) agregam mais valor quando vc nao acessa o registro todo da tabela um a um. Isso é conceitualmente verdade, porém uma coisa que o pessoal tem que considerar é que o HANA permite uma utilização daquela tabela que vai além do mundo transacional. O que quero dizer é que, por exemplo, considere as tabelas de ordem de vendas, VBAK/VBAP. Na prática, no mundo transacional do ERP, ou seja, nos processos de negócio de SD (ou mesmo Zs), vc cria e/ou acessa ordens de venda uma a uma. Porém, no ERP on HANA, aquela mesma tabela VBAP que vc alimenta ou lê uma a uma nos processos de SD, pode ser acessada online por um relatório (analytic view sobre a tabela), que é o conceito do HANA Live. Nesse sentido, aquela tabela vai ter um grande acesso analítico, ou seja, onde poucas colunas serão lidas através de um grande número de registros (pense num relatório de vendas de 2014 por organização de vendas e região). Isso justifica a organização por coluna, mesmo para tabelas transacionais. Por isso que, na prática, a grande maioria das tabelas do SAP ERP no HANA estão armazenadas colunarmente, a menos de poucas tabelas de customizing/configuração.
+  Mauricio Cruz (30/09/2014 09:04): Henrique, Fazia um tempo que você não dava as caras por aqui, muito legal o seu comentário! Pô, o ABAP não está arrependido não, acho que ele está é rindo da cara de todo mundo que o enxerga como antiquado, mas não conseguem viver sem ele 🙂 1) Eu não tinha muito noção do ponto de vista de custos, muito obrigado por ter explicado! Meu pensamento foi direcionado às informações da empresa, pois com o combo ERP + HANA, tudo que acontece na empresa estará, de certa forma, nas “mãos” da SAP e do seu ecosistema (consultorias, etcs). Mas o que você falou é verdade, a assinatura com sangue já foi feita com a compra do ERP. Com o HANA você só está entregando mais um braço! 2) Estou curioso para ver a segunda parte do curso, pois apesar de toda a “evangelização” que é feita no SCN, cursos, livros, etc, etc, etc, a grande maioria da galera não está nem aí para aprender, e eles SÃO a maioria. De nada irá adiantar a empresa colocar o HANA se não existirem profissionais capacitados para extraírem tudo que ele proporciona. Essa capacitação levará tempo, portanto, será interessante analisar o que a SAP fez para conseguir extrair performance do ABAP “comum” mesmo que ele não dê a mínima para os guidelines do HANA (duvido que ninguém tenha pensado nisso!). Bônus) Juro que eu tentei explicar exatamente essa coisa no meu post, mas talvez não tenha ficado claro 🙁 . Boa parte das aplicações que um ABAPer faz na sua vida são relatórios que têm total potencial para extrair a performance que o HANA entrega, pois são meramente visões analíticas de dados, coisa que o HANA conseguirá tratar nativamente. Anyway, obrigado por complementar a minha explicação! 🙂 Valeu mano, abs!
+    eric (02/10/2014 16:34): A única coisa que eu vi para abap comum utilizando Hana foram os %hints, que se usa nos selects for all entries.
+    eric (02/10/2014 16:34): A única coisa que eu vi para abap comum utilizando Hana foram os %hints, que se usa nos selects for all entries.
+  Mauricio Cruz (30/09/2014 09:04): Henrique, Fazia um tempo que você não dava as caras por aqui, muito legal o seu comentário! Pô, o ABAP não está arrependido não, acho que ele está é rindo da cara de todo mundo que o enxerga como antiquado, mas não conseguem viver sem ele 🙂 1) Eu não tinha muito noção do ponto de vista de custos, muito obrigado por ter explicado! Meu pensamento foi direcionado às informações da empresa, pois com o combo ERP + HANA, tudo que acontece na empresa estará, de certa forma, nas “mãos” da SAP e do seu ecosistema (consultorias, etcs). Mas o que você falou é verdade, a assinatura com sangue já foi feita com a compra do ERP. Com o HANA você só está entregando mais um braço! 2) Estou curioso para ver a segunda parte do curso, pois apesar de toda a “evangelização” que é feita no SCN, cursos, livros, etc, etc, etc, a grande maioria da galera não está nem aí para aprender, e eles SÃO a maioria. De nada irá adiantar a empresa colocar o HANA se não existirem profissionais capacitados para extraírem tudo que ele proporciona. Essa capacitação levará tempo, portanto, será interessante analisar o que a SAP fez para conseguir extrair performance do ABAP “comum” mesmo que ele não dê a mínima para os guidelines do HANA (duvido que ninguém tenha pensado nisso!). Bônus) Juro que eu tentei explicar exatamente essa coisa no meu post, mas talvez não tenha ficado claro 🙁 . Boa parte das aplicações que um ABAPer faz na sua vida são relatórios que têm total potencial para extrair a performance que o HANA entrega, pois são meramente visões analíticas de dados, coisa que o HANA conseguirá tratar nativamente. Anyway, obrigado por complementar a minha explicação! 🙂 Valeu mano, abs!
+    eric (02/10/2014 16:34): A única coisa que eu vi para abap comum utilizando Hana foram os %hints, que se usa nos selects for all entries.
+    eric (02/10/2014 16:34): A única coisa que eu vi para abap comum utilizando Hana foram os %hints, que se usa nos selects for all entries.
+Vinicius de Morais Mendes (29/09/2014 16:30): Parabéns pelo post… excelente explanação sobre a primeira semana do curso. Acredito que vá demorar um pouco para o SAP HANA se popularizar nos clientes em geral, mas quando começar também… Os ABAPossauros que se cuidem.
+Fabio Pagoti (29/09/2014 13:58): Olá Maurício! Primeiramente, obrigado por referenciar o ABAP101 aqui mais uma vez. Eu no momento só assisti a primeira aula deste curso (estou fazendo 3 outros cursos da OpenSAP no momento e confesso que uma hora a paciência se esgota). Ainda não entre na parte técnica, mas estou com um bom pressentimento sobre o curso. Quanto aos seus levantamentos: sim, eu considero o Hana uma assinatura com sangue e que na maioria dos casos não haverá arrependimento mas quando houver, advogados serão mais requisitados que desenvolvedores abap com conhecimentos em hana. Quanto aos ABAPossauros, caso não se aprofundem irão se tornar uma das 2 possibilidades abaixo: – Bombeiros de user exits milenares que tentarão virar funcional a todo custo por não aguentarem fazer um trampo nojento em ABAP – Desenvolvedores back end SAP. Vejo que quem vai trabalhar com Hana será polivalente. E confio que haverá muitos entrantes na área por quem vem de tecnologias cujos profissionais são mais mente aberta. No fim só haverá demanda para estes profissionais relacionadas a back end uma vez que o cara não vai manjar Web Dynpro, FloorPlan, Fiori, Personas, SAPUI5. E mesmo assim ele será limitado porque o que for back end no Hana, ele não resolver. Eu vejo um futuro sensacional para o Hana, mas não no que tange a ABAP. Quem quiser continuar como ABAP vai ter que saber e pronto. Será mais fácil encontrar desenvolvedores Hana com conhecimentos em ABAP do que ABAPeiros com conhecimentos em Hana. Conto que o Gateway vai tirar muita responsabilidade do ABAPeiro convencional.
+  Mauricio Cruz (29/09/2014 14:13): Pretendo falar um pouco mais do Gateway aqui no blog no futuro. Gostei muito das possibilidades de UI que o Gateway proporciona, mas achei o SAPUI5 um pouco engessado (mas entendo que esse é o melhor caminho no momento). Quem sabe no futuro a coisa fique bastante aberta, e passe a existir esse diferenciação backend / frontend também no mundo SAP? Muita coisa vai acontecer ainda, o negócio é esperar para ver. Vlw mano, sempre que for relevante eu linko mesmo! 🙂
+    Henrique Pinto (30/09/2014 02:22): O UI5 é um framework pra aplicacoes corporativas, ele serve pra acelerar o desenvolvimento através da disponibilização de bibliotecas com os componentes mais utilizados nesse tipo de aplicação (forms, tables, charts, etc.), mas se os componentes que ele apresenta nao te agregam, vc pode partir pra qq outro framework que vc ache que seja mais relevante. No final é tudo JS consumindo OData. De maneira alguma o UI5 é obrigatório.
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+    Henrique Pinto (30/09/2014 02:22): O UI5 é um framework pra aplicacoes corporativas, ele serve pra acelerar o desenvolvimento através da disponibilização de bibliotecas com os componentes mais utilizados nesse tipo de aplicação (forms, tables, charts, etc.), mas se os componentes que ele apresenta nao te agregam, vc pode partir pra qq outro framework que vc ache que seja mais relevante. No final é tudo JS consumindo OData. De maneira alguma o UI5 é obrigatório.
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+  Mauricio Cruz (29/09/2014 14:13): Pretendo falar um pouco mais do Gateway aqui no blog no futuro. Gostei muito das possibilidades de UI que o Gateway proporciona, mas achei o SAPUI5 um pouco engessado (mas entendo que esse é o melhor caminho no momento). Quem sabe no futuro a coisa fique bastante aberta, e passe a existir esse diferenciação backend / frontend também no mundo SAP? Muita coisa vai acontecer ainda, o negócio é esperar para ver. Vlw mano, sempre que for relevante eu linko mesmo! 🙂
+    Henrique Pinto (30/09/2014 02:22): O UI5 é um framework pra aplicacoes corporativas, ele serve pra acelerar o desenvolvimento através da disponibilização de bibliotecas com os componentes mais utilizados nesse tipo de aplicação (forms, tables, charts, etc.), mas se os componentes que ele apresenta nao te agregam, vc pode partir pra qq outro framework que vc ache que seja mais relevante. No final é tudo JS consumindo OData. De maneira alguma o UI5 é obrigatório.
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+    Henrique Pinto (30/09/2014 02:22): O UI5 é um framework pra aplicacoes corporativas, ele serve pra acelerar o desenvolvimento através da disponibilização de bibliotecas com os componentes mais utilizados nesse tipo de aplicação (forms, tables, charts, etc.), mas se os componentes que ele apresenta nao te agregam, vc pode partir pra qq outro framework que vc ache que seja mais relevante. No final é tudo JS consumindo OData. De maneira alguma o UI5 é obrigatório.
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+      Mauricio Cruz (30/09/2014 08:50): Sim, realmente não é obrigatório. O que eu quis dizer é que eu duvido muito que as pessoas fujam do SAPUI5 no começo. Ele tem um set bem específico de controles, até para manter a UX do sistema consistente (e isso não é algo ruim, faz sentido). Mas as possibilidades com o Gateway são imensas, muito além do UI5 🙂
+Daniel Jesus (29/09/2014 11:11): Enquanto tivermos price em user-exits e mau uso de exits como a MV45AFZZ… temo pelo futuro do Hana. O Hana não funcionará bem sem um estudo de solução, coisa que dificilmente se faz. Para o abap sobra correr atrás e fazer chover, algo que outrem prometeu. Será que vai surgir um profissional novo para esta tarefa, ou vão passar a ouvir os técnicos antes de sair galopando#gohorsefeelings#AbapiBelieve#SAPthetruthisoutthere
+  Mauricio Cruz (29/09/2014 11:18): Cara, vai ser uma zona, sinceramente. Se nem a galera técnica está entendendo direito como o HANA vai funcionar, imagine os comerciais, gerentes, líderes, pmos, clientes, etc, etc, etc… Na segunda semana acho que vão responder algumas dúvidas sobre como o HANA se comporta no código já existente, e eu trago aqui para vocês as conclusões 🙂 Abs!
+  Mauricio Cruz (29/09/2014 11:18): Cara, vai ser uma zona, sinceramente. Se nem a galera técnica está entendendo direito como o HANA vai funcionar, imagine os comerciais, gerentes, líderes, pmos, clientes, etc, etc, etc… Na segunda semana acho que vão responder algumas dúvidas sobre como o HANA se comporta no código já existente, e eu trago aqui para vocês as conclusões 🙂 Abs!

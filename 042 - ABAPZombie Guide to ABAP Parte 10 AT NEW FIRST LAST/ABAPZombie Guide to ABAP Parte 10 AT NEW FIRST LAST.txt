@@ -1,0 +1,137 @@
+ABAPZombie Guide to ABAP – Parte 10 – AT (NEW, FIRST, LAST)
+Autor: Mauricio Cruz
+Data: 15/02/2011 08:30
+
+O Comando AT (loops de tabelas internas) é um comando divertido e útil em diversos casos. Ele pode ser colocado dentro de LOOPs, e ele direciona a execução de acordo com algumas restrições:
+AT FIRST… ENDAT:
+Entra no bloco para executar algum processo no primeiro registro do LOOP.
+AT LAST… ENDAT:
+Entra no bloco para executar algum processo no último registro do LOOP.
+AT NEW (campo)… ENDAT:
+Entra no bloco sempre que o valor de (campo) mudar. (campo) deve ser um campo existente na estrutura usada no LOOP.
+Porém, nem tudo é simples na vida do ABAPer. Vejamos o código:
+REPORT zombie_at.
+
+* Declarações
+*----------------------------------------
+TYPES: BEGIN OF ty_mara,
+        mtart TYPE mara-mtart,
+        matnr TYPE mara-matnr,
+       END OF ty_mara.
+
+DATA: t_mara TYPE TABLE OF ty_mara.
+
+DATA: wa_mara LIKE LINE OF t_mara.
+
+DATA: l_matnr TYPE mara-matnr,
+      l_mtart TYPE mara-matnr.
+
+**-----------------------------------------------------------------
+* START-OF-SELECTION
+*------------------------------------------------------------------
+START-OF-SELECTION.
+
+* Estou limitando o select para 10 linhas, para ficar mais fácil de
+* entender :D
+  SELECT mtart matnr
+    FROM mara
+    INTO TABLE t_mara
+    UP TO 10 ROWS.
+
+* Ordenando a tabela para não ferrar com o AT NEW!
+ SORT t_mara BY mtart matnr.
+
+* E a magia tem início:
+ LOOP AT t_mara INTO wa_mara.
+
+*   Aqui todos os campos CHAR vão virar '*' e os outros campos irão
+*   ficar vazios. É, nem tudo é lindo na vida do ABAPer...
+
+*   O jeito é fazer a atribuição em variáveis locais, work areas, etc
+    l_matnr = wa_mara-matnr.
+    l_mtart = wa_mara-mtart.
+
+    AT FIRST.
+      WRITE: 'First! - -Linha com **',
+             / wa_mara-matnr, space, wa_mara-mtart.
+      WRITE: / 'Print correto dos valores:',
+             / l_matnr, space, l_mtart.
+      SKIP 1.
+    ENDAT.
+
+*   Pelo menos aqui o comando não atrapalha os valores da Work Area.
+*   o processamento vai parar nesse bloco sempre que o valor de mtart
+*   mudar, portanto mantenham o SORT correto crianças!
+    AT NEW mtart.
+      WRITE: / 'New one!',
+             / wa_mara-mtart.
+    ENDAT.
+
+*   O AT LAST funciona igual ao first. Triste, eu sei!
+    AT LAST.
+      SKIP 1.
+      WRITE: / 'Last - Print com *',
+       / wa_mara-matnr, space, wa_mara-mtart.
+    ENDAT.
+
+ ENDLOOP.
+Pelo exemplo deu para ver que existem algumas restrições:
+Os comandos
+AT LAST
+e
+AT FIRST
+sempre irão “sumir” com os valores da WORK AREA. Isso é um restrição do sistema, e você pode usar o mesmo esquema que eu fiz no código acima para pegar os valores da Work Area (atribuir os valores em variáveis locais).
+O comando
+AT NEW
+sempre verifica se o campo utilizado no
+AT NEW
+muda de acordo com a sequência da tabela do LOOP. Mas aqui tem um pequeno
+gato
+: ele também verifica se os campos à esquerda mudaram de valor. Se eles mudarem, ele também irá entrar no laço! Veja:
+REPORT zombie_at.
+
+* Declarações
+*----------------------------------------
+DATA: t_mara TYPE TABLE OF mara.
+
+DATA: wa_mara LIKE LINE OF t_mara.
+
+START-OF-SELECTION.
+
+* Estou limitando o select para 10 linhas, para ficar mais fácil de
+* entender :D
+  SELECT *
+    FROM mara
+    INTO TABLE t_mara
+    UP TO 10 ROWS.
+
+* Ordenando a tabela para não ferrar com o AT NEW!
+ SORT t_mara BY mtart matnr.
+
+* E magia tem início:
+ LOOP AT t_mara INTO wa_mara.
+
+*   Apesar do SORT estar correto, ele irá imprimir as 10 linhas (ou
+*   menos), porque o valor do campo MATNR que está a esquerda do campo
+*   MTART sempre muda. Se você notar bem, no exemplo anterior eu
+*   declarei um TYPES com o campo MTART antes do MATNR, para evitar
+*   este problema.
+    AT NEW mtart.
+      WRITE: / 'New one!',
+             / wa_mara-mtart.
+    ENDAT.
+
+ ENDLOOP.
+O AT é legal, se usado com cuidado. É muito fácil se perder com o AT NEW por causa do
+gato
+que eu citei. Você pode destruir um programa que já funciona só por colocar um campo novo à esquerda do campo usado no AT NEW, por exemplo. Portanto, use com “carinho” 😀
+Abraços!
+
+
+
+Comentários:
+Carlos (27/06/2016 18:25): Boa tarde, pessoal, No exemplo acima, mostra o loop com esse comando que funciona assim LOOP AT it_spfli INTO wa_spfli. Mas eu vi comando onde o loop está assim LOOP AT t_sairport. A diferença é que eu não consegui fazer funcionar. Alguém tem o exemplo desse comando LOOP AT t_sairport.?
+Marcelo (17/08/2012 09:51): Valeu pelo post, Mas uma duvida, alguém entende pq o programa se perde quando usamos AT NEW em um LOOP contendo WHERE ?? Marcelo
+  Paolo (27/05/2014 11:54): Olá Marcelo, eu não cheguei a testar um LOOP WHERE para este caso, mas, se o problema for o WHERE, acredito que um LOOP BINÁRIO resolveria este problema. atte.
+  Paolo (27/05/2014 11:54): Olá Marcelo, eu não cheguei a testar um LOOP WHERE para este caso, mas, se o problema for o WHERE, acredito que um LOOP BINÁRIO resolveria este problema. atte.
+Felipe Tieppo (26/04/2012 11:39): Uma outra forma contornar o “problema” do AT LAST e AT FIRST é usar um field symbol.

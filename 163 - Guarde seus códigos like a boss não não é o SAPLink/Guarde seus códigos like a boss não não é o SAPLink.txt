@@ -1,0 +1,58 @@
+Guarde seus códigos like a boss (não, não é o SAPLink)
+Autor: Mauricio Cruz
+Data: 05/12/2012 15:33
+
+Você que acompanha nosso site já deve estar de saco cheio de ouvir-nos falar sobre o
+SAPLink
+. Mas vou fazer uma confissão para você, caro zumbi anão sedento por cérebros: eu uso
+outra ferramenta
+para guardar meus códigos.
+Muitas vezes, tudo que eu quero é
+somente guardar o código
+, porque eu sei que eu nunca vou utilizar aquele programa em outro lugar. Só preciso deixá-lo disponível para que eu possa pesquisar alguma lógica antiga de maneira rápida e fácil.
+Não
+, ctrl+c / ctrl+v para um TXT
+não
+é uma opção. Somo PROGRAMADORES, oras bolas!
+E é aí que entra uma ferramenta criada por uma empresa da Inglaterra, e que disponibiliza o código de graça para qualquer um que quiser baixar. O que a ferramenta faz?
+Cria um HTML a partir dos seus objetos ABAP
+!
+Enquanto o SAPLink é muito bom para transportar objetos de um ambiente para outro, o XML que ele gera não é lá muito amigável quando você quer só dar
+“aquela”
+olhada em um código antigo, ou lembrar como você tinha criado
+“aquela”
+tabela/tela/função/classe. O XML é simples até, mas é um saco procurar as coisas lá dentro. Mas existem alternativas!
+Eu não sei nada sobre a
+Dalestech
+além do que está no seu site: ela foi criada por dois irmãos em 2000 e é da Inglaterra. Mas o legal é que eles disponibilizam algumas ferramentas em ABAP desde 2007, e dão manutenção nesses códigos
+até hoje
+.
+Encontrei o site deles por acaso, em meados de 2010 no fórum do SDN, mas sei de pessoas que utilizam isso há muito tempo, conhecendo o código pelo velho “tráfico saudável de ferramentas”. Talvez algum de vocês já tenham acessado a página deles, já que comentei de leve sobre o trabalho dos caras em alguns posts no passado. Quem for zumbi das antigas talvez se lembre que tínhamos um link direto para o site da Dalestech no layout antigo do site.
+A empresa tem várias ferramentas em ABAP publicadas, mas a que eu mais uso é, de longe, a
+Mass Download
+. Ela cria HTMLs formatados a partir do seu código ABAP. Ela também cria links para algumas coisas, como includes, funções e tabelas, mas não é sempre que isso funciona (e também não faz muita falta).
+Clicando aqui
+você pode ver um exemplo de HTMLs que eu gerei a partir da ferramenta. As tabelas também ficam quase iguais à SE11, teste aí 🙂 Outra coisa legal é que, se você tiver um programa Z, que use uma função Z e uma tabela Z, ele cria os HTMLs automaticamente, e você não precisa colocar objeto por objeto na tela de seleção.
+O site tem as explicações de como usar e instalar a ferramenta. O processo é bem simples: copie para um programa Z o código que você baixar, execute e seja feliz! 😀 Fique atento à versão correta da ferramenta para o seu ambiente.
+Agora não tem desculpa para usar aquela velha frase “eu já fiz isso uma vez, mas não guardei o código”…
+Se você utilizar alguma outra ferramenta da Dalestech, conte nos comentários as suas experiências!
+Abraços!
+
+
+
+Comentários:
+PauloRic (19/08/2016 22:33): Instalei o Mass Download no Minisap. Mas qdo eu executo nao acontece nada. Criei o mkdir na trans SM69, e mesmo assim nao faz nada. Tens ideia do q possa ser? Obrigado
+Mauro Laranjeira (13/02/2013 17:14): Também tem o programa standard RSDUMPSOURCE.
+Herbert Henrique (23/01/2013 14:03): Não seria mais fácil guardar seus códigos no Github ou Bitbucket? Além de ter eles sempre disponíveis na web, teria todo um source control fudido (git, eu te amo). Sem contar que pode divulgar para amigos ou colegas de trabalho, ter contribuições de terceiros e colocar no currículo o link do seu repositório favorito (github, bitbucket ou outro)
+  Mauricio Cruz (24/01/2013 08:36): Olá Herbert! Eu gosto muito de Git, acho uma ferramenta de versionamento formidável para várias linguagens. Mas, ainda que formidável, por motivos óbvios ela não suporta nativamente o ABAP. Ou você guarda os códigos via TXTs (tosco), ou você envia pelo XML do SAPLink (menos tosco, mas trabalhoso). Além de que boa parte das ferramentas de Merge e comparação de versão do Git não funcionam muito bem com os XMLs do SAPLink – a visualização é sofrível. Nós, aqui do ABAPZombie, compartilhamos nossos códigos aqui: https://github.com/abapzombie . Ainda falta ajustar mta coisa, mas aos poucos vamos migrar todos os códigos daqui para lá. Porém, particularmente, acho pouco provável que a grande massa de desenvolvedores ABAP largue o velho TXT em troca do Git (por mais absurdo que isso pareça). Portanto, acho que uma ferramenta que possa melhorar o armazenamento desses monte de TXTs, hoje, é sim uma forma de guarda o código “like a boss”… ainda que esse título possa soar “sensacionalista” para quem usa um versionamento bom de verdade 😉 Abraços!
+  Mauricio Cruz (24/01/2013 08:36): Olá Herbert! Eu gosto muito de Git, acho uma ferramenta de versionamento formidável para várias linguagens. Mas, ainda que formidável, por motivos óbvios ela não suporta nativamente o ABAP. Ou você guarda os códigos via TXTs (tosco), ou você envia pelo XML do SAPLink (menos tosco, mas trabalhoso). Além de que boa parte das ferramentas de Merge e comparação de versão do Git não funcionam muito bem com os XMLs do SAPLink – a visualização é sofrível. Nós, aqui do ABAPZombie, compartilhamos nossos códigos aqui: https://github.com/abapzombie . Ainda falta ajustar mta coisa, mas aos poucos vamos migrar todos os códigos daqui para lá. Porém, particularmente, acho pouco provável que a grande massa de desenvolvedores ABAP largue o velho TXT em troca do Git (por mais absurdo que isso pareça). Portanto, acho que uma ferramenta que possa melhorar o armazenamento desses monte de TXTs, hoje, é sim uma forma de guarda o código “like a boss”… ainda que esse título possa soar “sensacionalista” para quem usa um versionamento bom de verdade 😉 Abraços!
+Fawcs (07/12/2012 09:26): bom, eu já achei lindo =D
+  Fawcs (11/12/2012 08:00): bom, o mestre zumbi pediu e aqui está: Você pode colocar todos os seus programas Google Drive, cria uma pasta e coloca tudo dentro, deixa ela publica e quando copiar o link vai ter uns codigos from hell do tipo: 0B4pVilMUTt8VYTN6Yi1ZZmlyVWX Concatene https://googledrive.com/host/ e o código acima e vc tera uma paginazinha com todos teus códigos =) Se quiser da pra incrementar, o google drive aceita por default um index.html, mas da pra programar em outras linguas e criar um trequinho de search
+    Mauricio Cruz (11/12/2012 15:17): Valeu por compartilhar mano Fawcs!
+    Mauricio Cruz (11/12/2012 15:17): Valeu por compartilhar mano Fawcs!
+  Fawcs (11/12/2012 08:00): bom, o mestre zumbi pediu e aqui está: Você pode colocar todos os seus programas Google Drive, cria uma pasta e coloca tudo dentro, deixa ela publica e quando copiar o link vai ter uns codigos from hell do tipo: 0B4pVilMUTt8VYTN6Yi1ZZmlyVWX Concatene https://googledrive.com/host/ e o código acima e vc tera uma paginazinha com todos teus códigos =) Se quiser da pra incrementar, o google drive aceita por default um index.html, mas da pra programar em outras linguas e criar um trequinho de search
+    Mauricio Cruz (11/12/2012 15:17): Valeu por compartilhar mano Fawcs!
+    Mauricio Cruz (11/12/2012 15:17): Valeu por compartilhar mano Fawcs!
+Jose Nunes (05/12/2012 15:39): E eu pensando que era algo realmente like a boss, tipo plugin com github…
+  Mauricio Cruz (05/12/2012 15:41): Isso é ABAP, caro colega Jose Nunes. As pessoas acham isso revolucionário: https://cw.sdn.sap.com/cw/groups/zake . 🙂
+  Mauricio Cruz (05/12/2012 15:41): Isso é ABAP, caro colega Jose Nunes. As pessoas acham isso revolucionário: https://cw.sdn.sap.com/cw/groups/zake . 🙂

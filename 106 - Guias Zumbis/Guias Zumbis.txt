@@ -1,0 +1,11 @@
+Guias Zumbis
+Autor: Mauricio Cruz
+Data: 30/11/2011 12:58
+
+Já sofreu procurando aquela mesma informação ou guia 1 milhão de vezes? Pois não tema mais jovem zumbizinho, use nossos guias para maximizar o seu tempo no trabalho, e livre-se de uma vez por todas daqueles 234 txts que você tem no Pen Drive!
+ABAPZombie Guide to ABAP
+Passou horas procurando algum comando? Apertou o F1, leu, e não entendeu nada? Utilize o noso Guia para descobrir comandos malucos que talvez façam aquilo que você precisa! E as explicações seguem o padrão informal do nosso blog zumbi.
+Link para a página.
+Novo ABAP Debugger
+Você já se perguntou o porque do Novo Debugger parecer tão “maluco”? É amigo… tudo tem um explicação! Veja aqui as funcionalidades do mais novo debugger e reduza o tempo das suas “debuggadas”.
+Link para a página.

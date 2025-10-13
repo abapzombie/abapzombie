@@ -1,0 +1,32 @@
+REFRESH no início de REPORTs –  A síndrome do Robô
+Autor: Mauricio Cruz
+Data: 25/01/2011 15:32
+
+Olha só…
+E não que eu encontrei
+DENOVO
+esse perform f_inicializa_variáveis no começo de um report simples?
+O report só faz o seguinte: Seleciona dados, Monta ALV, Mostra ALV, fim.
+Agora, porque o cara perdeu tempo criando um “form f_inicializa_variaveis”, se o SAP sozinho já limpa as tabelas internas, workareas e variáveis toda vez que o usuário volta para a tela de seleção?
+A resposta é fácil:
+ele
+sofre da síndrome do robô
+!
+ABAP Com a Síndrome do Robô
+O CTRL+C CTRL+V foi o passado, é o presente, e será o futuro. Isso é fato consumado no mundo da programação. O problema não é o copy-paste, é a falta do entendimento das coisas copiadas. Esse cara que não entende nada e copia tudo, é portador da síndrome do robô.
+Hoje é feriado em minha Cidade (São Paulo) e eu deixo aqui registrado
+m
+inha indignação
+com os Refreshs e Clears sem sentido.
+O que? Que mal faz ter o REFRESH e o CLEAR ali?
+Mal nenhum!
+Só comentei para dar uma animada na galera
+Abraços!
+
+
+
+Comentários:
+Felipe (26/02/2013 01:31): é ainda é um robô jr. quem faz isso.. nem inteligência artificial tem.. só sabe ctrl+c e ctrl+v. único caso pra ter um form inicia_variaveis ou limpa_campos é em online, pois se vc preenche campos da tela e volta para a principal (de seleção) os campos e tabelas não são limpos.. ai vc precisa tomar cuidado. abraços
+Vagn&atilde;o (18/02/2011 12:37): Isso é falta de conhecimento do que acontece dentro de um Work Process e de seus processos internos. Aí o robô prefere colocar os clears…. pra garantir. E 99% dos projetos não tem um cara pra garantir a qualidade do código… e isso aí passa… e outro robô vê… e resolve fazer… e recomeça o ciclo. Abraço Vagnão
+  maurocesarsl (18/02/2011 14:21): rsrsrs…. isso mesmo Vagnão…. Fica naquela, "nem sei pq eu faço, eu vi alguém fazendo então deve servir para alguma coisa" rsrsrs… Vlw pelo comentário Abs, Mauro Laranjeira
+  maurocesarsl (18/02/2011 14:21): rsrsrs…. isso mesmo Vagnão…. Fica naquela, "nem sei pq eu faço, eu vi alguém fazendo então deve servir para alguma coisa" rsrsrs… Vlw pelo comentário Abs, Mauro Laranjeira

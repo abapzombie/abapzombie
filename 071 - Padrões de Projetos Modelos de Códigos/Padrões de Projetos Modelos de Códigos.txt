@@ -1,0 +1,28 @@
+Padrões de Projetos – Modelos de Códigos
+Autor: Mauro Laranjeira
+Data: 27/04/2011 21:05
+
+Certo “Zombizada” =D
+Para quem trabalha em consultoria e cada dia está em um cliente diferente, sempre tem aqueles padrões de desenvolvimento, um cliente tem um cabeçalho de tal forma, outro declara as variáveis de um outro modo. Mas isso faz parte do nosso trabalho 😉
+Mas também, podemos facilitar né?!
+Uma dica, podemos criar vários modelos de cabeçalhos e declarações, para nos ajudar durante a codificação.
+Para criar um modelo, abra a transação SE38 -> Utilitários -> Outros utilitários -> Processar modelo -> Criar modelo.
+Criação de Modelo
+Insira o nome do Modelo.
+Nome do Modelo
+Podemos utilizar o editor para escrever o nosso modelo. =D
+Escrevendo um modelo
+A qualquer momento podemos chamar o modelo criado.
+Clique em “Modelo”, marque “Outro modelo” e coloque o nome do seu modelo criado.
+Inserir modelo
+Podemos fazer a criação de vários modelos, por exemplo para cabeçalho, início e fim de alteração de código, cabeçalho de modificação e etc.
+Segue o
+modelo do abapzombie
+.
+Abraços a toda “zombizada”.
+
+
+
+Comentários:
+João (25/03/2013 14:39): Maneira mais simples(Para mim)… criar um atalho..em Options – Code Template… Se já existe o IF..DO..CASE…porque não aproveitar? 🙂 bastando depois escrever o nosso atalho…
+Fawcs (04/03/2013 09:26): Já que isso foi twittado hoje, vou comentar =D uma vez tentei ser exxxxxxxxxxxxxxxxxxxxperto e gravar um puta código como modelo para toda vez que eu precisasse gerar um alvzinho batuta… esse fdp só guarda 100 linhas!

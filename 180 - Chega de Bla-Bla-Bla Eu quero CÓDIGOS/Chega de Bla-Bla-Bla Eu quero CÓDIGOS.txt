@@ -1,0 +1,27 @@
+Chega de Bla-Bla-Bla! Eu quero CÓDIGOS!
+Autor: Mauricio Cruz
+Data: 06/01/2014 19:58
+
+E se a gente juntasse todos os códigos fontes já postados aqui no ABAPZombie, e organizássemos tudo bonitinho num
+repositório
+, para qualquer um poder baixar?
+E se as pessoas pudessem contribuir com mais códigos, ou mesmo corrigir alguma
+besteira
+coisa errada nos nossos?
+E se desse pra baixar tudo em formato .zip, com todos os códigos para você guardar no seu HD?
+E se desse para clonar o repositório, e acompanhar a evolução dessa
+biblioteca de códigos
+, sem sair de casa?
+…
+E se eu te falar QUE EU JÁ FIZ ESSA PARADA AE E VOCÊ PODE USAR TUDO QUANTO É CÓDIGO MALUCO DO MUNDO?!?!?!?!!11!!ONZE!
+Quer código, zumbi? ENTÃO TOMA:
+https://github.com/abapzombie/ABAPZombie-Code-Library
+(em breve link fixo na lateral do site).
+Tem um botão lá “
+Download ZIP
+” para vocês que não gostam do Github ou tem preguiça de aprender. Se você quiser saber mais sobre a ferramenta
+FANTÁSTICA
+que é o Github, acesse este
+post
+.
+Abraços a todos aqueles que colocam comentários inúteis do tipo “modificado por XYZ”, deixando o código de 10mil linhas impossível de ler para qualquer humano. Se você não faz isso, não ganha abraço.

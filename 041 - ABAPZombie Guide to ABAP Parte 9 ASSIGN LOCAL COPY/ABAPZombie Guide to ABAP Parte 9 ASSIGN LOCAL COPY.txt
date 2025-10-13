@@ -1,0 +1,44 @@
+ABAPZombie Guide to ABAP – Parte 9 – ASSIGN – LOCAL COPY
+Autor: Mauricio Cruz
+Data: 14/02/2011 08:30
+
+* Atenção, este comando é obsoleto na versão 6.0!
+Bom, mais um comando obsoleto nas versões mais novas. O
+ASSIGN LOCAL-COPY
+funciona de maneira similar ao ASSIGN, porém ele só pode ser declarado dentro de FORMs e Funções (faz sentido, senão não seria local, dãr 😛 ).
+A principal diferença com o ASSIGN comum é que ele cria uma nova área de memória quando você dá o ASSIGN, como se fosse uma variável a parte. Vejamos:
+REPORT zombie_assign_local_copy.
+
+* Variáveis Locais
+*--------------------------------
+DATA: v_teste TYPE char10 VALUE 'TESTE'.
+
+START-OF-SELECTION.
+
+PERFORM f_teste.
+
+*&---------------------------------------------------------------------*
+*&      Form  F_TESTE
+*&---------------------------------------------------------------------*
+FORM f_teste .
+
+* Field-Symbol Local
+*----------------------------------
+FIELD-SYMBOLS <fs_obj> TYPE ANY.
+
+* Gerando uma nova área de memória
+ASSIGN LOCAL COPY OF v_teste TO <fs_obj>.
+
+* Atribuindo valor ao novo field-symbol
+<fs_obj> = '123!'.
+
+* Se fosse num ASSIGN comum, o valor de V_TESTE deveria ter mudado..
+* mas não mudará! Ele irá imprimir valores diferentes, ou seja,
+* <fs_obj> virou mesmo uma nova área de memória.
+WRITE   <fs_obj>.
+WRITE: / v_teste.
+
+ENDFORM.                    " F_TESTE
+Este comando tem praticamente todas as outras terminologias do ASSIGN, por isso, não irei extender muito o tópico.
+E assim termina mais um tópico sobre um comando morto (se ele renascer nas versões futuras, teremos um código-zumbi! o/).
+Abraços!

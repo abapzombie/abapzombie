@@ -1,0 +1,53 @@
+ABAPZombie Guide to ABAP – Parte 16 – BACK
+Autor: Mauricio Cruz
+Data: 01/03/2011 08:30
+
+O comando
+BACK
+é um comando utilizado em listas.
+Toda lista feita em WRITE é escrita conforme os comandos WRITE vão sendo executados, e o ABAP internamente salva um cursor indicando onde a próxima instrução deverá ser escrita.
+O BACK faz com que esse cursor volte à posição inicial(início da lista).
+Veja um exemplo simples:
+REPORT zombie_back.
+
+* Linhas escritas
+WRITE:   'Linha 1'.
+WRITE: / 'Linha 2'.
+WRITE: / 'Linha 3'.
+
+* Volta o Cursor para a linha inicial
+BACK.
+
+* Sobre-escreve as informações
+WRITE: 'Apaguei a Linha 1'.
+SKIP 1.
+WRITE: 'Apaguei a Linha 3'.
+Se voce usar um BACK num TOP-OF-PAGE e outro BACK no corpo da lista, o SAP não vai misturar os cursores. Veja:
+REPORT zombie_back.
+
+* Este BACK irá fazer o cursor voltar ao início do TOP-OF-PAGE
+* Apesar de ter outro BACK dentro do START-OF-SELECTIOn, ele não irá
+* alterar o TOP-OF-PAGE, somente o que foi escrito no corpo
+TOP-OF-PAGE.
+  WRITE 'HEADER'.
+  BACK.
+  WRITE 'Apaguei o Header!'.
+  ULINE.
+
+START-OF-SELECTION.
+
+* Linhas escritas
+WRITE:   'Linha 1'.
+WRITE: / 'Linha 2'.
+WRITE: / 'Linha 3'.
+
+* Volta o Cursor para a linha inicial do corpo, sem alterar o
+* que foi escrito no header (TOP-OF-PAGE)
+BACK.
+
+* Sobre-escreve as informações
+WRITE: 'Apaguei a Linha 1'.
+SKIP 1.
+WRITE: 'Apaguei a Linha 3'.
+Existe ainda o BACK utilizano junto ao RESERVE… Mas isso é história para um outro post 🙂
+Abraços!

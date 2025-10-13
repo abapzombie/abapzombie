@@ -1,0 +1,56 @@
+Sobre o ABAPZombie!
+Autor: Mauricio Cruz
+Data: 10/02/2011 13:19
+
+ABAPZombie Team
+: @daianeczm, @maurocesarsl, @mauriciooocruz, Henrique Dias e @ABAPdepressao (Leonardo Schmidt)
+O ABAPZombie é um site com artigos sobre ABAP, PI, CRM e outras coisas malucas do mundo SAP. O principal objetivo é prevenir que você, caro consultor, vire noites trabalhando e sucumba ao efeito “
+Zumbi
+“, quando você trabalha tanto que só há zero raciocínio, zero discernimento, litros de café e vontade de explodir o sistema! Explicações malucas e  informais para diversos problemas e itens técnicos.
+Brincadeiras à parte, gostamos muito de trabalhar dentro do mundo SAP e através do blog vamos compartilhar nossos conhecimentos e dicas que podem ajudar pessoas no dia-a-dia corrido de projetos/suporte/whatever. Também gostariamos de incentivar a troca de experiências e discussões de questões técnicas entre consultores de diversos níveis de experiência.
+E como bons seres humanos nós também cometemos erros – ou por falta de conhecimento ou por burrice mesmo ( 🙄 ). Portanto, se você ler alguma coisa errada, não concordar, achar que tem um comentário que pode adicionar ao blog, por favor, comente!
+Se você tiver algum site ou blog relacionado ao mundo SAP, deixe um comentário no blog/twitter/facebook para que possamos trocar banners e links. Acreditamos na união de diversos sites, blogs e fóruns para disseminar conhecimento! Dessa forma, todo mundo cresce junto.
+Abraços e divirta-se!
+Blog criado por
+Mauricio Cruz
+e
+Mauro Laranjeira
+, num dezembro de mudanças em 2010.
+Caso você queira ajudar-nos a divulgar o nosso trabalho, utilize um dos banners abaixo:
+Small Size – PNG
+Standard Size – PNG
+Small Size – GIF
+Standard Size – GIF
+
+
+
+Comentários:
+Adriel da Silva Silveira (25/09/2024 21:31): Encontrei esse blog somente em 2024, mas é ouro pra quem quer começar nesse mundo. Abraço pros ADM’s !
+Willian Fakri Bratkauskas (11/05/2012 13:58): Parabéns, é sempre bom ver pessoas ajudando os que estão chegando agora. =) Abraço.
+Paulo Rios (05/04/2011 07:34): Cara, encontre o blog por acaso e estou me divertindo muito! Uma maneira muito bem humorada de ensinar Abap. Tirando o ABAP101 do Furlan, o Webdynpro Brazil e mais uns outros 2 blogs de Portugal que acesso, não têm muitos por aí… Continuem assim. Abraços!
+  Mauricio Cruz (05/04/2011 07:44): Opa, valeu Paulo! E a idéia é sempre ter esse humor maluco, e sempre zoar a Pri quando o Corinthians perder! hahaha. Abraços e valeu mesmo pelo apoio! 🙂
+  Mauricio Cruz (05/04/2011 07:44): Opa, valeu Paulo! E a idéia é sempre ter esse humor maluco, e sempre zoar a Pri quando o Corinthians perder! hahaha. Abraços e valeu mesmo pelo apoio! 🙂
+Leonardo Nobre (07/03/2011 21:14): Muito bom o blog! Sou abapeiro tb e gostaria de ajudar com dicas e tudo o mais. É possível? Um grande abraço, Léo
+  Mauricio Cruz (10/03/2011 05:54): Muito obrigado pela força Leonardo! Temos idéias de criar um canal para os users ajudarem, mas por enquanto nada concreto. De qualque forma, mandei um e-mail para você, olha lá depois! Abraços!
+  Mauricio Cruz (10/03/2011 05:54): Muito obrigado pela força Leonardo! Temos idéias de criar um canal para os users ajudarem, mas por enquanto nada concreto. De qualque forma, mandei um e-mail para você, olha lá depois! Abraços!
+Rodolfo Mi&atilde;o (24/02/2011 12:18): Show. Muito bom o blog. Vou adicionar o de voces no meu blog. Vlw Rodolfo Mião
+  Mauro Laranjeira (06/04/2011 10:51): Vlw Rodolfo. Você é brother, saudade de trabalhar com você amigo 😉
+  Mauricio Cruz (24/02/2011 12:29): Opa Rodolfo, valeu! Vou pegar seu blog e adicionar também! Se você tiver um banner, me avise ok? Abraço!
+  Mauro Laranjeira (06/04/2011 10:51): Vlw Rodolfo. Você é brother, saudade de trabalhar com você amigo 😉
+  Mauricio Cruz (24/02/2011 12:29): Opa Rodolfo, valeu! Vou pegar seu blog e adicionar também! Se você tiver um banner, me avise ok? Abraço!
+Alexandre Moura (23/02/2011 10:29): Olha só o que eu encontrei por aqui!!! Parabéns pessoal, muito bom o blog!! Vocês devem ter arrumado alguns inimigos que não gostam de distribuir informação!!! Deixo uma sugestão para próximos posts: função ** e ** Abraço and have fun!!!!
+  Mauricio Cruz (23/02/2011 11:57): Faaala Dudu! Beleza? Sobre os inimigos, sei lá, até hoje ninguem falou nada… Até porque, se for para falar, o cara vai ter que virar inimigo do Fórum intero do SDN, e vai ter que virar inimigo também do F1! hahahaha Anyway, um abração cara, mande notícias aí de vez em quando 😀
+    Alexandre Moura (25/02/2011 10:11): ** means funções que não podem ser mencionadas?!?!?!!? heheheh Ótima iniciativa de qualquer forma!!! Abração.
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+    Alexandre Moura (25/02/2011 10:11): ** means funções que não podem ser mencionadas?!?!?!!? heheheh Ótima iniciativa de qualquer forma!!! Abração.
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+  Mauricio Cruz (23/02/2011 11:57): Faaala Dudu! Beleza? Sobre os inimigos, sei lá, até hoje ninguem falou nada… Até porque, se for para falar, o cara vai ter que virar inimigo do Fórum intero do SDN, e vai ter que virar inimigo também do F1! hahahaha Anyway, um abração cara, mande notícias aí de vez em quando 😀
+    Alexandre Moura (25/02/2011 10:11): ** means funções que não podem ser mencionadas?!?!?!!? heheheh Ótima iniciativa de qualquer forma!!! Abração.
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+    Alexandre Moura (25/02/2011 10:11): ** means funções que não podem ser mencionadas?!?!?!!? heheheh Ótima iniciativa de qualquer forma!!! Abração.
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+      Mauricio Cruz (25/02/2011 10:21): Infelizmente, tem muita gente mal intencionada… 🙂 Aparece no MSN, pô! Abraço!
+William Ant&ocirc;ni (22/02/2011 05:29): Parabéns pelo Blog!

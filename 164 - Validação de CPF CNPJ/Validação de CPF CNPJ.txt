@@ -1,0 +1,44 @@
+Validação de CPF / CNPJ
+Autor: Mauro Laranjeira
+Data: 17/12/2012 15:22
+
+Certo Zombizada?!
+Essa é para a garotada que se mata convertendo função de JavaScript para ABAP. (pior que ja vi)
+Por favor, menino Zombie, use as funções:
+CONVERSION_EXIT_CPFBR_INPUT – Validar CPF
+CONVERSION_EXIT_CGCBR_INPUT – Validar CNPJ
+Abraços a todos, força anti-zumbie.
+
+
+
+Comentários:
+How do we use the CBD Bath Bombs? (17/11/2021 23:44): Good Afternoon everybody ! can anyone recommend where I can purchase Kats Naturals CBD Topical Skin Serum 125mg 250mg?
+Leonardo Moreira (25/05/2021 15:36): Usei o domínio J_1BCPF direto na estrutura do ALV, para fazer as conversoes de input e output automaticamente na saída do ALV, porém,  na saída do ALV o campo apresenta o seguinte formato: 137.269.330-18000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Alguém poderia me ajudar a como exibir somente o CPF sem os zeros a direita?
+Eduardo Henrique (11/07/2019 11:31): Sei que este post é antigo, mas tenho duas maneiras de validar o CPF que podem ajudar. usando a função do post e também usando uma de HR. Fica pro registro histórico. Eu estou usando a versão 1 em alguns desenvolvimentos, porém a versão 2 é útil porque a função já formata ou tira a formatação do CPF se necessário, e verifica o digito na função. Versão 1 (Método VALIDAR_CPF): ASSINATURA: Entrada: VALUE( I_CPF )	        TYPE STCD2	CPF Retorno: VALUE( R_ERRO )	TYPE FLAG_X	Flag METHOD validar_cpf. DATA: lv_temp  TYPE p, lv_idx     TYPE sy-tabix VALUE 9, lv_idx1   TYPE sy-tabix, lv_ver     TYPE c VALUE ‘0’. CALL FUNCTION ‘CONVERSION_EXIT_CPFBR_INPUT’ EXPORTING input     = i_cpf EXCEPTIONS not_valid = 1 OTHERS    = 2. IF sy-subrc IS NOT INITIAL. r_erro = ‘X’. EXIT. ENDIF. CHECK r_erro IS INITIAL. DO 10 TIMES. “Valida números repetidos IF i_cpf CO lv_ver . r_erro = ‘X’. EXIT. ENDIF. ADD 1 TO lv_ver. ENDDO. CHECK r_erro IS INITIAL. DO 2 TIMES. “Valida digitos CLEAR: lv_idx1, lv_temp. WHILE lv_idx1 = 10. CLEAR lv_temp. ENDIF. IF lv_temp  i_cpf+lv_idx(1). r_erro = ‘X’. EXIT. ENDIF. ADD 1 TO lv_idx. ENDDO. ENDMETHOD. Versão 2: (REPORT ZVALIDAR_CPF) TYPE-POOLS: pbr99. PARAMETERS: cpf TYPE pbr99_cpf. DATA: “cpf_for TYPE pbr99_cpf, “cpf_raw TYPE pbr99_cpf, cpf_unf TYPE pbr99_cpf, dig     TYPE n. START-OF-SELECTION. CALL FUNCTION ‘HR_BR_CHECK_CPF_FORMAT’ EXPORTING cpf_number               = cpf IMPORTING “cpf_number_formatted     = cpf_for “cpf_number_raw           = cpf_raw cpf_unformatted          = cpf_unf EXCEPTIONS cpf_format_not_supported = 1 cpf_check_digit          = 2 OTHERS                   = 3. IF sy-subrc  0. MESSAGE ‘Erro no CPF’ TYPE ‘S’ DISPLAY LIKE ‘E’. LEAVE LIST-PROCESSING. ELSE. DO 10 TIMES. IF cpf_unf(11) CO dig. MESSAGE ‘Erro no CPF’ TYPE ‘S’ DISPLAY LIKE ‘E’. LEAVE LIST-PROCESSING. ENDIF. ADD 1 TO dig. ENDDO. ENDIF.
+  Mauro Laranjeira (11/07/2019 11:43): Eduardo, Obrigado por sua contribuição o post é antigo mas sempre ajuda. 😉 Para colocar a formatação também temos a função de output (CONVERSION_EXIT_CPFBR_OUTPUT). Muito obrigado
+    Paula Santiago (05/08/2019 16:52): Muito bom, fui ajudar um colega agora e apesar de antigo, já se tornou atual de novo! heheeheh Obrigada
+    Paula Santiago (05/08/2019 16:52): Muito bom, fui ajudar um colega agora e apesar de antigo, já se tornou atual de novo! heheeheh Obrigada
+  Mauro Laranjeira (11/07/2019 11:43): Eduardo, Obrigado por sua contribuição o post é antigo mas sempre ajuda. 😉 Para colocar a formatação também temos a função de output (CONVERSION_EXIT_CPFBR_OUTPUT). Muito obrigado
+    Paula Santiago (05/08/2019 16:52): Muito bom, fui ajudar um colega agora e apesar de antigo, já se tornou atual de novo! heheeheh Obrigada
+    Paula Santiago (05/08/2019 16:52): Muito bom, fui ajudar um colega agora e apesar de antigo, já se tornou atual de novo! heheeheh Obrigada
+Gilson (03/06/2016 09:51): Maurão, para CNPJ tem a função HR_BR_CHECK_CGC_FORMAT
+  Mauro Laranjeira (03/06/2016 10:18): E ae Gilson, de boas? O problema é que ela faz parte do pacote de HR, no meu atual projeto temos 4 ambientes diferentes da SAP, esta função não esta presente em todos. Porem consegui fazer alguns testes no ECC, rola mesmo. Vlw pela dica. Abs, Mauro Laranjeira
+  Mauro Laranjeira (03/06/2016 10:18): E ae Gilson, de boas? O problema é que ela faz parte do pacote de HR, no meu atual projeto temos 4 ambientes diferentes da SAP, esta função não esta presente em todos. Porem consegui fazer alguns testes no ECC, rola mesmo. Vlw pela dica. Abs, Mauro Laranjeira
+Janaina (19/04/2016 12:45): Essa função é a mais completa. HR_BR_CHECK_CPF_FORMAT
+  Mauro Laranjeira (19/04/2016 13:59): Janaina, Curti essa função pelo fato dela retornar o valor com mascara. Mas pelo que vi ela não valida CNPJ e so existe no ambiente com HR. Fiz alguns testes em ambientes sem HR e não tem mesmo. Vlw pela dica. Abs, Mauro Laranjeira
+  Mauro Laranjeira (19/04/2016 13:59): Janaina, Curti essa função pelo fato dela retornar o valor com mascara. Mas pelo que vi ela não valida CNPJ e so existe no ambiente com HR. Fiz alguns testes em ambientes sem HR e não tem mesmo. Vlw pela dica. Abs, Mauro Laranjeira
+Alexandre Alves (13/11/2013 16:12): Essa função não valida se o CPF for 11111111111, 22222222222, 33333333333. pois eles são validos pelo modulo 11
+  Mauro Laranjeira (13/11/2013 16:24): Muito bem observado meu Alexandre. É necessário fazer esta validação. Abs
+    Funcional RE (20/01/2016 14:56): Ta errado, mano…
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+    Funcional RE (20/01/2016 14:56): Ta errado, mano…
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+  Mauro Laranjeira (13/11/2013 16:24): Muito bem observado meu Alexandre. É necessário fazer esta validação. Abs
+    Funcional RE (20/01/2016 14:56): Ta errado, mano…
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+    Funcional RE (20/01/2016 14:56): Ta errado, mano…
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?
+      Mauro Laranjeira (20/01/2016 15:00): Cara.. Acabei de testar aqui no ambiente em que estou alocado, funcionou. Qual o problema que vc esta tendo?

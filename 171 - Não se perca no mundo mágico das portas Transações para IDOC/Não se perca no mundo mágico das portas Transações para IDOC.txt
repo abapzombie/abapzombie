@@ -1,0 +1,55 @@
+Não se perca no mundo mágico das portas – Transações para IDOC
+Autor: Mauricio Cruz
+Data: 09/04/2013 14:11
+
+Confesso que fiquei sem entender absolutamente nada de IDOCs por muito tempo, e não tinha saco e nem vontade de aprender: eles sempre me pareceram confusos demais para o seu propósito. Mas, como é de praxe na nossa vida como abapers, sempre tem
+aquele
+desenvolvimento que TEM QUE SER FEITO EM IDOC, OU MIL MÍSSEIS NORTE-COREANOS IRÃO ACERTAR SEU CÉREBRO PUTREFATO.
+Este post não vai ensinar como fazer um IDOC do zero, tem bilhares de guias para isso perdidos na interwebs. Mas, apesar de termos uma
+seção específica de transações
+, decidi dedicar um post para fazer uma lista mais
+bacanuda
+, com algumas das milhares de transações relacionadas aos IDOCs.
+Tempos atrás eu montei essa lista num papel, e, acreditem, olhava para a foto que tirei com meu cel sempre que precisava (precário, mas já me salvou algumas vezes). Estava na hora de deixar a parada mais bacana, falae?
+Clique para aumentar
+“Mas Mauricio, não tem todas as transações de IDOC aí”. Quer tudo?
+SE93 > WE* > F4 / BD* > F4
+. Vai aparecer quase tudo e mais um pouco, se é que vc me entende 🙂
+Mais três pontos rápidos:
+Precisa mandar um IDOC de um programa Z pra
+PQP
+um sistema externo?? Use a função
+MASTER_IDOC_DISTRIBUTE
+.
+Precisa alterar a estrutura de IDOC, sabe-se lá porque motivo? Use a
+BADI IDOC_DATA_MAPPER
+(e preencha a estrutura PROTOCOL, senão não funciona).
+A transação
+SALE
+é tipo uma SPRO de IDOCs. Dá para criar destinations, logical systems e outras papagaiadas. Só tome cuidado, porque certas configurações não são exclusivas do processo de um IDOC.
+E aí, tem alguma dica de IDOC para contribuir? Deixe um comentário. Chega de ficar procurando transações e funções em 2983 posts. É muito WE e BD pra lembrar de cabeça!
+Abraços!
+
+
+
+Comentários:
+Diego (09/05/2013 13:46): Sempre digito WEDI para abrir o menu de IDOC, acho mais fácil do que lembrar tudo isso ae… você já fez isso? Não acha melhor?
+  Mauricio Cruz (09/05/2013 13:56): Ahm, eu não conhecia heoauheaoheou. Mas juro que vou tentar usar da próxima vez. Tenho o péssimo hábito de querer decorar transações soltas 🙁 Valeu mano, abs!
+  Mauricio Cruz (09/05/2013 13:56): Ahm, eu não conhecia heoauheaoheou. Mas juro que vou tentar usar da próxima vez. Tenho o péssimo hábito de querer decorar transações soltas 🙁 Valeu mano, abs!
+natalia (24/04/2013 15:40): olá!! existe alguma transação que eu consigo gerar um relatorio de idocs com seus motivos de erro? sem precisar dar dois cliques dentro do numero do idoc pra saber? Preciso criar um log de erros isso ja existe, ou preciso customizar? grata
+Elisson Gandolfo (09/04/2013 14:40): Muito bommmm!!!  =)
+Fawcs (09/04/2013 14:26): Próximo tópico: WorkFlow, como utilizar o editor abap mais feio que um papel de pão
+  Mauricio Cruz (09/04/2013 14:29): Pode pedir para o Henrique no twitter, ele é o cara de Workflow aqui da galera
+    Henrique Dias (09/04/2013 19:56): Felizmente o workflow evoluiu, já dá pra fazer OO. Em breve deve ser algum post sobre o assunto.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+    Henrique Dias (09/04/2013 19:56): Felizmente o workflow evoluiu, já dá pra fazer OO. Em breve deve ser algum post sobre o assunto.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+  Mauricio Cruz (09/04/2013 14:29): Pode pedir para o Henrique no twitter, ele é o cara de Workflow aqui da galera
+    Henrique Dias (09/04/2013 19:56): Felizmente o workflow evoluiu, já dá pra fazer OO. Em breve deve ser algum post sobre o assunto.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+    Henrique Dias (09/04/2013 19:56): Felizmente o workflow evoluiu, já dá pra fazer OO. Em breve deve ser algum post sobre o assunto.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.
+      Custodio (17/04/2013 23:47): “já dá pra fazer OO” ha uns 10 anos, ne.

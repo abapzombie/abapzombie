@@ -1,0 +1,74 @@
+De onde brotou essa história de “livro ABAP”?
+Autor: Mauricio Cruz
+Data: 05/10/2015 14:32
+
+Eae pequeno cambaleador, como vai essa vida zumbística? Hoje eu vou falar um pouco sobre a criação do meu livro!
+Sei que soa meio clichê, mas é real: nunca achei que um dia fosse lançar um livro proveniente do trabalho desenvolvido neste site. Só que sexta feira passada (02/10/2015), isso aconteceu 🙂 . Se você não sabe do que estou falando, dê uma olhada na barra lateral aqui do site e clique na capa para conhecê-lo.
+Neste post irei contar um pouco do nascimento do livro, as motivações por trás da obra e sobre o processo de escrita. Vamos lá?
+Como nascem os livros?
+Uma infinidade de sites/blogs/vlogs acabam virando livros – isso não é novidade alguma. Há até uma
+editora internacional
+que é especializada em publicações desse tipo. Porém eu sempre fui cetico sobre a criação de um livro de ABAP: pensava que em um mercado tão de nicho, seria irrelevante criar algo para competir com SCN + SAP Press. Eu não tenho conhecimentos profundos sobre novas tecnologias para criar um livro como o do
+Fábio
+ou mesmo algo parecido com os
+E-Bites
+: meu negócio aqui no ABAPZombie sempre foi discutir o “abapão memo”. Portanto, a idéia de transformar sequer parte do que eu tenho aqui em livro não era algo que eu achava que fizesse muito sentido.
+Entretanto eu tenho um grande amigo que me convenceu de essas minhas percepções poderiam estar erradas: eu já escrevi uma quantidade razoável de posts (141 para ser preciso – bizarro pensar nesse número) e o site tem um número razoável e recorrente de acessos. Isso, por si só, já demostra que as pessoas gostam de acessar este site por algum motivo e que identificar esses motivos (os artigos de mais destaque) poderiam fazer um livro dar minimamente certo.
+Na primeira vez que ele me falou isso, não liguei muito não (eu pensei “esse mano tá bem louco, isso sim”). Mas quando ele insistiu (bem insistido) e conversamos sobre isso pela segunda vez eu comprei a idéia. Resolvi então separar alguns artigos para ver como o livro poderia ficar para possivelmente depois fazer todo o processo de publicação por conta própria.
+“ABAPZombie, o livro”…?
+Quando cheguei num número X de artigos que eu achava que poderiam fazer um livro funcionar, percebi que eles tinham sido escritos para um blog, ou seja, continham alguns errinhos de português, usavam termos e expressões que só faziam sentido nas datas em que foram publicados e continham conceitos ou opiniões que eu já tinha revertido dentro de mim de alguma forma. Por conta disso, precisei reescrever todos os 23 artigos que juntei na primeira versão do livro.
+O processo deu um trabalho do caramba… parece fácil, não é? Um monte de coisa escrita, você olha, vê se está certo, “dá um tapa” e manda para PRD. Só que quando você pensa que aquilo irá virar um
+LIVRO
+, parece que o peso da escrita cresce. A mensagem é praticamente a mesma, mas a importância que você dá aquelas palavras fica um pouco maior. É uma relação estranha, mas é o que acabou acontecendo comigo.
+Mesmo depois de reescrever tudo, ainda precisava submeter o livro para uma revisão de português, que foi iniciada pela minha esposa, pelo Maurão e pela Priscila (que já postou aqui no blog láááá nos primórdios). Nesse meio tempo eu fui atrás de um revisor profissional e de formas de publicação por conta própria. Minha idéia era diagramar sozinho e publicar pela Amazon e fazer uma versão física do livro pelo CreateSpace. Até capa eu paguei para um amigo meu fazer, olha só:
+(Eu falei assim: games, resident evil e full throttle. O resultado está aí em cima!
+Aqui
+está a página do artista, ele manda muito bem! )
+No meio de todo esse caos de encontrar meios de publicar o livro sozinho, conversei com um amigo que dá aulas em uma universidade sobre todo esse processo, que estava se tornando bem tedioso. Ele me incentivou a submeter o livro para algumas editoras e ver se alguma delas se interessava. Caso isso acontecesse eu poderia avaliar o modelo de publicação e ver se fazia ou não sentido para mim.
+Bom, não custava nada, não é? E foi assim que eu resolvi enviar a idéia para a
+Casa do Código
+, empresa do grupo da
+Caelum
+onde eu já fiz alguns treinamentos. Esse passo foi
+essencial
+para transformar o livro no que ele é hoje.
+Transformação e versão final
+A Casa do Código me recebeu de braços abertos. Confesso que por se tratar de um livro de ABAP, fiquei um pouco surpreso. Mas não ouve nenhuma resistência e eles sempre foram bem tranquilos quanto ao tema.
+O mais interessante é que, por se tratar de uma editora de livros de TI, todo o processo de publicação foi feito – olhe só – pelo github, usando arquivos de texto e uma linguagem de markup parecida com o
+markdown
+. Tem como ser mais programador que isso? Porém o ponto mais importante foi ter uma editora, que revisava a didática do conteúdo e a progressão dos assuntos. As conversas que tive com ela me fizeram repensar completamente os motivos que estavam me levando a escrever aquele livro.
+Comecei a identificar a falta de diversos tópicos que eu gostaria que estivessem presentes, simplesmente por não ter artigos no ABAPZombie que falavam especificamente deles. Naquele momento o livro era basicamente artigos do blog organizados e reescritos para terem um formato mais atual. Mesmo assim eu não posso dizer que estava 100% confiante de que as pessoas leriam aquilo. Grande parte era composta de artigos técnicos que me soavam muito datados, apesar de serem textos que foram divertidos de criar.
+Decidi então repensar completamente a estrutura do livro e transformá-lo de um “livro nascido de um blog técnico” para “livro que reflete sobre os motivos que fazem os ABAPers trabalharem da forma como trabalham”, propondo melhorias no processo. Esse foi um passo extremamente importante, mas que fez com que eu tivesse que reescrever completamente o livro (de novo).
+A partir do momento que eu entendi o real propósito que aquele livro poderia ter, não hesitei em jogar fora boa parte do que já havia feito para recriar algo que eu acredito que realmente poderia trazer valor para os leitores e que me faria ficar contente com o resultado.
+Motivação por trás do livro
+Apesar de eu ter escrito muitos artigos técnicos, uma boa parte deles são artigos que falam mais sobre o mercado e da relação das pessoas com o ABAP. E é sobre isso que o meu livro trata:
+o que fez com que chegássemos onde chegamos e como podemos mudar para estar preparados para o futuro?
+Para isso estruturei o livro com o intuito de servir uma pessoa que esteja começando na área, mas passando por assuntos complexos e recorrentes na vida de quem já está nela: carreira, mecânicas de projetos, tabus que podem tornar o trabalho menos prazeroso, hábitos que são inseridos no início e que podem se tornar um problema futuro, novas tecnologias que irão afetar a vida dos ABAPers e até mesmo um grande compilado de indicações para ajudar na expansão da percepção do mundo de tecnologia como um todo. Se eu puder ajudar iniciantes a ingressarem no mundo SAP já “blindados” contra uma série de problemas crônicos e também fazer com que veteranos possam refletir um pouco sobre aquilo que fazem, estarei contente.
+Isso tudo que acabei de contar durou 1 ano e hoje o livro está finalmente publicado. Aprendi muito no processo, não só nas pesquisas que fiz sobre ABAP e tecnologia mas também sobre mim mesmo, de tanto refletir sobre minhas opiniões sobre muitos temas polêmicos do nosso dia-a-dia.
+E não poderia faltar
+Na área de agradecimentos do livro eu faço questão de agradecer a todos aqueles que já acessaram, acessam ou acessarão o ABAPZombie em algum momento. Sem o meu amigo insistir o livro não teria nascido, mas o mesmo pode ser dito de todas as pessoas com as quais eu já interagi por aqui. Meu muito obrigado a todos vocês.
+O Leonardo Schmidt (também aqui do site) me falou uma coisa interessante: para ter a vida completa, o ser humano precisa plantar uma árvore, ter um filho e escrever um livro. Sei lá de que porre de cachaça ele tirou isso, mas seguindo sua linha eu estou com 66% concluído e já estou bem de boa (bom, meus dois gatos talvez devem somar uns 4%, então 70% já tá melhor que a encomenda).
+Minha dica final portanto é: saia hoje no jardim da sua empresa, plante uma árvore, faz seus 33% e pelo menos sai do zero-a-zero (não vale plantar feijão no algodão). Se você tiver filho então, planta e também já fica de boa igual eu \o/.
+Abraços a todos aqueles que acham que essa teoria do Léo não faz o menor sentido e também para aqueles que se interessaram no livro 🙂
+Valeu!
+
+
+
+Comentários:
+Vanessa Morais (17/02/2017 15:39): Parabéns pelo Livro Maurício!!! Parabéns por mais essa iniciativa, além de terem criado e mantido o blog…. Sensacional, vocês não tem noção de quanto ajudam… Abraços!!!
+Ricardo (13/10/2015 18:03): Ah cara que isso, valeu a pena mesmo, fiz um monte de anotações no meu Google Books para guiar meus estudos por tema. Abraço!
+Ricardo (13/10/2015 17:44): Maurício, Logo após o meu último comentário comprei o livro e li em uma tacada só, durante a semana na hora do meu almoço, e sei que valeu cada centavo! Pretendo ingressar no mercado SAP (como BASIS, não ABAPER) e as informações foram muito proveitosas, deram um ‘norte’ no mar de informações, dicas e materiais que eu já havia obtido (parte com este site, outra parte com a SCN e ABAP101 e Abapinho). Reforço que é de extrema valia o conteúdo e recomendo a todos que desejam saber um pouco mais do ‘Mundo SAP’ como você inteligentemente definiu. Abraço e até mais! Ricardo
+  Mauricio Cruz (13/10/2015 17:50): Kcta, valeu man! Como eu disse no twitter, você é oficialment e o primeiro cara a comprar e me falar que terminou de ler. Muito obrigado de novo 🙂
+  Mauricio Cruz (13/10/2015 17:50): Kcta, valeu man! Como eu disse no twitter, você é oficialment e o primeiro cara a comprar e me falar que terminou de ler. Muito obrigado de novo 🙂
+Flavio Furlan (08/10/2015 23:12): Salve salve escritor! Mais uma vez parabéns pelo livro! Agora não posso mais dizer que não tem livro bom de ABAP escrito em português!!! BTW, ainda acho a capa rejeitada mais legal. Você poderia imprimir algumas edições com essa capa. Acho que dá até para fazer um preço especial como item de colecionador 🙂
+  Mauricio Cruz (13/10/2015 13:45): hahaha, vlw mano Furlan! Essa capa ficou muito dahora, mas acho que ia ficar um pouco fora do conceito da editora. De qualquer forma ela está imortalizada aqui neste post =)
+  Mauricio Cruz (13/10/2015 13:45): hahaha, vlw mano Furlan! Essa capa ficou muito dahora, mas acho que ia ficar um pouco fora do conceito da editora. De qualquer forma ela está imortalizada aqui neste post =)
+Luciano Soares (08/10/2015 16:41): Livro e Muito bom, valeu muito apena ter comprado, Mauricio Quando vai ter um novo Webcast?, Aprendi muito com o site, e queria agradeçer muito pela divulgação dos conhecimentos. Vlw =)
+  Mauricio Cruz (13/10/2015 13:44): Muito obrigado Luciano! Vamos ter um novo podcast em breve, aguarde 🙂 Abs!
+  Mauricio Cruz (13/10/2015 13:44): Muito obrigado Luciano! Vamos ter um novo podcast em breve, aguarde 🙂 Abs!
+Ricardo (06/10/2015 12:09): Fala Maurício, Parabéns pelo site (sou leitor assíduo) , pelo podcast (ouvi e curti as duas edições) e agora pelo livro, que vou comprar agora. Com relação ao lance de filho, árvore e livro, é uma expressão que ficou famosa nos anos 80 e agora ninguém usa mais. Abraço!
+  Mauricio Cruz (06/10/2015 15:18): Valeu por nos acompanhar Ricardo, é nóis no twitter! \o/
+  Mauricio Cruz (06/10/2015 15:18): Valeu por nos acompanhar Ricardo, é nóis no twitter! \o/
+Leo Schmidt (05/10/2015 15:34): a única cahcaça que eu tomo porre é aquela popular. sim, aquela mesmo, a sabedoria popular: https://www.google.com.br/search?q=plantar%20arvore%20escrever%20livro%20ter%20filho
+  Mauricio Cruz (06/10/2015 09:52): Achei que tinha sido essa cachaça aqui ó: https://www.youtube.com/watch?v=3jAjapEGg60
+  Mauricio Cruz (06/10/2015 09:52): Achei que tinha sido essa cachaça aqui ó: https://www.youtube.com/watch?v=3jAjapEGg60

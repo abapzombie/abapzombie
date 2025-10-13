@@ -1,0 +1,51 @@
+Zombie News! 1 – SAP Inside Track, Blogs da SCN, SAPCastBrasil
+Autor: Mauricio Cruz
+Data: 19/09/2011 08:30
+
+Demorei um pouco mas finalmente tirei do “papel” a idéia do Zombie News. Eu consumo bastante informação sobre coisas do mundo SAP, e decidi fazer um post de vez em quando para compartilhar artigos legais, eventos e outras coisas. Divirtam-se 🙂
+Nesta Edição:
+Conheça o evento SAP Inside Track
+Blogs na SCN: Um artigo interessante sobre FOR ALL ENTRIES e um guia SENSACIONAL sobre Types, Deep Structures e Nested Structures em ABAP
+Novo Episódio do SAPCastBrasil
+Essa semana rolou o SAP Teched
+SAP Inside Track 2011 – São Paulo
+Galera, agora em Outubro vai rolar mais uma edição do SAP Inside Track em São Paulo. É um evento “na faixa”, com paletras e debates de assuntos relacionas ao mundo SAP (ABAP included). Tudo que alguém ligado em tecnologia poderia querer 🙂
+O evento vai acontecer no dia
+07 de outubro de 2011,
+em São Paulo. Você pode se inscrever para fazer uma apresentação ou somente para participar do evento. Tem também uma iniciativa bem legal, o
+“Demo Break”,
+onde você pode apresentar algum protótipo ou devaneio proveniente da sua mente fértil (isso foi para mim mesmo, já que vou apresentar um
+jogo em ABAP
+🙂 ).
+Acesse aqui a página do eventopara mais informações. E sim, o zombie aqui vai falar algumas coisas sobre
+Usabilidade em ABAP
+😉
+Blogs da SCN – FOR ALL ENTRIEs e tudo sobre tipagem
+Dessa vez eu vou mostrar um blog que eu gostei muito, e uma sequência de posts que me ensinou coisas que eu nem imaginava que fossem possíveis de serem feitas na declarações de estruturas. Vale muito a pena ler!
+SAP Support Case – FOR ALL ENTRIES disaster
+–
+Algum vez você já se perguntou porque FOR ALL ENTRIES é tão “mágico”? Entenda aqui que ele é sim “mágico”, mas está longe de ser perfeito. Ah, e leiam também os comentários, tem uma discussão bem legal por lá.
+Do you really know everything about typing?
+– Sensacional! Fazia muito tempo que eu não lia uma sequência de posts tão legal sobre um tema em ABAP. Descubra aqui as coisas animais que você pode fazer ao declarar estruturas. Ah, e tem também a
+Parte 2
+,
+Parte 3
+e
+Parte 4
+!
+Novo Episódio do SAPCastBrasil
+Saiu mais um episódio do SAPCastBrasil. Dessa vez tivemos algumas “baixas”, mas o Marcelo Ramos, SAP Mentor juntou-se à nossa conversa, e falamos sobre ABAP Objects, ABAP no Eclipse, Usabilidade, Nova SCN no Jive e sobre o SAP Inside Track Brasil.
+Confira aqui
+e deixe o seu comentário!
+SAP TechEd 2011 – Las Vegas
+Imagine um evento que reúne especialistas em tecnologias SAP do mundo todo, recheado de palestras, atividades, debates, apresentações… pois é, esse é o SAP TechEd, que aconteceu em Las Vegas, na semana passada. Visite aqui a
+página do evento
+na SCN.
+O mais legal é que quase todas as palestras e apresentações de novos produtos da SAP foram gravadas, e você pode acessar o
+streamming online neste link
+. Aproveite e fique por dentro das novidades! 🙂
+
+
+
+Comentários:
+Mauro Cesar Silva Laranjeira (30/11/2011 13:41): Go Go!

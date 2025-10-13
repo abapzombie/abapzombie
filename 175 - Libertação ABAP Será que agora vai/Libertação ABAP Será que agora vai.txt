@@ -1,0 +1,50 @@
+Libertação ABAP – Será que agora vai?
+Autor: Mauricio Cruz
+Data: 22/08/2013 08:42
+
+Se você é um desenvolvedor ABAP com o mínimo de interesse na linguagem, já deve ter vasculhado nosso amigo SCN atrás de projetos divertidos. Nós já falamos aqui no site sobre o
+Code Exchange
+, que era a única plataforma onde um desenvolvedor ABAP poderia compartilhar seu projeto mega master blaster com a comunidade.
+Legalmente toda e qualquer outra forma de compartilhar um código ABAP é simplesmente errada. Ou seja, se você compartilhar códigos em um site (vamos supor que seja um site com temática de zumbis),  você pode receber uma visita da SWAT na sua casa para levar o seu computador embora quando menos esperar, e ter que pagar uma multa astronômica ou algo assim.
+(cara, eu adoro esse filme!)
+Mas… e se eu te falar que o
+Code Exchange será totalmente fechado
+no final deste mês (aug/13)? É sério,
+clique aqui
+para ver. A SAP vai apagar. Fim. The End. Adios.
+Só que, curiosamente, isto é uma coisa
+BOA
+!
+Eu tenho duras críticas ao Code Exchange. Sempre falei mal dessa bagaça. Onde já se viu, ter que concordar com páginas e páginas de blablabla para poder compartilhar um código com outros desenvolvedores? Aliás, você também teria que concordar com esses termos para poder sequer fazer o download do código. Ridículo.
+Essa insatisfação da minha parte era compartilhada por muita gente do mundo SAP, inclusive vários Mentors.  Mas o Code Exchange era a única forma de prover uma plataforma por onde os desenvolvedores pudessem interagir, por conta de pilhas e pilhas de contratos envolvendo esta linguagem criada em meados de 1980. Felizmente, com esse monte de mudanças estratégicas que a SAP vem fazendo (HANA, Mobile, HANA, Mobile, HANA, etc), parece que internamente a galera finalmente chegou ao ponto onde esse rolo todo terá um fim.
+Tudo começou com
+este post aqui no SCN
+, indagando sobre a possibilidade de compartilharmos códigos ABAP pelo Github. Peraí, ABAP no Github? Onde será que eu
+já vi isso
+heim…. 🙄 Enfim, o importante é que uma galera que está envolvida de fato com essa coisa toda da licença disse no post que o fim do Code Exchange envolve boas notícias sobre o assunto “Compartilhar códigos ABAP” (leia o post E os comentários!). Agora é esperar para ver.
+Para quem não sabe, a sap já tem um espaço no Github onde compartilha projetos criados internamente para a comunidade. Acesse aí:
+http://sap.github.io/
+(tem de tudos, menos ABAP).
+E então, será o fim dessa palhaçada toda e vamos poder compartilhar nossos códigos como quisermos e onde quisermos? O AS Trial vai finalmente deixar de ser só um ambiente para treinamento próprio, e vai passar a ser uma ferramenta de criação? Só o futuro dirá. Por hora, gostaria de pedir para que vocês também comentassem sobre o assunto
+no post do SCN
+,
+ou aqui mesmo no AZ. O importante é fomentar a discussão.
+Se você
+ainda não entendeu a importância
+, saiba que boa parte desse monte de animações que você vê na web todo dia e fala “olha que moderno” foram criadas e melhoradas por comunidades open source. O Linux, que segura a onda da maioria dos servidores por aí também é open source. Do Linux, veio o Android, que também é open source.
+Clique aqui
+. Ser open source de verdade, e não capado com o CodeEx, permite que mais desenvolvedores tragam idéias para projetos, e façam a linguagem e suas ferramentas evoluirem.
+Portanto, deixe de ser um ABAPossauro ranzinza e fique ligado neste tópico que, para mim, se tiver um “final feliz” será um marco na evolução dessa linguagem que tanta gente odeia 🙂
+Abraços!
+Atenção
+: nunca utilize o livro da imagem do post, ele é um
+péssimo
+livro (só serve para ilustrar este post de maneira cômica 😀 ).
+
+
+
+Comentários:
+Daniel Jesus (22/08/2013 21:43): Acho que não estamos muito longe disso.
+Fawcs (22/08/2013 08:52): Pode falar, você quase chorou de emoção escrevendo esse post
+  Mauricio Cruz (22/08/2013 09:02): Vou chorar quando a SAP finalmente liberar a parada 😀
+  Mauricio Cruz (22/08/2013 09:02): Vou chorar quando a SAP finalmente liberar a parada 😀

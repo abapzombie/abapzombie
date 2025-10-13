@@ -1,0 +1,66 @@
+In-Memory Database Management 2013
+Autor: Henrique Dias
+Data: 02/09/2013 14:50
+
+Começou semana passada mais um curso online nos mesmos moldes do curso do SAP Hana, 6 semanas de curso com vídeo aulas  e um teste final que dá direito a certificação pra quem acertar mais de 50% das questões da semana e do teste final. O curso fala sobre banco de dados in-memory :rolleyes: , tecnologia principal do SAP Hana.
+Agora os testes da semana podem ser feitos até a semana seguinte, ainda da tempo de participar.
+A inscrição pode ser feita no
+openHPI
+.
+Programação do curso:
+Week 1 (26.08.13 – 01.09.13)
+Assignment 1 (26.08.13 – 08.09.13)
+The Future of Enterprise Computing:
+Introduction
+New Requirements for Enterprise Computing
+Enterprise Application Characteristics
+Changes in Hardware
+A Blueprint of SanssouciDB
+Week 2 (02.09.13 – 08.09.13)
+Assignment 2 (02.09.13 – 15.09.13)
+Foundations of Database Storage Techniques and In-Memory Database Operators Part 1:
+Dictionary Encoding
+Compression
+Data Layout in Main Memory
+Partitioning
+Delete
+Insert
+Update
+Tuple Reconstruction
+Scan Performance
+Week 3 (09.09.13 – 15.09.13)
+Assignment 3 (09.09.13 – 22.09.13)
+Advanced Database Storage Techniques and In-Memory Database Operators Part 2:
+Select
+Materialization Strategies
+Differential Buffer
+Insert-only
+Merge
+Week 4 (16.09.13 – 22.09.13)
+Assignment 4 (16.09.13 – 29.09.13)
+Joins, Aggregates and Optimizations:
+Parallel Data Processing
+Indices
+Join
+Aggregate Functions
+Parallel Select
+Week 5 (23.09.13 – 29.09.13)
+Assignment 5 (23.08.13 – 06.10.13)
+Further Optimizations and Recovery:
+Workload Management
+Parallel Join
+Parallel Aggregation
+Logging
+Recovery
+On-the-fly Database Reorganization
+Week 6 (30.09.13 – 07.10.13)
+Assignment 6 (30.09.13 – 13.10.13)
+Foundations for a New Enterprise Application Development Era:
+Implications
+Views
+Handling Business Objects
+Bypass Solution
+Excursion 1: Aggregate Caching
+Excursion 2: Point of Sale Explorer
+Week 7 and 8 (07.10.13 – 20.10.13):
+Final Exam

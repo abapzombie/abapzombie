@@ -1,0 +1,21 @@
+Permitase um Momento de Relax – Hacker – fim do mundo após as olimpíadas do Rio
+Autor: Mauro Laranjeira
+Data: 23/05/2014 15:22
+
+EXTRA! EXTRA! Hackers da Globo fazem programa de exemplo para derrubar aplicações SAP!
+DUMPs Sem explicações;
+Sem autorização na SU53 para ver dados de autorização;
+Seleção pelo campo STRING funciona em DEV mas em PRD ficou lento;
+Sua função criada há 3 anos atras tem mais histórico de alteração no cabeçalho do que código;
+Meu caro Zumbie, se o seu ambiente tem estes sintomas, com tristeza posso afirmar que foi atacado por Hackers da Globo, diversos programas de exemplos sendo executados em serie.
+Cuidado com funcionalidades com data de validade, especialmente até as olimpíadas de 2016 no Rio, onde fica a sede da Globo.
+Quem poderá nos defender? Pergunte ao Christopher, ele sabe de TUDO.
+Christopher, sempre sabe onde parametrizar. SEMPRE!
+Dica de Zumbie para Zumbie
+Nunca esqueça de colocar as mensagens de erro.
+Abraços a todos os amiguinhos Zombies.
+
+
+
+Comentários:
+Daniel Jesus (28/05/2014 09:26): Achou que era só debuggar e pronto ? U know nothing Jhon Snow =D

@@ -1,0 +1,123 @@
+Programa de teste de clausula WHERE
+Autor: Mauro Laranjeira
+Data: 20/12/2011 08:00
+
+Ceerrtttooo Zombizada!!!
+Desde a antiguidade, antes do mundo começar a contar o tempo e os dias… Antes da galinha ou do ovo… Já debugava pela terra, o
+Terrível Homem Zumbie ABAP das Cavernas.
+Terrível Homem ABAP Zombie das Cavernas, bruto por não ter autorização na SE80
+Em quase todas as outras linguagens de programação, existem programas para auxiliar os programadores em consultas no banco de dados.
+Um grande amigo e também ABAP, me disse uma vez:
+– Bem que poderia ter uma transação para fazer testes das clausulas where dos comandos SQL.
+Pensando nisso e com tempo extra no projeto, fiz uma pequena ferramenta Module Pool com base no post
+Desvendando o Select Dinâmico
+REPORT  zombie_teste_where.
+
+**********************************************************************
+* Object (O_XX)                                                      *
+**********************************************************************
+DATA: o_alv       TYPE REF TO cl_gui_alv_grid,
+      o_container TYPE REF TO cl_gui_custom_container.
+
+**********************************************************************
+* Tabela Interna (TL_XX)                                             *
+**********************************************************************
+DATA: tl_tabela  TYPE REF TO data.
+
+**********************************************************************
+* Variavel (VL_XX)                                                   *
+**********************************************************************
+DATA: vl_tabela    TYPE string,
+      vl_where     TYPE string,
+      vl_rows      TYPE string VALUE '10',
+      vl_structure TYPE dd02l-tabname.
+
+**********************************************************************
+* Field-Symbols <FS_XX>                                        *
+**********************************************************************
+FIELD-SYMBOLS: <fs_tabela>  TYPE STANDARD TABLE.
+
+*&---------------------------------------------------------------------*
+*&      Module  STATUS_9000  OUTPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+MODULE status_9000 OUTPUT.
+
+*  SET PF-STATUS 'xxxxxxxx'.
+*  SET TITLEBAR 'xxx'.
+
+ENDMODULE.                 " STATUS_9000  OUTPUT
+*&---------------------------------------------------------------------*
+*&      Module  USER_COMMAND_9000  INPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+MODULE user_command_9000 INPUT.
+
+  "Foi digitado um nome de tabela?
+  CHECK vl_tabela IS NOT INITIAL.
+
+  TRY.
+      "Criação da tabela dinâmica
+      CREATE DATA tl_tabela TYPE TABLE OF (vl_tabela).
+
+    CATCH cx_root.
+
+      EXIT.
+  ENDTRY.
+
+  ASSIGN tl_tabela->* TO <fs_tabela>.
+
+  "Faz a seleção no banco de dados
+  SELECT * UP TO vl_rows ROWS
+    FROM (vl_tabela)
+    INTO TABLE <fs_tabela>
+    WHERE (vl_where).
+
+  "Caso o ALV ja tenha sido instanciado, limpa seus atributos
+  IF o_alv IS BOUND.
+    o_alv->free( ).
+  ENDIF.
+
+  IF o_container IS NOT BOUND.
+
+    "Faz a criação do objecto do container apenas uma vez
+    CREATE OBJECT o_container
+      EXPORTING
+        container_name = 'ALV'.
+
+  ENDIF.
+
+  "Criação do Objecto do ALV
+  CREATE OBJECT o_alv
+    EXPORTING
+      i_parent = o_container.
+
+  vl_structure = vl_tabela.
+
+  "Exibe o AVL
+  CALL METHOD o_alv->set_table_for_first_display
+    EXPORTING
+      i_structure_name = vl_structure
+    CHANGING
+      it_outtab        = <fs_tabela>.
+
+ENDMODULE.                 " USER_COMMAND_9000  INPUT
+Segue a tela 9000 do Module Pool:
+Tela 9000 do Module Pool - Teste de clausula Where
+Esta versão é 1.0, minha ideia é ter a possibilidade de fazer Inner Join, Subquery e etc. 😯
+Programa de teste de calusula where
+Este programinha vale também como estudo para ajuda em ALV Orientado a Objetos, Criação de Objeto Data e SQL Dinâmico.
+Espero que ajude mais alguém alem de mim, pois ja utilizei em outro projeto. 8)
+Abraços a todos que ja usaram o PHPMyAdmin e pensaram, porque não em ABAP?!
+
+
+
+Comentários:
+Douglas (20/12/2011 21:59): Talvez não tenha entendido bem a proposta, mas a utilização da SE16N, por exemplo, não substitui esse programa que você fez?
+  Mauro Laranjeira (21/12/2011 07:11): Tudo bem Douglas? Esse programa ainda esta em sua primeira versão. Mas a ideia dele não é apenas exibir os dados das tabelas, futuramente quero poder testar inner join, sub query e etc. Quero testar os comandos SQL sem precisar ficar rodando os programas, quando colocar comando SQL no código ter certeza que estará correto. Abs, Mauro Laranjeira
+  Mauro Laranjeira (21/12/2011 07:11): Tudo bem Douglas? Esse programa ainda esta em sua primeira versão. Mas a ideia dele não é apenas exibir os dados das tabelas, futuramente quero poder testar inner join, sub query e etc. Quero testar os comandos SQL sem precisar ficar rodando os programas, quando colocar comando SQL no código ter certeza que estará correto. Abs, Mauro Laranjeira
+Leo Kreator (20/12/2011 08:59): Você quer testar queries SQL. Não tem ferramenta nenhuma. #abapdepressao Ótimo post Mauro, a solução é simples e muito boa. Eu já tinha topado com esse problema, e fuçando na net achei o YES4SQL: http://www.sapdev.co.uk/programs/custom/zyes4sql.htm Mais complicado de implementar, mas é uma alternativa.
+  Mauro Laranjeira (20/12/2011 20:13): Vlw pela dica Leo, vou dar uma olhada nesse link que vc passou. Abs, Mauro Laranjeira
+  Mauro Laranjeira (20/12/2011 20:13): Vlw pela dica Leo, vou dar uma olhada nesse link que vc passou. Abs, Mauro Laranjeira

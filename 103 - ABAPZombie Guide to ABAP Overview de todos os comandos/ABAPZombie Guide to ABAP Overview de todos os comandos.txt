@@ -1,0 +1,334 @@
+ABAPZombie Guide to ABAP – Overview de todos os comandos
+Autor: Mauricio Cruz
+Data: 30/11/2011 12:49
+
+É pessoal, parece loucura, mas não é :mrgreen:. O
+ABAPZombie Guide to ABAP
+é um guia com uma explicação
+ABAP Zombie-Style
+de todos os comandos da linguagem ABAP. Este post irá reunir todos os comandos, e, conforme formos postando as explicações, irei atualizando os links, fazendo desta página um guia-rápido para uso. Espero que você goste e utilize bastante o guia. Como eu sempre digo, na pior das hipóteses, pelo menos aprendemos alguma coisa 😛 .
+Vamos lá!
+Nome da Sequência de Posts:
+ABAPZombie Guide to ABAP
+——————————–
+Descrição:
+Esse guia usa como base a página “ABAP Short Reference”, que é uma lista com todos os comandos da linguagem, disponível no help da SAP (mais conhecido como F1). Ele terá aproximadamente
+275 partes
+,
+e talvez demore um “tempinho” para ficar pronto 😛
+——————————–
+Lista de Comandos
+(Aperte CTRL+F para localizar um Comando!)
+** Comandos que não estão em negrito ainda não foram explicados. Tentaremos seguir uma ordem alfabética, ou não
+🙄
+A
+ADD
+ADD-CORRESPONDING
+ADD – THEN, UNTIL
+ALIASES
+APPEND
+ASSERT
+ASSIGN
+ASSIGN – LOCAL COPY
+AT
+AT PF
+AT LINE-SELECTION
+AT SELECTION-SCREEN
+AT USER-COMMAND
+AUTHORITY-CHECK
+B
+BACK
+BREAK-POINT
+C
+CALL BADI
+CALL DIALOG
+CALL FUNCTION
+CALL CUSTOMER-FUNCTION
+CALL METHOD
+CALL METHOD – OLE
+CALL SCREEN
+CALL SELECTION-SCREEN
+CALL TRANSACTION
+CALL TRANSFORMATION
+CASE
+CATCH SYSTEM-EXCEPTIONS
+CHECK
+CLASS
+CLASS – DEFERRED, LOAD
+CLASS-DATA
+CLASS-EVENTS
+CLASS-METHODS
+CLASS-POOL
+CLEAR
+CLOSE CURSOR
+CLOSE DATASET
+COLLECT
+COMMIT
+COMMUNICATION
+COMPUTE
+CONCATENATE
+CONDENSE
+CONSTANTS
+CONTEXTS
+CONTINUE
+CONTROLS
+CONVERT DATE
+CONVERT TEXT
+CONVERT TIME STAMP
+CREATE DATA
+CREATE OBJECT
+CREATE OBJECT – OLE
+D
+DATA
+DATA BEGIN OF
+DATA – COMMON PART
+DATA – OCCURS
+DEFINE
+DELETE DATASET
+DELETE DBTAB
+DELETE ITAB
+DELETE FROM
+DEMAND
+DESCRIBE DISTANCE
+DESCRIBE FIELD
+DESCRIBE LIST
+DESCRIBE TABLE
+DETAIL
+DIVIDE
+DIVIDE-CORRESPONDING
+DO
+E
+EDITOR-CALL
+END-OF-PAGE
+END-OF-SELECTION
+ENHANCEMENT
+ENHANCEMENT-POINT
+ENHANCEMENT-SECTION
+EVENTS
+EXEC SQL
+EXIT
+EXIT FROM SQL
+EXIT FROM STEP-LOOP
+EXPORT
+EXTRACT
+F
+FETCH
+FIELD-GROUPS
+FIELD-SYMBOLS
+FIELDS
+FIND
+FORM
+FORMAT
+FREE
+FREE MEMORY
+FREE OBJECT – OLE
+FUNCTION
+FUNCTION-POOL
+G
+GENERATE SUBROUTINE POOL
+GET
+GET BADI
+GET BIT
+GET CURSOR
+GET DATASET
+GET LOCALE
+GET PARAMETER
+GET PF-STATUS
+GET PROPERTY
+GET REFERENCE
+GET RUN TIME
+GET TIME
+GET TIME STAMP
+H
+HIDE
+I
+IF
+IMPORT
+IMPORT DIRECTORY
+INCLUDE
+INCLUDE – TYPE, STRUCTURE
+INFOTYPES
+INITIALIZATION
+INPUT
+INSERT dbtab
+INSERT field-group
+INSERT itab
+INSERT REPORT
+INSERT TEXTPOOL
+INTERFACE
+INTERFACE – DEFERRED, LOAD
+INTERFACE-POOL
+INTERFACES
+L
+LEAVE
+LEAVE LIST-PROCESSING
+LEAVE PROGRAM
+LEAVE SCREEN
+LEAVE TO LIST-PROCESSING
+LEAVE TO TRANSACTION
+LOAD-OF-PROGRAM
+LOCAL
+LOG-POINT
+log_exp
+LOOP
+LOOP AT dbtab
+LOOP AT itab
+LOOP AT SCREEN
+M
+MAXIMUM
+MESSAGE
+METHOD
+METHODS
+METHODS – FOR TESTING
+METHODS – REDEFINITION
+MINIMUM
+MODIFY dbtab
+MODIFY itab
+MODIFY LINE
+MODIFY SCREEN
+MODULE
+MOVE
+MOVE-CORRESPONDING
+MOVE PERCENTAGE
+MULTIPLY
+MULTIPLY-CORRESPONDING
+N
+NEW-LINE
+NEW-PAGE
+NEW-SECTION
+NODES
+O
+ON CHANGE OF
+OPEN CURSOR
+OPEN DATASET
+OVERLAY
+P
+PACK
+PARAMETERS
+PERFORM
+POSITION
+PRINT-CONTROL
+PROGRAM
+PROVIDE
+PUT
+R
+RAISE
+RAISE EVENT
+RAISE EXCEPTION
+RANGES
+READ DATASET
+READ LINE
+READ REPORT
+READ TABLE dbtab
+READ TABLE itab
+READ TEXTPOOL
+RECEIVE
+REFRESH
+REFRESH CONTROL
+REFRESH – FROM
+REJECT
+REPLACE
+REPLACE sub_string WITH
+REPORT
+RESERVE
+RETURN
+ROLLBACK
+S
+SCROLL
+SEARCH
+SELECT
+SELECT-OPTIONS
+SELECTION-SCREEN
+SELECTION-SCREEN – BEGIN OF
+SELECTION-SCREEN – BLOCK
+SELECTION-SCREEN – LINE
+SELECTION-SCREEN – TABBED BLOCK
+SELECTION-SCREEN – VERSION
+SELECTION-SCREEN DYNAMIC SELECTIONS
+SELECTION-SCREEN EXCLUDE
+SELECTION-SCREEN FIELD SELECTION
+SELECTION-SCREEN INCLUDE
+SELECTION-SCREEN TAB
+SET BIT
+SET BLANK LINES
+SET COUNTRY
+SET CURSOR
+SET DATASET
+SET EXTENDED CHECK
+SET HANDLER
+SET HOLD DATA
+SET LANGUAGE
+SET LEFT SCROLL-BOUNDARY
+SET LOCALE
+SET MARGIN
+SET PARAMETER
+SET PF-STATUS
+SET PROPERTY – OLE
+SET RUN TIME ANALYZER
+SET RUN TIME CLOCK
+SET SCREEN
+SET TITLEBAR
+SET UPDATE TASK
+SET USER-COMMAND
+SHIFT
+SKIP
+SORT
+SORT itab
+SPLIT
+sql_cond
+START-OF-SELECTION
+STATICS
+STOP
+SUBMIT
+subquery
+SUBTRACT
+SUBTRACT-CORRESPONDING
+SUM
+SUMMARY
+SUMMING
+SUPPLY
+SUPPRESS DIALOG
+SYNTAX-CHECK
+T
+TABLES
+TABLES*
+TOP-OF-PAGE
+TRANSFER
+TRANSLATE
+TRUNCATE DATASET
+TRY
+TYPE-POOL
+TYPE-POOLS
+TYPES
+TYPES BEGIN OF
+TYPES – OCCURS
+typing
+U
+ULINE
+UNPACK
+UPDATE
+W
+WAIT
+WAIT UNTIL
+WHILE
+WINDOW
+WRITE
+WRITE TO
+WRITE TO itab
+Para qualquer dúvida de um comando específico, comente direto na página do comando (não faz mal se ela foi postada faz tempo, a gente sempre vê os comentários!). Coloquem aqui comentários específicos da lista toda, ok?
+Abraços a todos aquele que vão se esquecer do primeiro comando quando estiverem escrevendo sobre o último! 😎
+
+
+
+Comentários:
+Caique de Paula Nascimento (22/11/2023 12:42): Boas, uma dúvida, existe alguma previsão de sair novos tópicos dessa lista ?
+Raul Romano (22/03/2013 13:56): Boa tarde, poderia informar a versão desses comandos acima?! no caso, se eu poderia usa-los na versão 6.0?? Pois se eles forem, digamos, da versão 4.0 já era.
+  Mauricio Cruz (22/03/2013 14:05): Tanto a lista quanto a explicação dos comandos vêm da 6.0
+    Raul Romano (22/03/2013 14:09): valeu cara! 😉
+    Raul Romano (22/03/2013 14:09): valeu cara! 😉
+  Mauricio Cruz (22/03/2013 14:05): Tanto a lista quanto a explicação dos comandos vêm da 6.0
+    Raul Romano (22/03/2013 14:09): valeu cara! 😉
+    Raul Romano (22/03/2013 14:09): valeu cara! 😉
+Thiago Molina (03/05/2012 11:45): Bom dia! Gostaria de saber se existe algum interesse de vcs em colaboradores! No sentido de colocar alguns comandos e funções. Atenciosamente,
+  Mauricio Cruz (04/05/2012 15:57): No momento não Thiago. Se tivermos alguma novidade, vamos postar aqui no site. Abraços e obrigado! 🙂
+  Mauricio Cruz (04/05/2012 15:57): No momento não Thiago. Se tivermos alguma novidade, vamos postar aqui no site. Abraços e obrigado! 🙂

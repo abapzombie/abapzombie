@@ -1,0 +1,93 @@
+Criando/Alterando tabela ordenadas (ou “manha” do BINARY SEARCH)
+Autor: Mauricio Cruz
+Data: 09/12/2011 09:00
+
+Nos primórdios da minha vida como ABAPer, uma
+sábia mestra ABAPai (pra rimar com JEDI, sacou? 🙄
+) me ensinou uma pequena tática para que você consiga alterar ou criar tabelas ordenadas por uma chave qualquer. Recentemente, num curso de performance que ministrei, fiquei surpreso com o fato de que quase ninguém havia usado esse esquema em seus códigos malucos.
+Portanto, resolvi explicar e compatilhar essa dica aqui no ABAPZombie. Você pode usar para tabelas internas do tipo
+STANDARD
+.
+Então vamos lá! 😀
+A idéia é você se aproveitar do
+algoritmo da busca binária
+para descobrir o sy-tabix de onde o registro deveria estar.
+Vamos supor que você tenha uma tabela com os dados:
+num
+1
+2
+3
+5
+Precisamos colocar o número 4 em seu devido lugar!
+Se você der um READ TABLE BINARY SEARCH na tabela acima, procurando pelo campo NUM = 4, o sistema vai retornar um SY-SUBRC = 4, porém o SY-TABIX será preenchido com 4, que é o lugar onde o registro de número 4 deveria estar.
+Daí é só inserir o danado ali para não quebrar a ordenação!
+Vejam o exemplo:
+REPORT zombie_manha_read_table.
+
+* Types
+TYPES: BEGIN OF ty_values,
+        num TYPE numc5,
+       END OF ty_values.
+
+* Tables
+DATA: t_desord TYPE TABLE OF ty_values,
+      t_ord    TYPE TABLE OF ty_values.
+
+* Work Areas
+DATA: wa_val TYPE ty_values.
+
+* Contador
+DATA: v_count TYPE i.
+
+*-- Vamos preencher a tabela com 10 linhas
+DO 10 TIMES.
+  ADD 1 TO v_count.
+  wa_val-num = v_count.
+  APPEND wa_val TO t_desord.
+ENDDO.
+
+* E agora, fazer com que os dados fiquem "desordenados" na T_DESORD
+* ou seja, a ordenação vai ficar inversa, do maior para o menor
+* O output na sequencia ficaria 10, 9, 8, 7, 6...
+SORT t_desord BY num DESCENDING.
+
+*-- E agora, vamos fazer com que a tabela t_ord fique ordenada,
+*-- sem usar o comando SORT
+LOOP AT t_desord INTO wa_val.
+
+* Nos aproveitamos do algoritmo de busca binária, que sempre
+* retorna o SY-TABIX de onde o registro deveria ser inserido caso
+* o mesmo não exista!
+  READ TABLE t_ord WITH KEY
+    num = wa_val-num
+  BINARY SEARCH
+  TRANSPORTING NO FIELDS.
+
+  IF sy-subrc <> 0.
+*   Vamos inserir o danado onde ele deveria estar
+    INSERT wa_val INTO t_ord INDEX sy-tabix.
+  ENDIF.
+
+ENDLOOP.
+
+* E, magicamente, a ordenação ficou correta na T_ORD!
+* 1, 2, 3, 4, 5, 6..
+No exemplo acima, você pode montar a tabela T_DESORD com qualquer ordenação, que a tabela T_ORD vai sempre sair certinha. Pode testar 😉
+Bom, eu aprendi isso quando era um júnior, e acho que por isso que eu sempre achei que “todo mundo soubesse”. Enfim, pelo menos com esse post espero que mais pessoas saibam! 🙂
+Abraços à todos aqueles que curte ordenações!
+
+
+
+Comentários:
+Alexandre (20/06/2016 17:41): Fala Mauricio, obrigado pela dica. Bem que você podia ministrar esse curso de performance de forma online hein, para que pudéssemos ter a oportunidade de participar. Amadureça essa ideia ai…. 🙂
+Alexandre (13/08/2014 10:51): Pessoal, Estou com uma dúvida, preciso fazer :  read TABLE it_files_in_dir with key name cp ‘*.xml’ into it_files O problema é que não sei como fazer um ‘Like’ com read table
+  Mauricio Cruz (15/08/2014 11:16): Sorry bro, vc não vai conseguir fazer isso num read table, pq o sistema não permite. Só dá para usar o “=” em READ TABLEs. Abs!
+  Mauricio Cruz (15/08/2014 11:16): Sorry bro, vc não vai conseguir fazer isso num read table, pq o sistema não permite. Só dá para usar o “=” em READ TABLEs. Abs!
+Custodio de Oliveira Antonio (12/12/2011 00:11): Complementando meu comentario anterior, fiz uns testes aqui para SORTED TABLE com 10, 1.000 e 10.000 registros, e usar INSERT   INTO TABLE  se mostrou aproximadamente 25% mais veloz. Abraco, Custodio
+  Mauricio Cruz (12/12/2011 08:02): Olá Custódio, tudo bem? Obrigado pela comentário! Realmente faz mais sentido usar o INSERT wa INTO TABLE itab, viajei e já estou arrumando. Mesmo para o caso onde o registro já exista (itab com UNIQUE KEY), o sistema retorna o SY-SUBRC = 4 e nos indica que o registro já foi inserido. Já ajustei o código. Aliás, vou fazer um post dedicado à tabelas SORTED depois dessa 🙂 Abraços!
+  Mauricio Cruz (12/12/2011 08:02): Olá Custódio, tudo bem? Obrigado pela comentário! Realmente faz mais sentido usar o INSERT wa INTO TABLE itab, viajei e já estou arrumando. Mesmo para o caso onde o registro já exista (itab com UNIQUE KEY), o sistema retorna o SY-SUBRC = 4 e nos indica que o registro já foi inserido. Já ajustei o código. Aliás, vou fazer um post dedicado à tabelas SORTED depois dessa 🙂 Abraços!
+Custodio (11/12/2011 21:15): Boa dica para standard  tables, porem desnecessario para SORTED TABLES. Para esse tipo de tabela o comando INSERT faz o trabalho por voce, nao precisa especificar o indice: INSERT wa_val INTO TABLE t_ord. Abraco
+Norberto Silva (10/12/2011 20:50): Mauricio, Parabéns pelo post. Excelente dica para quem está começando e também para quem já trabalha com ABAP, que resolvia esse problema de uma outra forma e não conhecia essa possibilidade (como eu! rs). Obrigado, Norberto Silva
+Rafael (09/12/2011 09:17): Bela dica Maurício, essa eu confesso que não sabia, enfim, vivendo e aprendendo. Obrigado mais uma vez.
+  Mauricio Cruz (09/12/2011 09:18): Normal! Como disse no post, eu meio que “cresci” tendo essa lógica bem clara na minha cabeça, por isso que me espantei tanto quando algumas pessoas me disseram que não sabiam. Mas normal, ninguém tem como saber tudo 🙂 Abraços!
+  Mauricio Cruz (09/12/2011 09:18): Normal! Como disse no post, eu meio que “cresci” tendo essa lógica bem clara na minha cabeça, por isso que me espantei tanto quando algumas pessoas me disseram que não sabiam. Mas normal, ninguém tem como saber tudo 🙂 Abraços!

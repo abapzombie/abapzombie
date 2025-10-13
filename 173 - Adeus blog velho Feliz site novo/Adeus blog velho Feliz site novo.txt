@@ -1,0 +1,37 @@
+Adeus blog velho… Feliz site novo!
+Autor: Mauricio Cruz
+Data: 06/06/2013 08:54
+
+Demorou um pouco, mas finalmente conseguimos alterar o layout de todo o site. Ainda temos algumas coisas para ajustar, mas são features menores e que podem ser ajustadas sem prejudicar a leitura dos artigos.
+Muitas coisas mudaram, portanto, montei uma lista das novas features do site:
+Esse novo layout é
+responsivo
+! Isso quer dizer que você pode acessar do seu celular, do seu tablet ou até da sua janela de browser de tamanho reduzido (tente diminuir a janela do browser com o site aberto).
+Diminuímos o número das categorias para que o site fique mais organizado. Cada categoria tem uma imagem principal, além do destaque com o nome no “triangulo vermelho” em cada uma das imagens na página inicial.
+Finalmente temos um espaço para você conhecer mais sobre os autores de cada post, sem precisar ficar navegando para a área da equipe. E se você clicar no nome do autor, conseguirá acessar todas as suas criações.
+Tem um botão maroto ali -> , que serve para voltar para o topo. Essa é a feature considerada pura frescura hehe.
+Os posts mais acessados dos sites são os guias para novatos, e demos mais destaques para ele na página inicial.
+Tiramos aquela barra lateral toda poluída de todas as páginas. Ainda vamos pensar em como estruturar os links para sites parceiros nos próximos dias.
+Lá embaixo, no rodapé, localizamos links menos acessados, mas que podem ser úteis para algumas pessoas. As tags e o calendário ficaram por lá também.
+Esperamos que você sinta uma melhora
+significativa
+na performance de site. Além desse novo layout sem beeeem mais leve, movemos os arquivos para um outro servidor e ajustamos algumas configurações no sistema de cache.
+Bastante coisa, falae? Tem um outro ponto que é bem visível: o site está menos 2001, e está mais para um site de 2008~2009. 😀
+Importantíssimo
+: mande pelo
+Contato
+tudo que você achar que está
+zuado, quebrado e/ou ilegível.
+Contamos
+muito
+com a ajuda de vocês, pois é muita coisa para revisar.
+E aí, o que você achou do novo layout? Curtiu? Odiou? Deixe um feedback nos comentários.
+Abraços!
+
+
+
+Comentários:
+Renan A. Ferreira (22/07/2013 14:53): Fala zumbizada, 🙂 Show de bola o novo layout do site, quando entrei aqui pensei que tinha entrado no site errado! .. pensei ‘wtf??!?!?’ hahaha. Massa! Sucesso! []’s
+Paulo (27/06/2013 11:41): Iae pessoal, parabéns pelo conteúdo do site e valeu por se esforçarem nesse trabalho, fornecendo bons artigos sobre Abap para nós, voluntariamente. Quanto ao layout, por enquanto ainda prefiro o antigo, sei que ainda estão aprimorando este mas no anterior eu encontrava os tópicos mais rapidamente e a leitura era mais fácil para mim. Abraço!
+  Mauricio Cruz (27/06/2013 11:50): Valeu Paulo! Estamos ajustando várias coisas ainda, tem bastante trabalho pela frente… No layout antigo também fomos implementando um monte de ajustes aos poucos, então a tendência é melhorar 🙂 O problema é que sou eu quem costuma ajustar o layout, e estou hyper mega atarefado nas últimas semanas. Mas vou arranjar um tempo. Abraços!
+  Mauricio Cruz (27/06/2013 11:50): Valeu Paulo! Estamos ajustando várias coisas ainda, tem bastante trabalho pela frente… No layout antigo também fomos implementando um monte de ajustes aos poucos, então a tendência é melhorar 🙂 O problema é que sou eu quem costuma ajustar o layout, e estou hyper mega atarefado nas últimas semanas. Mas vou arranjar um tempo. Abraços!

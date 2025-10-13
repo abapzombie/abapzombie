@@ -1,0 +1,32 @@
+Vídeo da Palestra no SAP Inside Track 2012 – ABAP no Eclipse
+Autor: Mauricio Cruz
+Data: 14/11/2012 10:15
+
+Saiu o vídeo da palestra que eu ministrei no último SAP Inside Track São Paulo. A gravação ficou animal, e foi feita pelo
+Henrique Dias
+, aqui do ABAPZombie 😀 (valeu manolo!).
+(aumente a definição pelo ícone da engrenagem para você conseguir ver os slides e a tela na demonstração)
+Você pode perceber alguns pequenos cortes na exibição, pois a gravação foi feita em partes, que foram agrupadas neste vídeo. O
+Marcelo Ramos
+, SAP Mentor, também faz algumas participações comentando as novidades.
+As outras palestras do dia foram gravadas pelo sistema da SAP, o Adobe Connect, mas os replays ainda não foram disponibilizadas no SDN. Essa daqui o Henrique gravou com sua câmera, e você vai poder ver eu falando altas baboseiras em HD! 😛
+Link para os slides no slideshare
+Muito obrigado a todos que compareceram no SITSP e assistiram as palestras!
+Divirta-se e deixe seus comentários.
+Abraços!
+
+
+
+Comentários:
+Felipe (15/05/2013 18:45): uahuahuahuhuahu animal mesmo que nem da pra ver o que está escrito no video. nem no eclipse deu pra ver nada escrito. tem como por favor, cara, fazer um tutorial, passo a passo, com exemplo da instalação ado ADT dentro do eclipse. como instala, executa as coisas, por favor grande. valeus, desculpa a sinceridade.
+  Mauricio Cruz (15/05/2013 19:59): Olá Felipe, tudo bem? Animal mesmo é uma funcionalidade do youtube, que deixa ver vídeos em melhores resoluções. Clique ali no botão do youtube, depois na engrenagem e mude para 1080dp. Você vai ler tudo e mais um pouco. Se você assistiu a palestra, deve ter percebido um link que está na apresentação , para o site do SDN que tem guias, discussões e vários tópicos discutindo não só a instalação do ADT como outras coisas. Tem também o link para o site do Furlan (abap101), que explica a instalação do minisap. Acho desnecessário refazer guias, já que o SDN tem quilos e litros de guias de instalação, não é mesmo? Abraços!
+  Mauricio Cruz (15/05/2013 19:59): Olá Felipe, tudo bem? Animal mesmo é uma funcionalidade do youtube, que deixa ver vídeos em melhores resoluções. Clique ali no botão do youtube, depois na engrenagem e mude para 1080dp. Você vai ler tudo e mais um pouco. Se você assistiu a palestra, deve ter percebido um link que está na apresentação , para o site do SDN que tem guias, discussões e vários tópicos discutindo não só a instalação do ADT como outras coisas. Tem também o link para o site do Furlan (abap101), que explica a instalação do minisap. Acho desnecessário refazer guias, já que o SDN tem quilos e litros de guias de instalação, não é mesmo? Abraços!
+rafael freitas (18/12/2012 16:36): Gostei da Palestra, Só uma duvida, em algum momento da instalação você teve um DUMP de ASSERT? ASSERTION_FAILED  CL_ADT_REST_SER_ADAPTER=======CP Estou testando em 2 ambientes diferentes e tenho o mesmo problema, só consegui resolver criando um enhancment na classe CL_ADT_PERMISSION_CONTROL métod is_sap_system
+  Mauricio Cruz (15/05/2013 20:02): Putz, esqueci de responder este comentário, foi mal 🙁 Mas, se alguém caiu aqui do google com este problema, infelizemente eu não sei do que se trata… Abs!
+  Mauricio Cruz (15/05/2013 20:02): Putz, esqueci de responder este comentário, foi mal 🙁 Mas, se alguém caiu aqui do google com este problema, infelizemente eu não sei do que se trata… Abs!
+Cleber (21/11/2012 17:52): Muito boa a palestra. Estou só começando mas, me identifico muito com a metodologia. Obs. Fiz outro “comment”, vc pode dar uma olhada? Segue: http://www.abapzombie.com/dicas-abap/2011/07/01/novatos-no-mundo-sap-por-onde-comecar-guia-do-abap-noob/#comment-10172
+  Mauricio Cruz (22/11/2012 18:33): Olá Cleber, que bom que curtiu, obrigado! Respondi, veja lá. Abraços!
+  Mauricio Cruz (22/11/2012 18:33): Olá Cleber, que bom que curtiu, obrigado! Respondi, veja lá. Abraços!
+Fawcs (14/11/2012 10:25): apresento-lhes: minha cabeça presente dos 0:00 aos 59:25.
+  Mauricio Cruz (14/11/2012 10:35): A sua na direita e a do Furlan na esquerda! Easter eggs em níveis absurdos nessa palestra
+  Mauricio Cruz (14/11/2012 10:35): A sua na direita e a do Furlan na esquerda! Easter eggs em níveis absurdos nessa palestra

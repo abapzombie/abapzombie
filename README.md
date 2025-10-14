@@ -1,10 +1,10 @@
 # ABAPZombie Backup
 
-Este é um backup de todos os artigos do site ABAPZombie. Todo o conteúdo criado desde 2010 está disponibilizado em dois formatos: pdf e txt.
+Este é um backup de todos os artigos do site ABAPZombie. Todo o conteúdo criado desde 2010 está disponibilizado em dois formatos: `pdf` e `txt`.
 
 ## Mas por que vocês tiraram o site do ar?
 
-Até os zumbis cansaram das historinhas da SAP e foram embora de volta para suas tumbas. Isso, e porque estavam de saco cheio de pagar por hospedagem sendo que não postavam ¯\(ツ)/¯.
+Até os zumbis cansaram das historinhas da SAP e foram embora de volta para suas tumbas. Isso, e porque estavam de saco cheio de pagar por hospedagem sendo que não postavam ¯\\(ツ)/¯.
 
 Reclamações através deste link: https://tinyurl.com/contato-abapzombie
 
